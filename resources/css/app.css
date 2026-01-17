@@ -11,7 +11,6 @@
     --rosso_ciliegia: #DE0722;
 }
 
-
 body {
 
     background-color: var(--bianco_sfondo);
@@ -36,6 +35,73 @@ p {
     font-family: "Montserrat", sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
+.scritta_verde_scuro {
+
+    color: var(--verde_scuro);
+}
+
+.scritta_rossa {
+
+    color: var(--rosso_ciliegia);
+}
+
+/* INIZIO NAVBAR */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    width: 100%;
+
+    background-color: transparent;
+}
+
+.icona_navbar {
+    width: 6rem;
+    height: 8rem;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-bottom: 1px solid transparent;
+    margin: 0 5px;
+    color: var(--verde_scuro);
+}
+
+.navbar-nav .nav-link:hover {
+    transition: 0.5;
+    color: var(--rosso_ciliegia);
+    border-bottom: 1px solid var(--rosso_ciliegia);
+}
+
+.btn-prenota {
+    background-color: var(--rosso_ciliegia);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    padding: 0.8rem 1.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(222, 7, 34, 0.2);
+}
+
+.btn-prenota:hover {
+    background-color: var(--bianco_sfondo);
+    border: 1px solid var(--rosso_ciliegia);
+    color: var(--rosso_ciliegia);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* FINE NAVBAR */
 
 
 
@@ -45,3 +111,28 @@ p {
 
 
 /* FINE HOMEPAGE */
+
+
+
+@media (min-width: 992px) {
+    .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0;
+        /* Rimuove lo spazio che potrebbe far chiudere il menu mentre ti sposti */
+        animation: fadeIn 0.3s;
+        /* Opzionale: aggiunge una piccola animazione fluida */
+    }
+
+    /* Rende il menu un po' più fluido nella comparsa */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
