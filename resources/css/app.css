@@ -9,9 +9,12 @@
     --rosso_ciliegia: #DE0722;
 }
 
-/* --- RESET E TIPOGRAFIA --- */
+/* --- RESET & BASE --- */
 body {
     background-color: var(--bianco_sfondo);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 h1,
@@ -22,12 +25,6 @@ h5 {
     font-family: "Cormorant Garamond", serif;
 }
 
-h4,
-h5 {
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
-
 p {
     font-family: "Montserrat", sans-serif;
 }
@@ -36,49 +33,103 @@ a {
     text-decoration: none;
 }
 
-/* --- NAVBAR BASE --- */
+/* --- NAVBAR SEMPRE TRASPARENTE --- */
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 1020;
+    padding: 15px 0;
+    position: fixed;
+    z-index: 1050;
     width: 100%;
     background-color: transparent;
+    border: none;
     transition: all 0.4s ease-in-out;
 }
 
-/* Stato quando scorrimento > 0 */
-.navbar-scrolled {
-    background-color: transparent !important;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
+/* Logo */
 .icona_navbar {
-    width: 6rem;
-    height: 8rem;
+    width: 6.5rem;
+    height: auto;
     transition: all 0.3s ease;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .navbar-scrolled .icona_navbar {
-    width: 4rem;
-    height: 5.5rem;
+    width: 4.5rem;
 }
 
-/* --- LINK NAVBAR --- */
+/* --- IL BOTTONE HAMBURGER (FONTAWESOME) --- */
+.navbar-toggler {
+    border: 2px solid white;
+    /* Bordo del bottone bianco */
+    padding: 5px 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* Stile dell'icona dentro il bottone */
+.navbar-toggler i {
+    color: white;
+    /* Colore bianco dell'icona */
+    font-size: 1.5rem;
+    /* Grandezza dell'icona */
+    line-height: 1;
+    vertical-align: middle;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --- IL MENU DROPDOWN (BOX BIANCO) --- */
+.navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    width: 280px;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    z-index: 1100;
+}
+
+/* Link all'interno del menu bianco */
 .navbar-nav .nav-link {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
     color: var(--verde_scuro);
-    border-bottom: 2px solid transparent;
-    margin: 0 10px;
+    text-align: center;
+    padding: 7px 0;
     transition: 0.3s;
+}
+
+.navbar-nav .nav-item:last-child .nav-link {
+    border-bottom: none;
 }
 
 .navbar-nav .nav-link:hover {
     color: var(--rosso_ciliegia);
-    border-bottom: 2px solid var(--rosso_ciliegia);
+}
 
+/* Dropdown interno (Servizi) */
+.dropdown-menu {
+    border: none;
+    text-align: center;
+}
+
+.dropdown-item {
+    font-family: "Cormorant Garamond", serif;
+    color: var(--verde_scuro);
+
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    color: var(--rosso_ciliegia);
 }
 
 /* --- BOTTONE PRENOTA --- */
@@ -91,89 +142,47 @@ a {
     letter-spacing: 1px;
     padding: 0.8rem 1.5rem;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(222, 7, 34, 0.2);
+    box-shadow: 0 4px 15px rgba(222, 7, 34, 0.3);
+    text-transform: uppercase;
 }
 
 .btn-prenota:hover {
     background-color: white;
-    border: 1px solid var(--rosso_ciliegia);
     color: var(--rosso_ciliegia);
+    transform: translateY(-2px);
+
 }
 
-/* --- GESTIONE HAMBURGER E COLLAPSE --- */
-
-/* 1. Forza la comparsa del Toggler quando la navbar è "scrolled" (anche su Desktop) */
-@media (min-width: 992px) {
-    .navbar-scrolled .navbar-toggler {
-        display: block !important;
-    }
-
-    /* Nascondi i link estesi quando siamo in modalità scrolled per far posto all'hamburger */
-    .navbar-scrolled .navbar-collapse:not(.show) {
-        display: none !important;
-    }
-}
-
-/* 2. Stile del menu a tendina (Collapse) quando viene aperto */
-.navbar-collapse {
-    transition: all 0.3s ease;
-}
-
-/* Quando il menu mobile/scrolled è APERTO */
-.navbar-collapse.show {
+/* --- HOMEPAGE & VIDEO --- */
+.video_home {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
     position: absolute;
-    right: 0;
-    left: auto;
-    top: 100%;
-    width: 280px;
-    background-color: transparent;
-    padding: 2rem;
-    text-align: center;
-    z-index: 1000;
-    max-height: 80vh;
-    overflow-y: auto;
-
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-.navbar-collapse.show .navbar-nav {
+.padding-prova {
+    padding-top: 10000px;
+}
+
+/* Utility centramento */
+.navbar-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
-.navbar-collapse.show .nav-item {
-    margin-bottom: 10px;
-}
-
-/* --- DROPDOWN --- */
-.dropdown-item {
-    color: var(--verde_scuro);
-    font-family: "Cormorant Garamond", serif;
-    font-weight: bold;
-
-}
-
-.dropdown-item:hover {
-    color: var(--rosso_ciliegia);
-}
-
-/* Hover dropdown su desktop (solo quando NON è scrolled) */
-@media (min-width: 992px) {
-    .navbar:not(.navbar-scrolled) .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-        animation: fadeIn 0.3s;
-
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
+/* Responsive per schermi molto piccoli */
+@media (max-width: 400px) {
+    .navbar-collapse {
+        right: 10px;
+        left: 10px;
+        width: auto;
     }
 }
