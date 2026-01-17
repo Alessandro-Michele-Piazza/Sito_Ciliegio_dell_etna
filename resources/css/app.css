@@ -109,7 +109,7 @@ a {
 /* --- IL MENU DROPDOWN (BOX BIANCO) --- */
 .navbar-collapse {
     position: absolute;
-    top: 100%;
+    top: 75%;
     right: 20px;
     width: 280px;
     background-color: white;
@@ -127,16 +127,30 @@ a {
     color: var(--verde_scuro);
     text-align: center;
     padding: 7px 0;
-    transition: 0.3s;
+    /* Aumentato il padding base per più respiro */
+    transition: all 0.3s ease;
+    /* Transizione fluida per tutto */
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    /* Separatore fisico quasi invisibile */
+
 }
 
+
+
+/* Rimuove l'ultimo bordo per pulizia */
 .navbar-nav .nav-item:last-child .nav-link {
     border-bottom: none;
 }
 
+/* EFFETTO HOVER MODERNO */
 .navbar-nav .nav-link:hover {
     color: var(--rosso_ciliegia);
-
+    padding-top: 18px;
+    /* Si espande leggermente sopra */
+    padding-bottom: 18px;
+    /* Si espande leggermente sotto */
+    background-color: transparent;
 }
 
 /* Dropdown interno (Servizi) */
