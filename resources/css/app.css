@@ -1,7 +1,5 @@
 @import 'bootstrap';
 
-
-
 :root {
     --verde_scurissimo: #001a23;
     --verde_scuro: #31493c;
@@ -11,24 +9,23 @@
     --rosso_ciliegia: #DE0722;
 }
 
+/* --- RESET E TIPOGRAFIA --- */
 body {
-
     background-color: var(--bianco_sfondo);
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5 {
     font-family: "Cormorant Garamond", serif;
 }
 
 h4,
 h5 {
-    font-family: "Cormorant Garamond", serif;
     letter-spacing: 0.5px;
-    /* Migliora la leggibilità sui titoli piccoli */
     text-transform: uppercase;
-    /* Spesso il Cormorant sta benissimo tutto in maiuscolo per i sottotitoli */
 }
 
 p {
@@ -39,47 +36,52 @@ a {
     text-decoration: none;
 }
 
-.scritta_verde_scuro {
-
-    color: var(--verde_scuro);
-}
-
-.scritta_rossa {
-
-    color: var(--rosso_ciliegia);
-}
-
-/* INIZIO NAVBAR */
-
+/* --- NAVBAR BASE --- */
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1020;
     width: 100%;
-
     background-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+/* Stato quando scorrimento > 0 */
+.navbar-scrolled {
+    background-color: transparent !important;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .icona_navbar {
     width: 6rem;
     height: 8rem;
+    transition: all 0.3s ease;
 }
 
+.navbar-scrolled .icona_navbar {
+    width: 4rem;
+    height: 5.5rem;
+}
+
+/* --- LINK NAVBAR --- */
 .navbar-nav .nav-link {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
     font-size: 1.1rem;
-    border-bottom: 1px solid transparent;
-    margin: 0 5px;
     color: var(--verde_scuro);
+    border-bottom: 2px solid transparent;
+    margin: 0 10px;
+    transition: 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
-    transition: 0.5;
     color: var(--rosso_ciliegia);
-    border-bottom: 1px solid var(--rosso_ciliegia);
+    border-bottom: 2px solid var(--rosso_ciliegia);
+
 }
 
+/* --- BOTTONE PRENOTA --- */
 .btn-prenota {
     background-color: var(--rosso_ciliegia);
     color: white;
@@ -93,46 +95,85 @@ a {
 }
 
 .btn-prenota:hover {
-    background-color: var(--bianco_sfondo);
+    background-color: white;
     border: 1px solid var(--rosso_ciliegia);
     color: var(--rosso_ciliegia);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* --- GESTIONE HAMBURGER E COLLAPSE --- */
 
-
-/* FINE NAVBAR */
-
-
-
-/* INIZIO HOMEPAGE */
-
-
-
-
-/* FINE HOMEPAGE */
-
-
-
+/* 1. Forza la comparsa del Toggler quando la navbar è "scrolled" (anche su Desktop) */
 @media (min-width: 992px) {
-    .nav-item.dropdown:hover .dropdown-menu {
-        display: block;
-        margin-top: 0;
-        /* Rimuove lo spazio che potrebbe far chiudere il menu mentre ti sposti */
-        animation: fadeIn 0.3s;
-        /* Opzionale: aggiunge una piccola animazione fluida */
+    .navbar-scrolled .navbar-toggler {
+        display: block !important;
     }
 
-    /* Rende il menu un po' più fluido nella comparsa */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-        }
+    /* Nascondi i link estesi quando siamo in modalità scrolled per far posto all'hamburger */
+    .navbar-scrolled .navbar-collapse:not(.show) {
+        display: none !important;
+    }
+}
 
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+/* 2. Stile del menu a tendina (Collapse) quando viene aperto */
+.navbar-collapse {
+    transition: all 0.3s ease;
+}
+
+/* Quando il menu mobile/scrolled è APERTO */
+.navbar-collapse.show {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 100%;
+    width: 280px;
+    background-color: transparent;
+    padding: 2rem;
+    text-align: center;
+    z-index: 1000;
+    max-height: 80vh;
+    overflow-y: auto;
+
+}
+
+.navbar-collapse.show .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbar-collapse.show .nav-item {
+    margin-bottom: 10px;
+}
+
+/* --- DROPDOWN --- */
+.dropdown-item {
+    color: var(--verde_scuro);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+
+}
+
+.dropdown-item:hover {
+    color: var(--rosso_ciliegia);
+}
+
+/* Hover dropdown su desktop (solo quando NON è scrolled) */
+@media (min-width: 992px) {
+    .navbar:not(.navbar-scrolled) .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        animation: fadeIn 0.3s;
+
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
