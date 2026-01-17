@@ -1,0 +1,47 @@
+@import 'bootstrap';
+
+
+
+:root {
+    --verde_scurissimo: #001a23;
+    --verde_scuro: #31493c;
+    --verde_medio: #7a9e7e;
+    --verde_chiaro: #b3efb2;
+    --bianco_sfondo: #e8f1f2;
+    --rosso_ciliegia: #DE0722;
+}
+
+
+body {
+
+    background-color: var(--bianco_sfondo);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Cormorant Garamond", serif;
+}
+
+h4,
+h5 {
+    font-family: "Cormorant Garamond", serif;
+    letter-spacing: 0.5px;
+    /* Migliora la leggibilità sui titoli piccoli */
+    text-transform: uppercase;
+    /* Spesso il Cormorant sta benissimo tutto in maiuscolo per i sottotitoli */
+}
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+/* INIZIO HOMEPAGE */
+
+
+
+
+/* FINE HOMEPAGE */
