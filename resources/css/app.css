@@ -22,18 +22,41 @@ h2,
 h3,
 h4,
 h5 {
+    color: #31493c;
     font-family: "Cormorant Garamond", serif;
 }
 
 p {
     font-family: "Montserrat", sans-serif;
+    color: var(--verde_medio);
 }
 
 a {
     text-decoration: none;
 }
 
-/* --- NAVBAR SEMPRE TRASPARENTE --- */
+.scritta_verde_medio {
+    color: var(--verde_medio);
+}
+
+.scritta_verde_chiaro {
+
+    color: var(--verde_chiaro);
+}
+
+.scritta_verde_scuro {
+
+    color: var(--verde_scuro);
+}
+
+.scritta_rossa {
+
+    color: var(--rosso_ciliegia);
+}
+
+
+/* INIZIO CSS NAVBAR */
+
 .navbar {
     padding: 15px 0;
     position: fixed;
@@ -113,6 +136,7 @@ a {
 
 .navbar-nav .nav-link:hover {
     color: var(--rosso_ciliegia);
+
 }
 
 /* Dropdown interno (Servizi) */
@@ -153,7 +177,19 @@ a {
 
 }
 
-/* --- HOMEPAGE & VIDEO --- */
+/* Utility centramento */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* FINE CSS NAVBAR */
+
+
+/* INIZIO  CSS HOMEPAGE */
+
 .video_home {
     display: block;
     width: 100vw;
@@ -170,13 +206,115 @@ a {
     padding-top: 10000px;
 }
 
-/* Utility centramento */
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.h-video {
+    height: 100vh;
 }
+
+.h-div-mission {
+    height: 50vh;
+}
+
+.section-mission {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.section-mission {
+    padding: 100px 0;
+}
+
+.sub-label {
+    letter-spacing: 1px;
+
+    color: var(--rosso_ciliegia);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.titolo-mission {
+    font-size: 3.8rem;
+    line-height: 1.1;
+    color: var(--verde_scuro);
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.testo-radici-sul-vulcano {
+    color: var(--verde_medio);
+    font-style: italic;
+}
+
+.divider-short {
+    width: 60px;
+    height: 3px;
+    background-color: var(--rosso_ciliegia);
+    margin-top: 30px;
+}
+
+.descrizione-mission {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Link stilizzato */
+.link-scopri {
+    display: inline-flex;
+    align-items: center;
+    color: var(--verde_scuro);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    /* Leggermente più piccolo è più elegante */
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* La linea sotto il testo */
+.link-scopri span {
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.link-scopri span::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--rosso_ciliegia);
+    transition: width 0.3s ease;
+}
+
+/* Animazione dell'icona */
+.link-scopri i {
+    transition: transform 0.3s ease;
+}
+
+/* Hover States */
+.link-scopri:hover {
+    color: var(--rosso_ciliegia);
+}
+
+.link-scopri:hover span::after {
+    width: 100%;
+    /* La linea si allunga */
+}
+
+.link-scopri:hover i {
+    transform: translateX(8px);
+    /* La freccia si sposta a destra */
+}
+
+/* FINE CSS HOMEPAGE */
+
+
 
 /* Responsive per schermi molto piccoli */
 @media (max-width: 400px) {
@@ -184,5 +322,19 @@ a {
         right: 10px;
         left: 10px;
         width: auto;
+    }
+
+
+
+}
+
+@media (max-width: 768px) {
+    .titolo-mission {
+        font-size: 2.5rem;
+    }
+
+    .section-mission {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
