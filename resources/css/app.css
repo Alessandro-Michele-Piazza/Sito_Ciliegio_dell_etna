@@ -15,6 +15,8 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    width: 100%;
+
 }
 
 h1,
@@ -53,6 +55,37 @@ a {
 
     color: var(--rosso_ciliegia);
 }
+
+
+/* INIZIO SCROLLBAR */
+
+body {
+    --sb-track-color: #232e33;
+    --sb-thumb-color: #6BAF8D;
+    --sb-size: 10px;
+}
+
+body::-webkit-scrollbar {
+    width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--sb-track-color);
+    border-radius: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--sb-thumb-color);
+    border-radius: 15px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+    body {
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+    }
+}
+
+/* FINE SCROLLBAR */
 
 
 /* INIZIO CSS NAVBAR */
@@ -111,7 +144,7 @@ a {
     position: absolute;
     top: 75%;
     right: 20px;
-    width: 280px;
+    width: 200px;
     background-color: white;
     padding: 1.5rem;
     border-radius: 15px;
@@ -239,8 +272,6 @@ a {
 
 .sub-label {
     letter-spacing: 1px;
-
-    color: var(--rosso_ciliegia);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     display: block;
@@ -255,7 +286,6 @@ a {
 }
 
 .testo-radici-sul-vulcano {
-    color: var(--verde_medio);
     font-style: italic;
 }
 
@@ -272,6 +302,14 @@ a {
     color: #444;
     font-family: 'Montserrat', sans-serif;
 }
+
+.descrizione-scacchiera {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /* Link stilizzato */
 .link-scopri {
@@ -326,8 +364,165 @@ a {
     /* La freccia si sposta a destra */
 }
 
-/* FINE CSS HOMEPAGE */
+/* FINE CSS HEADER */
 
+
+/* INIZIO SCACCHIERA */
+
+.img-scacchiera-1 {
+    object-fit: cover;
+}
+
+.div-scacchiera {
+    background-color: white;
+}
+
+
+/* Gestione altezza immagine per farla combaciare col testo */
+.container-img-scacchiera {
+    min-height: 450px;
+    /* Altezza minima su mobile */
+}
+
+.img-scacchiera-custom {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.div-scacchiera h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--verde_scurissimo);
+}
+
+/* Pulizia spaziatura */
+.div-scacchiera .divider-short {
+    margin-left: 0;
+    /* Forza la linea a sinistra */
+}
+
+
+/* FINE SCACCHIERA */
+
+
+/* INIZIO FOOTER */
+.footer-modern {
+    width: 100vw !important;
+    /* Forza la larghezza alla vista dello schermo */
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow-x: hidden !important;
+    /* Taglia via qualsiasi cosa sporga a destra */
+    background-color: var(--verde_scurissimo);
+    /* Assicurati che il colore sia qui */
+}
+
+/* Rimuove i margini negativi di Bootstrap che causano lo spazio bianco */
+.footer-modern .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+
+.footer-logo {
+    max-width: 100px;
+    filter: brightness(0) invert(1);
+    /* Se il logo è scuro, lo rende bianco */
+}
+
+.footer-description {
+    font-size: 0.9rem;
+    color: #aeb9ba;
+    line-height: 1.6;
+}
+
+.footer-title {
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--verde_chiaro);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+/* Link del footer */
+.footer-links li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-links a {
+    color: #aeb9ba;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+    color: var(--rosso_ciliegia);
+    padding-left: 8px;
+}
+
+/* Icone di contatto */
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 1rem;
+    color: #aeb9ba;
+    font-size: 0.9rem;
+}
+
+.footer-contact i {
+    color: var(--verde_medio);
+    margin-top: 4px;
+}
+
+/* Social Icons */
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-socials a {
+    width: 35px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+    background: var(--rosso_ciliegia);
+    transform: translateY(-3px);
+}
+
+/* Bottom bar */
+.footer-bottom {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.8rem;
+    color: #889495;
+}
+
+.footer-bottom a {
+    color: #889495;
+    text-decoration: underline;
+}
+
+.footer-bottom a:hover {
+    color: var(--verde_chiaro);
+}
+
+
+
+/* FINE FOOTER */
 
 
 /* Responsive per schermi molto piccoli */
@@ -350,5 +545,14 @@ a {
     .section-mission {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+
+    .div-scacchiera .row {
+        min-height: 80vh;
+        /* La sezione occupa l'80% della finestra */
+    }
+
+    .container-img-scacchiera {
+        height: 100%;
     }
 }

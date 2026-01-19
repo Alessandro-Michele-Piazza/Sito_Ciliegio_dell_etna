@@ -1,5 +1,9 @@
 import './bootstrap'; // Se usi Laravel
 import 'bootstrap';    // Importa il JS di bootstrap
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 
 const navbar = document.getElementById("navbar");
 

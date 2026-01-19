@@ -29,6 +29,7 @@
         {{ $slot }}
     </div>
 
+    <x-footer />
 
     {{-- FONT AWESOME --}}
     <script src="https://kit.fontawesome.com/098ae14503.js" crossorigin="anonymous"></script>
