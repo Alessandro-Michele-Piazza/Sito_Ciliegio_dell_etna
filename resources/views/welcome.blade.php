@@ -169,59 +169,59 @@
                         <div class="avatar-container profilo-1">
                             N <div class="google-icon">G</div>
                         </div>
-                        <div class="reviewer-name scritta_verde_scuro ">Nicola Ciricosta</div>
-                        <div class="review-date">2024-05-08</div>
+                        <div class="reviewer-name scritta_verde_scuro">Nicola Ciricosta</div>
+                        <div class="review-date">05-04-2025</div>
                         <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro ">Esperienza fantastica consiglio i corsi di
-                            formazione a tutti...
-                            formatori preparatissimi e molto disponibili top 💪😘</p>
+                        <p class="review-text scritta_verde_scuro">Esperienza fantastica consiglio i corsi di formazione
+                            a tutti... formatori preparatissimi e molto disponibili top 💪😘</p>
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
+
                 <div class="swiper-slide">
                     <div class="review-card">
                         <div class="avatar-container profilo-2">
                             M <div class="google-icon">G</div>
                         </div>
                         <div class="reviewer-name scritta_verde_scuro">Manuel Matera</div>
-                        <div class="review-date">2024-05-07</div>
+                        <div class="review-date">12-01-2026</div>
                         <div class="stars">★★★★★ <small>✔</small></div>
                         <p class="review-text scritta_verde_scuro">Esperienza davvero unica, formatori davvero
-                            preparati. Consiglio
-                            questa Accademia a qualsiasi ragazzo/a vorrebbe...</p>
+                            preparati. Consiglio questa Accademia a qualsiasi ragazzo/a vorrebbe...</p>
                     </div>
                 </div>
 
+
                 <!-- Slide 3 -->
+
                 <div class="swiper-slide">
                     <div class="review-card">
-                        <div class="avatar-container profilo-3 ">
-                            G <div class="google-icon">G</div>
+                        <div class="avatar-container profilo-3">
+                            R <div class="google-icon">G</div>
                         </div>
-                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
-                        <div class="review-date">2024-03-26</div>
+                        <div class="reviewer-name scritta_verde_scuro">Riccardo Esposito</div>
+                        <div class="review-date">06-12-2025</div>
                         <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
-                            settore!
-                            Consiglio vivamente!</p>
+                        <p class="review-text scritta_verde_scuro">La pizza è semplicemente divina! Impasto
+                            leggerissimo e ingredienti di prima scelta. La "Speciale" mi ha lasciato senza parole.
+                            Tornerò sicuramente!</p>
                     </div>
                 </div>
 
                 <!-- Slide 4 -->
 
-
                 <div class="swiper-slide">
                     <div class="review-card">
-                        <div class="avatar-container profilo-4 ">
-                            G <div class="google-icon">G</div>
+                        <div class="avatar-container profilo-4">
+                            S <div class="google-icon">G</div>
                         </div>
-                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
-                        <div class="review-date">2024-03-26</div>
+                        <div class="reviewer-name scritta_verde_scuro">Stefania Bianchi</div>
+                        <div class="review-date">20-10-2025</div>
                         <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
-                            settore!
-                            Consiglio vivamente!</p>
+                        <p class="review-text scritta_verde_scuro">Cucina raffinata che esalta i sapori del territorio.
+                            I primi piatti sono un’esplosione di gusto, impiattamento curatissimo. Un plauso allo chef!
+                        </p>
                     </div>
                 </div>
 
@@ -230,52 +230,49 @@
 
                 <div class="swiper-slide">
                     <div class="review-card">
-                        <div class="avatar-container profilo-5 ">
-                            G <div class="google-icon">G</div>
+                        <div class="avatar-container profilo-5">
+                            L <div class="google-icon">G</div>
                         </div>
-                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
-                        <div class="review-date">2024-03-26</div>
+                        <div class="reviewer-name scritta_verde_scuro">Luca Moretti</div>
+                        <div class="review-date">08-05-2025</div>
                         <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
-                            settore!
-                            Consiglio vivamente!</p>
+                        <p class="review-text scritta_verde_scuro">Soggiorno indimenticabile. Camere pulitissime,
+                            silenziose e arredate con gusto. Svegliarsi immersi in questa pace non ha prezzo. Personale
+                            gentilissimo.</p>
                     </div>
                 </div>
 
                 <!-- Slide 6 -->
 
-
                 <div class="swiper-slide">
                     <div class="review-card">
-                        <div class="avatar-container profilo-6 ">
-                            G <div class="google-icon">G</div>
+                        <div class="avatar-container profilo-6">
+                            A <div class="google-icon">G</div>
                         </div>
-                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
-                        <div class="review-date">2024-03-26</div>
+                        <div class="reviewer-name scritta_verde_scuro">Alessia Romano</div>
+                        <div class="review-date">14-09-2025</div>
                         <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
-                            settore!
-                            Consiglio vivamente!</p>
+                        <p class="review-text scritta_verde_scuro">Ho festeggiato qui i miei 18 anni ed è stato tutto
+                            perfetto! Musica, cibo ottimo e un’organizzazione impeccabile che ha reso la festa magica.
+                        </p>
                     </div>
                 </div>
 
                 <!-- Slide 7 -->
 
-
                 <div class="swiper-slide">
                     <div class="review-card">
-                        <div class="avatar-container profilo-7 ">
-                            G <div class="google-icon">G</div>
+                        <div class="avatar-container profilo-7">
+                            F <div class="google-icon">G</div>
                         </div>
-                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
-                        <div class="review-date">2024-03-26</div>
+                        <div class="reviewer-name scritta_verde_scuro">Federica & Marco</div>
+                        <div class="review-date">10-02-2025</div>
                         <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
-                            settore!
-                            Consiglio vivamente!</p>
+                        <p class="review-text scritta_verde_scuro">Il giorno più bello della nostra vita reso perfetto
+                            da questa location da sogno. Gestione professionale e buffet di benvenuto infinito. Grazie
+                            di cuore!</p>
                     </div>
                 </div>
-
 
             </div>
 
@@ -284,7 +281,7 @@
             <div class="swiper-button-prev"></div>
 
             <!-- Paginazione -->
-            <div class="swiper-pagination"></div>
+            {{-- <div class="swiper-pagination"></div> --}}
         </div>
 
 
