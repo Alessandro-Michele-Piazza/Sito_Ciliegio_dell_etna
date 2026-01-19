@@ -7,21 +7,21 @@
         </video>
     </div>
 
-    <section class="container section-mission py-5 " data-aos="fade-down" data-aos-duration="1500"
+    <section class="container section-mission py-5" data-aos="fade-down" data-aos-duration="1500"
         data-aos-easing="ease-in-out" data-aos-once="true">
 
         <div class="row align-items-start">
 
-            <div class="col-lg-5 col-md-12 mb-5 mb-lg-0">
+            <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center text-lg-start">
                 <span class="sub-label scritta_rossa">DAL 2005</span>
                 <h2 class="titolo-mission">
                     Il Ciliegio dell'Etna <br>
                     <span class="testo-radici-sul-vulcano">Radici sul Vulcano</span>
                 </h2>
-                <div class="divider-short"></div>
+                <div class="divider-short mx-auto mx-lg-0"></div>
             </div>
 
-            <div class="col-lg-7 col-md-12">
+            <div class="col-lg-7 col-md-12 text-center text-lg-start">
                 <div class="content-wrapper">
                     <p class="descrizione-mission">
                         Il nostro <strong class="scritta_verde_medio">agriturismo a Giarre</strong> racconta una storia
@@ -42,7 +42,7 @@
                         <strong class="scritta_verde_medio">banchetti</strong>, avvolti dal fascino unico della terra
                         vulcanica.
                     </p>
-                    <a href="#" class="link-scopri mt-4">
+                    <a href="#" class="link-scopri mt-4 d-inline-block">
                         <span>Contattaci</span>
                         <i class="fa-solid fa-arrow-right-long ms-2"></i>
                     </a>
@@ -59,7 +59,7 @@
 
     <section class="container-fluid  div-scacchiera px-0 margin-top-scacchiera" data-aos="fade-right"
         data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true">
-        <div class="row  align-items-stretch ">
+        <div class="row  align-items-stretch g-0">
 
             <!-- COLONNA IMMAGINE -->
             <div class="col-12 col-md-7  ">
@@ -108,7 +108,7 @@
 
     <section class="container-fluid  div-scacchiera px-0 margin-top-scacchiera" data-aos="fade-left"
         data-aos-duration="1500" data-aos-easing="ease-in-out" data-aos-once="true">
-        <div class="row  align-items-stretch ">
+        <div class="row  align-items-stretch g-0">
 
 
 
@@ -156,139 +156,152 @@
 
     {{-- FINE QUARTA SECTION --}}
 
+    {{-- EFFETTO PARALLASSE --}}
+
     {{-- INIZIO CAROSELLO --}}
 
+    <div>
+        <div
+            class="container-fluid mt-5 altezza-div-carosello d-flex align-items-center justify-content-center larghezza-custom position-relative">
+            <div class="swiper mySwiper px-3 " id="swiper-container">
+                <div class="swiper-wrapper ">
 
-    <div class="container mt-5 altezza-div-carosello d-flex align-items-center">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-
-                <!-- Slide 1 -->
-                <div class="swiper-slide">
-                    <div class="review-card">
-                        <div class="avatar-container profilo-1">
-                            N <div class="google-icon">G</div>
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-container profilo-1">
+                                N <div class="google-icon">G</div>
+                            </div>
+                            <div class="reviewer-name scritta_verde_scuro">Nicola Ciricosta</div>
+                            <div class="review-date">05-04-2025</div>
+                            <div class="stars">★★★★★ <small>✔</small></div>
+                            <p class="review-text scritta_verde_scuro">Esperienza fantastica consiglio i corsi di
+                                formazione
+                                a tutti... formatori preparatissimi e molto disponibili top 💪😘</p>
                         </div>
-                        <div class="reviewer-name scritta_verde_scuro">Nicola Ciricosta</div>
-                        <div class="review-date">05-04-2025</div>
-                        <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Esperienza fantastica consiglio i corsi di formazione
-                            a tutti... formatori preparatissimi e molto disponibili top 💪😘</p>
                     </div>
+
+                    <!-- Slide 2 -->
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-container profilo-2">
+                                M <div class="google-icon">G</div>
+                            </div>
+                            <div class="reviewer-name scritta_verde_scuro">Manuel Matera</div>
+                            <div class="review-date">12-01-2026</div>
+                            <div class="stars">★★★★★ <small>✔</small></div>
+                            <p class="review-text scritta_verde_scuro">Esperienza davvero unica, formatori davvero
+                                preparati. Consiglio questa Accademia a qualsiasi ragazzo/a vorrebbe...</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Slide 3 -->
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-container profilo-3">
+                                R <div class="google-icon">G</div>
+                            </div>
+                            <div class="reviewer-name scritta_verde_scuro">Riccardo Esposito</div>
+                            <div class="review-date">06-12-2025</div>
+                            <div class="stars">★★★★★ <small>✔</small></div>
+                            <p class="review-text scritta_verde_scuro">La pizza è semplicemente divina! Impasto
+                                leggerissimo e ingredienti di prima scelta. La "Speciale" mi ha lasciato senza parole.
+                                Tornerò sicuramente!</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-container profilo-4">
+                                S <div class="google-icon">G</div>
+                            </div>
+                            <div class="reviewer-name scritta_verde_scuro">Stefania Bianchi</div>
+                            <div class="review-date">20-10-2025</div>
+                            <div class="stars">★★★★★ <small>✔</small></div>
+                            <p class="review-text scritta_verde_scuro">Cucina raffinata che esalta i sapori del
+                                territorio.
+                                I primi piatti sono un’esplosione di gusto, impiattamento curatissimo. Un plauso allo
+                                chef!
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-container profilo-5">
+                                L <div class="google-icon">G</div>
+                            </div>
+                            <div class="reviewer-name scritta_verde_scuro">Luca Moretti</div>
+                            <div class="review-date">08-05-2025</div>
+                            <div class="stars">★★★★★ <small>✔</small></div>
+                            <p class="review-text scritta_verde_scuro">Soggiorno indimenticabile. Camere pulitissime,
+                                silenziose e arredate con gusto. Svegliarsi immersi in questa pace non ha prezzo.
+                                Personale
+                                gentilissimo.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-container profilo-6">
+                                A <div class="google-icon">G</div>
+                            </div>
+                            <div class="reviewer-name scritta_verde_scuro">Alessia Romano</div>
+                            <div class="review-date">14-09-2025</div>
+                            <div class="stars">★★★★★ <small>✔</small></div>
+                            <p class="review-text scritta_verde_scuro">Ho festeggiato qui i miei 18 anni ed è stato
+                                tutto
+                                perfetto! Musica, cibo ottimo e un’organizzazione impeccabile che ha reso la festa
+                                magica.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 -->
+
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <div class="avatar-container profilo-7">
+                                F <div class="google-icon">G</div>
+                            </div>
+                            <div class="reviewer-name scritta_verde_scuro">Federica & Marco</div>
+                            <div class="review-date">10-02-2025</div>
+                            <div class="stars">★★★★★ <small>✔</small></div>
+                            <p class="review-text scritta_verde_scuro">Il giorno più bello della nostra vita reso
+                                perfetto
+                                da questa location da sogno. Gestione professionale e buffet di benvenuto infinito.
+                                Grazie
+                                di cuore!</p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <!-- Slide 2 -->
-
-                <div class="swiper-slide">
-                    <div class="review-card">
-                        <div class="avatar-container profilo-2">
-                            M <div class="google-icon">G</div>
-                        </div>
-                        <div class="reviewer-name scritta_verde_scuro">Manuel Matera</div>
-                        <div class="review-date">12-01-2026</div>
-                        <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Esperienza davvero unica, formatori davvero
-                            preparati. Consiglio questa Accademia a qualsiasi ragazzo/a vorrebbe...</p>
-                    </div>
-                </div>
+                <!-- Frecce laterali -->
 
 
-                <!-- Slide 3 -->
 
-                <div class="swiper-slide">
-                    <div class="review-card">
-                        <div class="avatar-container profilo-3">
-                            R <div class="google-icon">G</div>
-                        </div>
-                        <div class="reviewer-name scritta_verde_scuro">Riccardo Esposito</div>
-                        <div class="review-date">06-12-2025</div>
-                        <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">La pizza è semplicemente divina! Impasto
-                            leggerissimo e ingredienti di prima scelta. La "Speciale" mi ha lasciato senza parole.
-                            Tornerò sicuramente!</p>
-                    </div>
-                </div>
-
-                <!-- Slide 4 -->
-
-                <div class="swiper-slide">
-                    <div class="review-card">
-                        <div class="avatar-container profilo-4">
-                            S <div class="google-icon">G</div>
-                        </div>
-                        <div class="reviewer-name scritta_verde_scuro">Stefania Bianchi</div>
-                        <div class="review-date">20-10-2025</div>
-                        <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Cucina raffinata che esalta i sapori del territorio.
-                            I primi piatti sono un’esplosione di gusto, impiattamento curatissimo. Un plauso allo chef!
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Slide 5 -->
-
-
-                <div class="swiper-slide">
-                    <div class="review-card">
-                        <div class="avatar-container profilo-5">
-                            L <div class="google-icon">G</div>
-                        </div>
-                        <div class="reviewer-name scritta_verde_scuro">Luca Moretti</div>
-                        <div class="review-date">08-05-2025</div>
-                        <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Soggiorno indimenticabile. Camere pulitissime,
-                            silenziose e arredate con gusto. Svegliarsi immersi in questa pace non ha prezzo. Personale
-                            gentilissimo.</p>
-                    </div>
-                </div>
-
-                <!-- Slide 6 -->
-
-                <div class="swiper-slide">
-                    <div class="review-card">
-                        <div class="avatar-container profilo-6">
-                            A <div class="google-icon">G</div>
-                        </div>
-                        <div class="reviewer-name scritta_verde_scuro">Alessia Romano</div>
-                        <div class="review-date">14-09-2025</div>
-                        <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Ho festeggiato qui i miei 18 anni ed è stato tutto
-                            perfetto! Musica, cibo ottimo e un’organizzazione impeccabile che ha reso la festa magica.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Slide 7 -->
-
-                <div class="swiper-slide">
-                    <div class="review-card">
-                        <div class="avatar-container profilo-7">
-                            F <div class="google-icon">G</div>
-                        </div>
-                        <div class="reviewer-name scritta_verde_scuro">Federica & Marco</div>
-                        <div class="review-date">10-02-2025</div>
-                        <div class="stars">★★★★★ <small>✔</small></div>
-                        <p class="review-text scritta_verde_scuro">Il giorno più bello della nostra vita reso perfetto
-                            da questa location da sogno. Gestione professionale e buffet di benvenuto infinito. Grazie
-                            di cuore!</p>
-                    </div>
-                </div>
 
             </div>
 
-            <!-- Frecce laterali -->
-            <div class="swiper-button-next "></div>
-            <div class="swiper-button-prev"></div>
 
-            <!-- Paginazione -->
-            {{-- <div class="swiper-pagination"></div> --}}
+            <div class="swiper-button-next " id="button-next"> </div>
+            <div class="swiper-button-prev" id="button-prev"></div>
+
+
+
+            {{-- FINCE CAROSELLO --}}
         </div>
 
-
     </div>
-
-
-    {{-- FINCE CAROSELLO --}}
-
-
 </x-layout>

@@ -26,11 +26,11 @@
 
 </head>
 
-<body>
+<body class="w-100">
     <x-navbar />
 
 
-    <div class="min-vh-100 ">
+    <div>
 
         {{ $slot }}
     </div>

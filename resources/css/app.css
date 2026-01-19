@@ -1,5 +1,6 @@
 @import 'bootstrap';
 
+
 :root {
     --verde_scurissimo: #001a23;
     --verde_scuro: #31493c;
@@ -55,6 +56,7 @@ a {
 
     color: var(--rosso_ciliegia);
 }
+
 
 
 /* INIZIO SCROLLBAR */
@@ -239,18 +241,15 @@ body::-webkit-scrollbar-thumb {
 
 .video_home {
     display: block;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     object-fit: cover;
     object-position: center;
-    position: absolute;
+    /* position: absolute; */
     top: 0;
     left: 0;
     z-index: -1;
-}
 
-.padding-prova {
-    padding-top: 10000px;
 }
 
 .h-video {
@@ -409,12 +408,10 @@ body::-webkit-scrollbar-thumb {
 
 /* INIZIO FOOTER */
 .footer-modern {
-    width: 100vw !important;
-    /* Forza la larghezza alla vista dello schermo */
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    overflow-x: hidden !important;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
     /* Taglia via qualsiasi cosa sporga a destra */
     background-color: var(--verde_scurissimo);
     /* Assicurati che il colore sia qui */
@@ -422,8 +419,8 @@ body::-webkit-scrollbar-thumb {
 
 /* Rimuove i margini negativi di Bootstrap che causano lo spazio bianco */
 .footer-modern .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 
@@ -535,10 +532,8 @@ body::-webkit-scrollbar-thumb {
     /* 1. ALTEZZA FISSA: Fondamentale per far funzionare height:100% nelle slide */
     height: 550px;
     /* 2. PADDING TOP: Creiamo spazio fisico per far "volare" l'avatar senza essere tagliato */
-    padding-top: 60px !important;
+    padding-top: 60px;
     padding-bottom: 50px;
-    overflow: hidden;
-    /* Mantiene lo scorrimento fluido */
 }
 
 .swiper-wrapper {
@@ -552,7 +547,8 @@ body::-webkit-scrollbar-thumb {
     /* Permette alla card di riempire lo spazio */
     display: flex;
     /* 3. OVERFLOW VISIBLE: Permette agli elementi absolute (avatar) di uscire dai bordi della slide */
-    overflow: visible !important;
+    /* overflow: visible; */
+
 }
 
 /* LA CARD */
@@ -564,13 +560,14 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     position: relative;
     width: 100%;
+    height: 45vh;
     flex-grow: 1;
     /* Forza la card a occupare tutta l'altezza della slide */
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
     border: 1px solid rgba(255, 255, 255, 0.05);
     /* Un tocco di classe */
     transition: all 0.3s ease;
-
+    margin-top: 15vh;
 }
 
 .review-card:hover {
@@ -644,21 +641,22 @@ body::-webkit-scrollbar-thumb {
     /* Bianco leggermente spento per non affaticare la vista */
 }
 
-/* PERSONALIZZAZIONE PUNTINI (BLUE COME IN FOTO) */
-.swiper-pagination-bullet {
-    background: var(--verde_medio) !important;
-    opacity: 1;
+
+.larghezza-custom {
+    width: 80%;
 }
 
-.swiper-pagination-bullet-active {
-    background: var(--verde_medio) !important;
+
+#button-next {
+    color: var(--rosso_ciliegia);
+    right: -40px;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
-    color: var(--rosso_ciliegia) !important;
-}
+#button-prev {
+    color: var(--rosso_ciliegia);
+    left: -40px;
 
+}
 
 
 /* INIZIO ICONCINE PROFILI */
@@ -715,7 +713,23 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 768px) {
     .titolo-mission {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+    }
+
+    .testo-radici-sul-vulcano {
+        font-size: 1.4rem;
+
+    }
+
+    .descrizione-mission {
+        font-size: 1rem;
+        line-height: 1.6;
+        padding: 0 1rem;
+    }
+
+    .divider-short {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .section-mission {
@@ -733,4 +747,10 @@ body::-webkit-scrollbar-thumb {
     }
 
 
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .titolo-mission {
+        font-size: 2.2rem;
+    }
 }

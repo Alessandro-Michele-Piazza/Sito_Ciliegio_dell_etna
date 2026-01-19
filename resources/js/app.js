@@ -29,22 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
         freeMode: true,
 
         // Quante slide vedere
-        slidesPerView: 1.1,
+        slidesPerView: 1,
 
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
         },
 
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            dynamicBullets: true,
-        },
-
         breakpoints: {
-            768: { slidesPerView: 2.2 },
-            1024: { slidesPerView: 3.5 }, // Simile alla tua foto
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
         },
     });
 });
