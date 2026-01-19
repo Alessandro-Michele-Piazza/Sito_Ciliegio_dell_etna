@@ -156,5 +156,142 @@
 
     {{-- FINE QUARTA SECTION --}}
 
+    {{-- INIZIO CAROSELLO --}}
+
+
+    <div class="container mt-5 altezza-div-carosello d-flex align-items-center">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="avatar-container profilo-1">
+                            N <div class="google-icon">G</div>
+                        </div>
+                        <div class="reviewer-name scritta_verde_scuro ">Nicola Ciricosta</div>
+                        <div class="review-date">2024-05-08</div>
+                        <div class="stars">★★★★★ <small>✔</small></div>
+                        <p class="review-text scritta_verde_scuro ">Esperienza fantastica consiglio i corsi di
+                            formazione a tutti...
+                            formatori preparatissimi e molto disponibili top 💪😘</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="avatar-container profilo-2">
+                            M <div class="google-icon">G</div>
+                        </div>
+                        <div class="reviewer-name scritta_verde_scuro">Manuel Matera</div>
+                        <div class="review-date">2024-05-07</div>
+                        <div class="stars">★★★★★ <small>✔</small></div>
+                        <p class="review-text scritta_verde_scuro">Esperienza davvero unica, formatori davvero
+                            preparati. Consiglio
+                            questa Accademia a qualsiasi ragazzo/a vorrebbe...</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="avatar-container profilo-3 ">
+                            G <div class="google-icon">G</div>
+                        </div>
+                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
+                        <div class="review-date">2024-03-26</div>
+                        <div class="stars">★★★★★ <small>✔</small></div>
+                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
+                            settore!
+                            Consiglio vivamente!</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+
+
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="avatar-container profilo-4 ">
+                            G <div class="google-icon">G</div>
+                        </div>
+                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
+                        <div class="review-date">2024-03-26</div>
+                        <div class="stars">★★★★★ <small>✔</small></div>
+                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
+                            settore!
+                            Consiglio vivamente!</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+
+
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="avatar-container profilo-5 ">
+                            G <div class="google-icon">G</div>
+                        </div>
+                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
+                        <div class="review-date">2024-03-26</div>
+                        <div class="stars">★★★★★ <small>✔</small></div>
+                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
+                            settore!
+                            Consiglio vivamente!</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+
+
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="avatar-container profilo-6 ">
+                            G <div class="google-icon">G</div>
+                        </div>
+                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
+                        <div class="review-date">2024-03-26</div>
+                        <div class="stars">★★★★★ <small>✔</small></div>
+                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
+                            settore!
+                            Consiglio vivamente!</p>
+                    </div>
+                </div>
+
+                <!-- Slide 7 -->
+
+
+                <div class="swiper-slide">
+                    <div class="review-card">
+                        <div class="avatar-container profilo-7 ">
+                            G <div class="google-icon">G</div>
+                        </div>
+                        <div class="reviewer-name scritta_verde_scuro">Giulia La Rocca</div>
+                        <div class="review-date">2024-03-26</div>
+                        <div class="stars">★★★★★ <small>✔</small></div>
+                        <p class="review-text scritta_verde_scuro">Corsi di formazione top fatti da professionisti del
+                            settore!
+                            Consiglio vivamente!</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- Frecce laterali -->
+            <div class="swiper-button-next "></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Paginazione -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </div>
+
+
+    {{-- FINCE CAROSELLO --}}
+
 
 </x-layout>

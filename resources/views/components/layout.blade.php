@@ -18,6 +18,12 @@
     {{-- FINE FONT GOOGLE --}}
 
 
+    {{-- CAROSELLO DI SWIPERSJS.COM --}}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    {{-- FINE CAROSELLO --}}
+
+
 </head>
 
 <body>
@@ -33,6 +39,11 @@
 
     {{-- FONT AWESOME --}}
     <script src="https://kit.fontawesome.com/098ae14503.js" crossorigin="anonymous"></script>
+
+    {{-- CAROSELLO --}}
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 </body>
 

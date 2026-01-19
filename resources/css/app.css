@@ -524,6 +524,182 @@ body::-webkit-scrollbar-thumb {
 
 /* FINE FOOTER */
 
+/* INIZIO CAROSELLO  */
+.altezza-div-carosello {
+    height: 90vh;
+    background-color: var(--bianco_sfondo);
+}
+
+.mySwiper {
+    width: 100%;
+    /* 1. ALTEZZA FISSA: Fondamentale per far funzionare height:100% nelle slide */
+    height: 550px;
+    /* 2. PADDING TOP: Creiamo spazio fisico per far "volare" l'avatar senza essere tagliato */
+    padding-top: 60px !important;
+    padding-bottom: 50px;
+    overflow: hidden;
+    /* Mantiene lo scorrimento fluido */
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+    /* Tutte le card avranno la stessa altezza */
+}
+
+.swiper-slide {
+    height: auto;
+    /* Permette alla card di riempire lo spazio */
+    display: flex;
+    /* 3. OVERFLOW VISIBLE: Permette agli elementi absolute (avatar) di uscire dai bordi della slide */
+    overflow: visible !important;
+}
+
+/* LA CARD */
+.review-card {
+    background-color: white;
+    border-radius: 20px;
+    /* Aumentiamo il padding top della card perché l'avatar ora la copre */
+    padding: 60px 25px 30px 25px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    /* Forza la card a occupare tutta l'altezza della slide */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* Un tocco di classe */
+    transition: all 0.3s ease;
+
+}
+
+.review-card:hover {
+
+    transform: translateY(-3vh);
+
+}
+
+/* AVATAR CIRCOLARE - RIPOSIZIONATO */
+.avatar-container {
+    position: absolute;
+    /* Centrato e sollevato esattamente a metà */
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    /* Bordo dello stesso colore dello sfondo per l'effetto "stacco" */
+    border: 5px solid var(--bianco_sfondo);
+    z-index: 10;
+}
+
+/* ICONA GOOGLE */
+.google-icon {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4285F4;
+    border: 2px solid var(--verde_scurissimo);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* TESTI */
+.reviewer-name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.review-date {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.review-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    /* Bianco leggermente spento per non affaticare la vista */
+}
+
+/* PERSONALIZZAZIONE PUNTINI (BLUE COME IN FOTO) */
+.swiper-pagination-bullet {
+    background: var(--verde_medio) !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--verde_medio) !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--rosso_ciliegia) !important;
+}
+
+
+
+/* INIZIO ICONCINE PROFILI */
+
+.profilo-1 {
+
+    background-color: #E67E22;
+}
+
+.profilo-2 {
+    background-color: #9B59B6;
+}
+
+.profilo-3 {
+    background-color: #1ABC9C;
+}
+
+.profilo-4 {
+    background-color: #3498DB;
+}
+
+.profilo-5 {
+    background-color: var(--rosso_ciliegia);
+}
+
+.profilo-6 {
+    background-color: #27AE60;
+
+}
+
+.profilo-7 {
+    background-color: #F1C40F;
+}
+
+
+/* FINE ICONCINE PROFILI */
+
+/* FINE CAROSELLO */
+
+
+
 
 /* Responsive per schermi molto piccoli */
 @media (max-width: 400px) {
@@ -555,4 +731,6 @@ body::-webkit-scrollbar-thumb {
     .container-img-scacchiera {
         height: 100%;
     }
+
+
 }
