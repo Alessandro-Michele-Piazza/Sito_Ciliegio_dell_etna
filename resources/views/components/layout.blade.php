@@ -37,6 +37,14 @@
 
     <x-footer />
 
+    <div class="whatsapp-container">
+        <span class="whatsapp-text">Hai bisogno di aiuto?</span>
+        <a href="https://wa.me/3911686078?text=Ciao!%20Vorrei%20ricevere%20informazioni" class="whatsapp-btn"
+            target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+
     {{-- FONT AWESOME --}}
     <script src="https://kit.fontawesome.com/098ae14503.js" crossorigin="anonymous"></script>
 

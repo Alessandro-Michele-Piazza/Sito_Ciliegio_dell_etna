@@ -12,12 +12,13 @@
                     un'accoglienza che profuma di casa.
                 </p>
                 <div class="footer-socials">
-                    <a href="https://www.facebook.com/ilciliegiodelletna/?locale=it_IT"><i
+                    <a href="https://www.facebook.com/ilciliegiodelletna/?locale=it_IT" class="icona_facebook"><i
                             class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/ilciliegiodelletna/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@il.ciliegio.delle?is_from_webapp=1&sender_device=pc"><i
-                            class="fab fa-tiktok"></i></a>
-                    <a href="https://www.youtube.com/watch?v=D07m6Y-4lrc" target="_blank"><i
+                    <a href="https://www.instagram.com/ilciliegiodelletna/" class="icona_instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com/@il.ciliegio.delle?is_from_webapp=1&sender_device=pc"
+                        class="icona_tiktok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/watch?v=D07m6Y-4lrc" target="_blank" class="icona_youtube"><i
                             class="fab fa-youtube"></i></a>
 
                 </div>

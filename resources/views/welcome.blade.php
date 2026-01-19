@@ -14,7 +14,7 @@
 
             <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center text-lg-start">
                 <span class="sub-label scritta_rossa">DAL 2005</span>
-                <h2 class="titolo-mission">
+                <h2 class="titolo-mission scritta_verde_scuro mt-2">
                     Il Ciliegio dell'Etna <br>
                     <span class="testo-radici-sul-vulcano">Radici sul Vulcano</span>
                 </h2>
@@ -298,16 +298,10 @@
 
                 <!-- Frecce laterali -->
 
-
-
-
             </div>
-
 
             <div class="swiper-button-next " id="button-next"> </div>
             <div class="swiper-button-prev" id="button-prev"></div>
-
-
 
             {{-- FINCE CAROSELLO --}}
         </div>
