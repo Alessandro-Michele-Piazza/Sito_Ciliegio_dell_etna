@@ -142,12 +142,13 @@
             </div>
 
             <!-- COLONNA IMMAGINE -->
-            <div class="col-12 col-md-7 px-0 ">
+            <div class="col-12 col-md-7 g-0">
                 <div class="h-100 container-img-scacchiera ">
                     {{-- IMMAGINE DA CAMBIARE  --}}
 
-                    <img src="{{ asset('storage/media/ciliegio_esterno.jpg') }}" alt="Immagine camera d'albergo"
+                    <img src="{{ asset('storage/media/ciliegio_esterno.jpg') }}"
                         class="img-fluid img-scacchiera-custom">
+
                 </div>
             </div>
 
@@ -156,7 +157,15 @@
 
     {{-- FINE QUARTA SECTION --}}
 
-    {{-- EFFETTO PARALLASSE --}}
+    <!-- COLONNA IMMAGINE PARALLASSE -->
+    <div class="col-12 col-md-7 px-0 w-100">
+        <div class="h-100 parallax-section"
+            style="background-image: url('{{ asset('storage/media/ciliegio_esterno.jpg') }}');">
+            <!-- Il div è vuoto perché l'immagine è di sfondo -->
+        </div>
+    </div>
+
+
 
     {{-- INIZIO CAROSELLO --}}
 

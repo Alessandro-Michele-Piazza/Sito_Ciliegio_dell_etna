@@ -261,12 +261,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .section-mission {
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
-
-.section-mission {
     padding: 100px 0;
+    padding-bottom: 100px;
 }
 
 .sub-label {
@@ -380,6 +376,7 @@ body::-webkit-scrollbar-thumb {
 /* Gestione altezza immagine per farla combaciare col testo */
 .container-img-scacchiera {
     min-height: 450px;
+
     /* Altezza minima su mobile */
 }
 
@@ -405,6 +402,20 @@ body::-webkit-scrollbar-thumb {
 
 /* FINE SCACCHIERA */
 
+
+/* INIZIO EFFETTO PARALLASSE */
+
+.parallax-section {
+    background-image: url('{{ asset(' storage/media/ciliegio_esterno.jpg') }}');
+    min-height: 450px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+/* FINE EFFETTO PARALLASSE */
 
 /* INIZIO FOOTER */
 .footer-modern {
@@ -567,7 +578,7 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid rgba(255, 255, 255, 0.05);
     /* Un tocco di classe */
     transition: all 0.3s ease;
-    margin-top: 15vh;
+    margin-top: 13vh;
 }
 
 .review-card:hover {
@@ -698,7 +709,6 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
 /* Responsive per schermi molto piccoli */
 @media (max-width: 400px) {
     .navbar-collapse {
@@ -706,7 +716,6 @@ body::-webkit-scrollbar-thumb {
         left: 10px;
         width: auto;
     }
-
 
 
 }
@@ -739,7 +748,6 @@ body::-webkit-scrollbar-thumb {
 
     .div-scacchiera .row {
         min-height: 80vh;
-        /* La sezione occupa l'80% della finestra */
     }
 
     .container-img-scacchiera {
