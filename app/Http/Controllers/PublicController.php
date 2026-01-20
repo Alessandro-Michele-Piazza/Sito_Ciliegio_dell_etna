@@ -10,4 +10,9 @@ class PublicController extends Controller
     {
         return view('welcome');
     }
+
+    public function contatti()
+    {
+        return view('contatti');
+    }
 }

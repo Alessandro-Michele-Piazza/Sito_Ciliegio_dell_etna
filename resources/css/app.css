@@ -1,6 +1,7 @@
 @import 'bootstrap';
+@import './contatti.css';
 
-
+/* --- VARIABILI E ROOT --- */
 :root {
     --verde_scurissimo: #001a23;
     --verde_scuro: #31493c;
@@ -17,7 +18,9 @@ body {
     padding: 0;
     overflow-x: hidden;
     width: 100%;
-
+    --sb-track-color: #232e33;
+    --sb-thumb-color: #6BAF8D;
+    --sb-size: 10px;
 }
 
 h1,
@@ -43,30 +46,18 @@ a {
 }
 
 .scritta_verde_chiaro {
-
     color: var(--verde_chiaro);
 }
 
 .scritta_verde_scuro {
-
     color: var(--verde_scuro);
 }
 
 .scritta_rossa {
-
     color: var(--rosso_ciliegia);
 }
 
-
-
-/* INIZIO SCROLLBAR */
-
-body {
-    --sb-track-color: #232e33;
-    --sb-thumb-color: #6BAF8D;
-    --sb-size: 10px;
-}
-
+/* --- SCROLLBAR --- */
 body::-webkit-scrollbar {
     width: var(--sb-size);
 }
@@ -87,11 +78,34 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-/* FINE SCROLLBAR */
+/* --- HEADER & VIDEO --- */
+.header {
+    height: 45vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/ciliegio_esterno.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
+.video_home {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
-/* INIZIO CSS NAVBAR */
+.h-video {
+    height: 100vh;
+}
 
+.h-div-mission {
+    height: 50vh;
+}
+
+/* --- NAVBAR --- */
 .navbar {
     padding: 15px 0;
     position: fixed;
@@ -102,7 +116,6 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.4s ease-in-out;
 }
 
-/* Logo */
 .icona_navbar {
     width: 6.5rem;
     height: auto;
@@ -114,53 +127,48 @@ body::-webkit-scrollbar-thumb {
     width: 4.5rem;
 }
 
-/* --- IL BOTTONE HAMBURGER (FONTAWESOME) --- */
 .navbar-toggler {
     border: 2px solid var(--rosso_ciliegia);
-    /* Bordo del bottone bianco */
     padding: 5px 10px;
     border-radius: 8px;
     transition: all 0.3s ease;
-
 }
 
 .navbar-toggler:focus {
     box-shadow: none;
 }
 
-/* Stile dell'icona dentro il bottone */
 .navbar-toggler i {
     color: var(--rosso_ciliegia);
-    /* Colore bianco dell'icona */
     font-size: 1.5rem;
-    /* Grandezza dell'icona */
     line-height: 1;
     vertical-align: middle;
-    backdrop-filter: blur(10px);
-
 }
 
 .navbar-toggler:hover {
     background-color: transparent;
     backdrop-filter: blur(10px);
-
 }
 
-/* --- IL MENU DROPDOWN (BOX BIANCO) --- */
 .navbar-collapse {
     position: absolute;
     top: 75%;
     right: 20px;
     width: 200px;
     background-color: white;
-
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
     z-index: 1100;
 }
 
-/* Link all'interno del menu bianco */
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
 .navbar-nav .nav-link {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 600;
@@ -168,33 +176,22 @@ body::-webkit-scrollbar-thumb {
     color: var(--verde_scuro);
     text-align: center;
     padding: 7px 0;
-    /* Aumentato il padding base per più respiro */
     transition: all 0.3s ease;
-    /* Transizione fluida per tutto */
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    /* Separatore fisico quasi invisibile */
-
 }
 
-
-
-/* Rimuove l'ultimo bordo per pulizia */
 .navbar-nav .nav-item:last-child .nav-link {
     border-bottom: none;
 }
 
-/* EFFETTO HOVER MODERNO */
 .navbar-nav .nav-link:hover {
     color: var(--rosso_ciliegia);
     padding-top: 18px;
-    /* Si espande leggermente sopra */
     padding-bottom: 18px;
-    /* Si espande leggermente sotto */
     background-color: transparent;
 }
 
-/* Dropdown interno (Servizi) */
 .dropdown-menu {
     border: none;
     text-align: center;
@@ -203,7 +200,6 @@ body::-webkit-scrollbar-thumb {
 .dropdown-item {
     font-family: "Cormorant Garamond", serif;
     color: var(--verde_scuro);
-
 }
 
 .dropdown-item:hover {
@@ -211,7 +207,6 @@ body::-webkit-scrollbar-thumb {
     color: var(--rosso_ciliegia);
 }
 
-/* --- BOTTONE PRENOTA --- */
 .btn-prenota {
     background-color: var(--rosso_ciliegia);
     color: white;
@@ -229,43 +224,9 @@ body::-webkit-scrollbar-thumb {
     background-color: white;
     color: var(--rosso_ciliegia);
     transform: translateY(-2px);
-
 }
 
-/* Utility centramento */
-.navbar-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-/* FINE CSS NAVBAR */
-
-
-/* INIZIO  CSS HOMEPAGE */
-
-.video_home {
-    display: block;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    object-position: center;
-    /* position: absolute; */
-    top: 0;
-    left: 0;
-    z-index: -1;
-
-}
-
-.h-video {
-    height: 100vh;
-}
-
-.h-div-mission {
-    height: 50vh;
-}
-
+/* --- MISSION SECTION --- */
 .section-mission {
     padding: 100px 0;
     padding-bottom: 100px;
@@ -303,31 +264,50 @@ body::-webkit-scrollbar-thumb {
     font-family: 'Montserrat', sans-serif;
 }
 
+/* --- SCACCHIERA (RISTORANTE & CAMERE) --- */
+.div-scacchiera {
+    width: 100%;
+    overflow: hidden;
+}
+
+.h-scacchiera {
+    min-height: 400px;
+    position: relative;
+}
+
+.img-scacchiera-custom {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+.div-scacchiera h2 {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--verde_scurissimo);
+    line-height: 1.2;
+}
+
 .descrizione-scacchiera {
-    font-size: 1rem;
+    font-size: 1.05rem;
     line-height: 1.8;
     color: #444;
     font-family: 'Montserrat', sans-serif;
 }
 
-
-/* Link stilizzato */
 .link-scopri {
     display: inline-flex;
     align-items: center;
-    color: var(--verde_scuro);
+    color: var(--verde_scurissimo);
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 0.85rem;
-    /* Leggermente più piccolo è più elegante */
     letter-spacing: 1.5px;
-    text-decoration: none;
     position: relative;
     transition: color 0.3s ease;
 }
 
-/* La linea sotto il testo */
 .link-scopri span {
     position: relative;
     padding-bottom: 2px;
@@ -344,111 +324,191 @@ body::-webkit-scrollbar-thumb {
     transition: width 0.3s ease;
 }
 
-/* Animazione dell'icona */
 .link-scopri i {
     transition: transform 0.3s ease;
 }
 
-/* Hover States */
 .link-scopri:hover {
     color: var(--rosso_ciliegia);
 }
 
 .link-scopri:hover span::after {
     width: 100%;
-    /* La linea si allunga */
 }
 
 .link-scopri:hover i {
     transform: translateX(8px);
-    /* La freccia si sposta a destra */
 }
 
-/* FINE CSS HEADER */
-
-
-/* INIZIO SCACCHIERA */
-
-.img-scacchiera-1 {
-    object-fit: cover;
-}
-
-.div-scacchiera {
-    background-color: white;
-}
-
-
-/* Gestione altezza immagine per farla combaciare col testo */
-.container-img-scacchiera {
-    min-height: 450px;
-
-    /* Altezza minima su mobile */
-}
-
-.img-scacchiera-custom {
-    width: 100%;
-    height: 70vh;
-    object-fit: cover;
-    display: block;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-.div-scacchiera h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    color: var(--verde_scurissimo);
-}
-
-/* Pulizia spaziatura */
-.div-scacchiera .divider-short {
-    margin-left: 0;
-    /* Forza la linea a sinistra */
-}
-
-
-/* FINE SCACCHIERA */
-
-
-/* INIZIO EFFETTO PARALLASSE */
-
+/* --- PARALLASSE --- */
 .parallax-section {
-    background-image: url('/storage/media/ciliegio_esterno.jpg');
+    background-image: url('../images/ciliegio_esterno.jpg');
     min-height: 450px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
-/* FINE EFFETTO PARALLASSE */
+/* --- CAROSELLO RECENSIONI --- */
+.margin-top-reviews {
+    margin-top: 10vh;
+}
 
-/* INIZIO FOOTER */
+.altezza-div-carosello {
+    height: 90vh;
+    background-color: var(--bianco_sfondo);
+}
+
+.swiper-wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+.swiper-slide {
+    height: 80vh;
+    display: flex;
+}
+
+.review-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 60px 25px 30px 25px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 45vh;
+    flex-grow: 1;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    margin-top: 13vh;
+}
+
+.review-card:hover {
+    transform: translateY(-3vh);
+}
+
+.review-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.avatar-container {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    border: 5px solid var(--bianco_sfondo);
+    z-index: 10;
+}
+
+.google-icon {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background: white;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4285F4;
+    border: 2px solid var(--verde_scurissimo);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.reviewer-name {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+.review-date {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #ffc107;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.larghezza-custom {
+    width: 80%;
+}
+
+#button-next {
+    color: var(--rosso_ciliegia);
+    right: -40px;
+}
+
+#button-prev {
+    color: var(--rosso_ciliegia);
+    left: -40px;
+}
+
+.profilo-1 {
+    background-color: #E67E22;
+}
+
+.profilo-2 {
+    background-color: #9B59B6;
+}
+
+.profilo-3 {
+    background-color: #1ABC9C;
+}
+
+.profilo-4 {
+    background-color: #3498DB;
+}
+
+.profilo-5 {
+    background-color: var(--rosso_ciliegia);
+}
+
+.profilo-6 {
+    background-color: #27AE60;
+}
+
+.profilo-7 {
+    background-color: #F1C40F;
+}
+
+/* --- FOOTER --- */
 .footer-modern {
     max-width: 100%;
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
-    /* Taglia via qualsiasi cosa sporga a destra */
     background-color: var(--verde_scurissimo);
-    /* Assicurati che il colore sia qui */
 }
 
-/* Rimuove i margini negativi di Bootstrap che causano lo spazio bianco */
 .footer-modern .row {
     margin-left: 0;
     margin-right: 0;
 }
 
-
 .footer-logo {
     max-width: 100px;
     filter: brightness(0) invert(1);
-    /* Se il logo è scuro, lo rende bianco */
 }
 
 .footer-description {
@@ -466,9 +526,9 @@ body::-webkit-scrollbar-thumb {
     position: relative;
 }
 
-/* Link del footer */
 .footer-links li {
     margin-bottom: 0.8rem;
+    list-style: none;
 }
 
 .footer-links a {
@@ -482,7 +542,6 @@ body::-webkit-scrollbar-thumb {
     padding-left: 8px;
 }
 
-/* Icone di contatto */
 .footer-contact li {
     display: flex;
     align-items: flex-start;
@@ -490,6 +549,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 1rem;
     color: #aeb9ba;
     font-size: 0.9rem;
+    list-style: none;
 }
 
 .footer-contact i {
@@ -497,7 +557,6 @@ body::-webkit-scrollbar-thumb {
     margin-top: 4px;
 }
 
-/* Social Icons */
 .footer-socials {
     display: flex;
     gap: 15px;
@@ -520,8 +579,6 @@ body::-webkit-scrollbar-thumb {
     transform: translateY(-3px);
 }
 
-
-/* Bottom bar */
 .footer-bottom {
     background-color: rgba(0, 0, 0, 0.2);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -554,204 +611,23 @@ body::-webkit-scrollbar-thumb {
     background: black;
 }
 
-/* FINE FOOTER */
-
-/* INIZIO CAROSELLO  */
-.altezza-div-carosello {
-    height: 90vh;
-    background-color: var(--bianco_sfondo);
-}
-
-.mySwiper {
-    width: 100%;
-    /* 1. ALTEZZA FISSA: Fondamentale per far funzionare height:100% nelle slide */
-    height: 550px;
-    /* 2. PADDING TOP: Creiamo spazio fisico per far "volare" l'avatar senza essere tagliato */
-    padding-top: 60px;
-    padding-bottom: 50px;
-}
-
-.swiper-wrapper {
-    display: flex;
-    align-items: stretch;
-    /* Tutte le card avranno la stessa altezza */
-}
-
-.swiper-slide {
-    height: auto;
-    /* Permette alla card di riempire lo spazio */
-    display: flex;
-    /* 3. OVERFLOW VISIBLE: Permette agli elementi absolute (avatar) di uscire dai bordi della slide */
-    /* overflow: visible; */
-
-}
-
-/* LA CARD */
-.review-card {
-    background-color: white;
-    border-radius: 20px;
-    /* Aumentiamo il padding top della card perché l'avatar ora la copre */
-    padding: 60px 25px 30px 25px;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    height: 45vh;
-    flex-grow: 1;
-    /* Forza la card a occupare tutta l'altezza della slide */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    /* Un tocco di classe */
-    transition: all 0.3s ease;
-    margin-top: 13vh;
-}
-
-.review-card:hover {
-
-    transform: translateY(-3vh);
-
-}
-
-/* AVATAR CIRCOLARE - RIPOSIZIONATO */
-.avatar-container {
-    position: absolute;
-    /* Centrato e sollevato esattamente a metà */
-    top: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85px;
-    height: 85px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.2rem;
-    font-weight: bold;
-    /* Bordo dello stesso colore dello sfondo per l'effetto "stacco" */
-    border: 5px solid var(--bianco_sfondo);
-    z-index: 10;
-}
-
-/* ICONA GOOGLE */
-.google-icon {
-    position: absolute;
-    bottom: 2px;
-    right: 2px;
-    background: white;
-    border-radius: 50%;
-    width: 26px;
-    height: 26px;
-    font-size: 0.8rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #4285F4;
-    border: 2px solid var(--verde_scurissimo);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* TESTI */
-.reviewer-name {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 700;
-    font-size: 1.4rem;
-    margin-bottom: 0;
-}
-
-.review-date {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.8rem;
-    margin-bottom: 15px;
-}
-
-.stars {
-    color: #ffc107;
-    font-size: 1.3rem;
-    margin-bottom: 20px;
-}
-
-.review-text {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    /* Bianco leggermente spento per non affaticare la vista */
-}
-
-
-.larghezza-custom {
-    width: 80%;
-}
-
-
-#button-next {
-    color: var(--rosso_ciliegia);
-    right: -40px;
-}
-
-#button-prev {
-    color: var(--rosso_ciliegia);
-    left: -40px;
-
-}
-
-
-/* INIZIO ICONCINE PROFILI */
-
-.profilo-1 {
-
-    background-color: #E67E22;
-}
-
-.profilo-2 {
-    background-color: #9B59B6;
-}
-
-.profilo-3 {
-    background-color: #1ABC9C;
-}
-
-.profilo-4 {
-    background-color: #3498DB;
-}
-
-.profilo-5 {
-    background-color: var(--rosso_ciliegia);
-}
-
-.profilo-6 {
-    background-color: #27AE60;
-
-}
-
-.profilo-7 {
-    background-color: #F1C40F;
-}
-
-
-/* FINE ICONCINE PROFILI */
-
-/* FINE CAROSELLO */
-
-
-/* INIZIO WHAT'S APP */
-
+/* --- WHATSAPP --- */
 .whatsapp-container {
     position: fixed;
     bottom: 30px;
     left: 30px;
-    /* Cambia in 'right: 30px' se lo preferisci a destra */
     z-index: 9999;
     display: flex;
     align-items: center;
     pointer-events: none;
-    /* Evita che il contenitore invisibile blocchi i click */
+    flex-direction: row;
 }
 
-/* L'icona verde */
 .whatsapp-btn {
     width: 60px;
     height: 60px;
     background-color: #25d366;
-    color: white !important;
+    color: white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -760,7 +636,6 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     pointer-events: auto;
-    /* Riattiva i click sul pulsante */
 }
 
 .whatsapp-btn:hover {
@@ -768,7 +643,6 @@ body::-webkit-scrollbar-thumb {
     background-color: #20ba5a;
 }
 
-/* Il fumetto con il testo */
 .whatsapp-text {
     background-color: white;
     color: #333;
@@ -778,7 +652,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 14px;
     font-weight: 600;
     margin-left: 15px;
-    /* Spazio tra testo e icona */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
     visibility: hidden;
@@ -786,15 +659,8 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s ease;
     white-space: nowrap;
     order: 2;
-    /* Mette il testo dopo l'icona se vuoi l'ordine del video */
 }
 
-/* Ordine invertito per averlo come nel video (Testo a destra dell'icona) */
-.whatsapp-container {
-    flex-direction: row;
-}
-
-/* Effetto Hover sul contenitore */
 .whatsapp-container:hover .whatsapp-text {
     opacity: 1;
     visibility: visible;
@@ -802,17 +668,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* FINE WHAT'S APP */
+/* ============================================================
+   MEDIA QUERIES (FINE PAGINA)
+   ============================================================ */
 
-/* Responsive per schermi molto piccoli */
 @media (max-width: 400px) {
     .navbar-collapse {
         right: 10px;
         left: 10px;
         width: auto;
     }
-
-
 }
 
 @media (max-width: 768px) {
@@ -822,7 +687,6 @@ body::-webkit-scrollbar-thumb {
 
     .testo-radici-sul-vulcano {
         font-size: 1.4rem;
-
     }
 
     .descrizione-mission {
@@ -841,14 +705,6 @@ body::-webkit-scrollbar-thumb {
         padding-bottom: 50px;
     }
 
-    .div-scacchiera .row {
-        min-height: 80vh;
-    }
-
-    .container-img-scacchiera {
-        height: 100%;
-    }
-
     .whatsapp-text {
         display: none;
     }
@@ -863,10 +719,16 @@ body::-webkit-scrollbar-thumb {
         height: 50px;
         font-size: 28px;
     }
-
 }
 
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 768px) {
+    .h-scacchiera {
+        min-height: 60vh;
+        height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
     .titolo-mission {
         font-size: 2.2rem;
     }

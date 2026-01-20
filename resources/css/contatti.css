@@ -1,0 +1,109 @@
+/* --- HERO CONTATTI --- */
+.header {
+    height: 45vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/ciliegio_esterno.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* --- CONTACT CARDS (LEFT SIDE) --- */
+.contact-card {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 0;
+}
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    color: var(--rosso_ciliegia);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    margin-right: 20px;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.contact-content h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.contact-content p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* --- FORM WRAPPER (RIGHT SIDE) --- */
+.form-wrapper {
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+}
+
+.custom-label {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: var(--verde_scuro);
+    margin-bottom: 8px;
+    display: block;
+}
+
+.contact-input {
+    border: 1px solid #eee;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.contact-input:focus {
+    background-color: white;
+    border-color: var(--verde_medio);
+    box-shadow: 0 0 0 4px rgba(122, 158, 126, 0.1);
+    outline: none;
+}
+
+/* --- MAPPA --- */
+.map-container {
+    width: 100%;
+    height: 450px;
+}
+
+.map-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* --- RESPONSIVE --- */
+@media (max-width: 768px) {
+    .header {
+        height: 35vh;
+    }
+
+    .form-wrapper {
+        padding: 25px;
+    }
+
+    .contact-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+
+
+}

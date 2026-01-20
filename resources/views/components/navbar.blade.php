@@ -4,7 +4,7 @@
 
             <!-- Sinistra: Logo -->
             <div class="d-flex align-items-center">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href=" {{ route('home') }}">
                     <img src="{{ Vite::asset('resources/images/logo_ciliegio.png') }}" alt="Logo" class="icona_navbar">
                 </a>
             </div>
@@ -39,7 +39,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Prodotti Tipici</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Esperienze</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contatti</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('contatti') }}">Contatti</a></li>
                 </ul>
             </div>
 

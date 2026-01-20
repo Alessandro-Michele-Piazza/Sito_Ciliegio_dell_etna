@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ Vite::asset('resources/images/logo_ciliegio.png') }}" type="image/png">
     <title>{{ $title }}</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/contatti.css'])
 
     {{-- FONT GOOGLE --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
