@@ -62,7 +62,8 @@
         <div class="row g-0 align-items-stretch">
             <!-- COLONNA IMMAGINE -->
             <div class="col-12 col-md-7 h-scacchiera">
-                <img src="{{ asset('storage/media/foto(5).jpg') }}" alt="Ristorante" class="img-scacchiera-custom">
+                <img src="{{ asset('storage/media/foto(5).jpg') }}" alt="Ristorante" class="img-scacchiera-custom"
+                    id="img-scacchiera">
             </div>
 
             <!-- COLONNA TESTO -->
