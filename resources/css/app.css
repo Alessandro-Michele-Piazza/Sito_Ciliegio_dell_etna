@@ -267,19 +267,22 @@ body::-webkit-scrollbar-thumb {
 /* --- SCACCHIERA (RISTORANTE & CAMERE) --- */
 .div-scacchiera {
     width: 100%;
-    overflow: hidden;
+    border: 1px solid var(--verde_scurissimo);
 }
 
 .h-scacchiera {
     min-height: 400px;
-    position: relative;
+    max-height: 80vh;
+
 }
 
 .img-scacchiera-custom {
     width: 100%;
-    height: 50%;
+    height: 100%;
     object-fit: cover;
-    display: block;
+    padding: 0px;
+    margin: 0px;
+
 }
 
 .div-scacchiera h2 {

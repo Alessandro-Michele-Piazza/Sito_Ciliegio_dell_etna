@@ -57,7 +57,6 @@
 
     {{-- INIZIO TERZA SECTION --}}
 
-    <!-- TERZA SECTION (Immagine SX, Testo DX) -->
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"
         data-aos-once="true">
         <div class="row g-0 align-items-stretch">
@@ -67,11 +66,11 @@
             </div>
 
             <!-- COLONNA TESTO -->
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5  ">
                 <div>
                     <h2 class="fw-bold mb-3">Ristorante <span class="scritta_verde_medio">&</span> Pizzeria</h2>
                     <div class="divider-short mb-4 mt-0"></div>
-                    <span class="sub-label scritta_verde_medio d-block mb-2">Tradizione Vulcanica</span>
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">Tradizione Vulcanica</span>
 
                     <p class="descrizione-scacchiera mb-4">
                         Al Ciliegio, ogni piatto racconta la storia della nostra terra. Dalla selezione di farine per le
@@ -91,21 +90,24 @@
         </div>
     </section>
 
-    <!-- QUARTA SECTION (Comfort & Relax) -->
-    <section class="container-fluid div-scacchiera px-0" data-aos="fade-left" ...>
-        <div class="row g-0 align-items-stretch"> <!-- AGGIUNTO g-0 e align-items-stretch -->
+    {{-- FINE TERZA SECTION --}}
+
+    {{-- INIZIO QUARTA SECTION --}}
+
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"
+        data-aos-once="true">
+        <div class="row g-0 align-items-stretch">
 
 
-            {{-- COLONNA TESTO --}}
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
+            <!-- COLONNA TESTO -->
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5  ">
                 <div>
                     <h2 class="fw-bold mb-3">Comfort <span class="scritta_verde_medio">&</span> Relax</h2>
                     <div class="divider-short mb-4 mt-0"></div>
-
-                    <span class="sub-label scritta_verde_medio d-block mb-2">Ospitalità Sicula</span>
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">Ospitalità Sicula</span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Scegliere un soggiorno a Il Ciliegio dell'Etna significa immergersi nella quiete del Parco
+                        Scegliere Il Ciliegio dell'Etna significa immergersi nella quiete del Parco
                         dell'Etna. Le nostre camere, ricavate con cura negli spazi storici della tenuta, fondono il
                         fascino del design rurale con i migliori comfort moderni.
                     </p>
@@ -121,12 +123,10 @@
                 </div>
             </div>
 
-
             <!-- COLONNA IMMAGINE -->
-            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
-                <img src="{{ asset('storage/media/foto(4).jpg') }}" class="img-scacchiera-custom">
+            <div class="col-12 col-md-7 h-scacchiera">
+                <img src="{{ asset('storage/media/foto(4).jpg') }}" alt="Ristorante" class="img-scacchiera-custom">
             </div>
-
         </div>
     </section>
 
