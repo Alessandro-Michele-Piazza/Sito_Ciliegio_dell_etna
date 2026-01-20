@@ -61,14 +61,24 @@
     </div>
 
     <!-- COPYRIGHT -->
-    <div class="footer-bottom text-center py-3">
+
+    <div class="footer-bottom text-center py-4">
         <div class="container">
-            <p class="m-0">
+            <!-- Prima riga: Copyright e Policy -->
+            <p class="mb-4">
                 © {{ date('Y') }} <strong>Il Ciliegio dell'Etna</strong>. Tutti i diritti riservati.
                 <span class="d-block d-md-inline ms-md-3">
                     <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a>
                 </span>
             </p>
+
+            <!-- Seconda riga: Powered by -->
+            <p class="mb-2 small">
+                Powered by <a href="https://www.linkedin.com/in/alessandro-michele-piazza-13b751171/" target="_blank"
+                    class="text-decoration-none">Alessandro Michele Piazza</a>
+            </p>
         </div>
     </div>
+
+
 </footer>

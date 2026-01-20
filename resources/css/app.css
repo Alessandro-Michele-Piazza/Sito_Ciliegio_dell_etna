@@ -116,11 +116,12 @@ body::-webkit-scrollbar-thumb {
 
 /* --- IL BOTTONE HAMBURGER (FONTAWESOME) --- */
 .navbar-toggler {
-    border: 2px solid white;
+    border: 2px solid var(--rosso_ciliegia);
     /* Bordo del bottone bianco */
     padding: 5px 10px;
     border-radius: 8px;
     transition: all 0.3s ease;
+
 }
 
 .navbar-toggler:focus {
@@ -129,16 +130,20 @@ body::-webkit-scrollbar-thumb {
 
 /* Stile dell'icona dentro il bottone */
 .navbar-toggler i {
-    color: white;
+    color: var(--rosso_ciliegia);
     /* Colore bianco dell'icona */
     font-size: 1.5rem;
     /* Grandezza dell'icona */
     line-height: 1;
     vertical-align: middle;
+    backdrop-filter: blur(10px);
+
 }
 
 .navbar-toggler:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+
 }
 
 /* --- IL MENU DROPDOWN (BOX BIANCO) --- */
@@ -148,6 +153,7 @@ body::-webkit-scrollbar-thumb {
     right: 20px;
     width: 200px;
     background-color: white;
+
     padding: 1.5rem;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
@@ -381,9 +387,14 @@ body::-webkit-scrollbar-thumb {
 
 .img-scacchiera-custom {
     width: 100%;
-    height: 100%;
+    height: 70vh;
     object-fit: cover;
     display: block;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -405,7 +416,7 @@ body::-webkit-scrollbar-thumb {
 /* INIZIO EFFETTO PARALLASSE */
 
 .parallax-section {
-    background-image: url('{{ asset(' /media/ciliegio_esterno.jpg') }}');
+    background-image: url('/storage/media/ciliegio_esterno.jpg');
     min-height: 450px;
     background-attachment: fixed;
     background-position: center;
@@ -528,11 +539,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .icona_facebook:hover {
-    background-color: blue;
+    background-color: #3b5998;
 }
 
 .icona_youtube:hover {
-    background: var(--rosso_ciliegia);
+    background: #ff0000;
 }
 
 .icona_instagram:hover {

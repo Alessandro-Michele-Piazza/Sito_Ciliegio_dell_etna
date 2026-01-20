@@ -67,8 +67,8 @@
 
                     {{-- IMMAGINE DA CAMBIARE  --}}
 
-                    <img src="{{ asset('storage/media/ciliegio_esterno.jpg') }}"
-                        alt="Immagine Pizzeria Ristorante al Ciliegio" class="img-fluid img-scacchiera-custom">
+                    <img src="{{ asset('storage/media/foto(5).jpg') }}" alt="Immagine Pizzeria Ristorante al Ciliegio"
+                        class="img-fluid img-scacchiera-custom">
                 </div>
             </div>
 
@@ -146,8 +146,7 @@
                 <div class="h-100 container-img-scacchiera ">
                     {{-- IMMAGINE DA CAMBIARE  --}}
 
-                    <img src="{{ asset('storage/media/ciliegio_esterno.jpg') }}"
-                        class="img-fluid img-scacchiera-custom">
+                    <img src="{{ asset('storage/media/foto(4).jpg') }}" class="img-fluid img-scacchiera-custom">
 
                 </div>
             </div>
@@ -197,7 +196,7 @@
                             <div class="avatar-container profilo-2">
                                 M <div class="google-icon">G</div>
                             </div>
-                            <div class="reviewer-name scritta_verde_scuro">Manuel Matera</div>
+                            <div class="reviewer-name scritta_verde_scuro">Manuel Licciardello</div>
                             <div class="review-date">12-01-2026</div>
                             <div class="stars">★★★★★ <small>✔</small></div>
                             <p class="review-text scritta_verde_scuro">Esperienza davvero unica, formatori davvero
@@ -213,7 +212,7 @@
                             <div class="avatar-container profilo-3">
                                 R <div class="google-icon">G</div>
                             </div>
-                            <div class="reviewer-name scritta_verde_scuro">Riccardo Esposito</div>
+                            <div class="reviewer-name scritta_verde_scuro">Riccardo Carmeci</div>
                             <div class="review-date">06-12-2025</div>
                             <div class="stars">★★★★★ <small>✔</small></div>
                             <p class="review-text scritta_verde_scuro">La pizza è semplicemente divina! Impasto
@@ -229,7 +228,7 @@
                             <div class="avatar-container profilo-4">
                                 S <div class="google-icon">G</div>
                             </div>
-                            <div class="reviewer-name scritta_verde_scuro">Stefania Bianchi</div>
+                            <div class="reviewer-name scritta_verde_scuro">Stefania Arcidiacono</div>
                             <div class="review-date">20-10-2025</div>
                             <div class="stars">★★★★★ <small>✔</small></div>
                             <p class="review-text scritta_verde_scuro">Cucina raffinata che esalta i sapori del
@@ -248,7 +247,7 @@
                             <div class="avatar-container profilo-5">
                                 L <div class="google-icon">G</div>
                             </div>
-                            <div class="reviewer-name scritta_verde_scuro">Luca Moretti</div>
+                            <div class="reviewer-name scritta_verde_scuro">Luca Contarino</div>
                             <div class="review-date">08-05-2025</div>
                             <div class="stars">★★★★★ <small>✔</small></div>
                             <p class="review-text scritta_verde_scuro">Soggiorno indimenticabile. Camere pulitissime,
@@ -265,7 +264,7 @@
                             <div class="avatar-container profilo-6">
                                 A <div class="google-icon">G</div>
                             </div>
-                            <div class="reviewer-name scritta_verde_scuro">Alessia Romano</div>
+                            <div class="reviewer-name scritta_verde_scuro">Alessia Lizzio</div>
                             <div class="review-date">14-09-2025</div>
                             <div class="stars">★★★★★ <small>✔</small></div>
                             <p class="review-text scritta_verde_scuro">Ho festeggiato qui i miei 18 anni ed è stato
@@ -287,8 +286,8 @@
                             <div class="review-date">10-02-2025</div>
                             <div class="stars">★★★★★ <small>✔</small></div>
                             <p class="review-text scritta_verde_scuro">Il giorno più bello della nostra vita reso
-                                perfetto
-                                da questa location da sogno. Gestione professionale e buffet di benvenuto infinito.
+                                perfetto da questa location da sogno. Gestione professionale e buffet di benvenuto
+                                infinito.
                                 Grazie
                                 di cuore!</p>
                         </div>
