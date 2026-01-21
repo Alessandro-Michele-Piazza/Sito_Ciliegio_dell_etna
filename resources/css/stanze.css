@@ -121,12 +121,12 @@
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     }
 
-    .wrapper-img-small{
+    .wrapper-img-small {
       width: 100%;
       height: 40vh;
       max-width: 450px;
       overflow: hidden;
-            border-radius: 8px;
+      border-radius: 8px;
 
     }
 
@@ -135,7 +135,7 @@
 
     /* Immagine grande (Destra) */
     .wrapper-img-large {
-       overflow: hidden; 
+      overflow: hidden;
     }
 
     .img-large-camere {
@@ -183,6 +183,23 @@
         border-bottom: 1px solid rgba(49, 73, 60, 0.1);
         padding-bottom: 3rem !important;
       }
+
+      .margin-left {
+        margin-left: 0vw;
+      }
+
+      .margin-right {
+        margin-right: 0vw;
+      }
+
+      #sezione-carosello-1.wrapper-carosello {
+        width: 100%;
+        height: 85vh;
+        /* Altezza intero schermo */
+        position: relative;
+      }
+
+
     }
 
 
