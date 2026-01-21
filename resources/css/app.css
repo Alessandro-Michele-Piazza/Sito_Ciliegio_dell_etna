@@ -1,5 +1,6 @@
 @import 'bootstrap';
 @import './contatti.css';
+@import './stanze.css';
 
 /* --- VARIABILI E ROOT --- */
 :root {
@@ -9,6 +10,7 @@
     --verde_chiaro: #b3efb2;
     --bianco_sfondo: #e8f1f2;
     --rosso_ciliegia: #DE0722;
+    --verde_acceso: #00ff00;
 }
 
 /* --- RESET & BASE --- */
@@ -55,6 +57,14 @@ a {
 
 .scritta_rossa {
     color: var(--rosso_ciliegia);
+}
+
+.scritta_verde_acceso {
+    color: var(--verde_acceso);
+}
+
+.scritta_verde_scurissimo {
+    color: var(--verde_scurissimo);
 }
 
 /* --- SCROLLBAR --- */
@@ -271,7 +281,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .h-scacchiera {
-    min-height: 400px;
+    min-height: 79vh;
     max-height: 80vh;
 
 }
@@ -613,6 +623,22 @@ body::-webkit-scrollbar-thumb {
 .icona_tiktok:hover {
     background: black;
 }
+
+
+#il_mio_nome:hover {
+    color: var(--verde_acceso);
+}
+
+#privacy_scritta:hover {
+    color: var(--verde_acceso);
+}
+
+#cookie_scritta:hover {
+    color: var(--verde_acceso);
+}
+
+
+/* FINE FOOTER */
 
 /* --- WHATSAPP --- */
 .whatsapp-container {

@@ -30,7 +30,7 @@
                 <ul class="list-unstyled footer-links">
                     <li><a href="#">Il Ristorante</a></li>
                     <li><a href="#">La Pizzeria</a></li>
-                    <li><a href="#">Le Camere</a></li>
+                    <li><a href="{{ route('stanze') }}">Le Camere</a></li>
                 </ul>
             </div>
 
@@ -68,14 +68,14 @@
             <p class="mb-4">
                 © {{ date('Y') }} <strong>Il Ciliegio dell'Etna</strong>. Tutti i diritti riservati.
                 <span class="d-block d-md-inline ms-md-3">
-                    <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a>
+                    <a href="#" id="privacy_scritta">Privacy Policy</a> | <a href="#" id="cookie_scritta">Cookie Policy</a>
                 </span>
             </p>
 
             <!-- Seconda riga: Powered by -->
             <p class="mb-2 small">
                 Powered by <a href="https://www.linkedin.com/in/alessandro-michele-piazza-13b751171/" target="_blank"
-                    class="text-decoration-none">Alessandro Michele Piazza</a>
+                    class="text-decoration-none" id="il_mio_nome">Alessandro Michele Piazza</a>
             </p>
         </div>
     </div>

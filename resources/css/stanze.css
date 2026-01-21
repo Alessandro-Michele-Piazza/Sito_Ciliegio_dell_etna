@@ -1,0 +1,194 @@
+    #sezione-carosello-1.wrapper-carosello {
+      width: 100%;
+      height: 100vh;
+      /* Altezza intero schermo */
+      position: relative;
+    }
+
+    #sezione-carosello-1 .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    #sezione-carosello-1 .swiper-slide {
+      text-align: center;
+      font-size: 24px;
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* --- STILE PAGINATION (LINEE) --- */
+
+    /* Rimuoviamo l'aspetto a pallino e diamo forma a linea */
+    #sezione-carosello-1 .swiper-pagination-bullet {
+      background: var(--verde_acceso);
+      /* Verde  */
+      opacity: 0.3;
+      border-radius: 0;
+      transition: all 0.3s ease;
+    }
+
+    /* Effetto quando la linea è attiva */
+    #sezione-carosello-1 .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: var(--verde_acceso);
+      box-shadow: 0 0 10px var(--verde_acceso);
+      /* Effetto neon */
+    }
+
+    /* --- POSIZIONAMENTO LINEE ORIZZONTALI (Slide Principali) --- */
+    #sezione-carosello-1 .pag-orizzontale-1 {
+      bottom: 20px !important;
+      /* Distanza dal bordo inferiore */
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    #sezione-carosello-1 .pag-orizzontale-1 .swiper-pagination-bullet {
+      width: 40px;
+      /* Larghezza linea */
+      height: 4px;
+      /* Spessore linea */
+    }
+
+    /* --- POSIZIONAMENTO LINEE VERTICALI (Slide Interne) --- */
+    #sezione-carosello-1 .pag-verticale-1 {
+      right: 20px !important;
+      /* Distanza dal bordo destro dello schermo */
+      left: auto !important;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    #sezione-carosello-1 .pag-verticale-1 .swiper-pagination-bullet {
+      width: 4px;
+      /* Spessore linea */
+      height: 40px;
+      /* Altezza linea */
+    }
+
+
+    .img-stanza-row-seconda-section {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+
+
+
+    .section-camere-premium {
+      background-color: var(--bianco_sfondo);
+      min-height: 80vh;
+      overflow: hidden;
+    }
+
+    /* Linea orizzontale prima di "CAMERE" */
+    .line-horizontal {
+      width: 50px;
+      height: 1px;
+      background-color: var(--verde_scurissimo);
+    }
+
+    /* Linea verticale divisoria (solo desktop) */
+
+
+    /* Immagine piccola (Sinistra) */
+    .img-small-camere {
+      width: 100%;
+      max-width: 450px;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: all 1.4s ease;
+      border-radius: 8px;
+    }
+
+    .img-small-camere:hover {
+      transform: scale(1.10);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .wrapper-img-small{
+      width: 100%;
+      height: 40vh;
+      max-width: 450px;
+      overflow: hidden;
+            border-radius: 8px;
+
+    }
+
+
+
+
+    /* Immagine grande (Destra) */
+    .wrapper-img-large {
+       overflow: hidden; 
+    }
+
+    .img-large-camere {
+      width: 100%;
+      height: 90vh;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+
+    /* Tipografia specifica */
+    .section-camere-premium h2 {
+      line-height: 1.1;
+      font-weight: 400;
+      /* Cormorant Garamond è già ereditato dal tuo CSS base */
+    }
+
+    .section-camere-premium p {
+      line-height: 1.8;
+      max-width: 500px;
+      /* Montserrat è già ereditato dal tuo CSS base */
+    }
+
+
+    .margin-left {
+      margin-left: 8vw;
+    }
+
+    .margin-right {
+      margin-right: 8vw;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 767px) {
+      .line-horizontal {
+        width: 30px;
+      }
+
+      .img-small-camere {
+        height: 200px;
+      }
+
+      .border-divider {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(49, 73, 60, 0.1);
+        padding-bottom: 3rem !important;
+      }
+    }
+
+
+    @media (min-width: 768px) {
+      .border-divider {
+        border-right: 1px solid rgba(49, 73, 60, 0.2) !important;
+        /* var(--verde_scuro) con trasparenza */
+      }
+    }

@@ -24,7 +24,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="#">Ristorante</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Pizzeria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Hotel</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('stanze') }}">Stanze</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Servizi

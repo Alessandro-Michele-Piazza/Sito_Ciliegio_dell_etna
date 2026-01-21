@@ -8,6 +8,15 @@
 
 
     <x-header title="Contatti" />
+    @if (session('success'))
+        <div class="container mt-4">
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                <i class="fa-solid fa-circle-check me-2"></i>
+                {{ session('success') }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    @endif
 
     <!-- INFO & FORM SECTION -->
     <section class="container py-5">
@@ -63,32 +72,64 @@
             <div class="col-lg-7" data-aos="fade-left">
                 <div class="form-wrapper">
                     <h3 class="fw-bold scritta_verde_scuro mb-4">Inviaci un messaggio</h3>
-                    <form action="#" method="POST">
+                    <form action="{{ route('contact.send') }}" method="POST">
+                        @csrf
+
                         <div class="row">
+                            <!-- NOME COMPLETO -->
                             <div class="col-md-6 mb-4">
                                 <label class="custom-label">Nome Completo</label>
-                                <input type="text" class="form-control contact-input"
-                                    placeholder="Esempio: Mario Rossi">
+                                <input type="text" name="name"
+                                    class="form-control contact-input @error('name') is-invalid @enderror"
+                                    placeholder="Mario Rossi" value="{{ old('name') }}">
+                                @error('name')
+                                    <div class="text-danger small">{{ $message }}</div>
+                                @enderror
                             </div>
+
+                            <!-- EMAIL -->
                             <div class="col-md-6 mb-4">
                                 <label class="custom-label">Indirizzo Email</label>
-                                <input type="email" class="form-control contact-input" placeholder="esempio@email.it">
+                                <input type="email" name="email"
+                                    class="form-control contact-input @error('email') is-invalid @enderror"
+                                    placeholder="esempio@email.it" value="{{ old('email') }}">
+                                @error('email')
+                                    <div class="text-danger small">{{ $message }}</div>
+                                @enderror
                             </div>
                         </div>
+
+                        <!-- OGGETTO -->
                         <div class="mb-4">
                             <label class="custom-label">Oggetto</label>
-                            <select class="form-select contact-input">
-                                <option selected disabled>Seleziona un'opzione</option>
-                                <option>Prenotazione Tavolo</option>
-                                <option>Soggiorno Camere</option>
-                                <option>Eventi Speciali</option>
-                                <option>Altro</option>
+                            <select name="subject"
+                                class="form-select contact-input @error('subject') is-invalid @enderror">
+                                <option selected disabled value="">Seleziona un'opzione</option>
+                                <option value="Prenotazione Tavolo"
+                                    {{ old('subject') == 'Prenotazione Tavolo' ? 'selected' : '' }}>Prenotazione Tavolo
+                                </option>
+                                <option value="Soggiorno Camere"
+                                    {{ old('subject') == 'Soggiorno Camere' ? 'selected' : '' }}>Soggiorno Camere
+                                </option>
+                                <option value="Eventi Speciali"
+                                    {{ old('subject') == 'Eventi Speciali' ? 'selected' : '' }}>Eventi Speciali</option>
+                                <option value="Altro" {{ old('subject') == 'Altro' ? 'selected' : '' }}>Altro</option>
                             </select>
+                            @error('subject')
+                                <div class="text-danger small">{{ $message }}</div>
+                            @enderror
                         </div>
+
+                        <!-- MESSAGGIO -->
                         <div class="mb-4">
                             <label class="custom-label">Il tuo Messaggio</label>
-                            <textarea class="form-control contact-input" rows="5" placeholder="Scrivi qui la tua richiesta..."></textarea>
+                            <textarea name="message" class="form-control contact-input @error('message') is-invalid @enderror" rows="5"
+                                placeholder="Scrivi qui...">{{ old('message') }}</textarea>
+                            @error('message')
+                                <div class="text-danger small">{{ $message }}</div>
+                            @enderror
                         </div>
+
                         <button type="submit" class="btn-prenota border-0 w-100 py-3">Invia Richiesta</button>
                     </form>
                 </div>

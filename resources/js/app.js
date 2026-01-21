@@ -42,3 +42,25 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
+
+// CAROSELLO STANZE
+
+var swiperOrizzontale1 = new Swiper(
+    "#sezione-carosello-1 .swiper-principale-1",
+    {
+        spaceBetween: 0,
+        pagination: {
+            el: "#sezione-carosello-1 .pag-orizzontale-1",
+            clickable: true,
+        },
+    },
+);
+
+var swiperVerticale1 = new Swiper("#sezione-carosello-1 .swiper-verticale-1", {
+    direction: "vertical",
+    spaceBetween: 0,
+    pagination: {
+        el: "#sezione-carosello-1 .pag-verticale-1",
+        clickable: true,
+    },
+});

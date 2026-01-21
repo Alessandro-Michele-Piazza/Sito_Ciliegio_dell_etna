@@ -15,4 +15,9 @@ class PublicController extends Controller
     {
         return view('contatti');
     }
+
+    public function stanze()
+    {
+        return view('stanze');
+    }
 }

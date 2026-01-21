@@ -117,7 +117,7 @@
                         "Svegliarsi con il respiro del vulcano e addormentarsi nel silenzio profondo."
                     </p>
 
-                    <a href="#" class="link-scopri">
+                    <a href="{{ route('stanze') }}" class="link-scopri">
                         <span>Scopri le nostre camere</span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
@@ -134,10 +134,7 @@
     {{-- FINE QUARTA SECTION --}}
 
     <!-- COLONNA IMMAGINE PARALLASSE -->
-    <div class="container-fluid px-0">
-        <div class="parallax-section"></div>
-    </div>
-
+    <x-parallasse />
     {{-- INIZIO CAROSELLO --}}
 
     <div
