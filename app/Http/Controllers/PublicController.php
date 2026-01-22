@@ -20,4 +20,14 @@ class PublicController extends Controller
     {
         return view('stanze');
     }
+
+    public function pizzeria()
+    {
+        return view('pizzeria');
+    }
+
+    public function ristorante()
+    {
+        return view('ristorante');
+    }
 }

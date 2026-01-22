@@ -28,8 +28,8 @@
             <div class="col-lg-2 col-md-6 ms-lg-auto">
                 <h5 class="footer-title">Esplora</h5>
                 <ul class="list-unstyled footer-links">
-                    <li><a href="#">Il Ristorante</a></li>
-                    <li><a href="#">La Pizzeria</a></li>
+                    <li><a href="{{ route('ristorante') }}">Il Ristorante</a></li>
+                    <li><a href="{{ route('pizzeria') }}">La Pizzeria</a></li>
                     <li><a href="{{ route('stanze') }}">Le Camere</a></li>
                 </ul>
             </div>

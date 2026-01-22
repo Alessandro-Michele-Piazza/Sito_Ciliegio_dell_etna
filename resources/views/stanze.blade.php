@@ -81,6 +81,11 @@
                             <i class="fas fa-shower scritta_verde_medio me-2"></i>
                             <span class="small fw-semibold">Bagno Privato</span>
                         </div>
+
+                        <div class="col-6 col-sm-4 d-flex align-items-center">
+                            <i class="fas fa-mug-hot scritta_verde_medio me-2"></i>
+                            <span class="small fw-semibold">Bollitore in stanza</span>
+                        </div>
                     </div>
 
                 </div>
@@ -105,13 +110,7 @@
                     </span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Le nostre camere triple sono la soluzione ideale per famiglie o piccoli gruppi che non vogliono
-                        rinunciare allo stile.
-                        Progettate per offrire il massimo equilibrio tra privacy e convivialità, queste stanze si
-                        distinguono per
-                        l'uso di materiali naturali e una distribuzione degli spazi intelligente, perfetta per
-                        rigenerarsi
-                        dopo una giornata passata alla scoperta dei sentieri dell'Etna.
+                       Le nostre camere triple sono ideali per famiglie e piccoli gruppi che non vogliono rinunciare allo stile. Ogni camera è dotata di un letto matrimoniale e un letto singolo, offrendo il giusto equilibrio tra privacy e convivialità. Gli spazi ben distribuiti e l’uso di materiali naturali creano un ambiente accogliente, perfetto per rigenerarsi dopo un’escursione sui sentieri dell’Etna.
                     </p>
 
                     <div class="row g-3 mt-2">
@@ -125,9 +124,16 @@
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-tv scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold"> TV</span>
+                            <span class="small fw-semibold">Smart TV</span>
                         </div>
-
+                        <div class="col-6 col-sm-4 d-flex align-items-center">
+                            <i class="fas fa-mug-hot scritta_verde_medio me-2"></i>
+                            <span class="small fw-semibold">Bollitore in stanza</span>
+                        </div>
+                        <div class="col-6 col-sm-4 d-flex align-items-center">
+                            <i class="fas fa-wheelchair scritta_verde_medio me-2"></i>
+                            <span class="small fw-semibold">Accesso Disabili</span>
+                        </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-shower scritta_verde_medio me-2"></i>
                             <span class="small fw-semibold">Bagno Privato</span>
@@ -170,11 +176,8 @@
                     </span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Pensate per accogliere famiglie o gruppi di amici, le nostre camere quadruple offrono
-                        ambienti generosi dove la storicità della tenuta incontra un'abitabilità d'eccellenza.
-                        Il design riflette i colori e i materiali del territorio etneo, garantendo a ogni
-                        ospite il proprio spazio di benessere senza rinunciare alla calda atmosfera di
-                        condivisione tipica della nostra terra.
+                        Pensate per famiglie o gruppi di amici, le nostre camere quadruple bilocali offrono ambienti ampi e confortevoli.
+                        La camera è climatizzata, dotata di due televisori, un letto matrimoniale e due letti singoli, con una piacevole vista mare. Il design richiama i colori e i materiali del territorio etneo, garantendo a ogni ospite il proprio spazio di benessere, in un’atmosfera accogliente e conviviale.
                     </p>
 
                     <div class="row g-3 mt-2">
@@ -188,9 +191,16 @@
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-tv scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold"> TV</span>
+                            <span class="small fw-semibold">Smart TV</span>
                         </div>
-
+                        <div class="col-6 col-sm-4 d-flex align-items-center">
+                            <i class="fas fa-mug-hot scritta_verde_medio me-2"></i>
+                            <span class="small fw-semibold">Bollitore in stanza</span>
+                        </div>
+                        <div class="col-6 col-sm-4 d-flex align-items-center">
+                            <i class="fas fa-wheelchair scritta_verde_medio me-2"></i>
+                            <span class="small fw-semibold">Accesso Disabili</span>
+                        </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-shower scritta_verde_medio me-2"></i>
                             <span class="small fw-semibold">Bagno Privato</span>
@@ -206,52 +216,3 @@
 
 </x-layout>
 
-
-{{-- ELEMENTO GRAFICO SCARTATO MA CARINO --}}
-{{-- 
-<div class="container-fluid g-0 section-camere-premium">
-        <div class="row g-0">
-
-            <!-- COLONNA SINISTRA: TESTI + FOTO PICCOLA -->
-            <div class="col-12 col-md-6 d-flex flex-column justify-content-between p-4 p-md-5 border-divider ">
-
-                <div class="content-text-top margin-left">
-                    <!-- Sottotitolo con linea orizzontale -->
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="line-horizontal me-3"></div>
-                        <h5 class="m-0 text-uppercase fw-light" style="letter-spacing: 3px;">Camere</h5>
-                    </div>
-
-                    <!-- Titolo Principale -->
-                    <h2 class="display-5 mb-4">
-                        Un rifugio di charme tra <span class="scritta_verde_medio">tradizione</span> e design
-                        contemporaneo
-                    </h2>
-
-                    <!-- Paragrafo Descrittivo -->
-                    <p class="mb-0">
-                        Le nostre camere, ricavate negli spazi storici della tenuta, fondono il fascino
-                        del design rurale con i migliori comfort moderni. Ogni dettaglio è pensato per
-                        offrirti un'esperienza di relax immersa nella quiete del Parco dell'Etna.
-                    </p>
-                </div>
-
-                <!-- Immagine piccola in basso a sinistra -->
-                <div class="mt-5  margin-left wrapper-img-small">
-                    <img src="{{ asset('storage/media/foto(7).jpg') }}" alt="Dettaglio Camera"
-                        class="img-small-camere shadow-sm">
-                </div>
-            </div>
-
-            <!-- COLONNA DESTRA: FOTO GRANDE -->
-            <div class="col-12 col-md-6 p-4 p-md-5 d-flex align-items-center justify-content-center">
-                <div class="wrapper-img-large margin-right">
-                    <img src="{{ asset('storage/media/foto(3).jpg') }}" alt="Stanza Principale"
-                        class="img-large-camere shadow">
-                </div>
-            </div>
-
-            
-
-        </div>
-    </div> --}}

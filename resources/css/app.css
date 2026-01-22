@@ -1,6 +1,8 @@
 @import 'bootstrap';
 @import './contatti.css';
 @import './stanze.css';
+@import './ristorante.css';
+@import './pizzeria.css';
 
 /* --- VARIABILI E ROOT --- */
 :root {
@@ -210,6 +212,7 @@ body::-webkit-scrollbar-thumb {
 .dropdown-item {
     font-family: "Cormorant Garamond", serif;
     color: var(--verde_scuro);
+    padding-right: 28px;
 }
 
 .dropdown-item:hover {

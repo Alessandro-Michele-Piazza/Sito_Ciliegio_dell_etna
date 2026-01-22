@@ -82,7 +82,7 @@
                         "Il sapore della tradizione, servito con una vista indimenticabile."
                     </p>
 
-                    <a href="#" class="link-scopri">
+                    <a href="{{ route('ristorante') }}" class="link-scopri">
                         <span>Esplora la nostra cucina</span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
@@ -152,7 +152,7 @@
                         <div class="review-date">05-04-2025</div>
                         <div class="stars">★★★★★ <small>✔</small></div>
                         <p class="review-text scritta_verde_scuro">
-                            {{ Str::limit('Il Posto è favoloso, il personale eccellente, la cucina da Dio! Merita davvero! Lo stra-consiglio !!!', 100, '...') }}
+                            {{ Str::limit('Il Posto è favoloso, il personale eccellente, la cucina da Dio! Merita davvero! Lo stra-consiglio!!!', 100, '...') }}
                         </p>
                     </div>
                 </div>
@@ -187,7 +187,7 @@
                         <div class="stars">★★★★★ <small>✔</small></div>
                         <p class="review-text scritta_verde_scuro">
                             {{ Str::limit(
-                                'Locale molto accogliente e personale efficiente. La pizza era buonissima. Completamente soddisfatta, tornerò sicuramente.',
+                                'Locale molto accogliente e personale efficiente. La pizza era buonissima. Completamente soddisfatta tornerò sicuramente.',
                                 100,
                                 '...',
                             ) }}

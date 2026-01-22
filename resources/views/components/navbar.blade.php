@@ -22,22 +22,22 @@
             <!-- Menu Collapse (Il "Dropdown" Bianco) -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Ristorante</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Pizzeria</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('stanze') }}">Stanze</a></li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item dropdown ms-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             Servizi
                         </a>
-                        <ul class="dropdown-menu border-0">
-                            <li><a class="dropdown-item" href="#">Corsi di cucina</a></li>
+                        <ul class="dropdown-menu border-0 ">
+                            <li><a class="dropdown-item dropdown-padding-right" href="#">Corsi di cucina</a></li>
                             <li><a class="dropdown-item" href="#">Corsi di pizzeria</a></li>
                             <li><a class="dropdown-item" href="#">Corsi di panificazione</a></li>
                             <li><a class="dropdown-item" href="#">Wine Tour</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#">Prodotti Tipici</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Esperienze</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('ristorante') }}">Ristorante</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('pizzeria') }}">Pizzeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Prodotti Tipici</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('contatti') }}">Contatti</a></li>
                 </ul>
