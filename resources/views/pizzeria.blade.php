@@ -21,22 +21,24 @@
 
                     <!-- Paragrafo Descrittivo -->
                     <p class="mb-0 scritta_verde_scuro mb-4">
-                        Le nostre pizze sono preparate con ingredienti locali a km 0, cotte nel nostro forno a legna
-                        utilizzando ricette tramandante da generazioni. Ogni impasto è lievitato naturalmente per
-                        garantire
-                        una qualità superiore e un sapore autentico della tradizione etnea.
+                        Le nostre pizze sono preparate con ingredienti locali a km 0, seguendo la tradizione siciliana. Ogni impasto è lievitato naturalmente  48h per
+                        garantire una qualità superiore e un sapore autentico della tradizione etnea. 
+                        Uno dei piatti più scelti per cenare nella nostra terrazza estiva con vista sulla
+                        costa ionica e su Giarre
+                        
+                    
                     </p>
 
-                    <a href="{{ route('ristorante') }}" class="link-scopri">
+                    <a href=" " class="link-scopri">
                         <span>Vedi il nostro menù</span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
 
                 <!-- Immagine piccola in basso a sinistra -->
-                <div class="mt-5  margin-left wrapper-img-small">
+                <div class="mt-5 mt-md-4 margin-left wrapper-img-small ">
                     <img src="{{ asset('storage/media/pizza_3.jpg') }}" alt="Pizza Tradizionale"
-                        class="img-small-camere shadow-sm ">
+                        class="img-small-camere img-fluid shadow-sm margin_right_pizza_piccola">
                 </div>
             </div>
 

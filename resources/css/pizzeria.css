@@ -1,0 +1,11 @@
+
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    .margin_right_pizza_piccola{
+        margin-right: 200vw;
+    }
+
+    .margin-left{
+        margin-left: 0vw;
+    }
+}
