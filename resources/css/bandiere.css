@@ -1,0 +1,29 @@
+/* Rende la freccia bianca tramite l'ID del bottone */
+#langBtn::after {
+    color: white;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+/* Gestisce la larghezza del menu tramite l'ID della lista */
+#langMenu {
+    min-width: auto;
+    /* Annulla i 10rem di default di Bootstrap */
+    width: fit-content;
+    /* Si stringe attorno alle bandiere */
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Il tuo stile per le bandiere */
+.flag-hover {
+    transition: all 0.2s ease;
+    opacity: 0.8;
+    display: block;
+}
+
+.flag-hover:hover {
+    opacity: 1;
+    transform: translateY(-2px);
+    filter: brightness(1.1);
+}

@@ -10,3 +10,4 @@ Route::post('/contatti/invio', [ContactController::class, 'send'])->name('contac
 Route::get('/stanze', [PublicController::class, 'stanze'])->name("stanze");
 Route::get('/pizzeria', [PublicController::class, 'pizzeria'])->name("pizzeria");
 Route::get('/ristorante', [PublicController::class, 'ristorante'])->name("ristorante");
+Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');

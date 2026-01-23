@@ -95,12 +95,13 @@
 
     {{-- CAMERE TRIPLE --}}
 
+
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left" data-aos-duration="1500"
         data-aos-once="true">
         <div class="row g-0 align-items-stretch">
 
-            <!-- COLONNA TESTO -->
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
+            <!-- COLONNA TESTO: Ho aggiunto order-2 (seconda su mobile) e order-md-1 (torna prima su PC) -->
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
                 <div>
                     <h2 class="fw-bold mb-3">Camere Triple Superior</h2>
                     <div class="divider-short mb-4 mt-0"></div>
@@ -110,7 +111,11 @@
                     </span>
 
                     <p class="descrizione-scacchiera mb-4">
-                       Le nostre camere triple sono ideali per famiglie e piccoli gruppi che non vogliono rinunciare allo stile. Ogni camera è dotata di un letto matrimoniale e un letto singolo, offrendo il giusto equilibrio tra privacy e convivialità. Gli spazi ben distribuiti e l’uso di materiali naturali creano un ambiente accogliente, perfetto per rigenerarsi dopo un’escursione sui sentieri dell’Etna.
+                        Le nostre camere triple sono ideali per famiglie e piccoli gruppi che non vogliono rinunciare
+                        allo stile. Ogni camera è dotata di un letto matrimoniale e un letto singolo, offrendo il giusto
+                        equilibrio tra privacy e convivialità. Gli spazi ben distribuiti e l’uso di materiali naturali
+                        creano un ambiente accogliente, perfetto per rigenerarsi dopo un’escursione sui sentieri
+                        dell’Etna.
                     </p>
 
                     <div class="row g-3 mt-2">
@@ -142,15 +147,14 @@
                 </div>
             </div>
 
-            <!-- COLONNA IMMAGINE -->
-            <div class="col-12 col-md-7 h-scacchiera">
+            <!-- COLONNA IMMAGINE: Ho aggiunto order-1 (prima su mobile) e order-md-2 (torna seconda su PC) -->
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <!-- Alt tag ottimizzato SEO -->
                 <img src="{{ asset('storage/media/foto(4).jpg') }}"
                     alt="Camera tripla spaziosa per famiglie al Ciliegio dell'Etna" class="img-scacchiera-custom">
             </div>
         </div>
     </section>
-
     {{-- CAMERE QUADRUPLE --}}
 
 
@@ -176,8 +180,12 @@
                     </span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Pensate per famiglie o gruppi di amici, le nostre camere quadruple bilocali offrono ambienti ampi e confortevoli.
-                        La camera è climatizzata, dotata di due televisori, un letto matrimoniale e due letti singoli, con una piacevole vista mare. Il design richiama i colori e i materiali del territorio etneo, garantendo a ogni ospite il proprio spazio di benessere, in un’atmosfera accogliente e conviviale.
+                        Pensate per famiglie o gruppi di amici, le nostre camere quadruple bilocali offrono ambienti
+                        ampi e confortevoli.
+                        La camera è climatizzata, dotata di due televisori, un letto matrimoniale e due letti singoli,
+                        con una piacevole vista mare. Il design richiama i colori e i materiali del territorio etneo,
+                        garantendo a ogni ospite il proprio spazio di benessere, in un’atmosfera accogliente e
+                        conviviale.
                     </p>
 
                     <div class="row g-3 mt-2">
@@ -215,4 +223,3 @@
 
 
 </x-layout>
-

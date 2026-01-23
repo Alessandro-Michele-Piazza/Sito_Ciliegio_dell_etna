@@ -3,6 +3,7 @@
 @import './stanze.css';
 @import './ristorante.css';
 @import './pizzeria.css';
+@import './bandiere.css';
 
 /* --- VARIABILI E ROOT --- */
 :root {

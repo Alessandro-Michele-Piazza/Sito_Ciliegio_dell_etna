@@ -1,5 +1,5 @@
 <footer class="footer-modern ">
-    <div class="container py-5 px-0">
+    <div class="container py-5 px-0 position-relative">
         <div class="row g-4">
 
             <!-- COLONNA BRAND & INFO -->
@@ -8,8 +8,7 @@
                     class="footer-logo mb-3">
 
                 <p class="footer-description">
-                    Un'oasi di gusto e relax ai piedi del vulcano. Tradizione siciliana, materie prime d'eccellenza e
-                    un'accoglienza che profuma di casa.
+                    {{ __('ui.footer_scritta') }}
                 </p>
                 <div class="footer-socials">
                     <a href="https://www.facebook.com/ilciliegiodelletna/?locale=it_IT" class="icona_facebook"><i
@@ -58,6 +57,30 @@
             </div>
 
         </div>
+
+        <div class="dropup position-absolute bottom-0 end-0 mb-4 me-4">
+            <button id="langBtn" class="btn dropdown-toggle d-flex align-items-center border-0 shadow-none p-0"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <x-_locale lang="{{ App::getLocale() }}" />
+            </button>
+
+            <ul id="langMenu" class="dropdown-menu dropdown-menu-end bg-dark border-secondary shadow-lg">
+                <div class="d-flex flex-column align-items-center gap-2 py-1">
+                    @if (App::getLocale() !== 'it')
+                        <li><x-_locale lang="it" /></li>
+                    @endif
+
+                    @if (App::getLocale() !== 'en')
+                        <li><x-_locale lang="en" /></li>
+                    @endif
+
+                    @if (App::getLocale() !== 'es')
+                        <li><x-_locale lang="es" /></li>
+                    @endif
+                </div>
+            </ul>
+        </div>
+
     </div>
 
     <!-- COPYRIGHT -->
@@ -68,7 +91,8 @@
             <p class="mb-4">
                 © {{ date('Y') }} <strong>Il Ciliegio dell'Etna</strong>. Tutti i diritti riservati.
                 <span class="d-block d-md-inline ms-md-3">
-                    <a href="#" id="privacy_scritta">Privacy Policy</a> | <a href="#" id="cookie_scritta">Cookie Policy</a>
+                    <a href="#" id="privacy_scritta">Privacy Policy</a> | <a href="#"
+                        id="cookie_scritta">Cookie Policy</a>
                 </span>
             </p>
 

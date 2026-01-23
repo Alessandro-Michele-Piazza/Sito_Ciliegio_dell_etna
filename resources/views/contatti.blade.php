@@ -130,7 +130,7 @@
                             @enderror
                         </div>
 
-                        <button type="submit" class="btn-prenota border-0 w-100 py-3">Invia Richiesta</button>
+                        <button type="submit" class="btn-prenota border-0 w-100 py-3">Invia</button>
                     </form>
                 </div>
             </div>

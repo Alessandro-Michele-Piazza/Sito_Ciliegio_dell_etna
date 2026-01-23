@@ -30,4 +30,10 @@ class PublicController extends Controller
     {
         return view('ristorante');
     }
+
+    public function setLanguage($lang)
+    {
+        session(['locale' => $lang]);
+        return redirect()->back();
+    }
 }
