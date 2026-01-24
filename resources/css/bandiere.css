@@ -1,29 +1,63 @@
-/* Rende la freccia bianca tramite l'ID del bottone */
+/* --- LINGUE E BANDIERE --- */
+
+/* Grandezza bandiere */
+#langBtn img, 
+#langMenu img,
+.flag-hover img {
+    width: 30px; /* Ancora un po' più grandi come richiesto */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+    display: block;
+}
+
+/* Freccetta accanto alla bandiera */
 #langBtn::after {
     color: white;
-    margin-left: 8px;
-    vertical-align: middle;
+    margin-left: 12px;
+    font-size: 1.1rem;
 }
 
-/* Gestisce la larghezza del menu tramite l'ID della lista */
+/* Menu Dropup */
 #langMenu {
     min-width: auto;
-    /* Annulla i 10rem di default di Bootstrap */
     width: fit-content;
-    /* Si stringe attorno alle bandiere */
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px !important; /* Distanza dal tasto quando si apre */
 }
 
-/* Il tuo stile per le bandiere */
+/* Effetto hover bandiere */
 .flag-hover {
-    transition: all 0.2s ease;
-    opacity: 0.8;
-    display: block;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    opacity: 0.9;
 }
 
 .flag-hover:hover {
     opacity: 1;
-    transform: translateY(-2px);
-    filter: brightness(1.1);
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* --- SOCIAL ICONE --- */
+.footer-socials {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-socials a {
+    font-size: 1.3rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* --- FIX RESPONSIVE --- */
+@media (max-width: 768px) {
+    /* Su mobile, se non c'è spazio, li mette uno sotto l'altro centrati */
+    .footer-modern .d-flex.justify-content-between {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
 }

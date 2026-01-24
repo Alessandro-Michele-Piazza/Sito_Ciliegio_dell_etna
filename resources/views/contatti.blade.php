@@ -1,4 +1,4 @@
-<x-layout title="Contatti">
+<x-layout title="{{ __('ui.Contatti') }}">
 
 
     <!-- COLONNA IMMAGINE PARALLASSE -->
@@ -7,7 +7,7 @@
     <!-- HERO SECTION -->
 
 
-    <x-header title="Contatti" />
+    <x-header title="{{ __('ui.Contatti') }}" />
     @if (session('success'))
         <div class="container mt-4">
             <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -24,7 +24,7 @@
 
             <!-- INFO BOXES -->
             <div class="col-lg-5" data-aos="fade-right">
-                <h2 class="titolo-mission scritta_verde_scuro mb-4">Siamo qui per te</h2>
+                <h2 class="titolo-mission scritta_verde_scuro mb-4"> {{ __('ui.Siamo_qui_per_te') }}</h2>
                 <div class="divider-short mb-5"></div>
 
                 <div class="contact-card mb-4">
@@ -32,7 +32,7 @@
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
                     <div class="contact-content ">
-                        <h5>Dove Siamo</h5>
+                        <h5>{{ __('ui.Dove_Siamo') }}</h5>
                         <p>Via Filippo Meda, 88 - Giarre (CT)</p>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                         <i class="fa-solid fa-phone"></i>
                     </div>
                     <div class="contact-content">
-                        <h5>Chiamaci</h5>
+                        <h5>{{ __('ui.Chiamaci') }}</h5>
                         <p>+39 095 969 109 <br> +39 391 168 6078</p>
                     </div>
                 </div>
@@ -62,8 +62,8 @@
                         <i class="fa-solid fa-clock"></i>
                     </div>
                     <div class="contact-content">
-                        <h5>Orari d'apertura</h5>
-                        <p>Aperto tutti i giorni <br>(Martedì chiuso)</p>
+                        <h5>{{ __('ui.Orari_contatti') }}</h5>
+                        <p>{{ __('ui.Aperto_tutti_i_giorni') }} <br>({{ __('ui.Martedì_chiuso') }})</p>
                     </div>
                 </div>
             </div>
@@ -71,14 +71,14 @@
             <!-- FORM BOX -->
             <div class="col-lg-7" data-aos="fade-left">
                 <div class="form-wrapper">
-                    <h3 class="fw-bold scritta_verde_scuro mb-4">Inviaci un messaggio</h3>
+                    <h3 class="fw-bold scritta_verde_scuro mb-4">{{ __('ui.Inviaci_un_messaggio') }}</h3>
                     <form action="{{ route('contact.send') }}" method="POST">
                         @csrf
 
                         <div class="row">
                             <!-- NOME COMPLETO -->
                             <div class="col-md-6 mb-4">
-                                <label class="custom-label">Nome Completo</label>
+                                <label class="custom-label">{{ __('ui.Nome_Completo') }}</label>
                                 <input type="text" name="name"
                                     class="form-control contact-input @error('name') is-invalid @enderror"
                                     placeholder="Mario Rossi" value="{{ old('name') }}">
@@ -89,10 +89,10 @@
 
                             <!-- EMAIL -->
                             <div class="col-md-6 mb-4">
-                                <label class="custom-label">Indirizzo Email</label>
+                                <label class="custom-label">{{ __('ui.Indirizzo_Email') }}</label>
                                 <input type="email" name="email"
                                     class="form-control contact-input @error('email') is-invalid @enderror"
-                                    placeholder="esempio@email.it" value="{{ old('email') }}">
+                                    placeholder=" {{ __('ui.email_esempio') }} " value="{{ old('email') }}">
                                 @error('email')
                                     <div class="text-danger small">{{ $message }}</div>
                                 @enderror
@@ -101,19 +101,19 @@
 
                         <!-- OGGETTO -->
                         <div class="mb-4">
-                            <label class="custom-label">Oggetto</label>
+                            <label class="custom-label">{{ __('ui.Oggetto') }}</label>
                             <select name="subject"
                                 class="form-select contact-input @error('subject') is-invalid @enderror">
-                                <option selected disabled value="">Seleziona un'opzione</option>
+                                <option selected disabled value=""> {{ __('ui.Seleziona_un_opzione') }} </option>
                                 <option value="Prenotazione Tavolo"
-                                    {{ old('subject') == 'Prenotazione Tavolo' ? 'selected' : '' }}>Prenotazione Tavolo
+                                    {{ old('subject') == 'Prenotazione Tavolo' ? 'selected' : '' }}> {{ __('ui.Prenotazione_Tavolo') }}
                                 </option>
                                 <option value="Soggiorno Camere"
-                                    {{ old('subject') == 'Soggiorno Camere' ? 'selected' : '' }}>Soggiorno Camere
+                                    {{ old('subject') == 'Soggiorno Camere' ? 'selected' : '' }}> {{ __('ui.Soggiorno_Camere') }}
                                 </option>
                                 <option value="Eventi Speciali"
-                                    {{ old('subject') == 'Eventi Speciali' ? 'selected' : '' }}>Eventi Speciali</option>
-                                <option value="Altro" {{ old('subject') == 'Altro' ? 'selected' : '' }}>Altro</option>
+                                    {{ old('subject') == 'Eventi Speciali' ? 'selected' : '' }}>{{ __('ui.Eventi_Speciali') }}</option>
+                                <option value="Altro" {{ old('subject') == 'Altro' ? 'selected' : '' }}>{{ __('ui.Altro') }}</option>
                             </select>
                             @error('subject')
                                 <div class="text-danger small">{{ $message }}</div>
@@ -122,15 +122,15 @@
 
                         <!-- MESSAGGIO -->
                         <div class="mb-4">
-                            <label class="custom-label">Il tuo Messaggio</label>
+                            <label class="custom-label">{{ __('ui.Il_tuo_Messaggio') }}</label>
                             <textarea name="message" class="form-control contact-input @error('message') is-invalid @enderror" rows="5"
-                                placeholder="Scrivi qui...">{{ old('message') }}</textarea>
+                                placeholder=" {{ __('ui.Scrivi_qui') }} ">{{ old('message') }}</textarea>
                             @error('message')
                                 <div class="text-danger small">{{ $message }}</div>
                             @enderror
                         </div>
 
-                        <button type="submit" class="btn-prenota border-0 w-100 py-3">Invia</button>
+                        <button type="submit" class="btn-prenota border-0 w-100 py-3">{{ __('ui.Invia') }}</button>
                     </form>
                 </div>
             </div>

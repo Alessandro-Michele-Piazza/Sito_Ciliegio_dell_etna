@@ -1,6 +1,5 @@
-<x-layout title="Pizzeria">
-
-    <x-header title="Pizzeria" />
+<x-layout title="{{ __('ui.Pizzeria') }}">
+    <x-header title="{{ __('ui.Pizzeria') }}" />
 
 
 
@@ -21,16 +20,11 @@
 
                     <!-- Paragrafo Descrittivo -->
                     <p class="mb-0 scritta_verde_scuro mb-4">
-                        Le nostre pizze sono preparate con ingredienti locali a km 0, seguendo la tradizione siciliana. Ogni impasto è lievitato naturalmente  48h per
-                        garantire una qualità superiore e un sapore autentico della tradizione etnea. 
-                        Uno dei piatti più scelti per cenare nella nostra terrazza estiva con vista sulla
-                        costa ionica e su Giarre
-                        
-                    
-                    </p>
+                        {{ __('ui.Pizzeria_Descrizione') }}
+                     </p>
 
                     <a href=" " class="link-scopri">
-                        <span>Vedi il nostro menù</span>
+                        <span> {{ __('ui.Vedi_il_nostro_menu') }} </span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>

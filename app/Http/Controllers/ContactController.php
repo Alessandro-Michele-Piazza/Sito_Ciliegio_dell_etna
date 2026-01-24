@@ -14,23 +14,6 @@ class ContactController extends Controller
             'email'   => 'required|email',
             'subject' => 'required',
             'message' => 'required|min:10|max:2000',
-        ], [
-            // Messaggi per il Nome
-            'name.required'    => 'Il nome completo è obbligatorio.',
-            'name.min'         => 'Il nome deve avere almeno 3 caratteri.',
-            'name.max'         => 'Il nome è troppo lungo.',
-
-            // Messaggi per l'Email
-            'email.required'   => 'L\'indirizzo email è obbligatorio.',
-            'email.email'      => 'Inserisci un indirizzo email valido.',
-
-            // Messaggi per l'Oggetto
-            'subject.required' => 'Devi selezionare un oggetto per la tua richiesta.',
-
-            // Messaggi per il Messaggio
-            'message.required' => 'Il testo del messaggio è obbligatorio.',
-            'message.min'      => 'Il messaggio deve essere lungo almeno 10 caratteri.',
-            'message.max'      => 'Il messaggio non può superare i 2000 caratteri.',
         ]);
 
         $content = "Hai ricevuto un nuovo messaggio dal sito Il Ciliegio dell'Etna:\n\n" .

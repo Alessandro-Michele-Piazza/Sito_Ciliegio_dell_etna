@@ -1,6 +1,6 @@
-<x-layout title="Ristorante">
+<x-layout title=" {{ __('ui.Il_Ristorante') }} ">
 
-    <x-header title="Ristorante" />
+    <x-header title=" {{ __('ui.Il_Ristorante') }} " />
 
     <div class="container-fluid g-0 section-camere-premium">
         <div class="row g-0">
@@ -13,24 +13,22 @@
                     <div>
                         <div class="d-flex align-items-center mb-4">
                             <div class="line-horizontal me-3"></div>
-                            <h5 class="m-0 text-uppercase fw-light" style="letter-spacing: 3px;">Il Nostro Ristorante</h5>
+                            <h5 class="m-0 text-uppercase fw-light" style="letter-spacing: 3px;">{{ __('ui.Il_Nostro_Ristorante') }}</h5>
                         </div>
 
                         <!-- Titolo Principale -->
                         <h2 class="display-5 mb-4">
-                            Sapori <span class="scritta_verde_medio">Autentici</span> <br> della Sicilia
+                            {{ __('ui.Sapori') }} <span class="scritta_verde_medio"> {{ __('ui.Autentici') }} </span> <br> {{ __('ui.Della_Sicilia') }}
                         </h2>
                     </div>
 
                     <!-- Paragrafo Descrittivo -->
                     <p class="mb-0 scritta_verde_scuro mb-4">
-                        Il ristorante siciliano a Catania, dove la tradizione culinaria dell'Etna incontra l'ospitalità. 
-                        Scopri piatti tipici siciliani preparati con ingredienti locali a km 0 e ricette tramandate da generazioni. 
-                        A Giarre offriamo un'esperienza gastronomica indimenticabile con sapori autentici della Sicilia e dell'Etna.
+                        {{__('ui.descrizione_ristorante')}}
                     </p>
 
                     <a href=" " class="link-scopri">
-                        <span>Vedi il nostro menù</span>
+                        <span>{{ __('ui.Vedi_il_nostro_menu') }}</span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>

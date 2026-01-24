@@ -73,6 +73,35 @@ return [
     'Camere_Quadruple_Descrizione' => "Designed for families or groups of friends, our double-room quadruple rooms offer spacious and comfortable environments. The room is air-conditioned, equipped with two televisions, a double bed and two single beds, with a pleasant sea view. The design recalls the colors and materials of the Etna territory, guaranteeing each guest their own wellness space, in a welcoming and convivial atmosphere.",
     'Spazio_e_armonia' => 'Space and harmony for your most precious moments.',
     'Quadrupla' => 'Quadruple Family Suite',
+    'Piatti_Tipici' => 'Typical Dishes',
+    'Pizzeria_Descrizione' => "Our pizzas are prepared with local km 0 ingredients, following the Sicilian tradition. Each dough is naturally leavened for 48 hours to ensure superior quality and an authentic flavor of the Etna tradition. One of the most chosen dishes to dine on our summer terrace with a view of the Ionian coast and Giarre.", 
+    'Vedi_il_nostro_menu' => 'See our menu',
+    'Il_Ristorante' => 'The Restaurant',
+    'Sapori' => 'Flavors',
+    'Autentici' => 'Authentic',
+    'Della_Sicilia' => 'of Sicily', 
+    'descrizione_ristorante' => "The Sicilian restaurant in Catania, where the culinary tradition of Etna meets hospitality. 
+    Discover typical Sicilian dishes prepared with local km 0 ingredients and recipes handed down for generations. 
+    In Giarre we offer an unforgettable gastronomic experience with authentic flavors of Sicily and Etna.",
+    'Siamo_qui_per_te' => 'We are here for you',
+    'Dove_Siamo' => 'Where We Are',
+    'Nome_Completo' => 'Full Name',
+    'Indirizzo_Email' => 'Email Address',
+    'Oggetto' => 'Subject',
+    'Seleziona_un_opzione' => 'Select an option',
+    'Prenotazione_Tavolo' => 'Table Reservation',
+    'Soggiorno_Camere' => 'Room Stay',
+    'Eventi_Speciali' => 'Special Events',
+    'Altro' => 'Other',
+    'Il_tuo_Messaggio' => 'Your Message',
+    'Invia' => 'Send',
+    'Orari_contatti' => 'Contact Hours',
+    'Aperto_tutti_i_giorni' => 'Open every day',
+    'Martedì_chiuso' => 'Closed on Tuesdays',
+    'email_esempio' => 'example@email.it',
+    'Inviaci_un_messaggio' => 'Send us a message',
+    'Scrivi_qui' => 'Write here',
+
 
     // other keys...
 
