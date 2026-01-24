@@ -45,8 +45,26 @@ return [
     'Wine_Tour' => 'Wine Tour',
     'Esperienze' => 'Esperienze',
     'Prodotti_Tipici' => 'Prodotti Tipici',
-    'Blog' => 'Blog',   
-    
+    'Blog' => 'Blog',
+    'Contatti' => 'Contatti',
+    'Camere_matrimoniali' => 'Camere Matrimoniali',
+    'Un_nido' => 'Un nido di pace',
+    'Camere_matrimoniali_Descrizione' => "Le nostre camere matrimoniali nascono dal sapiente recupero degli spazi storici della tenuta, fondendo l'estetica del design rurale siciliano con i più alti standard di comfort moderno. Ogni ambiente è un rifugio esclusivo, pensato per chi desidera un soggiorno rigenerante circondato dalla natura incontaminata del vulcano.",
+    'Aria_Condizionata' => 'Aria Condizionata',
+    'Wi-Fi_Free' => 'Wi-Fi Free',
+    'TV' => 'TV',
+    'Bagno_privato' => 'Bagno Privato',
+    'Bollitore_in_stanza' => 'Bollitore in stanza',
+    'Camere_Triple_Superior' => 'Camere Triple Superior',
+    'Ampiezza_e_Comfort' => 'Ampiezza e comfort per i vostri momenti condivisi.',
+    'Camere_Triple_Descrizione' => "Le nostre camere triple sono ideali per famiglie e piccoli gruppi che non vogliono rinunciare allo stile. Ogni camera è dotata di un letto matrimoniale e un letto singolo, offrendo il giusto equilibrio tra privacy e convivialità. Gli spazi ben distribuiti e l’uso di materiali naturali creano un ambiente accogliente, perfetto per rigenerarsi dopo un’escursione sui sentieri dell’Etna.",
+    'Accesso_Disabili' => 'Accesso Disabili',
+    'Quadrupla' => 'Quadrupla Family Suite',
+    'Camere_Quadruple_Descrizione' => "Pensate per famiglie o gruppi di amici, le nostre camere quadruple bilocali offrono ambienti
+    ampi e confortevoli. La camera è climatizzata, dotata di due televisori, un letto matrimoniale e due letti singoli, con una piacevole vista mare. Il design richiama i colori e i materiali del territorio etneo, garantendo a ogni ospite il proprio spazio di benessere, in un’atmosfera accogliente e conviviale.",
+    'Spazio_e_armonia' => 'Spazio e armonia per i vostri momenti più preziosi.',
+    'Quadrupla' => 'Quadrupla Family Suite',
+
 
 
     // altre chiavi...

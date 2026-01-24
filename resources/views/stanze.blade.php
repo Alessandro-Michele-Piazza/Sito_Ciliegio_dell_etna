@@ -51,40 +51,37 @@
             <!-- COLONNA TESTO -->
             <div class="col-12 col-md-5 d-flex align-items-center  py-5 px-4 p-md-5 bg-white ">
                 <div>
-                    <h2 class="fw-bold mb-3">Camere Matrimoniali</h2>
+                    <h2 class="fw-bold mb-3"> {{ __('ui.Camere_matrimoniali') }} </h2>
                     <div class="divider-short mb-4 mt-0"></div>
-                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic"> Un nido di pace
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic"> {{ __('ui.Un_nido') }}
                     </span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Le nostre camere matrimoniali nascono dal sapiente recupero degli spazi storici della tenuta,
-                        fondendo l'estetica del design rurale siciliano con i più alti standard di comfort moderno.
-                        Ogni ambiente è un rifugio esclusivo, pensato per chi desidera un soggiorno rigenerante
-                        circondato dalla natura incontaminata del vulcano.
+                        {{ __('ui.Camere_matrimoniali_Descrizione') }}
                     </p>
 
                     <div class="row g-3 mt-2">
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-snowflake scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Aria Condizionata</span>
+                            <span class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-wifi scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Wi-Fi Free</span>
+                            <span class="small fw-semibold">{{ __('ui.Wi-Fi_Free') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-tv scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold"> TV</span>
+                            <span class="small fw-semibold">{{ __('ui.TV') }}</span>
                         </div>
 
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-shower scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Bagno Privato</span>
+                            <span class="small fw-semibold">{{ __('ui.Bagno_privato') }}</span>
                         </div>
 
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-mug-hot scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Bollitore in stanza</span>
+                            <span class="small fw-semibold">{{ __('ui.Bollitore_in_stanza') }}</span>
                         </div>
                     </div>
 
@@ -103,45 +100,42 @@
             <!-- COLONNA TESTO: Ho aggiunto order-2 (seconda su mobile) e order-md-1 (torna prima su PC) -->
             <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
                 <div>
-                    <h2 class="fw-bold mb-3">Camere Triple Superior</h2>
+                    <h2 class="fw-bold mb-3">{{ __('ui.Camere_Triple_Superior') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
 
                     <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">
-                        Ampiezza e comfort per i vostri momenti condivisi.
+                        {{ __('ui.Ampiezza_e_Comfort') }}
+
                     </span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Le nostre camere triple sono ideali per famiglie e piccoli gruppi che non vogliono rinunciare
-                        allo stile. Ogni camera è dotata di un letto matrimoniale e un letto singolo, offrendo il giusto
-                        equilibrio tra privacy e convivialità. Gli spazi ben distribuiti e l’uso di materiali naturali
-                        creano un ambiente accogliente, perfetto per rigenerarsi dopo un’escursione sui sentieri
-                        dell’Etna.
+                        {{ __('ui.Camere_Triple_Descrizione') }}
                     </p>
 
                     <div class="row g-3 mt-2">
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-snowflake scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Aria Condizionata</span>
+                            <span class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-wifi scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Wi-Fi Free</span>
+                            <span class="small fw-semibold">{{ __('ui.Wi-Fi_Free') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-tv scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Smart TV</span>
+                            <span class="small fw-semibold">{{ __('ui.TV') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-mug-hot scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Bollitore in stanza</span>
+                            <span class="small fw-semibold">{{ __('ui.Bollitore_in_stanza') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-wheelchair scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Accesso Disabili</span>
+                            <span class="small fw-semibold">{{ __('ui.Accesso_Disabili') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-shower scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Bagno Privato</span>
+                            <span class="small fw-semibold">{{ __('ui.Bagno_privato') }}</span>
                         </div>
                     </div>
                 </div>
@@ -172,30 +166,25 @@
             <!-- COLONNA TESTO -->
             <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
                 <div>
-                    <h2 class="fw-bold mb-3">Quadruple Family Suite</h2>
+                    <h2 class="fw-bold mb-3">{{ __('ui.Quadrupla') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
 
                     <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">
-                        Spazio e armonia per i vostri momenti più preziosi.
+                        {{ __('ui.Spazio_e_armonia') }}
                     </span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Pensate per famiglie o gruppi di amici, le nostre camere quadruple bilocali offrono ambienti
-                        ampi e confortevoli.
-                        La camera è climatizzata, dotata di due televisori, un letto matrimoniale e due letti singoli,
-                        con una piacevole vista mare. Il design richiama i colori e i materiali del territorio etneo,
-                        garantendo a ogni ospite il proprio spazio di benessere, in un’atmosfera accogliente e
-                        conviviale.
+                        {{ __('ui.Camere_Quadruple_Descrizione') }}
                     </p>
 
                     <div class="row g-3 mt-2">
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-snowflake scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Aria Condizionata</span>
+                            <span class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-wifi scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Wi-Fi Free</span>
+                            <span class="small fw-semibold">{{ __('ui.Wi-Fi_Free') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-tv scritta_verde_medio me-2"></i>
@@ -203,23 +192,20 @@
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-mug-hot scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Bollitore in stanza</span>
+                            <span class="small fw-semibold">{{ __('ui.Bollitore_in_stanza') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-wheelchair scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Accesso Disabili</span>
+                            <span class="small fw-semibold">{{ __('ui.Accesso_Disabili') }}</span>
                         </div>
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-shower scritta_verde_medio me-2"></i>
-                            <span class="small fw-semibold">Bagno Privato</span>
+                            <span class="small fw-semibold">{{ __('ui.Bagno_privato') }}</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
 
 </x-layout>
