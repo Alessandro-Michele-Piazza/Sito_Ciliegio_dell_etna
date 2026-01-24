@@ -37,6 +37,16 @@ return [
     'banchetti' => 'banquets',
     'avvolti' => ', wrapped in the unique charm of the volcanic land.',
     'contattaci' => 'Contact us',
+    'Ristorante' => 'Restaurant',
+    'Pizzeria' => 'Pizzeria',
+    'Tradizione_Vulcanica' => 'Volcanic Tradition', 
+    'descrizione_scacchiera_1' => "At Il Ciliegio, every dish tells the story of our land. From the selection of flours for our long-leavened pizzas to the fresh ingredients of the Etna territory.",
+    'descrizione_scacchiera_2' => "The taste of tradition, served with an unforgettable view.",
+    'esplora_la_nostra_cucina' => 'Explore our cuisine',
+    'Ospitalità_sicula' => 'Sicilian Hospitality',
+    'descrizione_scacchiera_3' => "Choosing Il Ciliegio dell'Etna means immersing yourself in the tranquility of the Etna Park. Our rooms, carefully created in the historic spaces of the estate, blend the charm of rural design with the best modern comforts.",
+    'descrizione_scacchiera_4' => "Waking up with the breath of the volcano and falling asleep in deep silence.",
+    'Scopri_le_nostre_camere' => 'Discover our rooms',
     // other keys...
 
 

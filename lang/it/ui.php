@@ -26,6 +26,16 @@ return [
     'banchetti' => 'banchetti',
     'avvolti' => ', avvolti dal fascino unico della terra vulcanica.',
     'contattaci' => 'Contattaci',
+    'Ristorante' => 'Ristorante',
+    'Pizzeria' => 'Pizzeria',
+    'Tradizione_Vulcanica' => 'Tradizione Vulcanica',
+    'descrizione_scacchiera_1' => "Al Ciliegio, ogni piatto racconta la storia della nostra terra. Dalla selezione di farine per le nostre pizze a lunga lievitazione, agli ingredienti freschi del territorio etneo.",
+    'descrizione_scacchiera_2' => "Il sapore della tradizione, servito con una vista indimenticabile.",
+    'esplora_la_nostra_cucina' => 'Esplora la nostra cucina',   
+    'Ospitalità_sicula' => 'Ospitalità Sicula',
+    'descrizione_scacchiera_3' => "Scegliere Il Ciliegio dell'Etna significa immergersi nella quiete del Parco dell'Etna. Le nostre camere, ricavate con cura negli spazi storici della tenuta, fondono il fascino del design rurale con i migliori comfort moderni.",
+    'descrizione_scacchiera_4' => "Svegliarsi con il respiro del vulcano e addormentarsi nel silenzio profondo.",
+    'Scopri_le_nostre_camere' => 'Scopri le nostre camere',
 
     // altre chiavi...
 ];

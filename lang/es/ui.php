@@ -38,6 +38,12 @@ return [
     'banchetti' => 'banquetes',
     'avvolti' => ', envueltos por el encanto único de la tierra volcánica.',
         'contattaci' => 'Contáctanos',
+        'Ristorante' => 'Restaurante',
+        'Pizzeria' => 'Pizzería',
+        'Tradizione_Vulcanica' => 'Tradición Volcánica',
+        'descrizione_scacchiera_1' => "En Il Ciliegio, cada plato cuenta la historia de nuestra tierra. Desde la selección de harinas para nuestras pizzas de larga fermentación, hasta los ingredientes frescos del territorio etneo.",
+        'descrizione_scacchiera_2' => "El sabor de la tradición, servido con una vista inolvidable.",
+        'esplora_la_nostra_cucina' => 'Explora nuestra cocina',     
     // otras claves...
 
 ];

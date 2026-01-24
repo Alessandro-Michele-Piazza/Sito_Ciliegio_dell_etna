@@ -32,7 +32,7 @@
                         <strong class="scritta_verde_medio">{{ __('ui.prodotti_tipici') }}</strong> {{__('ui.km.0')}}
                         <strong class="scritta_verde_medio">{{ __('ui.banchetti') }}</strong>{{__('ui.avvolti')}}
                     </p>
-                    <a href="#" class="link-scopri mt-4 d-inline-block">
+                    <a href=" {{ route('contatti') }} " class="link-scopri mt-4 d-inline-block">
                         <span> {{ __('ui.contattaci') }}</span>
                         <i class="fa-solid fa-arrow-right-long ms-2"></i>
                     </a>
@@ -59,21 +59,20 @@
             <!-- COLONNA TESTO -->
             <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5  ">
                 <div>
-                    <h2 class="fw-bold mb-3">Ristorante <span class="scritta_verde_medio">&</span> Pizzeria</h2>
+                    <h2 class="fw-bold mb-3"> {{ __('ui.Ristorante') }} <span class="scritta_verde_medio">&</span> {{ __('ui.Pizzeria') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
-                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">Tradizione Vulcanica</span>
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">{{ __('ui.Tradizione_Vulcanica') }}</span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Al Ciliegio, ogni piatto racconta la storia della nostra terra. Dalla selezione di farine per le
-                        nostre pizze a lunga lievitazione, agli ingredienti freschi del territorio etneo.
+                        {{__('ui.descrizione_scacchiera_1')}}
                     </p>
 
                     <p class="testo-radici-sul-vulcano mb-5 fst-italic">
-                        "Il sapore della tradizione, servito con una vista indimenticabile."
+                        "{{__('ui.descrizione_scacchiera_2')}}"
                     </p>
 
                     <a href="{{ route('ristorante') }}" class="link-scopri">
-                        <span>Esplora la nostra cucina</span>
+                        <span> {{ __('ui.esplora_la_nostra_cucina') }}</span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
@@ -95,20 +94,18 @@
                 <div>
                     <h2 class="fw-bold mb-3">Comfort <span class="scritta_verde_medio">&</span> Relax</h2>
                     <div class="divider-short mb-4 mt-0"></div>
-                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">Ospitalità Sicula</span>
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic"> {{ __('ui.Ospitalità_sicula') }} </span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        Scegliere Il Ciliegio dell'Etna significa immergersi nella quiete del Parco
-                        dell'Etna. Le nostre camere, ricavate con cura negli spazi storici della tenuta, fondono il
-                        fascino del design rurale con i migliori comfort moderni.
+                        {{ __('ui.descrizione_scacchiera_3') }}
                     </p>
 
                     <p class="testo-radici-sul-vulcano mb-5 fst-italic">
-                        "Svegliarsi con il respiro del vulcano e addormentarsi nel silenzio profondo."
+                        "{{ __('ui.descrizione_scacchiera_4') }}"
                     </p>
 
                     <a href="{{ route('stanze') }}" class="link-scopri">
-                        <span>Scopri le nostre camere</span>
+                        <span>{{ __('ui.Scopri_le_nostre_camere') }}</span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
                 </div>
