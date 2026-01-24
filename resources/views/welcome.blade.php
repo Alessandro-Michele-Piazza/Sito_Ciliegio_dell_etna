@@ -13,10 +13,10 @@
         <div class="row align-items-start">
 
             <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center text-lg-start">
-                <span class="sub-label scritta_rossa">DAL 2005</span>
+                <span class="sub-label scritta_rossa"> {{ __('ui.dal_2005') }} </span>
                 <h2 class="titolo-mission scritta_verde_scuro mt-2">
                     Il Ciliegio dell'Etna <br>
-                    <span class="testo-radici-sul-vulcano">Radici sul Vulcano</span>
+                    <span class="testo-radici-sul-vulcano">{{ __('ui.radici_sul_vulcano') }}</span>
                 </h2>
                 <div class="divider-short mx-auto mx-lg-0"></div>
             </div>
@@ -24,26 +24,16 @@
             <div class="col-lg-7 col-md-12 text-center text-lg-start">
                 <div class="content-wrapper">
                     <p class="descrizione-mission">
-                        Il nostro <strong class="scritta_verde_medio">agriturismo a Giarre</strong> racconta una storia
-                        di passione
-                        legata
-                        indissolubilmente al territorio dell’<strong class="scritta_verde_medio"> Etna</strong>. La
-                        nostra missione è portarvi alla
-                        scoperta della vera <strong class="scritta_verde_medio">cucina siciliana</strong>, fatta di
-                        gesti antichi e ingredienti
-                        purissimi.
+                        {{ __('ui.il_nostro') }}<strong class="scritta_verde_medio">{{ __('ui.agriturismo_a_Giarre') }}</strong> {{ __('ui.storia_di_passione') }}<strong class="scritta_verde_medio"> Etna</strong>{{ __('ui.la_nostra_missione') }} <strong class="scritta_verde_medio">{{ __('ui.cucina_siciliana') }}</strong> {{ __('ui.antichi_ingredienti') }}
                     </p>
                     <p class="descrizione-mission mt-4">
-                        Nel nostro <strong class="scritta_verde_medio">ristorante</strong> e nella nostra <strong
-                            class="scritta_verde_medio">pizzeria</strong>, i
-                        <strong class="scritta_verde_medio">prodotti tipici</strong> a chilometro zero diventano i
-                        protagonisti: dalle verdure del
-                        nostro orto alle farine pregiate. Siamo la cornice ideale per celebrare i vostri
-                        <strong class="scritta_verde_medio">banchetti</strong>, avvolti dal fascino unico della terra
-                        vulcanica.
+                        <strong class="scritta_verde_medio"> {{ __('ui.ristorante') }}</strong> {{ __('ui.nella_nostra') }} <strong
+                            class="scritta_verde_medio">{{ __('ui.pizzeria') }}</strong>
+                        <strong class="scritta_verde_medio">{{ __('ui.prodotti_tipici') }}</strong> {{__('ui.km.0')}}
+                        <strong class="scritta_verde_medio">{{ __('ui.banchetti') }}</strong>{{__('ui.avvolti')}}
                     </p>
                     <a href="#" class="link-scopri mt-4 d-inline-block">
-                        <span>Contattaci</span>
+                        <span> {{ __('ui.contattaci') }}</span>
                         <i class="fa-solid fa-arrow-right-long ms-2"></i>
                     </a>
                 </div>

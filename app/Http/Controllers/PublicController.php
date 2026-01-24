@@ -33,7 +33,11 @@ class PublicController extends Controller
 
     public function setLanguage($lang)
     {
-        session(['locale' => $lang]);
+        // Verifichiamo che la lingua sia tra quelle ammesse
+        if (in_array($lang, ['it', 'en', 'es'])) {
+            session()->put('locale', $lang);
+        }
+
         return redirect()->back();
     }
 }

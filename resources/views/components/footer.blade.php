@@ -25,17 +25,17 @@
 
             <!-- COLONNA LINK RAPIDI -->
             <div class="col-lg-2 col-md-6 ms-lg-auto">
-                <h5 class="footer-title">Esplora</h5>
+                <h5 class="footer-title">{{ __('ui.esplora') }}</h5>
                 <ul class="list-unstyled footer-links">
-                    <li><a href="{{ route('ristorante') }}">Il Ristorante</a></li>
-                    <li><a href="{{ route('pizzeria') }}">La Pizzeria</a></li>
-                    <li><a href="{{ route('stanze') }}">Le Camere</a></li>
+                    <li><a href="{{ route('ristorante') }}">{{ __('ui.il_ristorante') }}</a></li>
+                    <li><a href="{{ route('pizzeria') }}">{{ __('ui.la_pizzeria') }}</a></li>
+                    <li><a href="{{ route('stanze') }}">{{ __('ui.le_camere') }}</a></li>
                 </ul>
             </div>
 
             <!-- COLONNA CONTATTI -->
             <div class="col-lg-4 col-md-6">
-                <h5 class="footer-title">Contatti</h5>
+                <h5 class="footer-title">{{ __('ui.contatti') }}</h5>
                 <ul class="list-unstyled footer-contact">
                     <li>
                         <i class="fas fa-map-marker-alt"></i>
@@ -51,7 +51,7 @@
                     </li>
                     <li>
                         <i class="fas fa-clock"></i>
-                        <span>Aperto tutti i giorni (Martedì chiuso)</span>
+                        <span>{{ __('ui.orari') }}</span>
                     </li>
                 </ul>
             </div>
@@ -93,6 +93,8 @@
                 <span class="d-block d-md-inline ms-md-3">
                     <a href="#" id="privacy_scritta">Privacy Policy</a> | <a href="#"
                         id="cookie_scritta">Cookie Policy</a>
+                        {{ __('ui.lingua') }}: {{ App::getLocale() }}
+
                 </span>
             </p>
 

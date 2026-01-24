@@ -15,9 +15,12 @@ class SetLocaleMiddleware
      * @param  \Closure(\Illuminate\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      */
     public function handle(Request $request, Closure $next): Response
-    {
-        $localLanguage = session('locale', 'it');
-        App::setLocale($localLanguage);
-        return $next($request);
+{
+    // Se esiste la lingua in sessione, impostala nell'app
+    if (session()->has('locale')) {
+        App::setLocale(session()->get('locale'));
     }
+
+    return $next($request);
+}
 }
