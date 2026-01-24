@@ -47,6 +47,17 @@ return [
     'descrizione_scacchiera_3' => "Choosing Il Ciliegio dell'Etna means immersing yourself in the tranquility of the Etna Park. Our rooms, carefully created in the historic spaces of the estate, blend the charm of rural design with the best modern comforts.",
     'descrizione_scacchiera_4' => "Waking up with the breath of the volcano and falling asleep in deep silence.",
     'Scopri_le_nostre_camere' => 'Discover our rooms',
+    'Prenota_ora' => 'Book Now',
+    'Camere' => 'Rooms',
+    'Servizi' => 'Services',
+    'Corsi_di_cucina' => 'Cooking Courses',
+    'Corsi_di_pizzeria' => 'Pizzeria Courses',
+    'Corsi_di_panificazione' => 'Baking Courses',
+    'Wine_Tour' => 'Wine Tour',
+    'Esperienze' => 'Experiences',
+    'Prodotti_Tipici' => 'Typical Products',
+    'Blog' => 'Blog',
+        'Contatti' => 'Contacts',
     // other keys...
 
 

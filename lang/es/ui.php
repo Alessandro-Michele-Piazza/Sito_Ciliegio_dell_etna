@@ -44,6 +44,21 @@ return [
         'descrizione_scacchiera_1' => "En Il Ciliegio, cada plato cuenta la historia de nuestra tierra. Desde la selección de harinas para nuestras pizzas de larga fermentación, hasta los ingredientes frescos del territorio etneo.",
         'descrizione_scacchiera_2' => "El sabor de la tradición, servido con una vista inolvidable.",
         'esplora_la_nostra_cucina' => 'Explora nuestra cocina',     
+        'Ospitalità_sicula' => 'Hospitalidad Siciliana',
+        'descrizione_scacchiera_3' => "Elegir Il Ciliegio dell'Etna significa sumergirse en la tranquilidad del Parque del Etna. Nuestras habitaciones, cuidadosamente creadas en los espacios históricos de la finca, combinan el encanto del diseño rural con las mejores comodidades modernas.",
+        'descrizione_scacchiera_4' => "Despertarse con el aliento del volcán y dormirse en el profundo silencio.",
+        'Scopri_le_nostre_camere' => 'Descubre nuestras habitaciones',  
+        'Prenota_ora' => 'Reserva Ahora',
+        'Camere' => 'Habitaciones',
+        'Servizi' => 'Servicios',
+        'Corsi_di_cucina' => 'Cursos de cocina',
+        'Corsi_di_pizzeria' => 'Cursos de pizzería',
+        'Corsi_di_panificazione' => 'Cursos de panificación',
+        'Wine_Tour' => 'Wine Tour',
+        'Esperienze' => 'Experiencias',
+        'Prodotti_Tipici' => 'Productos Típicos',
+        'Blog' => 'Blog',
+        'Contatti' => 'Contactos',
     // otras claves...
 
 ];
