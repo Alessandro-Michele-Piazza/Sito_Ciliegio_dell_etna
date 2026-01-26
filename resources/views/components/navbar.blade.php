@@ -22,24 +22,57 @@
             <!-- Menu Collapse (Il "Dropdown" Bianco) -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="{{ route('stanze') }}"> {{ __('ui.Camere') }} </a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('stanze') }}"> {{ __('ui.Camere') }} </a>
+                    </li>
                     <li class="nav-item dropdown ms-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             {{ __('ui.Servizi') }}
                         </a>
                         <ul class="dropdown-menu border-0 ">
-                            <li><a class="dropdown-item dropdown-padding-right" href="#"> {{ __('ui.Corsi_di_cucina') }} </a></li>
+                            <li><a class="dropdown-item dropdown-padding-right" href="#">
+                                    {{ __('ui.Corsi_di_cucina') }} </a></li>
                             <li><a class="dropdown-item" href="#">{{ __('ui.Corsi_di_pizzeria') }}</a></li>
                             <li><a class="dropdown-item" href="#"> {{ __('ui.Corsi_di_panificazione') }} </a></li>
                             <li><a class="dropdown-item" href="#"> {{ __('ui.Wine_Tour') }} </a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#"> {{ __('ui.Esperienze') }} </a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('ristorante') }}">{{ __('ui.Ristorante') }}</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('pizzeria') }}"> {{ __('ui.Pizzeria') }} </a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="{{ route('ristorante') }}">{{ __('ui.Ristorante') }}</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('pizzeria') }}"> {{ __('ui.Pizzeria') }}
+                        </a></li>
                     <li class="nav-item"><a class="nav-link" href="#"> {{ __('ui.Prodotti_Tipici') }} </a></li>
+                    <li class="nav-item"><a class="nav-link" href=" {{ route('menu_domenicale') }} "> {{ __('ui.Menu_domenicale') }} </a></li>
+
                     <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="{{ route('contatti') }}">{{ __('ui.Contatti') }}</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="{{ route('contatti') }}">{{ __('ui.Contatti') }}</a></li>
+                    {{-- 
+                    <li><a class="dropdown-item bg-dark text-white" href="{{ route('login') }}">Accedi</a></li>
+                    <li><a class="dropdown-item bg-dark text-white" href="{{ route('register') }}">Registrati</a></li> --}}
+
+
+                    <form action="{{ route('logout') }}" method="POST" id="form-logout" class="d-none">
+                        @csrf
+                    </form>
+
+                    @auth
+
+
+                        <!-- Visibile solo se l'utente È loggato -->
+                        <li>
+                            <a class="dropdown-item bg-dark text-white" href="#"
+                                onclick="event.preventDefault(); document.getElementById('form-logout').submit();">
+                                Logout
+                            </a>
+                        </li>
+
+                        <!-- Il form nascosto che esegue effettivamente la richiesta POST di logout -->
+                        <form action="{{ route('logout') }}" method="POST" id="form-logout" class="d-none">
+                            @csrf
+                        </form>
+                    @endauth
+
                 </ul>
             </div>
 

@@ -72,8 +72,8 @@
                     <a href="#" id="privacy_scritta">Privacy Policy</a> | <a href="#" id="cookie_scritta">Cookie Policy</a>
                 </span>
             </p>
-            <p class="small opacity-75 mb-0">
-                Powered by <a href="#" target="_blank" class="text-white text-decoration-none">Alessandro Michele Piazza</a>
+            <p class="small opacity-75 mb-0 my-3 " >
+                Powered by <a href="https://www.linkedin.com/in/alessandro-michele-piazza-13b751171/" target="_blank" class="text-decoration-none " id="il_mio_nome">Alessandro Michele Piazza</a>
             </p>
         </div>
     </div>

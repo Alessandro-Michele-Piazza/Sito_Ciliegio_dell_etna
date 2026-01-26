@@ -91,7 +91,11 @@ return [
     'email_esempio' => 'esempio@email.it',
     'Inviaci_un_messaggio' => 'Inviaci un messaggio',
     'Scrivi_qui' => 'Scrivi qui...',
-
-
+    'Chiamaci' => 'Chiamaci',
+    'Inviato_con_successo' => 'Inviato con successo',
+    'Errore_invio' => 'Errore nell\'invio, riprova più tardi',
+    'whatsapp_text' => 'Ciao! Vorrei avere maggiori informazioni',
+    'Menu_domenicale'=> 'Menù Domenicale'
+    
     // altre chiavi...
 ];

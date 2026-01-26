@@ -31,6 +31,11 @@ class PublicController extends Controller
         return view('ristorante');
     }
 
+    public function menu_domenicale()
+    {
+        return view('menu_domenicale');
+    }
+
     public function setLanguage($lang)
     {
         // Verifichiamo che la lingua sia tra quelle ammesse

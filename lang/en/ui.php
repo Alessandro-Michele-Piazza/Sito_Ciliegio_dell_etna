@@ -101,7 +101,13 @@ return [
     'email_esempio' => 'example@email.it',
     'Inviaci_un_messaggio' => 'Send us a message',
     'Scrivi_qui' => 'Write here',
-
+    'Inviato_con_successo' => 'Sent successfully',
+    'Errore_invio' => 'Sending error, please try again later',
+    'Chiamaci' => 'Call us',
+    'Visita' => 'Visit',
+    'Scrivici' => 'Write to us',
+    'whatsapp_text' => 'Hello! I would like to have more information',
+    'Menu_domenicale' => 'Sunday Menu',
 
     // other keys...
 

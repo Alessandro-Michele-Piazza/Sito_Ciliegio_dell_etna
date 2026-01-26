@@ -100,8 +100,13 @@ return [
     'email_esempio' => 'ejemplo@email.it',
     'Inviaci_un_messaggio' => 'Envíanos un mensaje',
     'Scrivi_qui' => 'Escribe aquí',
-
-
+    'Inviato_con_successo' => 'Enviado con éxito',
+    'Errore_invio' => 'Error al enviar, por favor inténtalo de nuevo más tarde',
+    'Chiamaci' => 'Llámanos',
+    'Scrivici' => 'Escríbenos',
+    'Visita' => 'Visita',
+    'whatsapp_text' => '¡Hola! Me gustaría tener más información',
+    'Menu_domenicale' => 'Menú Domenicale',
     // otras claves...
 
 ];

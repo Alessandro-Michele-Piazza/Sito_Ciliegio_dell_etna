@@ -68,3 +68,36 @@ var swiperVerticale1 = new Swiper("#sezione-carosello-1 .swiper-verticale-1", {
         clickable: true,
     },
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    // --- LOGICA PER PASSWORD ---
+    const togglePassword = document.querySelector('#togglePassword');
+    const passwordInput = document.querySelector('#password');
+    const eyeIcon = document.querySelector('#eyeIcon');
+
+    if (togglePassword && passwordInput && eyeIcon) {
+        togglePassword.addEventListener('click', function () {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            // Cambia l'icona FontAwesome
+            eyeIcon.classList.toggle('fa-eye');
+            eyeIcon.classList.toggle('fa-eye-slash');
+        });
+    }
+
+    // --- LOGICA PER CONFERMA PASSWORD ---
+    const toggleConfirmPassword = document.querySelector('#toggleConfirmPassword');
+    const confirmPasswordInput = document.querySelector('#password_confirmation');
+    const eyeIconConfirm = document.querySelector('#eyeIconConfirm');
+
+    if (toggleConfirmPassword && confirmPasswordInput && eyeIconConfirm) {
+        toggleConfirmPassword.addEventListener('click', function () {
+            const type = confirmPasswordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            confirmPasswordInput.setAttribute('type', type);
+            // Cambia l'icona FontAwesome
+            eyeIconConfirm.classList.toggle('fa-eye');
+            eyeIconConfirm.classList.toggle('fa-eye-slash');
+        });
+    }
+});

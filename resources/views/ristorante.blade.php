@@ -1,6 +1,6 @@
-<x-layout title=" {{ __('ui.Il_Ristorante') }} ">
+<x-layout title=" {{ __('ui.il_ristorante') }} ">
 
-    <x-header title=" {{ __('ui.Il_Ristorante') }} " />
+    <x-header title=" {{ __('ui.il_ristorante') }} " />
 
     <div class="container-fluid g-0 section-camere-premium">
         <div class="row g-0">

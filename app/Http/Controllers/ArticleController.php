@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Article;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class ArticleController extends Controller
 {
@@ -12,7 +13,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        //
+        $article = Article::find(1);
+        // dd($article); 
+        return view('menu_domenicale', compact('article'));
     }
 
     /**
@@ -42,17 +45,44 @@ class ArticleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Article $article)
+    public function edit()
     {
-        //
+        $article = Article::findOrFail(1);
+        // Togli "admin." se il file è direttamente in resources/views
+        return view('edit-article', compact('article'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Article $article)
+    public function update(Request $request)
     {
-        //
+        $article = Article::findOrFail(1);
+
+        $request->validate([
+            'title'   => 'required|string|max:255',
+            'body'    => 'required',
+            'authors' => 'nullable|string',
+            'image'   => 'nullable|image|mimes:jpeg,png,jpg|max:2048' // Max 2MB
+        ]);
+
+        $article->title = $request->title;
+        $article->body = $request->body;
+        $article->authors = $request->authors;
+
+        if ($request->hasFile('image')) {
+            // Elimina la vecchia immagine se esiste
+            if ($article->image) {
+                Storage::disk('public')->delete($article->image);
+            }
+            // Salva la nuova foto nella cartella 'public/articles'
+            $path = $request->file('image')->store('articles', 'public');
+            $article->image = $path;
+        }
+
+        $article->save();
+
+        return redirect()->route('menu_domenicale')->with('success', 'Menù aggiornato!');
     }
 
     /**

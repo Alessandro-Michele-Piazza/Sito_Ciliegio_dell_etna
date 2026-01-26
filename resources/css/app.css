@@ -4,6 +4,7 @@
 @import './ristorante.css';
 @import './pizzeria.css';
 @import './bandiere.css';
+@import './menu_domenicale.css';
 
 /* --- VARIABILI E ROOT --- */
 :root {
@@ -629,12 +630,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+#il_mio_nome {
+    color: white; /* Imposti il colore base qui */
+    transition: color 0.3s ease; /* Opzionale: rende l'effetto più fluido */
+}
+
 #il_mio_nome:hover {
     color: var(--verde_acceso);
 }
 
+#privacy_scritta
+{
+    color: white; /* Imposti il colore base qui */
+    transition: color 0.3s ease; /* Opzionale: rende l'effetto più fluido */
+}
+
 #privacy_scritta:hover {
     color: var(--verde_acceso);
+}
+
+
+#cookie_scritta
+{
+    color: white; /* Imposti il colore base qui */
+    transition: color 0.3s ease; /* Opzionale: rende l'effetto più fluido */
 }
 
 #cookie_scritta:hover {
@@ -698,6 +717,11 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
     visibility: visible;
     transform: translateX(0);
+}
+
+
+#il_mio_nome:hover {
+    color: var(--verde_acceso);
 }
 
 
