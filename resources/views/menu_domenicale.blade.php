@@ -1,10 +1,4 @@
 <x-layout title="Menù Domenicale">
-
-    <style>
-        /* Contenitore principale della "Carta Menù" */
-        
-    </style>
-
     <x-header title="Tradizione ed Eleganza" />
 
     <div class="container">
@@ -12,20 +6,17 @@
             <div class="col-lg-11">
 
                 <div class="menu-wrapper">
-                    <div class="row g-0"> {{-- g-0 toglie lo spazio tra le colonne --}}
-
-                        <!-- COLONNA SINISTRA: IMMAGINE -->
-                        <div class="col-md-6 menu-image-side"
-                            style="background-image: url('{{ $article->image ? asset('storage/' . $article->image) : 'https://via.placeholder.com/800x1000?text=Il+Ciliegio+dell+Etna' }}');">
+                    <div class="row g-0">
+                        <!-- COLONNA SINISTRA: IMMAGINE (Senza stile in linea) -->
+                        <div class="col-md-6 menu-image-side">
+                            <img src="{{ $article->image ? asset('storage/' . $article->image) : 'https://via.placeholder.com/800x1000?text=Il+Ciliegio+dell+Etna' }}"
+                                alt="Immagine Menù Domenicale">
                         </div>
 
                         <!-- COLONNA DESTRA: CONTENUTO -->
                         <div class="col-md-6 menu-content-side">
                             <div class="text-center">
-                                <h1 class="menu-title">{{ $article->title }}</h1>
-
-                              
-
+                                <h1 class="menu-title">{!! nl2br(e($article->title)) !!}</h1>
                                 <div class="menu-body">
                                     {{ $article->body }}
                                 </div>
@@ -37,7 +28,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
 
@@ -45,11 +35,9 @@
         </div>
     </div>
 
-    {{-- Tasto Modifica (visibile solo agli admin) --}}
     @auth
         <a href="{{ route('menu.edit') }}" class="btn btn-warning edit-fab shadow">
             🔧 MODIFICA MENÙ
         </a>
     @endauth
-
 </x-layout>

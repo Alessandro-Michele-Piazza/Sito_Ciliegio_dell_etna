@@ -1,3 +1,4 @@
+/* --- STILI PAGINA VISUALIZZAZIONE --- */
 .menu-wrapper {
     background-color: #fff;
     border-radius: 20px;
@@ -8,30 +9,38 @@
     margin-bottom: 50px;
 }
 
-/* Colonna Immagine */
+/* Aggiornato: ora è un contenitore per il tag img */
 .menu-image-side {
     min-height: 500px;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
 }
 
-/* Colonna Testo */
+/* Nuova regola per l'immagine dinamica */
+.menu-image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Sostituisce background-size: cover */
+    display: block;
+}
+
 .menu-content-side {
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #fdfdfd;
-    /* Un bianco sporco per far risaltare il testo */
 }
 
 .menu-title {
     font-family: 'Playfair Display', serif;
     color: #1a3c34;
-    /* Verde scuro agriturismo */
     font-size: 3rem;
     margin-bottom: 10px;
+    line-height: 1.2;
+    /* Spaziatura ottimale per titolo + data */
 }
 
 .chef-box {
@@ -58,18 +67,58 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     font-weight: bold;
     transition: all 0.3s;
+    text-decoration: none;
+    color: #212529;
 }
 
 .edit-fab:hover {
     transform: scale(1.1);
     background-color: #ffc107;
+    color: #212529;
 }
 
-/* Mobile adjustment */
+/* --- STILI PAGINA DI MODIFICA --- */
+.edit-container {
+    padding: 60px 0;
+    background-color: #f4f7f6;
+    min-height: 100vh;
+}
+
+.edit-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #1a3c34;
+    margin-top: 15px;
+}
+
+.preview-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.img-edit-menu-dom {
+    width: 100%;
+    /* Corretto da 40vw per stare nel container */
+    height: auto;
+    border-radius: 15px;
+}
+
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .menu-image-side {
-        height: 300px;
-        min-height: 300px;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
     }
 
     .menu-content-side {
