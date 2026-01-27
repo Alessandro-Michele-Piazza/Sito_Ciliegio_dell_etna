@@ -95,7 +95,8 @@ return [
     'Inviato_con_successo' => 'Inviato con successo',
     'Errore_invio' => 'Errore nell\'invio, riprova più tardi',
     'whatsapp_text' => 'Ciao! Vorrei avere maggiori informazioni',
-    'Menu_domenicale'=> 'Menù Domenicale'
+    'Menu_domenicale'=> 'Menù Domenicale',
+    'Il_Nostro_Ristorante' => 'Il Nostro Ristorante',
     
     // altre chiavi...
 ];

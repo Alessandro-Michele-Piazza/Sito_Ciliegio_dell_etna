@@ -29,6 +29,14 @@ body {
     --sb-size: 10px;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    /* Aiuta a contenere elementi assoluti */
+}
+
 h1,
 h2,
 h3,
@@ -631,18 +639,21 @@ body::-webkit-scrollbar-thumb {
 
 
 #il_mio_nome {
-    color: white; /* Imposti il colore base qui */
-    transition: color 0.3s ease; /* Opzionale: rende l'effetto più fluido */
+    color: white;
+    /* Imposti il colore base qui */
+    transition: color 0.3s ease;
+    /* Opzionale: rende l'effetto più fluido */
 }
 
 #il_mio_nome:hover {
     color: var(--verde_acceso);
 }
 
-#privacy_scritta
-{
-    color: white; /* Imposti il colore base qui */
-    transition: color 0.3s ease; /* Opzionale: rende l'effetto più fluido */
+#privacy_scritta {
+    color: white;
+    /* Imposti il colore base qui */
+    transition: color 0.3s ease;
+    /* Opzionale: rende l'effetto più fluido */
 }
 
 #privacy_scritta:hover {
@@ -650,10 +661,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-#cookie_scritta
-{
-    color: white; /* Imposti il colore base qui */
-    transition: color 0.3s ease; /* Opzionale: rende l'effetto più fluido */
+#cookie_scritta {
+    color: white;
+    /* Imposti il colore base qui */
+    transition: color 0.3s ease;
+    /* Opzionale: rende l'effetto più fluido */
 }
 
 #cookie_scritta:hover {

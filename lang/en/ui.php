@@ -108,7 +108,7 @@ return [
     'Scrivici' => 'Write to us',
     'whatsapp_text' => 'Hello! I would like to have more information',
     'Menu_domenicale' => 'Sunday Menu',
-
+    'Il_Nostro_Ristorante' => 'Our Restaurant',
     // other keys...
 
 

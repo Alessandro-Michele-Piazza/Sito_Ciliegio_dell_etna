@@ -107,6 +107,7 @@ return [
     'Visita' => 'Visita',
     'whatsapp_text' => '¡Hola! Me gustaría tener más información',
     'Menu_domenicale' => 'Menú Domenicale',
+    'Il_Nostro_Ristorante' => 'Nuestro Restaurante',
     // otras claves...
 
 ];

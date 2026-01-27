@@ -24,13 +24,20 @@
             <div class="col-lg-7 col-md-12 text-center text-lg-start">
                 <div class="content-wrapper">
                     <p class="descrizione-mission">
-                        {{ __('ui.il_nostro') }}<strong class="scritta_verde_medio">{{ __('ui.agriturismo_a_Giarre') }}</strong> {{ __('ui.storia_di_passione') }}<strong class="scritta_verde_medio"> Etna</strong>{{ __('ui.la_nostra_missione') }} <strong class="scritta_verde_medio">{{ __('ui.cucina_siciliana') }}</strong> {{ __('ui.antichi_ingredienti') }}
+                        {{ __('ui.il_nostro') }}<strong
+                            class="scritta_verde_medio">{{ __('ui.agriturismo_a_Giarre') }}</strong>
+                        {{ __('ui.storia_di_passione') }}<strong class="scritta_verde_medio">
+                            Etna</strong>{{ __('ui.la_nostra_missione') }} <strong
+                            class="scritta_verde_medio">{{ __('ui.cucina_siciliana') }}</strong>
+                        {{ __('ui.antichi_ingredienti') }}
                     </p>
                     <p class="descrizione-mission mt-4">
-                        <strong class="scritta_verde_medio"> {{ __('ui.ristorante') }}</strong> {{ __('ui.nella_nostra') }} <strong
+                        <strong class="scritta_verde_medio"> {{ __('ui.ristorante') }}</strong>
+                        {{ __('ui.nella_nostra') }} <strong
                             class="scritta_verde_medio">{{ __('ui.pizzeria') }}</strong>
-                        <strong class="scritta_verde_medio">{{ __('ui.prodotti_tipici') }}</strong> {{__('ui.km.0')}}
-                        <strong class="scritta_verde_medio">{{ __('ui.banchetti') }}</strong>{{__('ui.avvolti')}}
+                        <strong class="scritta_verde_medio">{{ __('ui.prodotti_tipici') }}</strong>
+                        {{ __('ui.km.0') }}
+                        <strong class="scritta_verde_medio">{{ __('ui.banchetti') }}</strong>{{ __('ui.avvolti') }}
                     </p>
                     <a href=" {{ route('contatti') }} " class="link-scopri mt-4 d-inline-block">
                         <span> {{ __('ui.contattaci') }}</span>
@@ -59,16 +66,18 @@
             <!-- COLONNA TESTO -->
             <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5  ">
                 <div>
-                    <h2 class="fw-bold mb-3"> {{ __('ui.Ristorante') }} <span class="scritta_verde_medio">&</span> {{ __('ui.Pizzeria') }}</h2>
+                    <h2 class="fw-bold mb-3"> {{ __('ui.Ristorante') }} <span class="scritta_verde_medio">&</span>
+                        {{ __('ui.Pizzeria') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
-                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">{{ __('ui.Tradizione_Vulcanica') }}</span>
+                    <span
+                        class="sub-label scritta_verde_medio d-block mb-2 fst-italic">{{ __('ui.Tradizione_Vulcanica') }}</span>
 
                     <p class="descrizione-scacchiera mb-4">
-                        {{__('ui.descrizione_scacchiera_1')}}
+                        {{ __('ui.descrizione_scacchiera_1') }}
                     </p>
 
                     <p class="testo-radici-sul-vulcano mb-5 fst-italic">
-                        "{{__('ui.descrizione_scacchiera_2')}}"
+                        "{{ __('ui.descrizione_scacchiera_2') }}"
                     </p>
 
                     <a href="{{ route('ristorante') }}" class="link-scopri">
@@ -84,17 +93,18 @@
 
     {{-- INIZIO QUARTA SECTION --}}
 
+    {{-- INIZIO QUARTA SECTION --}}
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"
         data-aos-once="true">
         <div class="row g-0 align-items-stretch">
 
-
-            <!-- COLONNA TESTO -->
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5  ">
+            <!-- COLONNA TESTO: diventa seconda su mobile (order-2) e torna prima su desktop (order-md-1) -->
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
                 <div>
                     <h2 class="fw-bold mb-3">Comfort <span class="scritta_verde_medio">&</span> Relax</h2>
                     <div class="divider-short mb-4 mt-0"></div>
-                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic"> {{ __('ui.Ospitalità_sicula') }} </span>
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">
+                        {{ __('ui.Ospitalità_sicula') }} </span>
 
                     <p class="descrizione-scacchiera mb-4">
                         {{ __('ui.descrizione_scacchiera_3') }}
@@ -111,13 +121,12 @@
                 </div>
             </div>
 
-            <!-- COLONNA IMMAGINE -->
-            <div class="col-12 col-md-7 h-scacchiera">
+            <!-- COLONNA IMMAGINE: diventa prima su mobile (order-1) e torna seconda su desktop (order-md-2) -->
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <img src="{{ asset('storage/media/foto(4).jpg') }}" alt="Ristorante" class="img-scacchiera-custom">
             </div>
         </div>
     </section>
-
     {{-- FINE QUARTA SECTION --}}
 
     <!-- COLONNA IMMAGINE PARALLASSE -->

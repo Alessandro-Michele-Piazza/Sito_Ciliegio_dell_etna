@@ -1,5 +1,5 @@
 <x-layout title="Menù Domenicale">
-    <x-header title="Tradizione ed Eleganza" />
+    <x-header title=" {{ __('ui.Menu_domenicale') }}  " />
 
     <div class="container">
         <div class="row justify-content-center">
