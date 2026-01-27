@@ -24,7 +24,7 @@
     width: fit-content;
     padding: 10px;
     border-radius: 10px;
-    margin-bottom: 10px !important; /* Distanza dal tasto quando si apre */
+    margin-bottom: 10px; /* Distanza dal tasto quando si apre */
 }
 
 /* Effetto hover bandiere */

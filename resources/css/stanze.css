@@ -41,7 +41,7 @@
 
     /* --- POSIZIONAMENTO LINEE ORIZZONTALI (Slide Principali) --- */
     #sezione-carosello-1 .pag-orizzontale-1 {
-      bottom: 20px !important;
+      bottom: 20px;
       /* Distanza dal bordo inferiore */
       left: 0;
       width: 100%;
@@ -59,9 +59,9 @@
 
     /* --- POSIZIONAMENTO LINEE VERTICALI (Slide Interne) --- */
     #sezione-carosello-1 .pag-verticale-1 {
-      right: 20px !important;
+      right: 20px ;
       /* Distanza dal bordo destro dello schermo */
-      left: auto !important;
+      left: auto ;
       top: 50%;
       transform: translateY(-50%);
       display: flex;
@@ -179,9 +179,9 @@
       }
 
       .border-divider {
-        border-right: none !important;
+        border-right: none ;
         border-bottom: 1px solid rgba(49, 73, 60, 0.1);
-        padding-bottom: 3rem !important;
+        padding-bottom: 3rem ;
       }
 
       .margin-left {
@@ -205,7 +205,7 @@
 
     @media (min-width: 768px) {
       .border-divider {
-        border-right: 1px solid rgba(49, 73, 60, 0.2) !important;
+        border-right: 1px solid rgba(49, 73, 60, 0.2);
         /* var(--verde_scuro) con trasparenza */
       }
     }
