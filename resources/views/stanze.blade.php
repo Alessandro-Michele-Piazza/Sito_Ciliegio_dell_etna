@@ -1,4 +1,4 @@
-<x-layout title="stanze">
+<x-layout title="camere">
 
     <div id="sezione-carosello-1" class="wrapper-carosello">
 

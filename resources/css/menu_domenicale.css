@@ -112,6 +112,26 @@
     border-radius: 15px;
 }
 
+.menu-image-side .carousel,
+.menu-image-side .carousel-inner,
+.menu-image-side .carousel-item {
+    height: 100%;
+}
+
+/* Applica le regole che avevi per img a tutte le immagini del carosello */
+.menu-image-side .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.menu-image-side .carousel-control-prev-icon,
+.menu-image-side .carousel-control-next-icon {
+    filter: invert(1);
+}
+
+
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .menu-image-side {

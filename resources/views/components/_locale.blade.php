@@ -2,8 +2,9 @@
     // Mapping dei codici lingua ai codici nazione per le bandiere
     $countryCode = [
         'it' => 'it',
-        'en' => 'gb', // 'gb' per la bandiera del Regno Unito
-        'es' => 'es'
+        'en' => 'gb', 
+        'es' => 'es',
+        'fr' => 'fr' 
     ][$lang] ?? $lang;
 @endphp
 

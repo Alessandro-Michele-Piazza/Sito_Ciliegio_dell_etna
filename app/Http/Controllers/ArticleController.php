@@ -60,31 +60,38 @@ class ArticleController extends Controller
         $article = Article::findOrFail(1);
 
         $request->validate([
-            'title'   => 'required|string|max:255',
-            'body'    => 'required',
-            'authors' => 'nullable|string',
-            'image'   => 'nullable|image|mimes:jpeg,png,jpg|max:2048' // Max 2MB
+            'title'           => 'required|string|max:255',
+            'body'            => 'required',
+            'authors'         => 'nullable|string',
+            'image'           => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            'image_secondary' => 'nullable|image|mimes:jpeg,png,jpg|max:2048' // Nuova validazione
         ]);
 
         $article->title = $request->title;
         $article->body = $request->body;
         $article->authors = $request->authors;
 
+        // Gestione Immagine 1 (Principale)
         if ($request->hasFile('image')) {
-            // Elimina la vecchia immagine se esiste
             if ($article->image) {
                 Storage::disk('public')->delete($article->image);
             }
-            // Salva la nuova foto nella cartella 'public/articles'
-            $path = $request->file('image')->store('articles', 'public');
-            $article->image = $path;
+            $article->image = $request->file('image')->store('articles', 'public');
+        }
+
+        // Gestione Immagine 2 (Secondaria)
+        if ($request->hasFile('image_secondary')) {
+            // Se l'admin carica una nuova immagine, eliminiamo quella vecchia dal server
+            if ($article->image_secondary) {
+                Storage::disk('public')->delete($article->image_secondary);
+            }
+            $article->image_secondary = $request->file('image_secondary')->store('articles', 'public');
         }
 
         $article->save();
 
         return redirect()->route('menu_domenicale')->with('success', 'Menù aggiornato!');
     }
-
     /**
      * Remove the specified resource from storage.
      */

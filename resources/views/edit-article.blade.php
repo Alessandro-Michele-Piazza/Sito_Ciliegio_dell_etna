@@ -13,17 +13,29 @@
                             @method('PUT')
 
                             <div class="row">
-                                <!-- Colonna Sinistra: Anteprima e Foto -->
+                                <!-- Colonna Sinistra: Anteprime e Foto -->
                                 <div class="col-md-5">
-                                    <label class="form-label">Immagine Attuale</label>
-                                    @if ($article->image)
-                                        <img src="{{ asset('storage/' . $article->image) }}" class="preview-img"
-                                            alt="Anteprima">
-                                    @endif
+                                    <!-- Gestione Prima Immagine -->
+                                    <div class="mb-4 border-bottom pb-3">
+                                        <label class="form-label">Immagine Principale</label>
+                                        @if ($article->image)
+                                            <img src="{{ asset('storage/' . $article->image) }}" class="preview-img"
+                                                alt="Anteprima 1">
+                                        @endif
+                                        <input type="file" name="image" class="form-control">
+                                    </div>
 
-                                    <label class="form-label">Sostituisci Immagine</label>
-                                    <input type="file" name="image" class="form-control">
-                                    <small class="text-muted">Formati: JPG, PNG. Max 2MB.</small>
+                                    <!-- Gestione Seconda Immagine -->
+                                    <div class="mb-3">
+                                        <label class="form-label">Seconda Immagine (Carosello)</label>
+                                        @if ($article->image_secondary)
+                                            <img src="{{ asset('storage/' . $article->image_secondary) }}"
+                                                class="preview-img" alt="Anteprima 2">
+                                        @endif
+                                        <input type="file" name="image_secondary" class="form-control">
+                                        <small class="text-muted">Carica un file per attivare lo scorrimento nel
+                                            menù.</small>
+                                    </div>
                                 </div>
 
                                 <!-- Colonna Destra: Testi -->
@@ -31,8 +43,6 @@
                                     <div class="mb-3">
                                         <label class="form-label">Titolo del Menù</label>
                                         <textarea name="title" class="form-control" rows="2" required>{{ $article->title }}</textarea>
-                                        <small class="text-muted">Premi INVIO per scrivere la data sotto il
-                                            titolo.</small>
                                     </div>
 
                                     <div class="mb-3">

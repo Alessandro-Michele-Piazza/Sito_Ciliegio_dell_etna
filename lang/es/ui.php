@@ -34,7 +34,7 @@ return [
     'nella_nostra' => ' y en nuestra ',
     'pizzeria' => 'pizzería',
     'prodotti_tipici' => 'productos típicos',
-    'km.0' => ' de kilómetro cero se convierten en los protagonistas: desde las verduras de nuestro huerto hasta las harinas selectas. Somos el marco ideal para celebrar sus ',
+    'km.0' => ' de km.0 se convierten en los protagonistas: desde las verduras de nuestro huerto hasta las harinas selectas. Somos el marco ideal para celebrar sus ',
     'banchetti' => 'banquetes',
     'avvolti' => ', envueltos por el encanto único de la tierra volcánica.',
     'contattaci' => 'Contáctanos',

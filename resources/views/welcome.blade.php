@@ -32,7 +32,7 @@
                         {{ __('ui.antichi_ingredienti') }}
                     </p>
                     <p class="descrizione-mission mt-4">
-                        <strong class="scritta_verde_medio"> {{ __('ui.ristorante') }}</strong>
+                        <strong class="scritta_verde_medio"> {{ __('ui.Ristorante') }}</strong>
                         {{ __('ui.nella_nostra') }} <strong
                             class="scritta_verde_medio">{{ __('ui.pizzeria') }}</strong>
                         <strong class="scritta_verde_medio">{{ __('ui.prodotti_tipici') }}</strong>

@@ -7,10 +7,40 @@
 
                 <div class="menu-wrapper">
                     <div class="row g-0">
-                        <!-- COLONNA SINISTRA: IMMAGINE (Senza stile in linea) -->
+                        <!-- COLONNA SINISTRA: CAROSELLO -->
                         <div class="col-md-6 menu-image-side">
-                            <img src="{{ $article->image ? asset('storage/' . $article->image) : 'https://via.placeholder.com/800x1000?text=Il+Ciliegio+dell+Etna' }}"
-                                alt="Immagine Menù Domenicale">
+                            <div id="carouselMenu" class="carousel slide h-100" data-bs-ride="carousel">
+
+                                <div class="carousel-inner h-100">
+                                    <!-- Prima Immagine -->
+                                    <div class="carousel-item active h-100">
+                                        <img src="{{ $article->image ? asset('storage/' . $article->image) : 'https://via.placeholder.com/800x1000?text=Il+Ciliegio+dell+Etna' }}"
+                                            alt="Immagine Menù 1">
+                                    </div>
+
+                                    <!-- Seconda Immagine (Condizionale) -->
+                                    @if ($article->image_secondary)
+                                        <div class="carousel-item h-100">
+                                            <img src="{{ asset('storage/' . $article->image_secondary) }}"
+                                                alt="Immagine Menù 2">
+                                        </div>
+                                    @endif
+                                </div>
+
+                                <!-- Controlli Carosello: visibili solo se esiste la seconda immagine -->
+                                @if ($article->image_secondary)
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu"
+                                        data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Precedente</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu"
+                                        data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Successiva</span>
+                                    </button>
+                                @endif
+                            </div>
                         </div>
 
                         <!-- COLONNA DESTRA: CONTENUTO -->

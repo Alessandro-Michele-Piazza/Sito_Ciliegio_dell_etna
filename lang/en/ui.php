@@ -33,7 +33,7 @@ return [
     'nella_nostra' => ' and in our ',
     'pizzeria' => 'pizzeria',
     'prodotti_tipici' => 'typical products',
-    'km.0' => ' of zero kilometer become the protagonists: from the vegetables of our garden to the finest flours. We are the ideal setting to celebrate your ',
+    'km.0' => ' of km.0 become the protagonists: from the vegetables of our garden to the finest flours. We are the ideal setting to celebrate your ',
     'banchetti' => 'banquets',
     'avvolti' => ', wrapped in the unique charm of the volcanic land.',
     'contattaci' => 'Contact us',

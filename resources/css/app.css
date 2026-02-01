@@ -656,10 +656,17 @@ body::-webkit-scrollbar-thumb {
     /* Opzionale: rende l'effetto più fluido */
 }
 
+#indicazione_mappa_footer:hover{
+ color: var(--verde_acceso);
+}
+
 #privacy_scritta:hover {
     color: var(--verde_acceso);
 }
 
+#contatti:hover {
+    color: var(--verde_acceso);
+}
 
 #cookie_scritta {
     color: white;
