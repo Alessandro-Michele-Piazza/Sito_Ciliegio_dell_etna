@@ -1,0 +1,158 @@
+/* 1. VARIABILI */
+:root {
+    --rosso_ciliegia: #DE0722;
+    --rosso_ombra: #a00518;
+}
+
+/* 2. ELEVAZIONE CARD */
+#blog-container-main .transition-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#blog-container-main .transition-hover:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 3. IL PULSANTE (CORRETTO) */
+#blog-container-main .btn-peel-cherry {
+    position: relative;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 0.6rem 1.4rem;
+    background-color: var(--rosso_ciliegia);
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5em;
+    /* Curvatura del bottone */
+    color: #ffffff;
+    box-shadow: 0.4em 0.4em 0.5em rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    z-index: 1;
+    overflow: hidden;
+    /* Taglia tutto ciò che esce dai bordi arrotondati */
+}
+
+/* 4. L'EFFETTO PIEGA (CORRETTO PER ELIMINARE L'ARTEFATTO) */
+#blog-container-main .btn-peel-cherry::before {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+
+    /* SPOSTAMENTO DI 1PX PER COPRIRE IL BORDO */
+    top: -1px;
+    left: -1px;
+
+    /* DEVE AVERE LA STESSA CURVATURA DEL PADRE IN ALTO A SINISTRA */
+    border-top-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+
+    background: linear-gradient(135deg,
+            #ffffff 0%,
+            #ffffff 50%,
+            var(--rosso_ombra) 50%,
+            var(--rosso_ciliegia) 65%);
+
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+
+/* 5. ANIMAZIONI */
+#blog-container-main .btn-peel-cherry:hover::before {
+    width: 1.8em;
+    height: 1.8em;
+}
+
+#blog-container-main .btn-peel-cherry:hover {
+    box-shadow: 0.5em 0.5em 0.8em rgba(0, 0, 0, 0.2);
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#blog-container-main .btn-peel-cherry:active {
+    box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.2);
+    transform: translate(0.1em, 0.1em);
+}
+
+/* PULSANTE PER TORNARE INDIETRO */
+
+/* Pulsante Torna al Blog Moderno */
+.btn-modern-back {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.6rem 1.4rem;
+    background-color: #ffffff;
+    color: #333;
+    border: 2px solid #e0e0e0;
+    border-radius: 50px;
+    /* Forma a pillola molto moderna */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.btn-modern-back i {
+    transition: transform 0.3s ease;
+    color: var(--rosso_ciliegia);
+    /* La freccia richiama il tema */
+}
+
+/* Effetto Hover */
+.btn-modern-back:hover {
+    background-color: #fcfcfc;
+    border-color: var(--rosso_ciliegia);
+    color: var(--rosso_ciliegia);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+}
+
+/* Micro-interazione: la freccia si muove a sinistra */
+.btn-modern-back:hover i {
+    transform: translateX(-5px);
+}
+
+/* Effetto al click */
+.btn-modern-back:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* ICONE SOCIAL REALISTICHE */
+
+/* Colori Social Ufficiali */
+.share-icon {
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    display: inline-block;
+}
+
+.share-icon:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+/* Facebook: Blu ufficiale */
+.brand-facebook {
+    color: #1877F2;
+}
+
+/* WhatsApp: Verde ufficiale */
+.brand-whatsapp {
+    color: #25D366;
+}
+
+/* Telegram: Azzurro ufficiale */
+.brand-telegram {
+    color: #0088cc;
+}
+
+/* Instagram: Effetto Gradiente Originale */
+.brand-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}

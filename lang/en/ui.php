@@ -109,6 +109,15 @@ return [
     'whatsapp_text' => 'Hello! I would like to have more information',
     'Menu_domenicale' => 'Sunday Menu',
     'Il_Nostro_Ristorante' => 'Our Restaurant',
+    'Piatti_Tipici' => 'Typical Dishes',
+    'Descrizione' => 'Description',
+    'Vedi_il_nostro_menu' => 'See our menu',
+    'Il_Nostro_Ristorante' => 'Our Restaurant',
+    'Ultimi_Articoli'=> 'Latest Articles',
+    'Leggi_di_più' => 'Read more',
+    'Torna_al_Blog' => 'Back to Blog',
+    'Pubblicato_il' => 'Published on',
+    'Tempo_di_lettura' => 'Reading time:',
     // other keys...
 
 

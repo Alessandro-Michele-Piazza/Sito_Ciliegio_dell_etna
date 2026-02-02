@@ -97,6 +97,11 @@ return [
     'whatsapp_text' => 'Ciao! Vorrei avere maggiori informazioni',
     'Menu_domenicale'=> 'Menù Domenicale',
     'Il_Nostro_Ristorante' => 'Il Nostro Ristorante',
+    'Ultimi_Articoli' => 'Ultimi Articoli',
+    'Leggi_di_più' => 'Leggi di più',
+    'Torna_al_Blog' => 'Torna al Blog',
+    'Pubblicato_il' => 'Pubblicato il',
+    'Tempo_di_lettura' => 'Tempo di lettura:',
     
     // altre chiavi...
 ];

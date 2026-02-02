@@ -108,6 +108,15 @@ return [
     'whatsapp_text' => '¡Hola! Me gustaría tener más información',
     'Menu_domenicale' => 'Menú Domenicale',
     'Il_Nostro_Ristorante' => 'Nuestro Restaurante',
+    'Piatti_Tipici' => 'Platos Típicos',
+    'Descrizione' => 'Descripción',
+    'Vedi_il_nostro_menu' => 'Ver nuestro menú',
+    'Il_Nostro_Ristorante' => 'Nuestro Restaurante',
+    'Ultimi_Articoli'=> 'Derniers Articles',
+    'Leggi_di_più' => 'Lire plus',
+    'Torna_al_Blog' => 'Retour au Blog',
+    'Pubblicato_il' => 'Publiqué il',
+    'Tempo_di_lettura' => 'Temps de lecture:',
     // otras claves...
 
 ];

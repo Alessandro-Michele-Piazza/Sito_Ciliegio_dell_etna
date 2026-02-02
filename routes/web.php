@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PostController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
@@ -26,4 +27,20 @@ Route::post('/area-segreta-registrazione-123', [Laravel\Fortify\Http\Controllers
 Route::middleware(['auth'])->group(function () {
     Route::get('/menu-domenicale/modifica', [ArticleController::class, 'edit'])->name('menu.edit');
     Route::put('/menu-domenicale/aggiorna', [ArticleController::class, 'update'])->name('menu.update');
+});
+
+
+//ROTTE PER IL BLOG
+
+// Rotte PUBBLICHE (Tutti possono vedere la lista e il dettaglio)
+Route::get('/blog', [PostController::class, 'index'])->name('blog.index');
+Route::get('/blog/articolo/{blog}', [PostController::class, 'show'])->name('blog.show');
+
+// Rotte PROTETTE (Solo chi è loggato con Fortify può creare, modificare o eliminare)
+Route::middleware(['auth'])->group(function () {
+    Route::get('/blog/crea', [PostController::class, 'create'])->name('blog.create');
+    Route::post('/blog/salva', [PostController::class, 'store'])->name('blog.store');
+    Route::get('/blog/modifica/{blog}', [PostController::class, 'edit'])->name('blog.edit');
+    Route::put('/blog/aggiorna/{blog}', [PostController::class, 'update'])->name('blog.update');
+    Route::delete('/blog/elimina/{blog}', [PostController::class, 'destroy'])->name('blog.destroy');
 });

@@ -23,13 +23,21 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     {{-- FINE CAROSELLO --}}
 
+    {{-- PARTE NECESSARIA PER LA CONDIVISIONE BLOG --}}
+    <meta property="og:title" content="{{ $post->title ?? 'Il Ciliegio dell\'Etna' }}">
+    <meta property="og:description" content="{{ Str::limit($post->content ?? '', 150) }}">
+    <meta property="og:image"
+        content="{{ isset($post->image) ? asset('storage/' . $post->image) : asset('default-image.jpg') }}">
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:type" content="article">
+
 
 </head>
 
 <body class="w-100">
     <x-navbar />
 
-     
+
 
     <div>
 
@@ -39,7 +47,7 @@
     <x-footer />
 
     <div class="whatsapp-container">
-        <span class="whatsapp-text">  {{ __('ui.whatsapp_text') }}</span>
+        <span class="whatsapp-text"> {{ __('ui.whatsapp_text') }}</span>
         <a href="https://wa.me/3911686078?text=Ciao!%20Vorrei%20ricevere%20informazioni" class="whatsapp-btn"
             target="_blank">
             <i class="fa-brands fa-whatsapp"></i>

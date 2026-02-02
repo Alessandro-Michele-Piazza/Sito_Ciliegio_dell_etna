@@ -34,6 +34,7 @@
                             <li><a class="dropdown-item" href="#">{{ __('ui.Corsi_di_pizzeria') }}</a></li>
                             <li><a class="dropdown-item" href="#"> {{ __('ui.Corsi_di_panificazione') }} </a></li>
                             <li><a class="dropdown-item" href="#"> {{ __('ui.Wine_Tour') }} </a></li>
+                            <li><a class="dropdown-item" href="#"> Catering </a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#"> {{ __('ui.Esperienze') }} </a></li>
@@ -41,10 +42,11 @@
                             href="{{ route('ristorante') }}">{{ __('ui.Ristorante') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('pizzeria') }}"> {{ __('ui.Pizzeria') }}
                         </a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"> {{ __('ui.Prodotti_Tipici') }} </a></li>
-                    <li class="nav-item"><a class="nav-link" href=" {{ route('menu_domenicale') }} "> {{ __('ui.Menu_domenicale') }} </a></li>
+                    {{-- <li class="nav-item"><a class="nav-link" href="#"> {{ __('ui.Prodotti_Tipici') }} </a></li> --}}
+                    <li class="nav-item"><a class="nav-link" href=" {{ route('menu_domenicale') }} ">
+                            {{ __('ui.Menu_domenicale') }} </a></li>
 
-                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{{ route('blog.index') }}">Blog</a></li>
                     <li class="nav-item"><a class="nav-link"
                             href="{{ route('contatti') }}">{{ __('ui.Contatti') }}</a></li>
                     {{-- 
@@ -57,9 +59,20 @@
                     </form>
 
                     @auth
-
-
                         <!-- Visibile solo se l'utente È loggato -->
+
+                        <!-- Il form nascosto che esegue effettivamente la richiesta POST di logout -->
+                        <form action="{{ route('logout') }}" method="POST" id="form-logout" class="d-none">
+                            @csrf
+                        </form>
+
+                        <li class="nav-item">
+                            <a class="nav-link {{ request()->routeIs('blog.create') ? 'active fw-bold text-primary' : '' }}"
+                                href="{{ route('blog.create') }}">
+                                <i class="fas fa-plus-circle me-1"></i> Nuovo Articolo
+                            </a>
+                        </li>
+
                         <li>
                             <a class="dropdown-item bg-dark text-white" href="#"
                                 onclick="event.preventDefault(); document.getElementById('form-logout').submit();">
@@ -67,10 +80,6 @@
                             </a>
                         </li>
 
-                        <!-- Il form nascosto che esegue effettivamente la richiesta POST di logout -->
-                        <form action="{{ route('logout') }}" method="POST" id="form-logout" class="d-none">
-                            @csrf
-                        </form>
                     @endauth
 
                 </ul>

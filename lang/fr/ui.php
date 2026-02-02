@@ -95,4 +95,9 @@ return [
     'Errore_invio' => "Erreur d'envoi, veuillez réessayer plus tard",
     'whatsapp_text' => "Bonjour ! J'aimerais avoir plus d'informations",
     'Menu_domenicale' => 'Menu du Dimanche',
+    'Ultimi_Articoli' => 'Derniers Articles',
+    'Leggi_di_più' => 'Lire plus',
+    'Torna_al_Blog' => 'Retour au Blog',
+    'Pubblicato_il' => 'Publiqué il',
+    'Tempo_di_lettura' => 'Temps de lecture:',
 ];
