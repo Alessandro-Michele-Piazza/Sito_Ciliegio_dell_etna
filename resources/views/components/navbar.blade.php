@@ -11,7 +11,10 @@
 
             <!-- Destra: Bottone + Hamburger -->
             <div class="d-flex align-items-center">
-                <a class="btn btn-prenota me-3" href="#">{{ __('ui.Prenota_ora') }}</a>
+                <a class="btn btn-prenota me-3"
+                    href="https://ilciliegiodelletna.beddy.io?lang={{ app()->getLocale() }}">
+                    {{ __('ui.Prenota_ora') }}
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
