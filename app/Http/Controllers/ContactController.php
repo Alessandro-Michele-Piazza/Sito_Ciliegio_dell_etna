@@ -23,18 +23,12 @@ class ContactController extends Controller
             "Messaggio:\n" . $request->message;
 
         Mail::raw($content, function ($message) use ($request) {
-            $message->to('alexpiazza98@gmail.com') // Dove ricevi la mail
-                // Imposta te stesso come mittente per evitare blocchi
-                ->from('alexpiazza98@gmail.com', 'Sito Ciliegio dell\'Etna')
-
-                // FONDAMENTALE: Se rispondi alla mail, risponderai all'utente!
-                ->replyTo($request->email, $request->name)
-
-                // Cambia l'oggetto rendendolo dinamico (così Gmail non raggruppa le mail)
-                ->subject('Nuovo Contatto da: ' . $request->name . ' - ' . now()->format('H:i'));
+            $message->to('info@ilciliegiodelletna.it') // Dove vuoi RICEVERE il messaggio
+                ->from(config('mail.from.address'), config('mail.from.name')) // Invia tramite Gmail
+                ->replyTo($request->email, $request->name) // Se rispondi, rispondi all'utente
+                ->subject('Nuovo Contatto: ' . $request->name);
         });
 
-        // 4. Torna indietro con messaggio di successo
         return back()->with('success', 'Grazie! Il tuo messaggio è stato inviato correttamente.');
     }
 }

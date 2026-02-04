@@ -48,7 +48,7 @@
 
     <div class="whatsapp-container">
         <span class="whatsapp-text"> {{ __('ui.whatsapp_text') }}</span>
-        <a href="https://wa.me/3911686078?text=Ciao!%20Vorrei%20ricevere%20informazioni" class="whatsapp-btn"
+        <a href="https://wa.me/39095969109?text=Ciao!%20Vorrei%20ricevere%20informazioni" class="whatsapp-btn"
             target="_blank">
             <i class="fa-brands fa-whatsapp"></i>
         </a>
