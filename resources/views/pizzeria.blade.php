@@ -21,12 +21,13 @@
                     <!-- Paragrafo Descrittivo -->
                     <p class="mb-0 scritta_verde_scuro mb-4">
                         {{ __('ui.Pizzeria_Descrizione') }}
-                     </p>
+                    </p>
 
-                    <a href=" " class="link-scopri">
-                        <span> {{ __('ui.Vedi_il_nostro_menu') }} </span>
+                    <a href="{{ route('apri_menu_diretto') }}" class="link-scopri" target="_blank">
+                        <span>{{ __('ui.Vedi_il_nostro_menu') }}</span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>
+
                 </div>
 
                 <!-- Immagine piccola in basso a sinistra -->
@@ -45,5 +46,12 @@
 
         </div>
     </div>
+
+    {{-- Pulsante Modifica Flottante --}}
+    @auth
+        <a href="{{ route('menu_pizzeria_edit') }}" class="btn btn-warning edit-fab shadow">
+            🔧 MODIFICA MENÙ
+        </a>
+    @endauth
 
 </x-layout>

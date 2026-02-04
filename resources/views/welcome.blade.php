@@ -134,8 +134,9 @@
     {{-- INIZIO CAROSELLO --}}
 
     <div
-        class="container-fluid altezza-div-carosello d-flex align-items-evenly justify-content-center larghezza-custom position-relative">
-        <div class="swiper mySwiper px-3 margin-top-reviews">
+        class="container-fluid altezza-div-carosello d-flex align-items-evenly justify-content-center larghezza-custom position-relative ">
+        <div class="swiper mySwiper px-3 margin-top-reviews " data-aos="fade-down" data-aos-duration="1500"
+            data-aos-easing="ease-in-out" data-aos-once="true">
             <div class="swiper-wrapper ">
 
                 <!-- Slide 1 -->
@@ -258,8 +259,10 @@
             </div>
         </div>
 
-        <div class="swiper-button-next " id="button-next"> </div>
-        <div class="swiper-button-prev" id="button-prev"></div>
+        <div class="swiper-button-next " id="button-next" data-aos="fade-left" data-aos-duration="1500"
+            data-aos-once="true"> </div>
+        <div class="swiper-button-prev" id="button-prev" data-aos="fade-right" data-aos-duration="1500"
+            data-aos-once="true"></div>
 
         {{-- FINE CAROSELLO --}}
     </div>

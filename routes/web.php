@@ -5,6 +5,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\MenuPizzeriaController;
 
 Route::get('/', [PublicController::class, 'home'])->name("home");
 Route::get('/contatti', [PublicController::class, 'contatti'])->name("contatti");
@@ -44,3 +45,19 @@ Route::middleware(['auth'])->group(function () {
     Route::put('/blog/aggiorna/{blog}', [PostController::class, 'update'])->name('blog.update');
     Route::delete('/blog/elimina/{blog}', [PostController::class, 'destroy'])->name('blog.destroy');
 });
+
+//ROTTE PIZZERIA
+
+// Area riservata (Admin) - protetta dal middleware di Fortify
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/menu-pizzeria/edit', [MenuPizzeriaController::class, 'edit'])->name('menu_pizzeria_edit');
+    Route::post('/admin/menu-pizzeria/update', [MenuPizzeriaController::class, 'update'])->name('menu_pizzeria_update');
+});
+
+Route::get('/apri-menu-pdf', function () {
+    $menu = \App\Models\MenuPizzeria::first();
+    if ($menu) {
+        return redirect(asset('storage/' . $menu->pdf_path));
+    }
+    return redirect()->back()->with('error', 'Menu non trovato');
+})->name('apri_menu_diretto');

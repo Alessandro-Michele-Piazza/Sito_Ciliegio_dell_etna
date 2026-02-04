@@ -64,7 +64,7 @@
                                 <button type="submit" class="btn btn-success btn-lg px-5 rounded-pill">
                                     🚀 PUBBLICA AGGIORNAMENTO
                                 </button>
-                                <a href="{{ route('menu_domenicale') }}"
+                                <a href="{{ route('pizzeria') }}"
                                     class="btn btn-outline-secondary btn-lg px-5 rounded-pill">
                                     Annulla
                                 </a>

@@ -658,7 +658,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #indicazione_mappa_footer:hover{
- color: var(--verde_acceso);
+ color: var(--rosso_ciliegia);
 }
 
 #privacy_scritta:hover {
