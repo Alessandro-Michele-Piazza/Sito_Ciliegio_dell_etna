@@ -309,6 +309,8 @@ body::-webkit-scrollbar-thumb {
 
 }
 
+
+
 .div-scacchiera h2 {
     font-size: clamp(1.8rem, 4vw, 2.8rem);
     color: var(--verde_scurissimo);
@@ -654,11 +656,17 @@ body::-webkit-scrollbar-thumb {
     color: white;
     /* Imposti il colore base qui */
     transition: color 0.3s ease;
+
     /* Opzionale: rende l'effetto più fluido */
 }
 
-#indicazione_mappa_footer:hover{
- color: var(--rosso_ciliegia);
+#indicazione_mappa_footer {
+    transition: 0.3s ease;
+}
+
+#indicazione_mappa_footer:hover {
+    padding-left: 8px;
+    color: var(--rosso_ciliegia);
 }
 
 #privacy_scritta:hover {
@@ -796,6 +804,11 @@ body::-webkit-scrollbar-thumb {
         height: 50px;
         font-size: 28px;
     }
+
+    .review-text {
+        font-size: 0.70rem;
+        line-height: 1.6;
+    }
 }
 
 @media (min-width: 768px) {
@@ -817,14 +830,14 @@ body::-webkit-scrollbar-thumb {
 /* Tablet */
 @media (min-width: 768px) and (max-width: 1023px) {
     .review-card {
-        height: 45vh;
+        height: 30vh;
     }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
     .review-card {
-        height: 50vh;
+        height: 45vh;
     }
 }
 

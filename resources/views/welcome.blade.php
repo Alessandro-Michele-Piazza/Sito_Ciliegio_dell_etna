@@ -59,8 +59,14 @@
         <div class="row g-0 align-items-stretch">
             <!-- COLONNA IMMAGINE -->
             <div class="col-12 col-md-7 h-scacchiera">
-                <img src="{{ asset('storage/media/foto(5).jpg') }}" alt="Ristorante" class="img-scacchiera-custom"
-                    id="img-scacchiera">
+                <picture>
+                    <!-- Immagine per Mobile (schermi fino a 767px) -->
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto(5).jpg') }}"
+                        class="w-full h-screen object-cover">
+                    <!-- Immagine per Desktop (default) -->
+                    <img src="{{ asset('storage/media/foto_pc(5).jpg') }}" class=" img-scacchiera-custom"
+                        alt="Stanza 1">
+                </picture>
             </div>
 
             <!-- COLONNA TESTO -->
@@ -94,7 +100,7 @@
     {{-- INIZIO QUARTA SECTION --}}
 
     {{-- INIZIO QUARTA SECTION --}}
-    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left" data-aos-duration="1500"
         data-aos-once="true">
         <div class="row g-0 align-items-stretch">
 
@@ -123,7 +129,14 @@
 
             <!-- COLONNA IMMAGINE: diventa prima su mobile (order-1) e torna seconda su desktop (order-md-2) -->
             <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
-                <img src="{{ asset('storage/media/foto(4).jpg') }}" alt="Ristorante" class="img-scacchiera-custom">
+                <picture>
+                    <!-- Immagine per Mobile (schermi fino a 767px) -->
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto_telefono(12).jpg') }}"
+                        class="w-full h-screen object-cover">
+                    <!-- Immagine per Desktop (default) -->
+                    <img src="{{ asset('storage/media/foto(12).jpg') }}" class=" img-scacchiera-custom"
+                        alt="Stanza 1">
+                </picture>
             </div>
         </div>
     </section>

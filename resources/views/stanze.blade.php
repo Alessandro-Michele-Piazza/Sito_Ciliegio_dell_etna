@@ -10,12 +10,38 @@
                 <div class="swiper-slide">
                     <div class="swiper swiper-verticale-1">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="{{ asset('storage/media/foto(1).jpg') }}" alt="Stanza 1">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <picture>
+                                    <!-- Immagine per Mobile (schermi fino a 767px) -->
+                                    <source media="(max-width: 767px)"
+                                        srcset="{{ asset('storage/media/foto_telefono(9).jpg') }}"
+                                        class="w-full h-screen object-cover">
+                                    <!-- Immagine per Desktop (default) -->
+                                    <img src="{{ asset('storage/media/foto(9).jpg') }}" class="img_carosello_stanza"
+                                        alt="Stanza 1">
+                                </picture>
                             </div>
-                            <div class="swiper-slide"><img src="{{ asset('storage/media/foto(2).jpg') }}"
-                                    alt="Stanza 2"></div>
-                            <div class="swiper-slide"><img src="{{ asset('storage/media/foto(4).jpg') }}"
-                                    alt="Stanza 3"></div>
+
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="{{ asset('storage/media/foto_telefono(10).jpg') }}">
+                                    <img src="{{ asset('storage/media/foto(10).jpg') }}" class="img_carosello_stanza"
+                                        alt="Stanza 2">
+                                </picture>
+                            </div>
+
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <picture>
+                                    <source media="(max-width: 767px)"
+                                        srcset="{{ asset('storage/media/foto_telefono(11).jpg') }}">
+                                    <img src="{{ asset('storage/media/foto(11).jpg') }}" class="img_carosello_stanza"
+                                        alt="Stanza 3">
+                                </picture>
+                            </div>
                         </div>
                         <!-- Pagination Verticale (Linee a destra) -->
                         <div class="swiper-pagination pag-verticale-1"></div>
@@ -44,8 +70,13 @@
         <div class="row g-0 align-items-stretch">
             <!-- COLONNA IMMAGINE -->
             <div class="col-12 col-md-7 h-scacchiera">
-                <img src="{{ asset('storage/media/foto(2).jpg') }}" alt="Ristorante" class="img-scacchiera-custom"
-                    id="img-scacchiera">
+                <picture>
+                    <!-- Immagine per Mobile (schermi fino a 767px) -->
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto_telefono(12).jpg') }}"
+                        class="w-full h-screen object-cover">
+                    <!-- Immagine per Desktop (default) -->
+                    <img src="{{ asset('storage/media/foto(12).jpg') }}" class=" img-scacchiera-custom" alt="Stanza 1">
+                </picture>
             </div>
 
             <!-- COLONNA TESTO -->
@@ -144,8 +175,13 @@
             <!-- COLONNA IMMAGINE: Ho aggiunto order-1 (prima su mobile) e order-md-2 (torna seconda su PC) -->
             <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <!-- Alt tag ottimizzato SEO -->
-                <img src="{{ asset('storage/media/foto(4).jpg') }}"
-                    alt="Camera tripla spaziosa per famiglie al Ciliegio dell'Etna" class="img-scacchiera-custom">
+                <picture>
+                    <!-- Immagine per Mobile (schermi fino a 767px) -->
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/tripla_telefono.jpg') }}"
+                        class="w-full h-screen object-cover">
+                    <!-- Immagine per Desktop (default) -->
+                    <img src="{{ asset('storage/media/tripla.jpg') }}" class=" img-scacchiera-custom" alt="Stanza 1">
+                </picture>
             </div>
         </div>
     </section>
@@ -158,9 +194,14 @@
             <!-- COLONNA IMMAGINE -->
             <div class="col-12 col-md-7 h-scacchiera">
                 <!-- Alt tag ottimizzato per SEO: focus su Famiglie e Suite -->
-                <img src="{{ asset('storage/media/foto(2).jpg') }}"
-                    alt="Camere Quadruple Family Suite per famiglie al Ciliegio dell'Etna" class="img-scacchiera-custom"
-                    id="img-scacchiera">
+                <picture>
+                    <!-- Immagine per Mobile (schermi fino a 767px) -->
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/quadrupla_telefono.jpg') }}"
+                        class="w-full h-screen object-cover">
+                    <!-- Immagine per Desktop (default) -->
+                    <img src="{{ asset('storage/media/quadrupla.jpg') }}" class=" img-scacchiera-custom"
+                        alt="Stanza 1">
+                </picture>
             </div>
 
             <!-- COLONNA TESTO -->

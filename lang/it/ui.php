@@ -59,7 +59,7 @@ return [
     'Ampiezza_e_Comfort' => 'Ampiezza e comfort per i vostri momenti condivisi.',
     'Camere_Triple_Descrizione' => "Le nostre camere triple sono ideali per famiglie e piccoli gruppi che non vogliono rinunciare allo stile. Ogni camera è dotata di un letto matrimoniale e un letto singolo, offrendo il giusto equilibrio tra privacy e convivialità. Gli spazi ben distribuiti e l’uso di materiali naturali creano un ambiente accogliente, perfetto per rigenerarsi dopo un’escursione sui sentieri dell’Etna.",
     'Accesso_Disabili' => 'Accesso Disabili',
-    'Quadrupla' => 'Quadrupla Family Suite',
+    'Quadrupla' => 'Quadruple Family Suite',
     'Camere_Quadruple_Descrizione' => "Pensate per famiglie o gruppi di amici, le nostre camere quadruple bilocali offrono ambienti ampi e confortevoli. La camera è climatizzata, dotata di due televisori, un letto matrimoniale e due letti singoli, con una piacevole vista mare. Il design richiama i colori e i materiali del territorio etneo, garantendo a ogni ospite il proprio spazio di benessere, in un’atmosfera accogliente e conviviale.",
     'Spazio_e_armonia' => 'Spazio e armonia per i vostri momenti più preziosi.',
     'Pizzeria_Descrizione' => "Le nostre pizze sono preparate con ingredienti locali a km 0, seguendo la tradizione siciliana. Ogni impasto è lievitato naturalmente  48h per garantire una qualità superiore e un sapore autentico della tradizione etnea. Uno dei piatti più scelti per cenare nella nostra terrazza estiva con vista sulla costa ionica e su Giarre.",
