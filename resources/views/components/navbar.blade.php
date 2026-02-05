@@ -40,7 +40,7 @@
                             <li><a class="dropdown-item" href="#"> Catering </a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="nav-link" href="#"> {{ __('ui.Esperienze') }} </a></li>
+                    <li class="nav-item"><a class="nav-link" href=" {{ route('esperienze') }} "> {{ __('ui.Esperienze') }} </a></li>
                     <li class="nav-item"><a class="nav-link"
                             href="{{ route('ristorante') }}">{{ __('ui.Ristorante') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('pizzeria') }}"> {{ __('ui.Pizzeria') }}

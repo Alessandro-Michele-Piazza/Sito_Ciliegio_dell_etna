@@ -100,4 +100,13 @@ return [
     'Torna_al_Blog' => 'Retour au Blog',
     'Pubblicato_il' => 'Publiqué il',
     'Tempo_di_lettura' => 'Temps de lecture:',
+    'Etna_tour_escursioni' => "Excursions sur l'Etna",
+    'Sottotitolo_Escursioni' => 'Naturaleza, volcanes, emociones',
+    'Torna_al_blog' => 'Retour au Blog',
+    'Pubblicato_il' => 'Publiqué il',
+    'Tempo_di_lettura' => 'Temps de lecture:',
+    'Etna_tour_escursioni' => "Excursions sur l'Etna",
+    'Sottotitolo_Escursioni' => 'Naturaleza, volcanes, emociones',
+    'Escursioni_etna_descrizione'=>"Vivez une randonnée inoubliable sur l'Etna. Nous proposons des trekkings guidés avec départ depuis votre hôtel vers le Parc de l'Etna. Découvrez la nature de la Sicile avec des guides experts : plus de 44 cratères, des grottes de lave, des minéraux rares et des plantes endémiques uniques. Un tour au cœur de paysages volcaniques à couper le souffle."
+    
 ];

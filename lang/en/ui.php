@@ -118,6 +118,9 @@ return [
     'Torna_al_Blog' => 'Back to Blog',
     'Pubblicato_il' => 'Published on',
     'Tempo_di_lettura' => 'Reading time:',
+    'Etna_tour_escursioni' => 'Etna Tour Excursions',
+    'Sottotitolo_Escursioni' => 'Nature, volcanoes, emotions',
+    'Escursioni_etna_descrizione'=>"Enjoy an unforgettable Etna hiking experience. We offer guided trekking tours with hotel pick-up to the Etna Park. Discover Sicily’s nature with expert guides: over 44 craters, lava caves, rare minerals, and unique endemic plants. A tour through breathtaking volcanic landscapes."
     // other keys...
 
 

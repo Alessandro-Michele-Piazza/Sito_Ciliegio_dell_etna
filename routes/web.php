@@ -15,6 +15,8 @@ Route::get('/pizzeria', [PublicController::class, 'pizzeria'])->name("pizzeria")
 Route::get('/ristorante', [PublicController::class, 'ristorante'])->name("ristorante");
 Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
 Route::get('/menu_domenicale', [ArticleController::class, 'index'])->name('menu_domenicale');
+Route::get('/esperienze', [PublicController::class, 'esperienze'])->name("esperienze");
+
 
 
 // Rotta registrazione per uri segreta:

@@ -102,6 +102,9 @@ return [
     'Torna_al_Blog' => 'Torna al Blog',
     'Pubblicato_il' => 'Pubblicato il',
     'Tempo_di_lettura' => 'Tempo di lettura:',
+    'Etna_Etna_tour_escursioni' => 'Etna Tour Escursioni',
+    'Sottotilo_Escursioni'=>'Natura, vulcano, emozione',
+    'Escursioni_etna_descrizione'=>"Vivi un’escursione sull'Etna indimenticabile. Offriamo trekking guidati con partenza dal tuo hotel verso il Parco dell’Etna. Scopri con guide esperte la natura della Sicilia: oltre 44 crateri, grotte laviche, minerali rari e piante endemiche uniche. Un tour tra paesaggi vulcanici mozzafiato.",
     
     // altre chiavi...
 ];

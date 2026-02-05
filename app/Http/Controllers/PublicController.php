@@ -36,6 +36,11 @@ class PublicController extends Controller
         return view('menu_domenicale');
     }
 
+    public function esperienze(){
+        return view('esperienze');
+    }
+
+
     public function setLanguage($lang)
     {
         // Verifichiamo che la lingua sia tra quelle ammesse

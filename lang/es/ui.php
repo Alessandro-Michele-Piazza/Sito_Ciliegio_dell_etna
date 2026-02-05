@@ -117,6 +117,11 @@ return [
     'Torna_al_Blog' => 'Retour au Blog',
     'Pubblicato_il' => 'Publiqué il',
     'Tempo_di_lettura' => 'Temps de lecture:',
+    'Etna_tour_escursioni' => "Excursiones al Etna",
+    'Sottotitolo_Escursioni' => 'Naturaleza, volcanes, emociones',
+    'Escursioni_etna_descrizione'=> "Vive una excursión inolvidable al Etna. Ofrecemos rutas de senderismo guiadas con salida desde tu hotel hacia el Parque del Etna. Descubre con guías expertos la naturaleza de Sicilia: más de 44 cráteres, cuevas de lava, minerales raros y plantas endémicas únicas. Un tour por paisajes volcánicos impresionantes.",
+    ''
+
     // otras claves...
 
 ];
