@@ -35,7 +35,7 @@
 
                 <!-- Immagine piccola in basso a sinistra -->
                 <div class="mt-5 mt-md-4 margin-left wrapper-img-small ">
-                    <img src="{{ asset('storage/media/foto(6).jpg') }}" alt="Dettagli Ristorante"
+                    <img src="{{ asset('storage/media/foto(6).webp') }}" alt="Dettagli Ristorante"
                         class="img-small-camere img-fluid shadow-sm margin_right_pizza_piccola">
                 </div>
             </div>
@@ -43,7 +43,7 @@
             <!-- COLONNA DESTRA: FOTO GRANDE -->
             <div class="col-12 col-md-6 p-4 p-md-5 d-flex align-items-center justify-content-center">
                 <div class="wrapper-img-large margin-right">
-                    <img src="{{ asset('storage/media/foto(3).jpg') }}" alt="Ristorante" class="img-large-camere shadow">
+                    <img src="{{ asset('storage/media/foto(3).webp') }}" alt="Ristorante" class="img-large-camere shadow">
                 </div>
             </div>
         </div>

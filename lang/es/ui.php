@@ -143,6 +143,25 @@ return [
     'Sottotitolo_asini' => 'Redescubre la naturaleza en compañía de amigos dóciles y cariñosos',
     'Etna_descrizione_asini' => 'En un mundo que corre, te invitamos a frenar. Pasea entre viñedos, olivares y castaños a los pies del Etna junto a nuestros burros, animales humildes y pacientes. Una experiencia sensorial auténtica, ideal para familias y niños, que culmina con una degustación de productos típicos y vino local en la granja.',
 
+    'Etnaland_titolo' => 'Etnaland y Themepark',
+    'Sottotitolo_Etnaland' => 'El parque de atracciones más grande del sur de Italia',
+    'Etnaland_descrizione' => 'Regálate un día de pura adrenalina y diversión. Situado a poca distancia, Etnaland combina un increíble parque temático con espectaculares atracciones acuáticas y un parque de la prehistoria. El destino ideal para grandes y pequeños a los pies del volcán.',
+    'Parco_Divertimenti' => 'Parque de atracciones',
+
+    'Taormina_titolo' => 'Taormine, la Perle de l’Ionienne',
+    'Sottotitolo_Taormina' => 'Histoire, élégance et panoramas à couper le souffle entre mer et ciel',
+    'Taormina_descrizione' => "Découvrez la destination la plus célèbre de Sicile. Promenez-vous sur le Corso Umberto, visitez le légendaire Théâtre Grec avec vue sur l'Etna et laissez-vous charmer par la beauté d'Isola Bella. Un mélange parfait de culture, de shopping de luxe et de vues inoubliables.",
+    'Cultura_Mare' => 'Culture et Mer',
+    'Teatro_Greco' => 'Théâtre Grec',
+    'Da_non_perdere' => 'À ne pas manquer',
+
+    'Alcantara_titolo' => 'Rafting - Gargantas del Alcántara',
+    'Sottotitolo_Alcantara' => 'Adrenalina y naturaleza salvaje en el cañón de basalto',
+    'Alcantara_descrizione' => 'Una aventura impresionante en el corazón del Parque Botánico y Geológico. Deslízate por aguas cristalinas, bucea entre rocas lávicas milenarias y déjate llevar por la corriente en una experiencia de body rafting inolvidable, acompañado de guías expertos.',
+    'Body_Rafting' => 'Body Rafting',
+    'Difficolta' => 'Dificultad',
+    'Livello_Medio' => 'Intermedio / Deportivo',
+
     // otras claves...
 
 ];

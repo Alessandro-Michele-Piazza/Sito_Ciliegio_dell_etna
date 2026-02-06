@@ -14,7 +14,7 @@
                 <div class="content-text-top margin-left">
                     <!-- Sottotitolo con linea orizzontale -->
                     <div>
-                        <img src="{{ asset('storage/media/agripizza.jpg') }}" alt="Agripizza" class="img-fluid mb-3 ">
+                        <img src="{{ asset('storage/media/agripizza.webp') }}" alt="Agripizza" class="img-fluid mb-3 ">
 
                     </div>
 
@@ -32,7 +32,7 @@
 
                 <!-- Immagine piccola in basso a sinistra -->
                 <div class="mt-5 mt-md-4 margin-left wrapper-img-small ">
-                    <img src="{{ asset('storage/media/pizza_3.jpg') }}" alt="Pizza Tradizionale"
+                    <img src="{{ asset('storage/media/pizza_3.webp') }}" alt="Pizza Tradizionale"
                         class="img-small-camere img-fluid shadow-sm margin_right_pizza_piccola">
                 </div>
             </div>
@@ -40,7 +40,7 @@
             <!-- COLONNA DESTRA: FOTO GRANDE -->
             <div class="col-12 col-md-6 p-4 p-md-5 d-flex align-items-center justify-content-center">
                 <div class="wrapper-img-large margin-right">
-                    <img src="{{ asset('storage/media/pizza_4.jpg') }}" alt="Pizzeria" class="img-large-camere shadow">
+                    <img src="{{ asset('storage/media/pizza_4.webp') }}" alt="Pizzeria" class="img-large-camere shadow">
                 </div>
             </div>
 

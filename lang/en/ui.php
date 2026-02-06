@@ -150,7 +150,27 @@ return [
     'Sottotilo_Quad' => 'Drive the excitement through craters, forests, and lava caves',
     'Quad_etna_descrizione' => 'Become the protagonist of a wild adventure across Etna’s lunar landscapes. Driving our powerful quads, you will explore extinct craters, pine forests, and suggestive lava flow caves. A dynamic tour accompanied by expert guides, perfect for couples and friends looking for an adrenaline-fueled and original way to discover the volcano.',
 
+    'Etna_asini_titolo' => "Mount Etna on Donkeyback",
+    'Sottotitolo_asini' => 'Rediscover nature in the company of gentle and affectionate friends',
+    'Etna_descrizione_asini' => "In a fast-paced world, we invite you to slow down. Wander through vineyards, olive groves, and chestnut forests at the foot of Mount Etna in the company of our donkeys—humble and patient animals. An authentic sensory experience, ideal for families and children, concluding with a tasting of local products and regional wine at the farm.",
 
+    'Etnaland_titolo' => 'Etnaland and ThemePark',
+    'Sottotitolo_Etnaland' => 'The largest amusement park in Southern Italy',
+    'Etnaland_descrizione' => 'Treat yourself to a day of pure adrenaline and fun. Located just a short distance away, Etnaland combines an incredible theme park with spectacular water attractions and a prehistoric park. The ideal destination for all ages at the foot of the volcano.',
+    'Parco_Divertimenti' => 'Amusement Park',
+
+    'Taormina_titolo' => 'Taormina, the Pearl of the Ionian',
+    'Sottotitolo_Taormina' => 'History, elegance, and breathtaking views between sea and sky',
+    'Taormina_descrizione' => "Discover Sicily's most famous destination. Stroll along Corso Umberto, visit the legendary Greek Theatre with its view of Mt. Etna, and be enchanted by the beauty of Isola Bella. A perfect blend of culture, luxury shopping, and unforgettable landscapes.",
+    'Cultura_Mare' => 'Culture & Sea',
+    'Teatro_Greco' => 'Greek Theatre',
+    'Da_non_perdere' => 'Must see',
+
+    'Alcantara_titolo' => 'Rafting - Alcantara Gorges',
+    'Sottotitolo_Alcantara' => 'Adrenaline and wild nature in the basalt canyon',
+    'Alcantara_descrizione' => 'A breathtaking adventure in the heart of the Botanical and Geological Park. Slide through crystal-clear waters, dive among ancient lava rocks, and let the current carry you in an unforgettable body rafting experience, led by expert guides.',
+    'Body_Rafting' => 'Body Rafting',
+    'Livello_Medio' => 'Intermediate / Sporty',
 
     // other keys...
 

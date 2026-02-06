@@ -61,10 +61,10 @@
             <div class="col-12 col-md-7 h-scacchiera">
                 <picture>
                     <!-- Immagine per Mobile (schermi fino a 767px) -->
-                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto(5).jpg') }}"
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto(5).webp') }}"
                         class="w-full h-screen object-cover">
                     <!-- Immagine per Desktop (default) -->
-                    <img src="{{ asset('storage/media/foto_pc(5).jpg') }}" class=" img-scacchiera-custom"
+                    <img src="{{ asset('storage/media/foto_pc(5).webp') }}" class=" img-scacchiera-custom"
                         alt="Stanza 1">
                 </picture>
             </div>
@@ -131,10 +131,10 @@
             <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <picture>
                     <!-- Immagine per Mobile (schermi fino a 767px) -->
-                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto_telefono(12).jpg') }}"
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto_telefono(12).webp') }}"
                         class="w-full h-screen object-cover">
                     <!-- Immagine per Desktop (default) -->
-                    <img src="{{ asset('storage/media/foto(12).jpg') }}" class=" img-scacchiera-custom"
+                    <img src="{{ asset('storage/media/foto(12).webp') }}" class=" img-scacchiera-custom"
                         alt="Stanza 1">
                 </picture>
             </div>

@@ -123,6 +123,8 @@ return [
     'Distanza' => 'Distance',
     'Tipologia' => 'Typologie',
     'Dislivello' => 'Dénivelé',
+    'Parco_Divertimenti'    => 'Parco Divertimenti',
+
 
     'Etna_quad_titolo' => 'Aventure en Quad : Émotions en Haute Altitude',
     'Sottotilo_Quad' => 'Pilotez l’adrénaline entre cratères, forêts et grottes de lave',
@@ -131,6 +133,25 @@ return [
     'Etna_asini_titolo' => "L'Etna à dos d'âne",
     'Sottotitolo_asini' => 'Redécouvrez la nature en compagnie d’amis doux et affectueux',
     'Etna_descrizione_asini' => "Dans un monde qui court, nous vous invitons à ralentir. Promenez-vous parmi les vignes, les oliviers et les châtaigniers au pied de l’Etna avec nos ânes, des animaux humbles et patients. Une expérience sensorielle authentique, idéale pour les familles et les enfants, qui se termine par une dégustation de produits locaux et de vin à la ferme.",
+
+    'Etnaland_titolo' => 'Etnaland et Themepark',
+    'Sottotitolo_Etnaland' => "Le plus grand parc d'attractions du sud de l'Italie",
+    'Etnaland_descrizione' => "Offrez-vous une journée de pure adrénaline et de divertissement. Situé à courte distance, Etnaland combine un incroyable parc à thèmes avec des attractions aquatiques spectaculaires et un parc de la préhistoire. La destination idéale pour petits et grands au pied du volcan.",
+    'Parco_Divertimenti' => "Parc d'attractions",
+
+    'Taormina_titolo' => 'Taormine, la Perle de l’Ionienne',
+    'Sottotitolo_Taormina' => 'Histoire, élégance et panoramas à couper le souffle entre mer et ciel',
+    'Taormina_descrizione' => "Découvrez la destination la plus célèbre de Sicile. Promenez-vous sur le Corso Umberto, visitez le légendaire Théâtre Grec avec vue sur l'Etna et laissez-vous charmer par la beauté d'Isola Bella. Un mélange parfait de culture, de shopping de luxe et de vues inoubliables.",
+    'Cultura_Mare' => 'Culture et Mer',
+    'Teatro_Greco' => 'Théâtre Grec',
+    'Da_non_perdere' => 'À ne pas manquer',
+
+    'Alcantara_titolo' => 'Rafting - Gorges de l’Alcantara',
+    'Sottotitolo_Alcantara' => 'Adrénaline et nature sauvage dans le canyon de basalte',
+    'Alcantara_descrizione' => "Une aventure époustouflante au cœur du Parc Botanique et Géologique. Glissez dans des eaux cristallines, plongez parmi les roches laviques millénaires et laissez-vous emporter par le courant pour une expérience de body rafting inoubliable, accompagné de guides experts.",
+    'Body_Rafting' => 'Body Rafting',
+    'Difficolta' => 'Difficulté',
+    'Livello_Medio' => 'Intermédiaire / Sportif',
 
 
 ];

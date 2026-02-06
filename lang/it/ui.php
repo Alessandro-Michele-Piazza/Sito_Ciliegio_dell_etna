@@ -118,10 +118,10 @@ return [
     'Distanza' => 'Distanza',
     'Tipologia' => 'Tipologia',
     'Dislivello' => 'Dislivello',
-    'Ideale_per'=>'Ideale per',
-    'Famiglie_bambini'=>'Famiglie e bambini',
-    'Incluso'=>'Incluso',
-    'Degustazione'=>'Degustazione',
+    'Ideale_per' => 'Ideale per',
+    'Famiglie_bambini' => 'Famiglie e bambini',
+    'Incluso' => 'Incluso',
+    'Degustazione' => 'Degustazione',
 
     'Etna_quad_titolo' => 'Quad Adventure: Emozioni ad alta quota',
     'Sottotilo_Quad' => 'Guida il brivido tra crateri, boschi e grotte laviche',
@@ -131,6 +131,24 @@ return [
     'Sottotitolo_asini' => 'Riscopri la natura in compagnia di amici docili e affettuosi',
     'Etna_descrizione_asini' => "In un mondo che corre, ti invitiamo a rallentare. Passeggia tra vigneti, uliveti e castagneti ai piedi dell’Etna in compagnia dei nostri asini, animali umili e pazienti. Un’esperienza sensoriale autentica, ideale per famiglie e bambini, che culmina con un assaggio di prodotti tipici e vino locale in fattoria.",
 
+    'Etnaland_titolo' => 'Etnaland e Themepark',
+    'Sottotitolo_Etnaland' => 'Il parco divertimenti più grande del Sud Italia',
+    'Etnaland_descrizione' => 'Regalati una giornata di pura adrenalina e divertimento. Situato a breve distanza, Etnaland combina un incredibile parco tematico con spettacolari attrazioni acquatiche e un parco della preistoria. La meta ideale per grandi e piccini ai piedi del vulcano.',
+    'Parco_Divertimenti'    => 'Parco Divertimenti',
+
+    'Taormina_titolo' => 'Taormina, Perla dello Ionio',
+    'Sottotitolo_Taormina' => 'Storia, eleganza e panorami tra mare e cielo',
+    'Taormina_descrizione' => 'Scopri la località più celebre della Sicilia. Passeggia lungo il Corso Umberto, visita il leggendario Teatro Greco con vista sull’Etna e lasciati incantare dalla bellezza di Isola Bella. Un mix perfetto di cultura, shopping di lusso e scorci indimenticabili.',
+    'Cultura_Mare' => 'Cultura e Mare',
+    'Teatro_Greco' => 'Teatro Greco',
+    'Da_non_perdere' => 'Da non perdere',
+
+    'Alcantara_titolo' => 'Rafting - Gole Alcantara',
+    'Sottotitolo_Alcantara' => 'Adrenalina e natura selvaggia nel canyon di basalto',
+    'Alcantara_descrizione' => 'Un’avventura mozzafiato nel cuore del Parco Botanico e Geologico. Scivola tra le acque cristalline, tuffati tra le rocce laviche millenarie e fatti trascinare dalla corrente in un’esperienza di body rafting indimenticabile, accompagnato da guide esperte.',
+    'Body_Rafting' => 'Body Rafting',
+    'Difficolta' => 'Difficoltà',
+    'Livello_Medio' => 'Intermedio / Sportivo',
 
     // altre chiavi...
 ];
