@@ -74,12 +74,12 @@ return [
     'Spazio_e_armonia' => 'Space and harmony for your most precious moments.',
     'Quadrupla' => 'Quadruple Family Suite',
     'Piatti_Tipici' => 'Typical Dishes',
-    'Pizzeria_Descrizione' => "Our pizzas are prepared with local km 0 ingredients, following the Sicilian tradition. Each dough is naturally leavened for 48 hours to ensure superior quality and an authentic flavor of the Etna tradition. One of the most chosen dishes to dine on our summer terrace with a view of the Ionian coast and Giarre.", 
+    'Pizzeria_Descrizione' => "Our pizzas are prepared with local km 0 ingredients, following the Sicilian tradition. Each dough is naturally leavened for 48 hours to ensure superior quality and an authentic flavor of the Etna tradition. One of the most chosen dishes to dine on our summer terrace with a view of the Ionian coast and Giarre.",
     'Vedi_il_nostro_menu' => 'See our menu',
     'Il_Ristorante' => 'The Restaurant',
     'Sapori' => 'Flavors',
     'Autentici' => 'Authentic',
-    'Della_Sicilia' => 'of Sicily', 
+    'Della_Sicilia' => 'of Sicily',
     'descrizione_ristorante' => "The Sicilian restaurant in Catania, where the culinary tradition of Etna meets hospitality. 
     Discover typical Sicilian dishes prepared with local km 0 ingredients and recipes handed down for generations. 
     In Giarre we offer an unforgettable gastronomic experience with authentic flavors of Sicily and Etna.",
@@ -113,14 +113,45 @@ return [
     'Descrizione' => 'Description',
     'Vedi_il_nostro_menu' => 'See our menu',
     'Il_Nostro_Ristorante' => 'Our Restaurant',
-    'Ultimi_Articoli'=> 'Latest Articles',
+    'Ultimi_Articoli' => 'Latest Articles',
     'Leggi_di_più' => 'Read more',
     'Torna_al_Blog' => 'Back to Blog',
     'Pubblicato_il' => 'Published on',
     'Tempo_di_lettura' => 'Reading time:',
     'Etna_tour_escursioni' => 'Etna Tour Excursions',
-    'Sottotitolo_Escursioni' => 'Nature, volcanoes, emotions',
-    'Escursioni_etna_descrizione'=>"Enjoy an unforgettable Etna hiking experience. We offer guided trekking tours with hotel pick-up to the Etna Park. Discover Sicily’s nature with expert guides: over 44 craters, lava caves, rare minerals, and unique endemic plants. A tour through breathtaking volcanic landscapes."
+    'Sottotitolo_Escursioni_etna' => 'Nature, volcanoes, emotions',
+    'Escursioni_etna_descrizione' => "Enjoy an unforgettable Etna hiking experience. We offer guided trekking tours with hotel pick-up to the Etna Park. Discover Sicily’s nature with expert guides: over 44 craters, lava caves, rare minerals, and unique endemic plants. A tour through breathtaking volcanic landscapes.",
+    'Durata' => 'Duration',
+    'Orari' => 'Hours',
+    'Prezzo' => 'Price',
+    'Prenotazione' => 'Reservation',
+    'Prenota' => 'Book',
+    'Difficolta' => 'Difficulty',
+    'Media' => 'Medium',
+    'Livello' => 'Level',
+    'Turistico' => 'Touristic',
+    'Ideale_per' => 'Ideal for',
+    'Famiglie_bambini' => 'Families and children',
+    'Incluso' => 'Included',
+    'Degustazione' => 'Tasting',
+    'Etna_bici_titolo' => 'E-Bike Adventure: Etna Sud',
+    'Ideale_per' => 'Ideal para',
+    'Famiglie_bambini' => 'Familias y niños',
+    'Incluso' => 'Incluido',
+    'Degustazione' => 'Degustación',
+
+    'Sottotitolo_Escursioni_biclicletta' => 'Pedaling between lava, woods and craters',
+    'Escursioni_etna_bicicletta' => 'Explora el volcán con el impulso de nuestras e-MTB de última generación. Un recorrido dinámico a lo largo de la famosa Pista Altomontana, entre antiguas coladas de lava y paisajes vírgenes. Una ruta accesible para todos, perfecta para quienes buscan una combinación de adrenalina, naturaleza y sostenibilidad, guiados por expertos locales.',
+    'Distanza' => 'Distance',
+    'Tipologia' => 'Type',
+    'Dislivello' => 'Elevation gain',
+
+    'Etna_quad_titolo' => 'Quad Adventure: High-Altitude Thrills',
+    'Sottotilo_Quad' => 'Drive the excitement through craters, forests, and lava caves',
+    'Quad_etna_descrizione' => 'Become the protagonist of a wild adventure across Etna’s lunar landscapes. Driving our powerful quads, you will explore extinct craters, pine forests, and suggestive lava flow caves. A dynamic tour accompanied by expert guides, perfect for couples and friends looking for an adrenaline-fueled and original way to discover the volcano.',
+
+
+
     // other keys...
 
 

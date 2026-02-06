@@ -112,15 +112,36 @@ return [
     'Descrizione' => 'Descripción',
     'Vedi_il_nostro_menu' => 'Ver nuestro menú',
     'Il_Nostro_Ristorante' => 'Nuestro Restaurante',
-    'Ultimi_Articoli'=> 'Derniers Articles',
+    'Ultimi_Articoli' => 'Derniers Articles',
     'Leggi_di_più' => 'Lire plus',
     'Torna_al_Blog' => 'Retour au Blog',
     'Pubblicato_il' => 'Publiqué il',
     'Tempo_di_lettura' => 'Temps de lecture:',
     'Etna_tour_escursioni' => "Excursiones al Etna",
-    'Sottotitolo_Escursioni' => 'Naturaleza, volcanes, emociones',
-    'Escursioni_etna_descrizione'=> "Vive una excursión inolvidable al Etna. Ofrecemos rutas de senderismo guiadas con salida desde tu hotel hacia el Parque del Etna. Descubre con guías expertos la naturaleza de Sicilia: más de 44 cráteres, cuevas de lava, minerales raros y plantas endémicas únicas. Un tour por paisajes volcánicos impresionantes.",
-    ''
+    'Sottotitolo_Escursioni_etna' => 'Naturaleza, volcanes, emociones',
+    'Escursioni_etna_descrizione' => "Vive una excursión inolvidable al Etna. Ofrecemos rutas de senderismo guiadas con salida desde tu hotel hacia el Parque del Etna. Descubre con guías expertos la naturaleza de Sicilia: más de 44 cráteres, cuevas de lava, minerales raros y plantas endémicas únicas. Un tour por paisajes volcánicos impresionantes.",
+    'Durata' => 'Duración',
+    'Difficolta' => 'Dificultade',
+    'Descrizione' => 'Descripción',
+    'Media' => 'Média',
+    'Livello' => 'Nivel',
+    'Turistico' => 'Turístico',
+
+    'Etna_bici_titolo' => 'E-Bike Adventure: Etna Sud',
+
+    'Sottotitolo_Escursioni_biclicletta' => 'Pedalez entre lave, bois et craters',
+    'Escursioni_etna_bicicletta' => 'Explora el volcán con el impulso de nuestras e-MTB de última generación. Un recorrido dinámico a lo largo de la famosa Pista Altomontana, entre antiguas coladas de lava y paisajes vírgenes. Una ruta accesible para todos, perfecta para quienes buscan una combinación de adrenalina, naturaleza y sostenibilidad, guiados por expertos locales.',
+    'Distanza' => 'Distancia',
+    'Tipologia' => 'Tipología',
+    'Dislivello' => 'Desnivel',
+
+    'Etna_quad_titolo' => 'Quad Adventure: Emociones a gran altura',
+    'Sottotilo_Quad' => 'Conduce la adrenalina entre cráteres, bosques y cuevas de lava',
+    'Quad_etna_descrizione' => 'Conviértete en el protagonista de una aventura salvaje a través de los paisajes lunares del Etna. Al volante de nuestros potentes quads, explorarás cráteres apagados, bosques de pinos y sugestivas cuevas de lava. Un tour dinámico acompañado por guías expertos, perfecto para parejas y amigos che buscan descubrir el volcán de una forma original y llena de adrenalina.',
+
+    'Etna_asini_titolo' => 'Etna a lomos de burro',
+    'Sottotitolo_asini' => 'Redescubre la naturaleza en compañía de amigos dóciles y cariñosos',
+    'Etna_descrizione_asini' => 'En un mundo que corre, te invitamos a frenar. Pasea entre viñedos, olivares y castaños a los pies del Etna junto a nuestros burros, animales humildes y pacientes. Una experiencia sensorial auténtica, ideal para familias y niños, que culmina con una degustación de productos típicos y vino local en la granja.',
 
     // otras claves...
 

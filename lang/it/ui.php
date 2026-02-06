@@ -95,7 +95,7 @@ return [
     'Inviato_con_successo' => 'Inviato con successo',
     'Errore_invio' => 'Errore nell\'invio, riprova più tardi',
     'whatsapp_text' => 'Ciao! Vorrei avere maggiori informazioni',
-    'Menu_domenicale'=> 'Menù Domenicale',
+    'Menu_domenicale' => 'Menù Domenicale',
     'Il_Nostro_Ristorante' => 'Il Nostro Ristorante',
     'Ultimi_Articoli' => 'Ultimi Articoli',
     'Leggi_di_più' => 'Leggi di più',
@@ -103,8 +103,34 @@ return [
     'Pubblicato_il' => 'Pubblicato il',
     'Tempo_di_lettura' => 'Tempo di lettura:',
     'Etna_Etna_tour_escursioni' => 'Etna Tour Escursioni',
-    'Sottotilo_Escursioni'=>'Natura, vulcano, emozione',
-    'Escursioni_etna_descrizione'=>"Vivi un’escursione sull'Etna indimenticabile. Offriamo trekking guidati con partenza dal tuo hotel verso il Parco dell’Etna. Scopri con guide esperte la natura della Sicilia: oltre 44 crateri, grotte laviche, minerali rari e piante endemiche uniche. Un tour tra paesaggi vulcanici mozzafiato.",
-    
+    'Sottotilo_Escursioni_etna' => 'Natura, vulcano, emozione',
+    'Escursioni_etna_descrizione' => "Vivi un’escursione sull'Etna indimenticabile. Offriamo trekking guidati con partenza dal tuo hotel verso il Parco dell’Etna. Scopri con guide esperte la natura della Sicilia: oltre 44 crateri, grotte laviche, minerali rari e piante endemiche uniche. Un tour tra paesaggi vulcanici mozzafiato.",
+
+    'Etna_bici_titolo' => 'E-Bike Adventure: Etna Sud',
+    'Sottotitolo_Escursioni_biclicletta' => 'Pedala tra lava, boschi e crateri spenti',
+    'Escursioni_etna_bicicletta' => 'Esplora il vulcano con la spinta delle nostre e-MTB di ultima generazione. Un tour dinamico lungo la celebre Pista Altomontana, tra antiche colate e paesaggi incontaminati. Un percorso accessibile a tutti, perfetto per chi cerca un mix di adrenalina, natura e sostenibilità, guidato da esperti del territorio.',
+    'Durata' => 'Durata',
+    'Difficolta' => 'Difficoltà',
+    'Descrizione' => 'Descrizione',
+    'Media' => 'Media',
+    'Livello' => 'Livello',
+    'Turistico' => 'Turistico',
+    'Distanza' => 'Distanza',
+    'Tipologia' => 'Tipologia',
+    'Dislivello' => 'Dislivello',
+    'Ideale_per'=>'Ideale per',
+    'Famiglie_bambini'=>'Famiglie e bambini',
+    'Incluso'=>'Incluso',
+    'Degustazione'=>'Degustazione',
+
+    'Etna_quad_titolo' => 'Quad Adventure: Emozioni ad alta quota',
+    'Sottotilo_Quad' => 'Guida il brivido tra crateri, boschi e grotte laviche',
+    'Quad_etna_descrizione' => 'Diventa il protagonista di un’avventura selvaggia tra i paesaggi lunari dell’Etna. Alla guida dei nostri potenti quad, esplorerai crateri spenti, foreste di pini e suggestive grotte a scorrimento lavico. Un tour dinamico accompagnato da guide esperte, perfetto per coppie e amici che vogliono scoprire il vulcano in modo adrenalinico e originale.',
+
+    'Etna_asini_titolo' => "Etna a dorso d'asino",
+    'Sottotitolo_asini' => 'Riscopri la natura in compagnia di amici docili e affettuosi',
+    'Etna_descrizione_asini' => "In un mondo che corre, ti invitiamo a rallentare. Passeggia tra vigneti, uliveti e castagneti ai piedi dell’Etna in compagnia dei nostri asini, animali umili e pazienti. Un’esperienza sensoriale autentica, ideale per famiglie e bambini, che culmina con un assaggio di prodotti tipici e vino locale in fattoria.",
+
+
     // altre chiavi...
 ];

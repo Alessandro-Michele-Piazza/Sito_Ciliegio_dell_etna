@@ -91,7 +91,7 @@
                         {{ __('ui.Camere_matrimoniali_Descrizione') }}
                     </p>
 
-                    <div class="row g-3 mt-2">
+                    <div class="row g-3 mt-2 border-top">
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-snowflake scritta_verde_medio me-2"></i>
                             <span class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span>
@@ -143,7 +143,7 @@
                         {{ __('ui.Camere_Triple_Descrizione') }}
                     </p>
 
-                    <div class="row g-3 mt-2">
+                    <div class="row g-3 mt-2 border-top">
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-snowflake scritta_verde_medio me-2"></i>
                             <span class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span>
@@ -218,7 +218,7 @@
                         {{ __('ui.Camere_Quadruple_Descrizione') }}
                     </p>
 
-                    <div class="row g-3 mt-2">
+                    <div class="row g-3 mt-2 border-top">
                         <div class="col-6 col-sm-4 d-flex align-items-center">
                             <i class="fas fa-snowflake scritta_verde_medio me-2"></i>
                             <span class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span>
