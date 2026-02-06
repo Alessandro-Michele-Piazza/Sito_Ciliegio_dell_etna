@@ -166,5 +166,8 @@ return [
     'Panorama' => 'Panorama',
     'Vista_Mare' => 'Vue sur Mer',
 
-
+    'Parco_Avventura_titolo' => 'Parc Aventure Etna',
+    'Sottotitolo_Parco_Avventura' => 'Relevez le défi au sommet des arbres',
+    'Parco_Avventura_descrizione' => "Le plus grand parc d'aventure du sud de l'Italie vous attend à Milo. Vivez l'émotion des parcours acrobatiques entre pins et châtaigniers : ponts tibétains, tyroliennes et lianes pour s'amuser en toute sécurité. Avec des parcours de difficultés variées, c'est la destination idéale pour une journée en famille ou entre amis.",
+    'Tutte_eta' => 'Enfants et Adultes',
 ];

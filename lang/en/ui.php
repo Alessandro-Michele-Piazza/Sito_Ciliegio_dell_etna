@@ -179,6 +179,11 @@ return [
     'Panorama' => 'Landscape',
     'Vista_Mare' => 'Sea View',
 
+    'Parco_Avventura_titolo' => 'Etna Adventure Park',
+    'Sottotitolo_Parco_Avventura' => 'Challenge your limits among the treetops',
+    'Parco_Avventura_descrizione' => 'The largest adventure park in Southern Italy awaits you in Milo. Experience the thrill of acrobatic courses among pine and chestnut trees: Tibetan bridges, zip lines, and vines for fun in total safety. With courses of varying difficulty, it is the ideal destination for a day with family or friends.',
+    'Tutte_eta' => 'Children and Adults',
+
 
     // other keys...
 

@@ -163,6 +163,11 @@ return [
     'Panorama' => 'Panorama',
     'Vista_Mare' => 'Vista Mare',
 
+    'Parco_Avventura_titolo' => 'Parco Avventura Etna',
+    'Sottotitolo_Parco_Avventura' => 'Sfida i tuoi limiti tra le chiome degli alberi',
+    'Parco_Avventura_descrizione' => 'Il parco avventura più grande del Sud Italia ti aspetta a Milo. Sperimenta l\'emozione dei percorsi acrobatici tra pini e castagni: ponti tibetani, tirolesi e liane per un divertimento in totale sicurezza. Con percorsi differenziati per difficoltà, meta ideale per una giornata in famiglia o con gli amici.',
+    'Tutte_eta' => 'Bambini e Adulti',
+
 
     // altre chiavi...
 ];

@@ -173,7 +173,11 @@ return [
     'Etna_sci_descrizione' => 'Vive la emoción de los deportes de invierno en las laderas del volcán activo más alto de Europa. Entre el Etna Sur (Nicolosi) y el Etna Norte (Piano Provenzana), podrás elegir entre pistas panorámicas impresionantes, rodeado de bosques de pinos y antiguas coladas de lava, con el azul del Jónico en el horizonte.',
     'Stazioni' => 'Estaciones',
     'Panorama' => 'Panorama',
-    'Vista_Mare' => 'Vistas al Mar',
+
+    'Parco_Avventura_titolo' => 'Parque de Aventura Etna',
+    'Sottotitolo_Parco_Avventura' => 'Desafía tus límites entre las copas de los árboles',
+    'Parco_Avventura_descrizione' => 'El parque de aventura más grande del sur de Italia te espera en Milo. Experimenta la emoción de los circuitos acrobáticos entre pinos y castaños: puentes tibetanos, tirolinas y lianas para divertirse con total seguridad. Con rutas de distinta dificultad, es el destino ideal para un día en familia o con amigos.',
+    'Tutte_eta' => 'Niños y Adultos',
 
     // otras claves...
 

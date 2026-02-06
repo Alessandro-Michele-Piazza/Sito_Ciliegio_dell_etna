@@ -413,7 +413,7 @@
                         </div>
 
                         <!-- Distanza -->
-                         <div class="d-flex align-items-center"><i
+                        <div class="d-flex align-items-center"><i
                                 class="fa-solid fa-route scritta_verde_medio fs-4 me-2"></i>
                             <div><small class="text-muted d-block lh-1">{{ __('ui.Distanza') }}</small><span
                                     class="fw-bold">30 min</span></div>
@@ -423,4 +423,64 @@
             </div>
         </div>
     </section>
+
+    <!-- 10. Parco Avventura Etna Milo (Testo Sinistra - Immagine Destra su Desktop | Immagine Sopra su Mobile) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left"
+        data-aos-duration="1500" data-aos-once="true">
+        <div class="row g-0 align-items-stretch">
+            <!-- COLONNA IMMAGINE: Prima su mobile, a destra su desktop -->
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/parco_avventura_tel.webp') }}"
+                        class="w-full h-screen object-cover">
+                    <img src="{{ asset('storage/media/parco_avventura.webp') }}" class="img-scacchiera-custom"
+                        alt="Parco Avventura Etna Milo - Percorsi sugli alberi" loading="lazy">
+                </picture>
+            </div>
+
+            <!-- COLONNA TESTO: Seconda su mobile, a sinistra su desktop -->
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
+                <div>
+                    <h2 class="fw-bold mb-3">{{ __('ui.Parco_Avventura_titolo') }}</h2>
+                    <div class="divider-short mb-4 mt-0"></div>
+
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">
+                        {{ __('ui.Sottotitolo_Parco_Avventura') }}
+                    </span>
+
+                    <p class="descrizione-scacchiera mb-4">
+                        {{ __('ui.Parco_Avventura_descrizione') }}
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-4 mt-4 pt-4 border-top">
+                        <!-- Tipologia -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-tree scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Tipologia') }}</small>
+                                <span class="fw-bold">15 Percorsi</span>
+                            </div>
+                        </div>
+
+                        <!-- Target -->
+                        <div class="d-flex align-items-center"><i
+                                class="fa-solid fa-children scritta_verde_medio fs-4 me-2"></i>
+                            <div><small class="text-muted d-block lh-1">{{ __('ui.Ideale_per') }}</small>
+                                <span class="fw-bold">{{ __('ui.Tutte_eta') }}</span></div>
+                        </div>
+
+                        <!-- Distanza -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-route scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Distanza') }}</small>
+                                <span class="fw-bold">17 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </x-layout>
