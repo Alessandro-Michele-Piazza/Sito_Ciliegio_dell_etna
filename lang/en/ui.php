@@ -172,6 +172,14 @@ return [
     'Body_Rafting' => 'Body Rafting',
     'Livello_Medio' => 'Intermediate / Sporty',
 
+    'Etna_sci_titolo' => 'Skiing on Mount Etna',
+    'Sottotitolo_sci' => 'The unique thrill of skiing while overlooking the sea',
+    'Etna_sci_descrizione' => 'Experience the excitement of winter sports on the slopes of Europe’s highest active volcano. Between Etna South (Nicolosi) and Etna North (Piano Provenzana), you can choose from breathtaking scenic runs, surrounded by pine forests and ancient lava flows, with the blue Ionian Sea on the horizon.',
+    'Stazioni' => 'Resorts',
+    'Panorama' => 'Landscape',
+    'Vista_Mare' => 'Sea View',
+
+
     // other keys...
 
 

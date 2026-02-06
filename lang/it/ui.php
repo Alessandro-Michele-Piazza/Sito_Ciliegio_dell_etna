@@ -150,5 +150,19 @@ return [
     'Difficolta' => 'Difficoltà',
     'Livello_Medio' => 'Intermedio / Sportivo',
 
+    'Delfini_titolo' => 'Delfini a Giardini Naxos',
+    'Sottotitolo_Delfini' => 'Un incontro magico nelle acque del Mar Ionio',
+    'Delfini_descrizione' => 'Salpa dal porto di Giardini Naxos alla ricerca dei delfini nel loro habitat naturale. Durante l’escursione ammirerai la Baia di Taormina, la Grotta degli Innamorati e Isola Bella. Un’esperienza emozionante che include una sosta bagno e un rinfrescante aperitivo a bordo.',
+    'Tour_Barca' => 'Tour in Barca',
+    'Aperitivo_Incluso' => 'Aperitivo',
+
+    'Etna_sci_titolo' => "Sciare sull'Etna",
+    'Sottotitolo_sci' => 'L’emozione unica di sciare guardando il mare',
+    'Etna_sci_descrizione' => 'Vivi l’ebbrezza degli sport invernali sui pendii del vulcano attivo più alto d’Europa. Tra Etna Sud (Nicolosi) ed Etna Nord (Piano Provenzana), potrai scegliere tra piste panoramiche mozzafiato, circondato da foreste di pini e antiche colate laviche, con l’azzurro dello Ionio all’orizzonte.',
+    'Stazioni' => 'Stazioni',
+    'Panorama' => 'Panorama',
+    'Vista_Mare' => 'Vista Mare',
+
+
     // altre chiavi...
 ];

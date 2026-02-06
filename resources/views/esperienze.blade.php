@@ -108,11 +108,14 @@
                         class="sub-label scritta_verde_medio d-block mb-2 fst-italic">{{ __('ui.Sottotitolo_Alcantara') }}</span>
                     <p class="descrizione-scacchiera mb-4">{{ __('ui.Alcantara_descrizione') }}</p>
                     <div class="d-flex flex-wrap gap-4 mt-4 pt-4 border-top">
-                        <div class="d-flex align-items-center"><i
-                                class="fa-solid fa-route scritta_verde_medio fs-4 me-2"></i>
-                            <div><small class="text-muted d-block lh-1">{{ __('ui.Distanza') }}</small><span
-                                    class="fw-bold">45 min</span></div>
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-route scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Distanza') }}</small><span
+                                    class="fw-bold">45 min</span>
+                            </div>
                         </div>
+
                         <div class="d-flex align-items-center"><i
                                 class="fa-solid fa-person-swimming scritta_verde_medio fs-4 me-2"></i>
                             <div><small class="text-muted d-block lh-1">{{ __('ui.Tipologia') }}</small><span
@@ -293,4 +296,131 @@
         </div>
     </section>
 
+    <!-- 8. Delfini Giardini (Testo Sinistra - Immagine Destra su Desktop | Immagine Sopra su Mobile) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left"
+        data-aos-duration="1500" data-aos-once="true">
+        <div class="row g-0 align-items-stretch">
+            <!-- COLONNA IMMAGINE: Prima su mobile, a destra su desktop -->
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/delfini_tel.webp') }}"
+                        class="w-full h-screen object-cover">
+                    <img src="{{ asset('storage/media/delfini.webp') }}" class="img-scacchiera-custom"
+                        alt="Dolphin Watching Giardini Naxos" loading="lazy">
+                </picture>
+            </div>
+
+            <!-- COLONNA TESTO: Seconda su mobile, a sinistra su desktop -->
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
+                <div>
+                    <h2 class="fw-bold mb-3">{{ __('ui.Delfini_titolo') }}</h2>
+                    <div class="divider-short mb-4 mt-0"></div>
+
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">
+                        {{ __('ui.Sottotitolo_Delfini') }}
+                    </span>
+
+                    <p class="descrizione-scacchiera mb-4">
+                        {{ __('ui.Delfini_descrizione') }}
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-4 mt-4 pt-4 border-top">
+                        <!-- Durata -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-regular fa-clock scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Durata') }}</small>
+                                <span class="fw-bold">2h</span>
+                            </div>
+                        </div>
+
+                        <!-- Tipologia -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-ship scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Tipologia') }}</small>
+                                <span class="fw-bold">{{ __('ui.Tour_Barca') }}</span>
+                            </div>
+                        </div>
+
+                        <!-- Extra -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-glass-cheers scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Incluso') }}</small>
+                                <span class="fw-bold">{{ __('ui.Aperitivo_Incluso') }}</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-route scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Distanza') }}</small><span
+                                    class="fw-bold">30 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Sciare sull'Etna (Immagine Sinistra - Testo Destra) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right"
+        data-aos-duration="1500" data-aos-once="true">
+        <div class="row g-0 align-items-stretch">
+            <!-- COLONNA IMMAGINE -->
+            <div class="col-12 col-md-7 h-scacchiera">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etna_scii_tel.webp') }}"
+                        class="w-full h-screen object-cover">
+                    <img src="{{ asset('storage/media/etna_scii.webp') }}" class="img-scacchiera-custom"
+                        alt="Sciare sull'Etna con vista mare" loading="lazy">
+                </picture>
+            </div>
+
+            <!-- COLONNA TESTO -->
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
+                <div>
+                    <h2 class="fw-bold mb-3">{{ __('ui.Etna_sci_titolo') }}</h2>
+                    <div class="divider-short mb-4 mt-0"></div>
+
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">
+                        {{ __('ui.Sottotitolo_sci') }}
+                    </span>
+
+                    <p class="descrizione-scacchiera mb-4">
+                        {{ __('ui.Etna_sci_descrizione') }}
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-4 mt-4 pt-4 border-top">
+                        <!-- Località -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-mountain-sun scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Stazioni') }}</small>
+                                <span class="fw-bold">Nord & Sud</span>
+                            </div>
+                        </div>
+
+                        <!-- Tipologia -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-person-skiing scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Tipologia') }}</small>
+                                <span class="fw-bold">Sci / Snowboard</span>
+                            </div>
+                        </div>
+
+                        <!-- Distanza -->
+                         <div class="d-flex align-items-center"><i
+                                class="fa-solid fa-route scritta_verde_medio fs-4 me-2"></i>
+                            <div><small class="text-muted d-block lh-1">{{ __('ui.Distanza') }}</small><span
+                                    class="fw-bold">30 min</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </x-layout>

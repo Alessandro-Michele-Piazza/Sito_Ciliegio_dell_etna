@@ -153,5 +153,18 @@ return [
     'Difficolta' => 'Difficulté',
     'Livello_Medio' => 'Intermédiaire / Sportif',
 
+    'Delfini_titolo' => 'Dauphins à Giardini Naxos',
+    'Sottotitolo_Delfini' => 'Une rencontre magique dans les eaux de la mer Ionienne',
+    'Delfini_descrizione' => "Naviguez depuis le port de Giardini Naxos à la recherche des dauphins dans leur habitat naturel. Pendant l'excursion, vous admirerez la baie de Taormine, la Grotte des Amoureux et Isola Bella. Une expérience passionnante qui comprend un arrêt baignade et un apéritif rafraîchissant à bord.",
+    'Tour_Barca' => 'Tour en bateau',
+    'Aperitivo_Incluso' => 'Apéritif',
+
+    'Etna_sci_titolo' => "Skier sur l'Etna",
+    'Sottotitolo_sci' => 'Le frisson unique de skier face à la mer',
+    'Etna_sci_descrizione' => "Découvrez l'ivresse des sports d'hiver sur les pentes du plus haut volcan actif d'Europe. Entre l'Etna Sud (Nicolosi) et l'Etna Nord (Piano Provenzana), choisissez parmi des pistes panoramiques époustouflantes, entourées de forêts de pins et d'anciennes coulées de lave, avec le bleu de l'Ionienne à l'horizon.",
+    'Stazioni' => 'Stations',
+    'Panorama' => 'Panorama',
+    'Vista_Mare' => 'Vue sur Mer',
+
 
 ];

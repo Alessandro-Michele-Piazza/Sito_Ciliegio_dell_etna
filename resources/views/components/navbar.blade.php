@@ -27,7 +27,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ route('stanze') }}"> {{ __('ui.Camere') }} </a>
                     </li>
-                    <li class="nav-item dropdown ms-3">
+                    {{-- <li class="nav-item dropdown ms-3">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
                             {{ __('ui.Servizi') }}
                         </a>
@@ -39,7 +39,7 @@
                             <li><a class="dropdown-item" href="#"> {{ __('ui.Wine_Tour') }} </a></li>
                             <li><a class="dropdown-item" href="#"> Catering </a></li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="nav-item"><a class="nav-link" href=" {{ route('esperienze') }} "> {{ __('ui.Esperienze') }} </a></li>
                     <li class="nav-item"><a class="nav-link"
                             href="{{ route('ristorante') }}">{{ __('ui.Ristorante') }}</a></li>

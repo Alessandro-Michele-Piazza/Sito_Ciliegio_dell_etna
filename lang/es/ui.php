@@ -162,6 +162,19 @@ return [
     'Difficolta' => 'Dificultad',
     'Livello_Medio' => 'Intermedio / Deportivo',
 
+    'Delfini_titolo' => 'Delfines en Giardini Naxos',
+    'Sottotitolo_Delfini' => 'Un encuentro mágico en las aguas del Mar Jónico',
+    'Delfini_descrizione' => 'Zarpa desde el puerto de Giardini Naxos en busca de delfines en su hábitat natural. Durante la excursión admirarás la Bahía de Taormina, la Cueva de los Enamorados e Isola Bella. Una experiencia emocionante que incluye una parada para nadar y un refrescante aperitivo a bordo.',
+    'Tour_Barca' => 'Tour en barco',
+    'Aperitivo_Incluso' => 'Aperitivo',
+
+    'Etna_sci_titolo' => 'Esquiar en el Etna',
+    'Sottotitolo_sci' => 'La emoción única de esquiar mirando al mar',
+    'Etna_sci_descrizione' => 'Vive la emoción de los deportes de invierno en las laderas del volcán activo más alto de Europa. Entre el Etna Sur (Nicolosi) y el Etna Norte (Piano Provenzana), podrás elegir entre pistas panorámicas impresionantes, rodeado de bosques de pinos y antiguas coladas de lava, con el azul del Jónico en el horizonte.',
+    'Stazioni' => 'Estaciones',
+    'Panorama' => 'Panorama',
+    'Vista_Mare' => 'Vistas al Mar',
+
     // otras claves...
 
 ];
