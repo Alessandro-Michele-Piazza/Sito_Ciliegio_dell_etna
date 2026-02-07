@@ -61,7 +61,7 @@
                         </div>
 
                         {{-- Titolo --}}
-                        <h1 class="display-5 fw-bold text-dark mb-4">{{ $post->title }}</h1>
+                        <h1 class="display-5 fw-bold text-dark mb-4">{{ html_entity_decode($post->title) }}</h1>
 
                         {{-- Testo dell'articolo --}}
                         <div class="fs-5 text-secondary lh-lg mb-5">

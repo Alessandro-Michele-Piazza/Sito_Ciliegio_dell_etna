@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ Vite::asset('resources/images/logo_ciliegio.png') }}" type="image/png">
-    <title>{{ $title }}</title>
+    <title>{{ html_entity_decode($title ?? '') }}</title>
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/contatti.css'])
 
     {{-- FONT GOOGLE --}}

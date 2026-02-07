@@ -13,7 +13,7 @@
                     <div>
                         <div class="d-flex align-items-center mb-4">
                             <div class="line-horizontal me-3"></div>
-                            <h5 class="m-0 text-uppercase fw-light" style="letter-spacing: 3px;">{{ __('ui.Il_Nostro_Ristorante') }}</h5>
+                            <h5 class="m-0 text-uppercase spaziatura_titolo_ristorante scritta_verde_medio">{{ __('ui.Il_Nostro_Ristorante') }}</h5>
                         </div>
 
                         <!-- Titolo Principale -->
@@ -27,23 +27,23 @@
                         {{__('ui.descrizione_ristorante')}}
                     </p>
 
-                    <a href=" " class="link-scopri">
+                    {{-- <a href=" " class="link-scopri">
                         <span>{{ __('ui.Vedi_il_nostro_menu') }}</span>
                         <i class="fas fa-arrow-right ms-2"></i>
-                    </a>
+                    </a> --}}
                 </div>
 
                 <!-- Immagine piccola in basso a sinistra -->
                 <div class="mt-5 mt-md-4 margin-left wrapper-img-small ">
                     <img src="{{ asset('storage/media/foto(6).webp') }}" alt="Dettagli Ristorante"
-                        class="img-small-camere img-fluid shadow-sm margin_right_pizza_piccola">
+                        class="img-small-camere img-fluid shadow-sm margin_right_pizza_piccola" loading="lazy">
                 </div>
             </div>
 
             <!-- COLONNA DESTRA: FOTO GRANDE -->
             <div class="col-12 col-md-6 p-4 p-md-5 d-flex align-items-center justify-content-center">
                 <div class="wrapper-img-large margin-right">
-                    <img src="{{ asset('storage/media/foto(3).webp') }}" alt="Ristorante" class="img-large-camere shadow">
+                    <img src="{{ asset('storage/media/foto(3).webp') }}" alt="Ristorante" class="img-large-camere shadow" loading="lazy">
                 </div>
             </div>
         </div>

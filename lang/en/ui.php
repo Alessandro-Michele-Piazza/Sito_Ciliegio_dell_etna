@@ -184,6 +184,11 @@ return [
     'Parco_Avventura_descrizione' => 'The largest adventure park in Southern Italy awaits you in Milo. Experience the thrill of acrobatic courses among pine and chestnut trees: Tibetan bridges, zip lines, and vines for fun in total safety. With courses of varying difficulty, it is the ideal destination for a day with family or friends.',
     'Tutte_eta' => 'Children and Adults',
 
+    'Delfini_titolo' => 'Dolphin Watching in Taormina',
+    'Sottotitolo_Delfini' => 'A magical encounter in the waters of the Ionian Sea',
+    'Delfini_descrizione' => 'Set sail from the port of Giardini Naxos in search of dolphins in their natural habitat. During the excursion, you will admire the Bay of Taormina, the Lovers\' Grotto, and Isola Bella. An exciting experience that includes a swimming stop and a refreshing aperitif on board.',
+    'Tour_Barca' => 'Boat Tour',
+    'Aperitivo_Incluso' => 'Aperitif Included',
 
     // other keys...
 

@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Article;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+use Intervention\Image\ImageManager;
+use Intervention\Image\Drivers\Gd\Driver;
 
 class ArticleController extends Controller
 {
@@ -63,35 +66,47 @@ class ArticleController extends Controller
             'title'           => 'required|string|max:255',
             'body'            => 'required',
             'authors'         => 'nullable|string',
-            'image'           => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
-            'image_secondary' => 'nullable|image|mimes:jpeg,png,jpg|max:2048' // Nuova validazione
+            'image'           => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048',
+            'image_secondary' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048'
         ]);
 
         $article->title = $request->title;
         $article->body = $request->body;
         $article->authors = $request->authors;
 
-        // Gestione Immagine 1 (Principale)
+        // Immagine 1 (Principale) -> WebP
         if ($request->hasFile('image')) {
             if ($article->image) {
                 Storage::disk('public')->delete($article->image);
             }
-            $article->image = $request->file('image')->store('articles', 'public');
+            $article->image = $this->storeWebp($request->file('image'), 'articles');
         }
 
-        // Gestione Immagine 2 (Secondaria)
+        // Immagine 2 (Secondaria) -> WebP
         if ($request->hasFile('image_secondary')) {
-            // Se l'admin carica una nuova immagine, eliminiamo quella vecchia dal server
             if ($article->image_secondary) {
                 Storage::disk('public')->delete($article->image_secondary);
             }
-            $article->image_secondary = $request->file('image_secondary')->store('articles', 'public');
+            $article->image_secondary = $this->storeWebp($request->file('image_secondary'), 'articles');
         }
 
         $article->save();
 
         return redirect()->route('menu_domenicale')->with('success', 'Menù aggiornato!');
     }
+
+    private function storeWebp($file, string $dir): string
+    {
+        $manager = new ImageManager(new Driver());
+        $image = $manager->read($file->getPathname());
+        $encoded = $image->toWebp(80);
+
+        $filename = $dir . '/' . Str::uuid() . '.webp';
+        Storage::disk('public')->put($filename, $encoded);
+
+        return $filename;
+    }
+
     /**
      * Remove the specified resource from storage.
      */

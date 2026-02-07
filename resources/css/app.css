@@ -372,7 +372,7 @@ body::-webkit-scrollbar-thumb {
 /* --- PARALLASSE --- */
 .parallax-section {
     background-image: url('../images/ciliegio_esterno.jpg');
-    min-height: 450px;
+    min-height: 70vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;

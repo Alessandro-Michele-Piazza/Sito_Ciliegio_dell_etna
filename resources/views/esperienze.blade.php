@@ -88,11 +88,77 @@
         </div>
     </section>
 
-    <!-- 3. GOLE ALCANTARA (Immagine Sinistra - Testo Destra) -->
+    <!-- 3. Parco Avventura Etna Milo (Testo Destra - Immagine Sinistra su Desktop | Immagine Sopra su Mobile) -->
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"
         data-aos-once="true">
         <div class="row g-0 align-items-stretch">
-            <div class="col-12 col-md-7 h-scacchiera">
+
+            <!-- COLONNA IMMAGINE: Prima su mobile, a sinistra su desktop -->
+            <div class="col-12 col-md-7 h-scacchiera order-2 order-md-1">
+                <picture>
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/parco_avventura_tel.webp') }}"
+                        class="w-full h-screen object-cover">
+                    <img src="{{ asset('storage/media/parco_avventura.webp') }}" class="img-scacchiera-custom"
+                        alt="Parco Avventura Etna Milo - Percorsi sugli alberi" loading="lazy">
+                </picture>
+            </div>
+
+            <!-- COLONNA TESTO: Seconda su mobile, a destra su desktop -->
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-2">
+                <div>
+                    <h2 class="fw-bold mb-3">{{ __('ui.Parco_Avventura_titolo') }}</h2>
+                    <div class="divider-short mb-4 mt-0"></div>
+
+                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">
+                        {{ __('ui.Sottotitolo_Parco_Avventura') }}
+                    </span>
+
+                    <p class="descrizione-scacchiera mb-4">
+                        {{ __('ui.Parco_Avventura_descrizione') }}
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-4 mt-4 pt-4 border-top">
+                        <!-- Tipologia -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-tree scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Tipologia') }}</small>
+                                <span class="fw-bold">15 Percorsi</span>
+                            </div>
+                        </div>
+
+                        <!-- Target -->
+                        <div class="d-flex align-items-center"><i
+                                class="fa-solid fa-children scritta_verde_medio fs-4 me-2"></i>
+                            <div><small class="text-muted d-block lh-1">{{ __('ui.Ideale_per') }}</small>
+                                <span class="fw-bold">{{ __('ui.Tutte_eta') }}</span>
+                            </div>
+                        </div>
+
+                        <!-- Distanza -->
+                        <div class="d-flex align-items-center">
+                            <i class="fa-solid fa-route scritta_verde_medio fs-4 me-2"></i>
+                            <div>
+                                <small class="text-muted d-block lh-1">{{ __('ui.Distanza') }}</small>
+                                <span class="fw-bold">17 min</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- 4. GOLE ALCANTARA (Immagine Destra - Testo Sinistra) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left" data-aos-duration="1500"
+        data-aos-once="true">
+        <div class="row g-0 align-items-stretch">
+
+            <!-- COLONNA IMMAGINE: Prima su mobile, a sinistra su desktop -->
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/alcantara_tel.webp') }}"
                         class="w-full h-screen object-cover">
@@ -100,7 +166,10 @@
                         alt="Body Rafting Gole Alcantara" loading="lazy">
                 </picture>
             </div>
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
+
+            <!-- COLONNA TESTO: Seconda su mobile, a destra su desktop -->
+
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
                 <div>
                     <h2 class="fw-bold mb-3">{{ __('ui.Alcantara_titolo') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
@@ -132,11 +201,11 @@
         </div>
     </section>
 
-    <!-- 4. TAORMINA (Testo Sinistra - Immagine Destra su Desktop | Immagine Sopra su Mobile) -->
-    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left" data-aos-duration="1500"
-        data-aos-once="true">
+    <!-- 5. TAORMINA (Testo Destra - Immagine Sinistra su Desktop | Immagine Sopra su Mobile) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-rkight"
+        data-aos-duration="1500" data-aos-once="true">
         <div class="row g-0 align-items-stretch">
-            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-1">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/taormina_tel.webp') }}"
                         class="w-full h-screen object-cover">
@@ -144,7 +213,7 @@
                         alt="Taormina" loading="lazy">
                 </picture>
             </div>
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-2">
                 <div>
                     <h2 class="fw-bold mb-3">{{ __('ui.Taormina_titolo') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
@@ -173,11 +242,11 @@
         </div>
     </section>
 
-    <!-- 5. QUAD TOUR (Immagine Sinistra - Testo Destra) -->
-    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right"
+    <!-- 6. QUAD TOUR (Immagine Destra - Testo Sinistra) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left"
         data-aos-duration="1500" data-aos-once="true">
         <div class="row g-0 align-items-stretch">
-            <div class="col-12 col-md-7 h-scacchiera">
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etna_quad_tel.webp') }}"
                         class="w-full h-screen object-cover">
@@ -185,7 +254,7 @@
                         alt="Etna Quad" loading="lazy">
                 </picture>
             </div>
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1  ">
                 <div>
                     <h2 class="fw-bold mb-3">{{ __('ui.Etna_quad_titolo') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
@@ -214,11 +283,11 @@
         </div>
     </section>
 
-    <!-- 6. E-BIKE TOUR (Testo Sinistra - Immagine Destra su Desktop | Immagine Sopra su Mobile) -->
-    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left"
+    <!-- 7. E-BIKE TOUR (Testo Destra - Immagine Sinistra su Desktop | Immagine Sopra su Mobile) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right"
         data-aos-duration="1500" data-aos-once="true">
         <div class="row g-0 align-items-stretch">
-            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-1">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etna_bici_tel.webp') }}"
                         class="w-full h-screen object-cover">
@@ -226,7 +295,7 @@
                         alt="E-Bike Etna" loading="lazy">
                 </picture>
             </div>
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-2">
                 <div>
                     <h2 class="fw-bold mb-3">{{ __('ui.Etna_bici_titolo') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
@@ -255,11 +324,11 @@
         </div>
     </section>
 
-    <!-- 7. ASINI TOUR (Immagine Sinistra - Testo Destra) -->
-    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right"
+    <!-- 8. ASINI TOUR (Immagine Sinistra - Testo Destra) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left"
         data-aos-duration="1500" data-aos-once="true">
         <div class="row g-0 align-items-stretch">
-            <div class="col-12 col-md-7 h-scacchiera">
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/asini_tel.webp') }}"
                         class="w-full h-screen object-cover">
@@ -267,7 +336,7 @@
                         alt="Asini Etna" loading="lazy">
                 </picture>
             </div>
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
                 <div>
                     <h2 class="fw-bold mb-3">{{ __('ui.Etna_asini_titolo') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
@@ -296,12 +365,12 @@
         </div>
     </section>
 
-    <!-- 8. Delfini Giardini (Testo Sinistra - Immagine Destra su Desktop | Immagine Sopra su Mobile) -->
-    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left"
+    <!-- 9. Delfini Giardini (Testo Destra - Immagine Sinistra su Desktop | Immagine Sopra su Mobile) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right"
         data-aos-duration="1500" data-aos-once="true">
         <div class="row g-0 align-items-stretch">
             <!-- COLONNA IMMAGINE: Prima su mobile, a destra su desktop -->
-            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-1">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/delfini_tel.webp') }}"
                         class="w-full h-screen object-cover">
@@ -311,7 +380,7 @@
             </div>
 
             <!-- COLONNA TESTO: Seconda su mobile, a sinistra su desktop -->
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-2">
                 <div>
                     <h2 class="fw-bold mb-3">{{ __('ui.Delfini_titolo') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
@@ -365,12 +434,12 @@
         </div>
     </section>
 
-    <!-- 9. Sciare sull'Etna (Immagine Sinistra - Testo Destra) -->
-    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right"
+    <!-- 10. Sciare sull'Etna (Immagine Destra - Testo Sinistra) -->
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left"
         data-aos-duration="1500" data-aos-once="true">
         <div class="row g-0 align-items-stretch">
             <!-- COLONNA IMMAGINE -->
-            <div class="col-12 col-md-7 h-scacchiera">
+            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etna_scii_tel.webp') }}"
                         class="w-full h-screen object-cover">
@@ -380,7 +449,7 @@
             </div>
 
             <!-- COLONNA TESTO -->
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
                 <div>
                     <h2 class="fw-bold mb-3">{{ __('ui.Etna_sci_titolo') }}</h2>
                     <div class="divider-short mb-4 mt-0"></div>
@@ -424,63 +493,6 @@
         </div>
     </section>
 
-    <!-- 10. Parco Avventura Etna Milo (Testo Sinistra - Immagine Destra su Desktop | Immagine Sopra su Mobile) -->
-    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left"
-        data-aos-duration="1500" data-aos-once="true">
-        <div class="row g-0 align-items-stretch">
-            <!-- COLONNA IMMAGINE: Prima su mobile, a destra su desktop -->
-            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
-                <picture>
-                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/parco_avventura_tel.webp') }}"
-                        class="w-full h-screen object-cover">
-                    <img src="{{ asset('storage/media/parco_avventura.webp') }}" class="img-scacchiera-custom"
-                        alt="Parco Avventura Etna Milo - Percorsi sugli alberi" loading="lazy">
-                </picture>
-            </div>
 
-            <!-- COLONNA TESTO: Seconda su mobile, a sinistra su desktop -->
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
-                <div>
-                    <h2 class="fw-bold mb-3">{{ __('ui.Parco_Avventura_titolo') }}</h2>
-                    <div class="divider-short mb-4 mt-0"></div>
-
-                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic">
-                        {{ __('ui.Sottotitolo_Parco_Avventura') }}
-                    </span>
-
-                    <p class="descrizione-scacchiera mb-4">
-                        {{ __('ui.Parco_Avventura_descrizione') }}
-                    </p>
-
-                    <div class="d-flex flex-wrap gap-4 mt-4 pt-4 border-top">
-                        <!-- Tipologia -->
-                        <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-tree scritta_verde_medio fs-4 me-2"></i>
-                            <div>
-                                <small class="text-muted d-block lh-1">{{ __('ui.Tipologia') }}</small>
-                                <span class="fw-bold">15 Percorsi</span>
-                            </div>
-                        </div>
-
-                        <!-- Target -->
-                        <div class="d-flex align-items-center"><i
-                                class="fa-solid fa-children scritta_verde_medio fs-4 me-2"></i>
-                            <div><small class="text-muted d-block lh-1">{{ __('ui.Ideale_per') }}</small>
-                                <span class="fw-bold">{{ __('ui.Tutte_eta') }}</span></div>
-                        </div>
-
-                        <!-- Distanza -->
-                        <div class="d-flex align-items-center">
-                            <i class="fa-solid fa-route scritta_verde_medio fs-4 me-2"></i>
-                            <div>
-                                <small class="text-muted d-block lh-1">{{ __('ui.Distanza') }}</small>
-                                <span class="fw-bold">17 min</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 </x-layout>
