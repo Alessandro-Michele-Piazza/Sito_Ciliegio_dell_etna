@@ -175,8 +175,6 @@ return [
 
 
 
-
-
     // WINE TOUR
     'Degustazioni_Titolo' => 'Dégustations',
     'Degustazioni_Sottotitolo' => 'Dégustations pour groupes',
@@ -222,5 +220,45 @@ return [
     'Degustazioni_Sezione_Lead' => 'Chaque proposition est pensée pour raconter l’Etna à travers des saveurs authentiques, des produits locaux et un service attentif. Idéal pour les groupes et les tours dédiés.',
     'Degustazioni_Nota' => '* Certains produits du menu peuvent varier selon la saison.',
     'Degustazioni_Footer' => 'Ciliegio dell’Etna — Dégustations pour groupes. Pour les réservations et infos, contactez-nous via le site.',
+        'header_subtitle' => 'Tradition, qualité et hospitalité sicilienne',
 
+
+    // CORSO PIZZERIA
+    'corso_pizzeria_title' => 'Cours de Pizza Italienne Classique',
+    'corso_pizzeria_badge' => 'Expérience sicilienne authentique',
+    'corso_pizzeria_h1' => 'Apprenez la vraie pizza italienne classique',
+    'corso_pizzeria_lead' => 'Pâte à levée naturelle, farines locales sélectionnées et techniques traditionnelles. Un cours pratique, clair et engageant.',
+    'corso_pizzeria_durata_label' => 'Durée',
+    'corso_pizzeria_durata_value' => 'Démonstration + pratique complète',
+    'corso_pizzeria_costo_label' => 'Coût',
+    'corso_pizzeria_costo_value' => '40,00 € par personne',
+    'corso_pizzeria_programma' => 'Programme du cours',
+    'corso_pizzeria_programma_1' => 'Introduction et participation des élèves',
+    'corso_pizzeria_programma_2' => 'Pâte et techniques de travail',
+    'corso_pizzeria_programma_3' => 'Levée et maturation',
+    'corso_pizzeria_programma_4' => 'Étaler le disque de pâte',
+    'corso_pizzeria_programma_5' => 'Garniture',
+    'corso_pizzeria_programma_6' => 'Cuisson et méthodes de cuisson',
+    'corso_pizzeria_programma_7' => 'Dégustation finale',
+    'corso_pizzeria_prenota' => 'Réservez votre place',
+    'corso_pizzeria_esperienza_title' => 'Une expérience authentique',
+    'corso_pizzeria_esperienza_text' => 'Nos pizzas naissent d’une pâte à levée naturelle, avec semoule de blé dur sicilienne et farine 00 italienne certifiée. Le cours vous guide pas à pas pour reproduire la qualité des grands maîtres pizzaioli.',
+    'corso_pizzeria_feature_1_title' => 'Ingrédients locaux',
+    'corso_pizzeria_feature_1_text' => 'Sélectionnés et traçables.',
+    'corso_pizzeria_feature_2_title' => 'Cuisson parfaite',
+    'corso_pizzeria_feature_2_text' => 'Températures et temps corrects.',
+    'corso_pizzeria_feature_3_title' => 'Pratique guidée',
+    'corso_pizzeria_feature_3_text' => 'Suivez chaque étape avec le chef.',
+    'corso_pizzeria_ingredienti' => 'Ingrédients',
+    'corso_pizzeria_ingrediente_1' => 'Semoule de blé dur remoulue',
+    'corso_pizzeria_ingrediente_2' => 'Farine 00',
+    'corso_pizzeria_ingrediente_3' => 'Eau',
+    'corso_pizzeria_ingrediente_4' => 'Levain naturel',
+    'corso_pizzeria_ingrediente_5' => 'Sel',
+    'corso_pizzeria_chef_title' => 'Chef pizzaiolo',
+    'corso_pizzeria_chef_name' => 'Darro Salvatore',
+    'corso_pizzeria_chef_note' => 'Remise du chapeau de cadet pizzaiolo.',
+    'corso_pizzeria_prenotazioni_title' => 'Réservations',
+    'corso_pizzeria_prenotazioni_text' => 'Places limitées. Réservez à l’avance.',
+    'corso_pizzeria_contattaci' => 'Contactez-nous',
 ];

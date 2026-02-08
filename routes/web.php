@@ -17,6 +17,7 @@ Route::post('/Lingua/{lang}', [PublicController::class, 'setLanguage'])->name('s
 Route::get('/Menu_domenicale', [ArticleController::class, 'index'])->name('menu_domenicale');
 Route::get('/Esperienze', [PublicController::class, 'esperienze'])->name("esperienze");
 Route::get('/Wine_tour', [PublicController::class, 'winetour'])->name("winetour");
+Route::get('/Corso_Pizzeria', [PublicController::class, 'corso_pizzeria'])->name("corso_pizzeria");
 
 
 

@@ -39,7 +39,7 @@
                         <ul class="dropdown-menu border-0 ">
                             <li><a class="dropdown-item dropdown-padding-right" href="#">
                                     {{ __('ui.Corsi_di_cucina') }} </a></li>
-                            <li><a class="dropdown-item" href="#">{{ __('ui.Corsi_di_pizzeria') }}</a></li>
+                            <li><a class="dropdown-item" href="{{ route('corso_pizzeria') }}">{{ __('ui.Corsi_di_pizzeria') }}</a></li>
                             <li><a class="dropdown-item" href="#"> {{ __('ui.Corsi_di_panificazione') }} </a></li>
                             <li><a class="dropdown-item" href="{{ route('winetour') }}"> {{ __('ui.Wine_Tour') }} </a></li>
                             <li><a class="dropdown-item" href="#"> Catering </a></li>

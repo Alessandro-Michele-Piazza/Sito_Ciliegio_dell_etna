@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | UI Language Lines
@@ -140,47 +139,39 @@ return [
     'Etna_quad_titolo' => 'Quad Adventure: Emociones a gran altura',
     'Sottotilo_Quad' => 'Conduce la adrenalina entre cráteres, bosques y cuevas de lava',
     'Quad_etna_descrizione' => 'Conviértete en el protagonista de una aventura salvaje a través de los paisajes lunares del Etna. Al volante de nuestros potentes quads, explorarás cráteres apagados, bosques de pinos y sugestivas cuevas de lava. Un tour dinámico acompañado por guías expertos, perfecto para parejas y amigos che buscan descubrir el volcán de una forma original y llena de adrenalina.',
-
     'Etna_asini_titolo' => 'Etna a lomos de burro',
     'Sottotitolo_asini' => 'Redescubre la naturaleza en compañía de amigos dóciles y cariñosos',
     'Etna_descrizione_asini' => 'En un mundo que corre, te invitamos a frenar. Pasea entre viñedos, olivares y castaños a los pies del Etna junto a nuestros burros, animales humildes y pacientes. Una experiencia sensorial auténtica, ideal para familias y niños, que culmina con una degustación de productos típicos y vino local en la granja.',
-
     'Etnaland_titolo' => 'Etnaland y Themepark',
     'Sottotitolo_Etnaland' => 'El parque de atracciones más grande del sur de Italia',
     'Etnaland_descrizione' => 'Regálate un día de pura adrenalina y diversión. Situado a poca distancia, Etnaland combina un increíble parque temático con espectaculares atracciones acuáticas y un parque de la prehistoria. El destino ideal para grandes y pequeños a los pies del volcán.',
     'Parco_Divertimenti' => 'Parque de atracciones',
-
     'Taormina_titolo' => 'Taormine, la Perle de l’Ionienne',
     'Sottotitolo_Taormina' => 'Histoire, élégance et panoramas à couper le souffle entre mer et ciel',
     'Taormina_descrizione' => "Découvrez la destination la plus célèbre de Sicile. Promenez-vous sur le Corso Umberto, visitez le légendaire Théâtre Grec avec vue sur l'Etna et laissez-vous charmer par la beauté d'Isola Bella. Un mélange parfait de culture, de shopping de luxe et de vues inoubliables.",
     'Cultura_Mare' => 'Culture et Mer',
     'Teatro_Greco' => 'Théâtre Grec',
     'Da_non_perdere' => 'À ne pas manquer',
-
     'Alcantara_titolo' => 'Rafting - Gargantas del Alcántara',
     'Sottotitolo_Alcantara' => 'Adrenalina y naturaleza salvaje en el cañón de basalto',
     'Alcantara_descrizione' => 'Una aventura impresionante en el corazón del Parque Botánico y Geológico. Deslízate por aguas cristalinas, bucea entre rocas lávicas milenarias y déjate llevar por la corriente en una experiencia de body rafting inolvidable, acompañado de guías expertos.',
     'Body_Rafting' => 'Body Rafting',
     'Difficolta' => 'Dificultad',
     'Livello_Medio' => 'Intermedio / Deportivo',
-
     'Delfini_titolo' => 'Delfines en Giardini Naxos',
     'Sottotitolo_Delfini' => 'Un encuentro mágico en las aguas del Mar Jónico',
     'Delfini_descrizione' => 'Zarpa desde el puerto de Giardini Naxos en busca de delfines en su hábitat natural. Durante la excursión admirarás la Bahía de Taormina, la Cueva de los Enamorados e Isola Bella. Una experiencia emocionante que incluye una parada para nadar y un refrescante aperitivo a bordo.',
     'Tour_Barca' => 'Tour en barco',
     'Aperitivo_Incluso' => 'Aperitivo',
-
     'Etna_sci_titolo' => 'Esquiar en el Etna',
     'Sottotitolo_sci' => 'La emoción única de esquiar mirando al mar',
     'Etna_sci_descrizione' => 'Vive la emoción de los deportes de invierno en las laderas del volcán activo más alto de Europa. Entre el Etna Sur (Nicolosi) y el Etna Norte (Piano Provenzana), podrás elegir entre pistas panorámicas impresionantes, rodeado de bosques de pinos y antiguas coladas de lava, con el azul del Jónico en el horizonte.',
     'Stazioni' => 'Estaciones',
     'Panorama' => 'Panorama',
-
     'Parco_Avventura_titolo' => 'Parque de Aventura Etna',
     'Sottotitolo_Parco_Avventura' => 'Desafía tus límites entre las copas de los árboles',
     'Parco_Avventura_descrizione' => 'El parque de aventura más grande del sur de Italia te espera en Milo. Experimenta la emoción de los circuitos acrobáticos entre pinos y castaños: puentes tibetanos, tirolinas y lianas para divertirse con total seguridad. Con rutas de distinta dificultad, es el destino ideal para un día en familia o con amigos.',
     'Tutte_eta' => 'Niños y Adultos',
-
     'Degustazioni_Titolo' => 'Degustaciones',
     'Degustazioni_Sottotitolo' => 'Degustaciones para grupos',
     'Degustazioni_H1_Line1' => 'Il Ciliegio dell’Etna –',
@@ -225,4 +216,42 @@ return [
     'Degustazioni_Nota' => '* Algunos productos del menú pueden variar según la temporada.',
     'Degustazioni_Footer' => 'Ciliegio dell’Etna — Degustaciones para grupos. Para reservas e información, contáctanos a través del sitio.',
 
+    // CORSO PIZZERIA
+    'corso_pizzeria_title' => 'Curso de Pizza Clásica Italiana',
+    'corso_pizzeria_badge' => 'Experiencia siciliana auténtica',
+    'corso_pizzeria_h1' => 'Aprende la verdadera pizza clásica italiana',
+    'corso_pizzeria_lead' => 'Masa de fermentación natural, harinas locales seleccionadas y técnicas tradicionales. Un curso práctico, claro y atractivo.',
+    'corso_pizzeria_durata_label' => 'Duración',
+    'corso_pizzeria_durata_value' => 'Demostración + práctica completa',
+    'corso_pizzeria_costo_label' => 'Costo',
+    'corso_pizzeria_costo_value' => '€ 40,00 por persona',
+    'corso_pizzeria_programma' => 'Programa del curso',
+    'corso_pizzeria_programma_1' => 'Introducción y participación de los alumnos',
+    'corso_pizzeria_programma_2' => 'Masa y técnicas de trabajo',
+    'corso_pizzeria_programma_3' => 'Fermentación y maduración',
+    'corso_pizzeria_programma_4' => 'Estirado del disco de masa',
+    'corso_pizzeria_programma_5' => 'Cobertura',
+    'corso_pizzeria_programma_6' => 'Horneado y métodos de cocción',
+    'corso_pizzeria_programma_7' => 'Degustación final',
+    'corso_pizzeria_prenota' => 'Reserva tu plaza',
+    'corso_pizzeria_esperienza_title' => 'Una experiencia auténtica',
+    'corso_pizzeria_esperienza_text' => 'Nuestras pizzas nacen de una masa de fermentación natural, con sémola de trigo duro siciliano y harina 00 italiana certificada. El curso te guía paso a paso para replicar la calidad de los grandes maestros pizzeros.',
+    'corso_pizzeria_feature_1_title' => 'Ingredientes locales',
+    'corso_pizzeria_feature_1_text' => 'Seleccionados y trazables.',
+    'corso_pizzeria_feature_2_title' => 'Cocción perfecta',
+    'corso_pizzeria_feature_2_text' => 'Temperaturas y tiempos correctos.',
+    'corso_pizzeria_feature_3_title' => 'Práctica guiada',
+    'corso_pizzeria_feature_3_text' => 'Sigue cada fase con el chef.',
+    'corso_pizzeria_ingredienti' => 'Ingredientes',
+    'corso_pizzeria_ingrediente_1' => 'Sémola de trigo duro remolida',
+    'corso_pizzeria_ingrediente_2' => 'Harina 00',
+    'corso_pizzeria_ingrediente_3' => 'Agua',
+    'corso_pizzeria_ingrediente_4' => 'Levadura natural',
+    'corso_pizzeria_ingrediente_5' => 'Sal',
+    'corso_pizzeria_chef_title' => 'Chef pizzero',
+    'corso_pizzeria_chef_name' => 'Darro Salvatore',
+    'corso_pizzeria_chef_note' => 'Entrega del gorro de cadete pizzero.',
+    'corso_pizzeria_prenotazioni_title' => 'Reservas',
+    'corso_pizzeria_prenotazioni_text' => 'Plazas limitadas. Reserva con antelación.',
+    'corso_pizzeria_contattaci' => 'Contáctanos',
 ];

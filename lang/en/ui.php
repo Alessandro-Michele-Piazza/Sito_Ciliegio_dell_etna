@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | UI Language Lines
@@ -235,6 +234,45 @@ return [
     'Degustazioni_Sezione_Lead' => 'Each proposal is designed to tell the story of Etna through authentic flavors, local products, and attentive service. Ideal for groups and dedicated tours.',
     'Degustazioni_Nota' => '* Some menu items may vary by season.',
     'Degustazioni_Footer' => 'Ciliegio dell’Etna — Group tastings. For bookings and info, contact us through the website.',
+        'header_subtitle' => 'Tradition, quality, and Sicilian hospitality',
 
 
+        // CORSO PIZZERIA
+        'corso_pizzeria_title' => 'Classic Italian Pizza Course',
+        'corso_pizzeria_badge' => 'Authentic Sicilian experience',
+        'corso_pizzeria_h1' => 'Learn true classic Italian pizza',
+        'corso_pizzeria_lead' => 'Naturally leavened dough, selected local flours and traditional techniques. A practical, clear and engaging course.',
+        'corso_pizzeria_durata_label' => 'Duration',
+        'corso_pizzeria_durata_value' => 'Demonstration + full practice',
+        'corso_pizzeria_costo_label' => 'Cost',
+        'corso_pizzeria_costo_value' => '€ 40.00 per person',
+        'corso_pizzeria_programma' => 'Course program',
+        'corso_pizzeria_programma_1' => 'Introduction and participant involvement',
+        'corso_pizzeria_programma_2' => 'Dough and working techniques',
+        'corso_pizzeria_programma_3' => 'Leavening and maturation',
+        'corso_pizzeria_programma_4' => 'Stretching the dough disk',
+        'corso_pizzeria_programma_5' => 'Toppings',
+        'corso_pizzeria_programma_6' => 'Baking and cooking methods',
+        'corso_pizzeria_programma_7' => 'Final tasting',
+        'corso_pizzeria_prenota' => 'Book your spot',
+        'corso_pizzeria_esperienza_title' => 'An authentic experience',
+        'corso_pizzeria_esperienza_text' => 'Our pizzas are born from naturally leavened dough, with Sicilian durum wheat semolina and certified Italian 00 flour. The course guides you step by step to replicate master pizzaiolo quality.',
+        'corso_pizzeria_feature_1_title' => 'Local ingredients',
+        'corso_pizzeria_feature_1_text' => 'Selected and traceable.',
+        'corso_pizzeria_feature_2_title' => 'Perfect baking',
+        'corso_pizzeria_feature_2_text' => 'Right temperatures and timing.',
+        'corso_pizzeria_feature_3_title' => 'Guided practice',
+        'corso_pizzeria_feature_3_text' => 'Follow every step with the chef.',
+        'corso_pizzeria_ingredienti' => 'Ingredients',
+        'corso_pizzeria_ingrediente_1' => 'Re-milled durum wheat semolina',
+        'corso_pizzeria_ingrediente_2' => '00 flour',
+        'corso_pizzeria_ingrediente_3' => 'Water',
+        'corso_pizzeria_ingrediente_4' => 'Natural yeast',
+        'corso_pizzeria_ingrediente_5' => 'Salt',
+        'corso_pizzeria_chef_title' => 'Pizza chef',
+        'corso_pizzeria_chef_name' => 'Darro Salvatore',
+        'corso_pizzeria_chef_note' => 'Cadet pizzaiolo hat awarded.',
+        'corso_pizzeria_prenotazioni_title' => 'Bookings',
+        'corso_pizzeria_prenotazioni_text' => 'Limited seats. Book in advance.',
+        'corso_pizzeria_contattaci' => 'Contact us',
 ];

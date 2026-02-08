@@ -46,6 +46,13 @@ class PublicController extends Controller
         return view('wine_tour');
     }
 
+    
+    public function corso_pizzeria()
+    {
+        return view('corso_pizzeria');
+    }
+
+
     public function setLanguage($lang)
     {
         // Verifichiamo che la lingua sia tra quelle ammesse
@@ -55,4 +62,5 @@ class PublicController extends Controller
 
         return redirect()->back();
     }
+
 }

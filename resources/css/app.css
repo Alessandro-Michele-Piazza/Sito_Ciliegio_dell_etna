@@ -7,6 +7,7 @@
 @import './menu_domenicale.css';
 @import './blog.css';
 @import './wine_tour.css';
+@import './corso_pizzeria.css';
 
 /* --- VARIABILI E ROOT --- */
 :root {
@@ -108,6 +109,38 @@ body::-webkit-scrollbar-thumb {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/ciliegio_esterno.webp');
     background-size: cover;
     background-position: center;
+}
+
+.header-modern {
+    position: relative;
+    min-height: 45vh;
+    background-image:
+        linear-gradient(120deg, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.2)),
+        url('../images/ciliegio_esterno.webp');
+    background-size: cover;
+    background-position: center;
+}
+
+.header-modern .header-overlay {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 20%, rgba(222, 7, 34, 0.12), transparent 60%);
+    pointer-events: none;
+}
+
+.header-modern .header-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    letter-spacing: 1px;
+    backdrop-filter: blur(6px);
+}
+
+.header-modern .header-subtitle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
 }
 
 .video_home {
