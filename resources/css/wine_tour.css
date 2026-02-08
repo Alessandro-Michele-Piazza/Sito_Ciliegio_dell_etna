@@ -1,0 +1,154 @@
+:root {
+    /* Usa la palette del sito */
+    --bg: var(--bianco_sfondo);
+    --card: #ffffff;
+    --accent: var(--rosso_ciliegia);
+    --text: var(--verde_scuro);
+    --muted: var(--verde_medio);
+    --radius: 16px;
+}
+
+.wine-page {
+    background: var(--bianco_sfondo);
+    color: var(--text);
+}
+
+.hero {
+    padding: 56px 6vw 24px;
+}
+
+.hero-grid {
+    display: grid;
+    gap: 32px;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.eyebrow {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(222, 7, 34, .10);
+    color: var(--rosso_ciliegia);
+    font-size: 12px;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    border: 1px solid rgba(222, 7, 34, .15);
+}
+
+.hero h1 {
+    font-size: clamp(28px, 4vw, 46px);
+    margin: .5rem 0 1rem;
+    line-height: 1.1;
+    color: var(--verde_scuro);
+}
+
+.lead {
+    font-size: clamp(15px, 1.5vw, 18px);
+    color: var(--verde_scuro);
+    margin-bottom: 1.2rem;
+}
+
+.cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    background: var(--rosso_ciliegia);
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    box-shadow: 0 6px 14px rgba(222, 7, 34, .18);
+}
+
+.cta:hover {
+    background: #b4051b;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, .12);
+    object-fit: cover;
+    aspect-ratio: 4/3;
+    border: 1px solid rgba(0, 0, 0, .06);
+}
+
+.section {
+    padding: 16px 6vw 64px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid rgba(49, 73, 60, .12);
+    border-radius: var(--radius);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-shadow: 0 6px 16px rgba(49, 73, 60, .08);
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 450;
+    color: var(--verde_medio);
+}
+
+.card h3 {
+    margin: 0;
+    color: var(--verde_scuro);
+    font-weight: 700;
+}
+
+.list {
+    margin: 0;
+    padding-left: 18px;
+    color: var(--verde_scuro);
+}
+
+.split {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    align-items: center;
+}
+
+.badge {
+    display: inline-block;
+    background: var(--rosso_ciliegia);
+    color: var(--bianco_sfondo);
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 12px;
+    border: 1px solid rgba(122, 158, 126, .25);
+}
+
+.note {
+    margin-top: 16px;
+    color: var(--verde_medio);
+    font-size: 14px;
+}
+
+.wine-footer {
+    padding: 32px 6vw 48px;
+    border-top: 1px solid rgba(49, 73, 60, .12);
+    color: var(--verde_medio);
+    font-size: 13px;
+}
+
+.wine-split {
+    margin-top: 36px;
+}
+
+.wine-title .line-1,
+.wine-title .line-2 {
+  display: block;
+}

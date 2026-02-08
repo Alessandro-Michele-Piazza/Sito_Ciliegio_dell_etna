@@ -6,6 +6,7 @@
 @import './bandiere.css';
 @import './menu_domenicale.css';
 @import './blog.css';
+@import './wine_tour.css';
 
 /* --- VARIABILI E ROOT --- */
 :root {
@@ -104,7 +105,7 @@ body::-webkit-scrollbar-thumb {
 /* --- HEADER & VIDEO --- */
 .header {
     height: 45vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/ciliegio_esterno.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/ciliegio_esterno.webp');
     background-size: cover;
     background-position: center;
 }
@@ -371,7 +372,7 @@ body::-webkit-scrollbar-thumb {
 
 /* --- PARALLASSE --- */
 .parallax-section {
-    background-image: url('../images/ciliegio_esterno.jpg');
+    background-image: url('../images/ciliegio_esterno.webp');
     min-height: 70vh;
     background-attachment: fixed;
     background-position: center;

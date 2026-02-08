@@ -28,13 +28,15 @@
                             class="scritta_verde_medio">{{ __('ui.agriturismo_a_Giarre') }}</strong>
                         {{ __('ui.storia_di_passione') }}<strong class="scritta_verde_medio">
                             Etna</strong>{{ __('ui.la_nostra_missione') }} <strong
-                            class="scritta_verde_medio">{{ __('ui.cucina_siciliana') }}</strong>
+                            class="scritta_verde_medio">{{ __('ui.cucina_siciliana') }}</strong>,
                         {{ __('ui.antichi_ingredienti') }}
                     </p>
                     <p class="descrizione-mission mt-4">
+                        {{ __('ui.nel_nostro') }}
                         <strong class="scritta_verde_medio"> {{ __('ui.Ristorante') }}</strong>
                         {{ __('ui.nella_nostra') }} <strong
                             class="scritta_verde_medio">{{ __('ui.pizzeria') }}</strong>
+                            {{ __('ui.i') }}
                         <strong class="scritta_verde_medio">{{ __('ui.prodotti_tipici') }}</strong>
                         {{ __('ui.km.0') }}
                         <strong class="scritta_verde_medio">{{ __('ui.banchetti') }}</strong>{{ __('ui.avvolti') }}

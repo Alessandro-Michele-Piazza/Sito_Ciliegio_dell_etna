@@ -1,4 +1,4 @@
-<x-layout title="Menù Domenicale">
+<x-layout title="{{ __('ui.Menu_domenicale') }}">
     <x-header title=" {{ __('ui.Menu_domenicale') }}  " />
 
     <div class="container">
@@ -15,14 +15,14 @@
                                     <!-- Prima Immagine -->
                                     <div class="carousel-item active h-100">
                                         <img src="{{ $article->image ? asset('storage/' . $article->image) : 'https://via.placeholder.com/800x1000?text=Il+Ciliegio+dell+Etna' }}"
-                                            alt="Immagine Menù 1">
+                                            alt="{{ __('ui.Immagine_Menu_1') }}">
                                     </div>
 
                                     <!-- Seconda Immagine (Condizionale) -->
                                     @if ($article->image_secondary)
                                         <div class="carousel-item h-100">
                                             <img src="{{ asset('storage/' . $article->image_secondary) }}"
-                                                alt="Immagine Menù 2">
+                                                alt="{{ __('ui.Immagine_Menu_2') }}">
                                         </div>
                                     @endif
                                 </div>
@@ -32,12 +32,12 @@
                                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselMenu"
                                         data-bs-slide="prev">
                                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Precedente</span>
+                                        <span class="visually-hidden">{{ __('ui.Precedente') }}</span>
                                     </button>
                                     <button class="carousel-control-next" type="button" data-bs-target="#carouselMenu"
                                         data-bs-slide="next">
                                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Successiva</span>
+                                        <span class="visually-hidden">{{ __('ui.Successiva') }}</span>
                                     </button>
                                 @endif
                             </div>

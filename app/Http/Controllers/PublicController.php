@@ -36,15 +36,20 @@ class PublicController extends Controller
         return view('menu_domenicale');
     }
 
-    public function esperienze(){
+    public function esperienze()
+    {
         return view('esperienze');
     }
 
+    public function winetour()
+    {
+        return view('wine_tour');
+    }
 
     public function setLanguage($lang)
     {
         // Verifichiamo che la lingua sia tra quelle ammesse
-        if (in_array($lang, ['it', 'en', 'es','fr'])) {
+        if (in_array($lang, ['it', 'en', 'es', 'fr'])) {
             session()->put('locale', $lang);
         }
 

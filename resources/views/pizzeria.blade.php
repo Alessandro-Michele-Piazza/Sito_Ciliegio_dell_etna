@@ -32,7 +32,7 @@
 
                 <!-- Immagine piccola in basso a sinistra -->
                 <div class="mt-5 mt-md-4 margin-left wrapper-img-small ">
-                    <img src="{{ asset('storage/media/pizza_3.webp') }}" alt="Pizza Tradizionale" loading="lazy">
+                    <img src="{{ asset('storage/media/pizza_3.webp') }}" alt="Pizza Tradizionale" loading="lazy" class="img-small-camere img-fluid shadow-sm margin_right_pizza_piccola">
                 </div>
             </div>
 

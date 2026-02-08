@@ -1,6 +1,6 @@
-<x-layout title="Esperienze">
+<x-layout title="{{ __('ui.Esperienze') }}">
 
-    <x-header title="Esperienze" />
+    <x-header title="{{ __('ui.Esperienze') }}" />
 
     <!-- 1. ETNA TOUR (Immagine Sinistra - Testo Destra) -->
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"

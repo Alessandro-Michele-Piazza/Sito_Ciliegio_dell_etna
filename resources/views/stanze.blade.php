@@ -1,4 +1,4 @@
-<x-layout title="camere">
+<x-layout title="{{ __('ui.Camere') }}">
 
     <div id="sezione-carosello-1" class="wrapper-carosello">
         <!-- Carosello Orizzontale -->
