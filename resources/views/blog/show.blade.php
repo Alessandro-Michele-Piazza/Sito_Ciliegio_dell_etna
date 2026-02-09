@@ -17,16 +17,16 @@
 
                     {{-- Mostriamo i controlli di gestione solo se l'utente è loggato con Fortify --}}
                     @auth
-                        <div class="btn-group shadow-sm">
-                            {{-- I tuoi tasti modifica ed elimina rimangono uguali o puoi applicare logiche simili --}}
+                        <div class="edit-fab-group">
                             <a href="{{ route('blog.edit', $post->id) }}"
-                                class="btn btn-warning btn-sm mx-2 rounded-pill px-3">
+                                class="btn btn-warning edit-fab shadow">
                                 <i class="fas fa-edit me-1"></i> Modifica
                             </a>
+
                             <form action="{{ route('blog.destroy', $post->id) }}" method="POST" class="d-inline">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm rounded-pill px-3"
+                                <button type="submit" class="btn btn-danger edit-fab shadow"
                                     onclick="return confirm('Sei sicuro?')">
                                     <i class="fas fa-trash me-1"></i> Elimina
                                 </button>

@@ -1,4 +1,4 @@
-<x-layout title="blog">
+<x-layout title="Blog">
     <x-header title="Blog" />
 
     <div class="container py-5" id="blog-container-main">
