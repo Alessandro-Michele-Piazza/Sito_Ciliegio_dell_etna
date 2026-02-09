@@ -1,7 +1,6 @@
 <x-layout title="blog">
     <x-header title="Blog" />
 
-    {{-- Aggiunto l'ID univoco per gestire il CSS senza conflitti e senza !important --}}
     <div class="container py-5" id="blog-container-main">
 
         <div class="d-flex justify-content-between align-items-center mb-5">

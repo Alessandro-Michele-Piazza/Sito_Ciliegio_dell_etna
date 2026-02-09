@@ -532,7 +532,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #button-next, #button-prev {
-    z-index: 100 !important;
+    z-index: 100;
     cursor: pointer;
     pointer-events: auto; /* Forza la ricezione del click */
     user-select: none;    /* Impedisce la selezione blu del testo al doppio click */
