@@ -111,6 +111,9 @@
                                 <option value="Soggiorno Camere"
                                     {{ old('subject') == 'Soggiorno Camere' ? 'selected' : '' }}> {{ __('ui.Soggiorno_Camere') }}
                                 </option>
+                                 <option value="Corsi di cucina"
+                                    {{ old('subject') == 'Corsi di cucina' ? 'selected' : '' }}> {{ __('ui.Corsi_di_cucina') }}
+                                </option>
                                 <option value="Eventi Speciali"
                                     {{ old('subject') == 'Eventi Speciali' ? 'selected' : '' }}>{{ __('ui.Eventi_Speciali') }}</option>
                                 <option value="Altro" {{ old('subject') == 'Altro' ? 'selected' : '' }}>{{ __('ui.Altro') }}</option>

@@ -52,6 +52,10 @@ class PublicController extends Controller
         return view('corso_pizzeria');
     }
 
+    public function corso_cucina()
+    {
+        return view('corso_cucina');
+    }
 
     public function setLanguage($lang)
     {

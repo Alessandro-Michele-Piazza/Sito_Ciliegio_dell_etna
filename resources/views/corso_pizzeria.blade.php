@@ -34,7 +34,7 @@
             </div>
 
             <div class="col-lg-6">
-                <img src="{{ asset('storage/media/pizza_3.webp') }}" 
+                <img src="{{ asset('storage/media/pizza_5.webp') }}" 
                      alt="Corso di pizza" class="img-fluid rounded-3 shadow-sm">
             </div>
         </div>

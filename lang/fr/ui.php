@@ -261,4 +261,50 @@ return [
     'corso_pizzeria_prenotazioni_title' => 'Réservations',
     'corso_pizzeria_prenotazioni_text' => 'Places limitées. Réservez à l’avance.',
     'corso_pizzeria_contattaci' => 'Contactez-nous',
+
+    // CORSO CUCINA
+    
+    
+    // CORSO CUCINA
+    'corso_cucina_title' => 'Cours de Cuisine Sicilienne',
+    'corso_cucina_badge' => 'Ciliegio Cooking School',
+    'corso_cucina_h1' => 'Programmation des cours de cuisine sicilienne',
+    'corso_cucina_lead' => 'Une expérience authentique dans notre lieu : techniques simples et innovantes, de l\'entrée au dessert, avec attention à l\'hygiène et au comportement en cuisine.',
+    'corso_cucina_durata_label' => 'Durée',
+    'corso_cucina_durata_value' => '3–4 heures (Pause 10 min)',
+    'corso_cucina_costo_label' => 'Coût',
+    'corso_cucina_costo_value' => '€ 70,00',
+    'corso_cucina_costo_suffix' => 'par personne',
+    'corso_cucina_prenota_email' => 'Réservez par Email',
+    'corso_cucina_posti_limitati' => 'Places limitées • Réservation recommandée',
+    'corso_cucina_img_alt' => 'Cours de cuisine sicilienne',
+
+    'corso_cucina_programma_title' => 'Programme de la journée',
+    'corso_cucina_programma_1' => '14:30 — éunion du groupe et distribution du matériel didactique',
+    'corso_cucina_programma_2' => '15:00 — Briefing avec interprète sur le déroulement du cours',
+    'corso_cucina_programma_3' => '17:30 — Pause de 10 minutes pour échange d\'idées',
+    'corso_cucina_programma_4' => '19:00 — Dîner avec dégustation des plats préparés',
+    'corso_cucina_programma_5' => '21:30 — Attestation de participation et livre de recettes en anglais',
+
+    'corso_cucina_esperienza_title' => 'Une expérience complète',
+    'corso_cucina_esperienza_text' => 'La leçon se déroule avec une préparation en direct utilisant des méthodes simples et innovantes, allant de l\'entrée au dessert. Nous expliquons également étape par étape les systèmes d\'hygiène et de comportement en cuisine. De la préparation à la dégustation, avec un accent sur les ingrédients locaux et les techniques traditionnelles.',
+
+    'corso_cucina_feature_1_title' => 'Matériel',
+    'corso_cucina_feature_1_text' => 'Tablier, bloc-notes et stylo pour les notes inclus dans le cours.',
+    'corso_cucina_feature_2_title' => 'Produits',
+    'corso_cucina_feature_2_text' => 'Viande ou poisson, selon la saison et les préférences.',
+    'corso_cucina_feature_3_title' => 'Dîner Inclus',
+    'corso_cucina_feature_3_text' => 'Entrées, pâtes, plat principal, dessert, eau et vin inclus.',
+
+    'corso_cucina_contatti_title' => 'Où nous sommes & Contacts',
+    'corso_cucina_contatti_text' => 'Pour plus de précisions ou pour vérifier la disponibilité des dates, n\'hésitez pas à nous contacter.',
+    'corso_cucina_indirizzo' => 'Via Filippo Meda 88, San Giovanni Montebello, Giarre',
+    'corso_cucina_telefono' => 'Tel. 095-969109 | Cell. 391 168 6078',
+    'corso_cucina_email' => 'info@ilciliegiodelletna.it',
+
+    'corso_cucina_domande_title' => 'Des questions ?',
+    'corso_cucina_domande_text' => 'Nous sommes à votre disposition pour organiser votre expérience culinaire.',
+    'corso_cucina_prenota_title' => 'Réservez maintenant',
+    'corso_cucina_prenota_text' => 'Écrivez-nous pour connaître les prochaines dates disponibles.',
+    'corso_cucina_prenota_cta' => 'Contactez-nous',
 ];
