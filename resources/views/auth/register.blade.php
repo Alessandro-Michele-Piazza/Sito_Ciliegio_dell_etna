@@ -39,9 +39,9 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-end">
+                    {{-- <div class="d-flex justify-content-end">
                         <button type="submit" class="btn btn-primary">Registrati</button>
-                    </div>
+                    </div> --}}
                 </form>
             </div>
         </div>

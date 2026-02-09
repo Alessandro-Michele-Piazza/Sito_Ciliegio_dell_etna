@@ -7,7 +7,7 @@
                 <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna"
                     class="footer-logo mb-3">
                 <p class="footer-description">
-                    {{ __('ui.footer_scritta') }}
+                    {{ __('ui.footer_scritta') }} 
                 </p>
             </div>
 
