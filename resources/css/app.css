@@ -782,11 +782,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-#il_mio_nome:hover {
-    color: var(--verde_acceso);
-}
-
-
 /* ============================================================
    MEDIA QUERIES (FINE PAGINA)
    ============================================================ */

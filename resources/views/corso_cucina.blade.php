@@ -33,7 +33,6 @@
                 <a href="{{ route('contatti') }}" class="btn btn-prenota">
                     <i class="fa-solid fa-envelope me-2"></i> {{ __('ui.corso_cucina_prenota_email') }}
                 </a>
-                <small class="text-muted d-block mt-2 ms-1">{{ __('ui.corso_cucina_posti_limitati') }}</small>
             </div>
 
             <div class="col-lg-6">

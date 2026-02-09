@@ -6,7 +6,9 @@
     <section class="container py-4 py-lg-5">
         <div class="row g-4 align-items-center">
             <div class="col-lg-6">
-                <span class="badge rounded-pill bg-success-subtle text-success mb-3">{{ __('ui.corso_pizzeria_badge') }}</span>
+                <span class="badge rounded-pill bg-success-subtle text-success mb-3">
+                    <i class="fa-solid fa-star me-2"></i>{{ __('ui.corso_pizzeria_badge') }}
+                </span>
                 <h1 class="display-5 fw-bold mb-3">{{ __('ui.corso_pizzeria_h1') }}</h1>
                 <p class="lead text-muted mb-4">
                     {{ __('ui.corso_pizzeria_lead') }}
@@ -28,14 +30,14 @@
                         </div>
                     </div>
                 </div>
-                 <a href="{{ route('contatti') }}" class="btn btn-prenota">
-                    <i class="fa-solid fa-calendar-check me-2"></i> {{ __('ui.corso_pizzeria_prenota') }}
+                <a href="{{ route('contatti') }}" class="btn btn-prenota">
+                    <i class="fa-solid fa-envelope me-2"></i> {{ __('ui.corso_cucina_prenota_email') }}
                 </a>
             </div>
 
             <div class="col-lg-6">
-                <img src="{{ asset('storage/media/pizza_5.webp') }}" 
-                     alt="Corso di pizza" class="img-fluid rounded-3 shadow-sm">
+                <img src="{{ asset('storage/media/pizza_5.webp') }}" alt="Corso di pizza"
+                    class="img-fluid rounded-3 shadow-sm">
             </div>
         </div>
     </section>
@@ -46,7 +48,8 @@
             {{-- Card Programma --}}
             <div class="col-lg-5">
                 <div class="card-corso p-4 p-lg-5 shadow-sm h-100">
-                    <h3 class="h5 mb-3"><i class="fa-solid fa-list-check me-2"></i>{{ __('ui.corso_pizzeria_programma') }}</h3>
+                    <h3 class="h5 mb-3"><i
+                            class="fa-solid fa-list-check me-2"></i>{{ __('ui.corso_pizzeria_programma') }}</h3>
                     <ul class="corso-list">
                         <li>{{ __('ui.corso_pizzeria_programma_1') }}</li>
                         <li>{{ __('ui.corso_pizzeria_programma_2') }}</li>
@@ -101,11 +104,12 @@
     </section>
 
     {{-- Sezione Ingredienti e Chef --}}
-     <section class="container pb-5">
+    <section class="container pb-5">
         <div class="row g-4">
             <div class="col-lg-8">
-                 <div class="card-corso p-4 h-100 shadow-sm">
-                    <h3 class="h5 mb-3"><i class="fa-solid fa-wheat-awn me-2"></i>{{ __('ui.corso_pizzeria_ingredienti') }}</h3>
+                <div class="card-corso p-4 h-100 shadow-sm">
+                    <h3 class="h5 mb-3"><i
+                            class="fa-solid fa-wheat-awn me-2"></i>{{ __('ui.corso_pizzeria_ingredienti') }}</h3>
                     <ul class="corso-list">
                         <li>{{ __('ui.corso_pizzeria_ingrediente_1') }}</li>
                         <li>{{ __('ui.corso_pizzeria_ingrediente_2') }}</li>
@@ -117,18 +121,19 @@
             </div>
             <div class="col-lg-4">
                 <div class="card-corso p-4 h-100 shadow-sm">
-                    <h3 class="h5 mb-2"><i class="fa-solid fa-user me-2"></i>{{ __('ui.corso_pizzeria_chef_title') }}</h3>
+                    <h3 class="h5 mb-2"><i class="fa-solid fa-user me-2"></i>{{ __('ui.corso_pizzeria_chef_title') }}
+                    </h3>
                     <p class="mb-1">{{ __('ui.corso_pizzeria_chef_name') }}</p>
                     <p class="text-muted mb-0">{{ __('ui.corso_pizzeria_chef_note') }}</p>
 
                     <div id="prenota" class="mt-4 p-3 bg-light rounded">
                         <div class="d-flex align-items-center gap-2 mb-2">
-                            <i class="fa-solid fa-ticket text-success"></i>
-                            <strong>{{ __('ui.corso_pizzeria_prenotazioni_title') }}</strong>
+                            <i class="fa-solid fa-calendar-check text-success"></i>
+                            <strong>{{ __('ui.corso_cucina_prenota_title') }}</strong>
                         </div>
-                        <p class="mb-2 text-muted">{{ __('ui.corso_pizzeria_prenotazioni_text') }}</p>
+                        <p class="mb-2 text-muted small">{{ __('ui.corso_cucina_prenota_text') }}</p>
                         <a href="{{ route('contatti') }}" class="btn btn-prenota w-100">
-                            {{ __('ui.corso_pizzeria_contattaci') }}
+                            {{ __('ui.corso_cucina_prenota_cta') }}
                         </a>
                     </div>
                 </div>

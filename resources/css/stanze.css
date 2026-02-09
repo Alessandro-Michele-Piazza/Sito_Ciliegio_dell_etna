@@ -59,21 +59,23 @@
 
     /* --- POSIZIONAMENTO LINEE VERTICALI (Slide Interne) --- */
     #sezione-carosello-1 .pag-verticale-1 {
-      right: 20px;
-      /* Distanza dal bordo destro dello schermo */
+      right: 0px;
       left: auto;
       top: 50%;
       transform: translateY(-50%);
       display: flex;
+      /* Cambiato da column a row per metterle affiancate */
       flex-direction: column;
+      /* Ruotiamo l'intero contenitore di 90 gradi se vuoi che restino sul lato 
+     ma siano orientate orizzontalmente, oppure semplicemente gestiamo le dimensioni */
       gap: 10px;
     }
 
     #sezione-carosello-1 .pag-verticale-1 .swiper-pagination-bullet {
-      width: 4px;
-      /* Spessore linea */
-      height: 40px;
-      /* Altezza linea */
+      width: 7vw;
+      /* Larghezza linea (diventa orizzontale) */
+      height:0.8vh;
+      /* Spessore sottile */
     }
 
 
