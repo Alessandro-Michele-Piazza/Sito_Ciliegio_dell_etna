@@ -424,6 +424,9 @@ body::-webkit-scrollbar-thumb {
 .altezza-div-carosello {
     height: 90vh;
     background-color: var(--bianco_sfondo);
+    position: relative;
+    z-index: 10; 
+    overflow: visible;
 }
 
 .swiper-wrapper {
@@ -528,6 +531,13 @@ body::-webkit-scrollbar-thumb {
     left: -40px;
 }
 
+#button-next, #button-prev {
+    z-index: 100 !important;
+    cursor: pointer;
+    pointer-events: auto; /* Forza la ricezione del click */
+    user-select: none;    /* Impedisce la selezione blu del testo al doppio click */
+}
+
 .profilo-1 {
     background-color: #E67E22;
 }
@@ -562,6 +572,8 @@ body::-webkit-scrollbar-thumb {
     margin: 0;
     padding: 0;
     background-color: var(--verde_scurissimo);
+    position: relative;
+    z-index: 1;
 }
 
 .footer-modern .row {
