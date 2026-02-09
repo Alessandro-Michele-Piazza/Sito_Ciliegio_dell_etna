@@ -1,62 +1,171 @@
 /* --- STILI PAGINA VISUALIZZAZIONE --- */
 .menu-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* The row that holds both columns */
+.menu-row {
+    align-items: flex-start;
+}
+
+/* Card styles for each column */
+.menu-card {
     background-color: #fff;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
     border: none;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    height: 100%;
 }
 
-/* Aggiornato: ora è un contenitore per il tag img */
+.menu-card-image {
+    min-height: 520px;
+}
+
+.menu-card-content {
+    min-height: 620px;
+}
+
+/* Image column: uses position tricks so image covers the full height */
 .menu-image-side {
-    min-height: 500px;
-    height: 100%;
-    padding: 0;
+    position: relative;
     overflow: hidden;
+    padding: 0;
 }
 
-/* Nuova regola per l'immagine dinamica */
-.menu-image-side img {
+/* Keep carousel natural height to avoid cropping text in images */
+.menu-image-side .carousel,
+.menu-image-side .carousel-inner,
+.menu-image-side .carousel-item {
+    position: relative;
+}
+
+.menu-image-side .carousel-item img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    /* Sostituisce background-size: cover */
+    height: auto;
+    object-fit: contain;
     display: block;
+    background-color: #f7f7f7;
 }
 
+/* Carousel indicator styling */
+.menu-image-side .carousel-indicators {
+    margin-bottom: 15px;
+}
+
+.menu-image-side .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.menu-image-side .carousel-indicators button.active {
+    background-color: #fff;
+}
+
+.menu-image-side .carousel-control-prev,
+.menu-image-side .carousel-control-next {
+    width: 40px;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.menu-image-side:hover .carousel-control-prev,
+.menu-image-side:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.menu-image-side .carousel-control-prev {
+    left: 12px;
+}
+
+.menu-image-side .carousel-control-next {
+    right: 12px;
+}
+
+.menu-image-side .carousel-control-prev-icon,
+.menu-image-side .carousel-control-next-icon {
+    width: 18px;
+    height: 18px;
+    filter: invert(1);
+}
+
+/* --- Content Side --- */
 .menu-content-side {
-    padding: 60px 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: #fdfdfd;
+    padding: 0;
+    /* Reset — padding is on the inner element */
+}
+
+.menu-content-inner {
+    padding: 55px 45px;
+    text-align: center;
+}
+
+.menu-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #1a3c34, #2d6a4f);
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 30px;
+    margin-bottom: 22px;
 }
 
 .menu-title {
     font-family: 'Playfair Display', serif;
     color: #1a3c34;
-    font-size: 3rem;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    /* Spaziatura ottimale per titolo + data */
+    font-size: 2.6rem;
+    margin-bottom: 0;
+    line-height: 1.25;
 }
 
-.chef-box {
-    border-bottom: 1px solid #e0e0e0;
-    padding-bottom: 20px;
-    margin-bottom: 30px;
+.menu-divider {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #1a3c34, #6b8f71);
+    border-radius: 2px;
+    margin: 20px auto 25px;
 }
 
 .menu-body {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     line-height: 2;
-    color: #333;
+    color: #444;
     white-space: pre-line;
     font-style: italic;
+    text-align: left;
 }
 
+.menu-footer {
+    margin-top: 35px;
+    padding-top: 20px;
+    border-top: 1px solid #e8e8e8;
+}
+
+.menu-footer p {
+    color: #8a8a8a;
+    font-size: 0.88rem;
+    font-style: italic;
+    margin: 0;
+}
+
+/* --- FAB Button --- */
 .edit-fab {
     position: fixed;
     bottom: 30px;
@@ -107,45 +216,42 @@
 
 .img-edit-menu-dom {
     width: 100%;
-    /* Corretto da 40vw per stare nel container */
     height: auto;
     border-radius: 15px;
 }
 
-.menu-image-side .carousel,
-.menu-image-side .carousel-inner,
-.menu-image-side .carousel-item {
-    height: 100%;
-}
-
-/* Applica le regole che avevi per img a tutte le immagini del carosello */
-.menu-image-side .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.menu-image-side .carousel-control-prev-icon,
-.menu-image-side .carousel-control-next-icon {
-    filter: invert(1);
-}
 
 
 /* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    .menu-image-side {
-        height: 100%;
-        width: 100%;
-        padding: 0;
-        overflow: hidden;
+    .menu-wrapper {
+        margin-top: 25px;
+        margin-bottom: 30px;
     }
 
-    .menu-content-side {
-        padding: 40px 20px;
+    .menu-card {
+        border-radius: 15px;
+    }
+
+    .menu-card-image,
+    .menu-card-content {
+        min-height: 0;
+    }
+
+    .menu-image-side .carousel-control-prev,
+    .menu-image-side .carousel-control-next {
+        opacity: 0.7;
+    }
+
+    .menu-content-inner {
+        padding: 35px 22px;
     }
 
     .menu-title {
-        font-size: 2.2rem;
+        font-size: 2rem;
+    }
+
+    .menu-body {
+        font-size: 1rem;
     }
 }

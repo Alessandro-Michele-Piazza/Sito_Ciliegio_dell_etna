@@ -48,8 +48,8 @@
             {{-- Card Programma --}}
             <div class="col-lg-5">
                 <div class="card-corso p-4 p-lg-5 shadow-sm h-100">
-                    <h3 class="h5 mb-3"><i class="fa-solid fa-list-check me-2"></i>{{ __('ui.corso_cucina_programma_title') }}</h3>
-                    <ul class="corso-list">
+                    <h3 class="h4 mb-3"><i class="fa-solid fa-list-check me-2"></i>{{ __('ui.corso_cucina_programma_title') }}</h3>
+                    <ul class="corso-list ">
                         <li>{{ __('ui.corso_cucina_programma_1') }}</li>
                         <li>{{ __('ui.corso_cucina_programma_2') }}</li>
                         <li>{{ __('ui.corso_cucina_programma_3') }}</li>
@@ -62,7 +62,7 @@
             <div class="col-lg-7">
                 <div class="card-corso p-4 p-lg-5 h-100 shadow-sm">
                     <h2 class="mb-3">{{ __('ui.corso_cucina_esperienza_title') }}</h2>
-                    <p class="descrizione-mission">
+                    <p class="descrizione-mission ">
                         {{ __('ui.corso_cucina_esperienza_text') }}
                     </p>
 
@@ -105,7 +105,7 @@
         <div class="row g-4">
             <div class="col-lg-8">
                 <div class="card-corso p-4 h-100 shadow-sm">
-                    <h3 class="h5 mb-3"><i class="fa-solid fa-location-dot me-2"></i>{{ __('ui.corso_cucina_contatti_title') }}</h3>
+                    <h3 class=" mb-3"><i class="fa-solid fa-location-dot me-2"></i>{{ __('ui.corso_cucina_contatti_title') }}</h3>
                     <p>{{ __('ui.corso_cucina_contatti_text') }}</p>
                     
                     <ul class="corso-list mt-3">
@@ -126,7 +126,7 @@
             </div>
             <div class="col-lg-4">
                 <div class="card-corso p-4 h-100 shadow-sm">
-                    <h3 class="h5 mb-2"><i class="fa-solid fa-circle-question me-2"></i>{{ __('ui.corso_cucina_domande_title') }}</h3>
+                    <h4 class="mb-2"><i class="fa-solid fa-circle-question me-2"></i>{{ __('ui.corso_cucina_domande_title') }}</h4>
                     <p class="text-muted mb-0">{{ __('ui.corso_cucina_domande_text') }}</p>
 
                     <div id="prenota" class="mt-4 p-3 bg-light rounded">
