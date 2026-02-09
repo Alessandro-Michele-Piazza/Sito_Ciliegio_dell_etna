@@ -7,7 +7,7 @@
         </video>
     </div>
 
-    <section class="container section-mission py-5" data-aos="fade-down" data-aos-duration="1500"
+    <section class="container section-mission py-5" data-aos="fade-up" data-aos-duration="1500"
         data-aos-easing="ease-in-out" data-aos-once="true">
 
         <div class="row align-items-start">

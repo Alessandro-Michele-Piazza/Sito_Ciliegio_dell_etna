@@ -67,7 +67,7 @@ class PostController extends Controller
 
     private function cleanOldPosts()
     {
-        $max = 55;
+        $max = 100;
         $count = Post::count();
         if ($count > $max) {
             $toDelete = Post::orderBy('created_at', 'asc')->take($count - $max)->get();
