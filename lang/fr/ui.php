@@ -29,6 +29,7 @@ return [
     'contattaci' => 'Contactez-nous',
     'Ristorante' => 'Restaurant',
     'Pizzeria' => 'Pizzeria',
+    'Prenota_il_tuo_tavolo' => 'Réservez votre table',
     'Tradizione_Vulcanica' => 'Tradition Volcanique',
     'descrizione_scacchiera_1' => "Au Ciliegio, chaque plat raconte l'histoire de notre terre. De la sélection de farines pour nos pizzas à longue levée, aux ingrédients frais du territoire de l'Etna.",
     'descrizione_scacchiera_2' => "La saveur de la tradition, servie avec une vue inoubliable.",

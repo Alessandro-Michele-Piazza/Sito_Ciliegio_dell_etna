@@ -176,6 +176,7 @@ class PostController extends Controller
     {
         $manager = new ImageManager(new Driver());
         $image = $manager->read($file->getPathname());
+        $image->scaleDown(1920, 1920);
         $encoded = $image->toWebp(80); // qualità 0-100
 
         $filename = 'blog_images/' . Str::uuid() . '.webp';

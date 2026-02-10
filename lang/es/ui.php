@@ -32,6 +32,7 @@ return [
     'ristorante' => 'restaurante',
     'nella_nostra' => ' y en nuestra ',
     'pizzeria' => 'pizzería',
+    'Prenota_il_tuo_tavolo' => 'Reserva tu mesa',
     'prodotti_tipici' => 'productos típicos',
     'km.0' => ' de km.0 se convierten en los protagonistas: desde las verduras de nuestro huerto hasta las harinas selectas. Somos el marco ideal para celebrar sus ',
     'banchetti' => 'banquetes',

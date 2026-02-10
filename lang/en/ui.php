@@ -31,6 +31,7 @@ return [
     'ristorante' => 'restaurant',
     'nella_nostra' => ' and in our ',
     'pizzeria' => 'pizzeria',
+    'Prenota_il_tuo_tavolo' => 'Book your table',
     'prodotti_tipici' => 'typical products',
     'km.0' => ' of km.0 become the protagonists: from the vegetables of our garden to the finest flours. We are the ideal setting to celebrate your ',
     'banchetti' => 'banquets',

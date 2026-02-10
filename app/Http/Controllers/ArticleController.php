@@ -99,6 +99,7 @@ class ArticleController extends Controller
     {
         $manager = new ImageManager(new Driver());
         $image = $manager->read($file->getPathname());
+        $image->scaleDown(1920, 1920);
         $encoded = $image->toWebp(80);
 
         $filename = $dir . '/' . Str::uuid() . '.webp';

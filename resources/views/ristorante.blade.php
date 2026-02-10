@@ -27,10 +27,10 @@
                         {{__('ui.descrizione_ristorante')}}
                     </p>
 
-                    {{-- <a href=" " class="link-scopri">
-                        <span>{{ __('ui.Vedi_il_nostro_menu') }}</span>
+                    <a href="https://pro.pns.sm/3sshe7v" class="link-scopri">
+                        <span>{{ __('ui.Prenota_il_tuo_tavolo') }}</span>
                         <i class="fas fa-arrow-right ms-2"></i>
-                    </a> --}}
+                    </a>
                 </div>
 
                 <!-- Immagine piccola in basso a sinistra -->

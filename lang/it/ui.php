@@ -30,6 +30,7 @@ return [
     'contattaci' => 'Contattaci',
     'Ristorante' => 'Ristorante',
     'Pizzeria' => 'Pizzeria',
+    'Prenota_il_tuo_tavolo' => 'Prenota il tuo tavolo',
     'Tradizione_Vulcanica' => 'Tradizione Vulcanica',
     'descrizione_scacchiera_1' => "Al Ciliegio, ogni piatto racconta la storia della nostra terra. Dalla selezione di farine per le nostre pizze a lunga lievitazione, agli ingredienti freschi del territorio etneo.",
     'descrizione_scacchiera_2' => "Il sapore della tradizione, servito con una vista indimenticabile.",
@@ -104,8 +105,8 @@ return [
     'Torna_al_Blog' => 'Torna al Blog',
     'Pubblicato_il' => 'Pubblicato il',
     'Tempo_di_lettura' => 'Tempo di lettura:',
-    'Etna_Etna_tour_escursioni' => 'Etna Tour Escursioni',
-    'Sottotilo_Escursioni_etna' => 'Natura, vulcano, emozione',
+    'Etna_tour_escursioni' => 'Etna Tour Escursioni',
+    'Sottotitolo_Escursioni_etna' => 'Natura, vulcano, emozione',
     'Escursioni_etna_descrizione' => "Vivi un’escursione sull'Etna indimenticabile. Offriamo trekking guidati con partenza dal tuo hotel verso il Parco dell’Etna. Scopri con guide esperte la natura della Sicilia: oltre 44 crateri, grotte laviche, minerali rari e piante endemiche uniche. Un tour tra paesaggi vulcanici mozzafiato.",
 
     'Etna_bici_titolo' => 'E-Bike Adventure: Etna Sud',
