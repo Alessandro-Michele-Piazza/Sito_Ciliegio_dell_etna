@@ -48,7 +48,7 @@ class ArticleController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit()
+    public function edit(Request $request)
     {
         $article = Article::findOrFail(1);
         // Togli "admin." se il file è direttamente in resources/views
@@ -60,7 +60,7 @@ class ArticleController extends Controller
      */
     public function update(Request $request)
     {
-        $article = Article::findOrFail(1);
+        $article = Article::findOrFail($request->id);
 
         $request->validate([
             'title'           => 'required|string|max:255',

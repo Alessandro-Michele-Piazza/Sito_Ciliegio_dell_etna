@@ -10,23 +10,22 @@
                 <div class="d-flex justify-content-between align-items-center mb-4">
 
                     <a href="{{ route('blog.index') }}" class="btn-modern-back">
-                        <i class="fas fa-arrow-left me-2"></i> 
+                        <i class="fas fa-arrow-left me-2"></i>
                         {{ __('ui.Torna_al_Blog') }}
-                        
+
                     </a>
 
                     {{-- Mostriamo i controlli di gestione solo se l'utente è loggato con Fortify --}}
                     @auth
                         <div class="edit-fab-group">
-                            <a href="{{ route('blog.edit', $post->id) }}"
-                                class="btn btn-warning edit-fab shadow">
+                            <a href="{{ route('blog.edit', $post->id) }}" id="btn-edit-post-{{ $post->id }}" class="btn btn-edit edit-fab shadow">
                                 <i class="fas fa-edit me-1"></i> Modifica
                             </a>
 
                             <form action="{{ route('blog.destroy', $post->id) }}" method="POST" class="d-inline">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger edit-fab shadow"
+                                <button type="submit" id="btn-delete-post-{{ $post->id }}" class="btn btn-delete edit-fab shadow"
                                     onclick="return confirm('Sei sicuro?')">
                                     <i class="fas fa-trash me-1"></i> Elimina
                                 </button>
@@ -43,6 +42,10 @@
                             <img src="{{ asset('storage/' . $post->image) }}" class="object-fit-cover w-100"
                                 alt="{{ $post->title }}">
                         </div>
+                    @else
+                        <div class="ratio ratio-21x9">
+                            <img src="{{ asset('storage/media/placeholder.webp') }}" class="object-fit-cover w-100" alt="Placeholder">
+                        </div>
                     @endif
 
                     <div class="p-4 p-md-5">
@@ -52,10 +55,10 @@
                                 <i class="far fa-calendar-alt me-1"></i>
                                 {{ __('ui.Pubblicato_il') }} {{ $post->created_at->format('d/m/Y') }}
                             </span>
-                            <span>
+                            <span >
                                 <i class="far fa-clock me-1"></i>
-                                
-                                
+
+
                                 {{ __('ui.Tempo_di_lettura') }} {{ ceil(str_word_count($post->content) / 200) }} min
                             </span>
                         </div>
@@ -64,8 +67,8 @@
                         <h1 class="display-5 fw-bold text-dark mb-4">{{ html_entity_decode($post->title) }}</h1>
 
                         {{-- Testo dell'articolo --}}
-                        <div class="fs-5 text-secondary lh-lg mb-5">
-                            {!! nl2br(e($post->content)) !!}
+                        <div class="fs-5 lh-lg mb-5 blog-post-content">
+                            {!! $post->content !!}
                         </div>
 
                         {{-- Social Share Funzionanti --}}
@@ -73,9 +76,7 @@
 
                             <div class="d-flex flex-column">
                                 <p class="text-uppercase small fw-bold text-muted mb-3">Condividi questo articolo</p>
-
                                 <div>
-
                                     <div class="d-flex gap-3 align-items-center">
 
                                         {{-- Condividi su Facebook --}}
@@ -101,7 +102,6 @@
 
                                     </div>
                                 </div>
-
                             </div>
 
                             <a href="{{ route('blog.index') }}" class="btn-modern-back mt-4">
@@ -110,7 +110,6 @@
                         </div>
                     </div>
                 </article>
-
             </div>
         </div>
     </div>

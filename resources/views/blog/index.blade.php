@@ -6,9 +6,8 @@
         <div class="d-flex justify-content-between align-items-center mb-5">
             <h2 class="h4 text-uppercase fw-bold m-0 text-dark"> {{ __('ui.Ultimi_Articoli') }}</h2>
             @auth
-                <a href="{{ route('blog.create') }}" class="btn btn-primary px-4 shadow-sm">
-                    <i class="fas fa-plus me-2"></i>Crea Nuovo
-                </a>
+                {{-- Pulsante flottante per creare un nuovo articolo --}}
+                <div class="d-none d-lg-block">{{-- mantiene spazio su mobile per non rompere layout --}}</div>
             @endauth
         </div>
 
@@ -29,8 +28,7 @@
                                 <img src="{{ asset('storage/' . $post->image) }}" class="card-img-top object-fit-cover"
                                     alt="{{ $post->title }}">
                             @else
-                                <img src="https://via.placeholder.com/600x400?text=Ciliegio+dell+Etna"
-                                    class="card-img-top object-fit-cover" alt="Placeholder">
+                                <img src="{{ asset('storage/media/placeholder.webp') }}" class="card-img-top object-fit-cover" alt="Placeholder">
                             @endif
                         </div>
 
@@ -40,7 +38,8 @@
                             </div>
                             <h5 class="card-title fw-bold text-dark mb-3">{{ $post->title }}</h5>
                             <p class="card-text text-secondary">
-                                {{ Str::limit($post->content, 110) }}
+                                {{-- TODO: Controllare il metodo corretto per fare questo oppure prendere exerpt già dal controller --}}
+                                {!! Str::limit(strip_tags($post->content), 110) !!}
                             </p>
                         </div>
 
@@ -49,20 +48,22 @@
 
                                 {{-- NUOVO PULSANTE MODERNO CON EFFETTO PIEGA --}}
                                 <a href="{{ route('blog.show', $post->id) }}" class="btn-peel-cherry">
-                                    {{ __('ui.Leggi_di_più') }}
+                                    <p class="read_more_button_blog">{{ __('ui.Leggi_di_più') }}</p>
+                                    
                                 </a>
 
                                 @auth
                                     <div class="d-flex gap-2">
                                         <a href="{{ route('blog.edit', $post->id) }}"
-                                            class="btn btn-light btn-sm text-warning shadow-sm border">
+                                            id="btn-edit-post-{{ $post->id }}"
+                                            class="btn btn-edit btn-sm shadow-sm border">
                                             <i class="fas fa-edit"></i>
                                         </a>
 
                                         <form action="{{ route('blog.destroy', $post->id) }}" method="POST">
                                             @csrf
                                             @method('DELETE')
-                                            <button type="submit" class="btn btn-light btn-sm text-danger shadow-sm border"
+                                            <button type="submit" id="btn-delete-post-{{ $post->id }}" class="btn btn-delete btn-sm shadow-sm border"
                                                 onclick="return confirm('Vuoi eliminare?')">
                                                 <i class="fas fa-trash"></i>
                                             </button>
@@ -81,4 +82,11 @@
             @endforelse
         </div>
     </div>
+    @auth
+        <div class="edit-fab-group">
+            <a href="{{ route('blog.create') }}" id="btn-create-post" class="btn btn-primary edit-fab shadow" title="Crea nuovo articolo" aria-label="Crea nuovo articolo">
+                <i class="fas fa-plus me-2"></i>NUOVO ARTICOLO
+            </a>
+        </div>
+    @endauth
 </x-layout>

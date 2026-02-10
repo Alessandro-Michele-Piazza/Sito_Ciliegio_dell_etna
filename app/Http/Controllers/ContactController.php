@@ -9,12 +9,14 @@ class ContactController extends Controller
 {
     public function send(Request $request)
     {
-        $request->validate([
+        $rules = [
             'name'    => 'required|min:3|max:100',
             'email'   => 'required|email',
             'subject' => 'required',
             'message' => 'required|min:10|max:2000',
-        ]);
+        ];
+
+        $request->validate($rules);
 
         $content = "Hai ricevuto un nuovo messaggio dal sito Il Ciliegio dell'Etna:\n\n" .
             "Nome: " . $request->name . "\n" .
@@ -28,6 +30,8 @@ class ContactController extends Controller
                 ->replyTo($request->email, $request->name) // Se rispondi, rispondi all'utente
                 ->subject('Nuovo Contatto: ' . $request->name);
         });
+
+        
 
         return back()->with('success', 'Grazie! Il tuo messaggio è stato inviato correttamente.');
     }

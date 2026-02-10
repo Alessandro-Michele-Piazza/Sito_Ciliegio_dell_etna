@@ -83,6 +83,11 @@
     transform: scale(0.98);
 }
 
+.read_more_button_blog{
+    margin: 0px;
+    font-weight: 600;
+    color: #ffffff;
+}
 
 /* --- RESTO DEL CODICE (ICONE E ALTRI PULSANTI) --- */
 .btn-modern-back {
@@ -160,4 +165,86 @@
 .edit-fab-group .edit-fab {
     position: static;
     margin: 0;
+}
+
+.blog-post-content,
+.blog-post-content p {
+    color: var(--verde_scurissimo);
+}
+
+.blog-edit-content,
+.blog-edit-content p,
+.blog-edit-content label,
+.blog-edit-content .form-text,
+.blog-edit-content .text-muted,
+.blog-edit-content .invalid-feedback {
+    color: var(--verde_scurissimo);
+}
+
+
+/* Create page: ensure form labels, helper text and content are black */
+.blog-create-content,
+.blog-create-content p,
+.blog-create-content label,
+.blog-create-content .form-text,
+.blog-create-content .text-muted,
+.blog-create-content .invalid-feedback {
+    color: var(--verde_scurissimo);
+}
+.blog-editor .ck-editor__editable {
+    min-height: 260px;
+}
+
+.blog-editor.is-invalid .ck-editor__editable {
+    border-color: var(--rosso_ciliegia);
+}
+
+.blog-editor.is-invalid .ck.ck-editor__main > .ck-editor__editable {
+    box-shadow: 0 0 0 0.25rem rgba(var(--rosso_ciliegia-rgb), 0.25);
+}
+
+/* Floating create button: keep primary colors on hover and show text clearly */
+#btn-create-post {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+    padding: 12px 18px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#btn-create-post:hover {
+    background-color: #0d6efd !important;
+    color: #ffffff !important;
+    transform: scale(1.05);
+}
+
+#btn-create-post i {
+    font-size: 1rem;
+}
+
+/* Edit/delete buttons: force colors even with Bootstrap */
+[id^="btn-edit-post-"] {
+    background-color: #ffc107 !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+[id^="btn-edit-post-"]:hover {
+    background-color: #ffc107 !important;
+    color: #ffffff !important;
+    transform: none !important;
+}
+
+[id^="btn-delete-post-"] {
+    background-color: var(--rosso_ciliegia) !important;
+    color: #ffffff !important;
+    border: none !important;
+}
+
+[id^="btn-delete-post-"]:hover {
+    background-color: var(--rosso_ciliegia) !important;
+    color: #ffffff !important;
+    transform: none !important;
 }

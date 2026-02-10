@@ -72,7 +72,7 @@
             <div class="col-lg-7" data-aos="fade-left">
                 <div class="form-wrapper">
                     <h3 class="fw-bold scritta_verde_scuro mb-4">{{ __('ui.Inviaci_un_messaggio') }}</h3>
-                    <form action="{{ route('contact.send') }}" method="POST">
+                    <form id="contact-form" action="{{ route('contact.send') }}" method="POST">
                         @csrf
 
                         <div class="row">
@@ -106,17 +106,22 @@
                                 class="form-select contact-input @error('subject') is-invalid @enderror">
                                 <option selected disabled value=""> {{ __('ui.Seleziona_un_opzione') }} </option>
                                 <option value="Prenotazione Tavolo"
-                                    {{ old('subject') == 'Prenotazione Tavolo' ? 'selected' : '' }}> {{ __('ui.Prenotazione_Tavolo') }}
+                                    {{ old('subject') == 'Prenotazione Tavolo' ? 'selected' : '' }}>
+                                    {{ __('ui.Prenotazione_Tavolo') }}
                                 </option>
                                 <option value="Soggiorno Camere"
-                                    {{ old('subject') == 'Soggiorno Camere' ? 'selected' : '' }}> {{ __('ui.Soggiorno_Camere') }}
+                                    {{ old('subject') == 'Soggiorno Camere' ? 'selected' : '' }}>
+                                    {{ __('ui.Soggiorno_Camere') }}
                                 </option>
-                                 <option value="Corsi di cucina"
-                                    {{ old('subject') == 'Corsi di cucina' ? 'selected' : '' }}> {{ __('ui.Corsi_di_cucina') }}
+                                <option value="Corsi di cucina"
+                                    {{ old('subject') == 'Corsi di cucina' ? 'selected' : '' }}>
+                                    {{ __('ui.Corsi_di_cucina') }}
                                 </option>
                                 <option value="Eventi Speciali"
-                                    {{ old('subject') == 'Eventi Speciali' ? 'selected' : '' }}>{{ __('ui.Eventi_Speciali') }}</option>
-                                <option value="Altro" {{ old('subject') == 'Altro' ? 'selected' : '' }}>{{ __('ui.Altro') }}</option>
+                                    {{ old('subject') == 'Eventi Speciali' ? 'selected' : '' }}>
+                                    {{ __('ui.Eventi_Speciali') }}</option>
+                                <option value="Altro" {{ old('subject') == 'Altro' ? 'selected' : '' }}>
+                                    {{ __('ui.Altro') }}</option>
                             </select>
                             @error('subject')
                                 <div class="text-danger small">{{ $message }}</div>
@@ -134,12 +139,13 @@
                         </div>
 
                         <button type="submit" class="btn-prenota border-0 w-100 py-3">{{ __('ui.Invia') }}</button>
+
                     </form>
                 </div>
             </div>
         </div>
-    </section>
 
+    </section>
     <!-- MAPPA SECTION -->
     <section class="container-fluid px-0 pt-5">
         <div class="map-container">
@@ -148,5 +154,7 @@
                 class="map-iframe"></iframe>
         </div>
     </section>
+
+
 
 </x-layout>

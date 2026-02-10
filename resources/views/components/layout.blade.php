@@ -31,7 +31,6 @@
     <meta property="og:url" content="{{ url()->current() }}">
     <meta property="og:type" content="article">
 
-
 </head>
 
 <body class="w-100">

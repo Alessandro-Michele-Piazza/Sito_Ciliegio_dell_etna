@@ -31,8 +31,8 @@ Route::post('/area-segreta-registrazione-123', [Laravel\Fortify\Http\Controllers
 
 // Rotte protette (bisogna essere loggati)
 Route::middleware(['auth'])->group(function () {
-    Route::get('/Menu_domenicale/modifica', [ArticleController::class, 'edit'])->name('menu.edit');
-    Route::put('/Menu_domenicale/aggiorna', [ArticleController::class, 'update'])->name('menu.update');
+    Route::get('/menu_domenicale/modifica', [ArticleController::class, 'edit'])->name('menu.edit');
+    Route::put('/menu_domenicale/aggiorna', [ArticleController::class, 'update'])->name('menu.update');
 });
 
 

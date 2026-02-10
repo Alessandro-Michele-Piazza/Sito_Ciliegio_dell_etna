@@ -1,13 +1,13 @@
 <x-layout title="Modifica Articolo">
     <x-header title="Modifica Post" />
 
-    <div class="container py-5">
+    <div class="container py-5 blog-edit-content">
         <div class="row justify-content-center">
             <div class="col-md-8">
 
                 {{-- Link rapido per tornare indietro --}}
                 <div class="mb-4">
-                    <a href="{{ route('blog.index') }}" class="btn btn-outline-secondary btn-sm shadow-sm">
+                    <a href="{{ route('blog.index') }}" class="btn-modern-back">
                         <i class="fas fa-chevron-left me-1"></i> Annulla e torna indietro
                     </a>
                 </div>
@@ -58,9 +58,12 @@
 
                             <div class="mb-4">
                                 <label for="content" class="form-label fw-bold">Contenuto</label>
-                                <textarea name="content" id="content" rows="10" class="form-control @error('content') is-invalid @enderror">{{ old('content', $blog->content) }}</textarea>
+                                <textarea name="content" id="content" class="d-none ">{{ old('content', $blog->content) }}</textarea>
+                                <div class="blog-editor @error('content') is-invalid @enderror">
+                                    <div id="content-editor" aria-label="Contenuto dell'articolo"></div>
+                                </div>
                                 @error('content')
-                                    <div class="invalid-feedback">{{ $message }}</div>
+                                    <div class="invalid-feedback d-block">{{ $message }}</div>
                                 @enderror
                             </div>
 

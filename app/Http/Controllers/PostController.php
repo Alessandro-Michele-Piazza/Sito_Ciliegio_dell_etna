@@ -43,7 +43,7 @@ class PostController extends Controller
         $cleanTitle = html_entity_decode($request->title);
 
         $post->title = $cleanTitle;
-        $post->slug = Str::slug($cleanTitle);
+        $post->slug = $this->generateUniqueSlug($cleanTitle);
         $post->content = $request->content;
 
         if ($request->hasFile('image')) {
@@ -62,6 +62,12 @@ class PostController extends Controller
      */
     public function show(Post $blog)
     { // Laravel usa l'ID automaticamente
+        // Se non c'è un valore o il file non esiste in storage pubblico,
+        // usiamo il placeholder presente in storage/app/public/media/placeholder.webp
+        if (empty($blog->image) || !Storage::disk('public')->exists($blog->image)) {
+            $blog->image = 'media/placeholder.webp';
+        }
+
         return view('blog.show', ['post' => $blog]);
     }
 
@@ -99,7 +105,7 @@ class PostController extends Controller
         $cleanTitle = html_entity_decode($request->title);
 
         $blog->title = $cleanTitle;
-        $blog->slug = Str::slug($cleanTitle);
+        $blog->slug = $this->generateUniqueSlug($cleanTitle, $blog->id);
         $blog->content = $request->content;
 
         if ($request->hasFile('image')) {
@@ -136,5 +142,21 @@ class PostController extends Controller
         Storage::disk('public')->put($filename, $encoded);
 
         return $filename;
+    }
+
+    private function generateUniqueSlug(string $title, ?int $ignoreId = null): string
+    {
+        $baseSlug = Str::slug($title);
+        $slug = $baseSlug;
+        $suffix = 1;
+
+        while (Post::where('slug', $slug)
+            ->when($ignoreId, fn($query) => $query->where('id', '!=', $ignoreId))
+            ->exists()) {
+            $suffix++;
+            $slug = $baseSlug . '-' . $suffix;
+        }
+
+        return $slug;
     }
 }

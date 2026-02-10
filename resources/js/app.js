@@ -2,6 +2,7 @@ import "./bootstrap";
 import * as bootstrap from "bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 import Swiper from "swiper/bundle";
 import "swiper/css/bundle";
@@ -59,6 +60,35 @@ document.addEventListener("DOMContentLoaded", () => {
             1024: { slidesPerView: 3 },
         },
     });
+
+    const editorInput = document.querySelector("#content");
+    const editorElement = document.querySelector("#content-editor");
+
+    if (editorInput && editorElement) {
+        ClassicEditor.create(editorElement, {
+            toolbar: [
+                "heading",
+                "|",
+                "bold",
+                "italic",
+                "link",
+                "bulletedList",
+                "numberedList",
+                "blockQuote",
+                "undo",
+                "redo",
+            ],
+        })
+            .then((editor) => {
+                editor.setData(editorInput.value || "");
+                editor.model.document.on("change:data", () => {
+                    editorInput.value = editor.getData();
+                });
+            })
+            .catch((error) => {
+                console.error("CKEditor initialization failed", error);
+            });
+    }
 });
 
 // CAROSELLO STANZE
