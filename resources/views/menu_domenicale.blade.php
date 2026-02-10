@@ -57,17 +57,17 @@
                         </div>
 
                         <!-- CARD TESTO: CONTENUTO -->
-                        <div class="col-md-6">
-                            <div class="menu-card menu-card-content">
-                                <div class="menu-content-side">
-                                    <div class="menu-content-inner  ">
+                        <div class="col-md-6 ">
+                            <div class="menu-card menu-card-content ">
+                                <div class="menu-content-side ">
+                                    <div class="menu-content-inner   ">
                                         <div class="menu-badge ">
                                             🍽️ {{ __('ui.Menu_domenicale') }}
                                         </div>
                                         <h1 class="menu-title">{!! nl2br(e($article->title)) !!}</h1>
                                         <div class="menu-divider "></div>
-                                        <div class="menu-body text-center">
-                                            {{ $article->body }}
+                                        <div id="menu-body" class="menu-body text-center scritta_verde_scuro">
+                                            {!! $article->body !!}
                                         </div>
 
                                         <div class="menu-footer">

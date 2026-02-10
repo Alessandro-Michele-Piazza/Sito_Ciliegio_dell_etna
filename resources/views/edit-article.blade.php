@@ -11,6 +11,7 @@
                         <form action="{{ route('menu.update') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             @method('PUT')
+                            <input type="hidden" name="id" value="{{ $article->id }}">
 
                             <div class="row">
                                 <!-- Colonna Sinistra: Anteprime e Foto -->
@@ -53,7 +54,10 @@
 
                                     <div class="mb-3">
                                         <label class="form-label">Elenco Piatti e Descrizione</label>
-                                        <textarea name="body" class="form-control" rows="8" required>{{ $article->body }}</textarea>
+                                        <textarea name="body" id="content" class="d-none" required>{{ $article->body }}</textarea>
+                                        <div class="blog-editor">
+                                            <div id="content-editor" aria-label="Elenco Piatti e Descrizione"></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -64,8 +68,8 @@
                                 <button type="submit" class="btn btn-success btn-lg px-5 rounded-pill">
                                     🚀 PUBBLICA AGGIORNAMENTO
                                 </button>
-                                <a href="{{ route('pizzeria') }}"
-                                    class="btn btn-outline-secondary btn-lg px-5 rounded-pill">
+                                <a href="{{ route('menu_domenicale') }}"
+                                    class="btn-modern-back">
                                     Annulla
                                 </a>
                             </div>

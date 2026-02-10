@@ -206,6 +206,23 @@
     margin-top: 15px;
 }
 
+/* Edit menu page: force text to black */
+.edit-container,
+.edit-container .form-label,
+.edit-container .text-muted,
+.edit-container .form-text,
+.edit-container .invalid-feedback,
+.edit-container p,
+.edit-container label {
+    color: #000000;
+}
+
+/* ID-based override for Menu body to ensure correct color specificity */
+#menu-body,
+#menu-body p {
+    color: var(--verde_scuro) !important;
+}
+
 .preview-img {
     width: 100%;
     height: 250px;
