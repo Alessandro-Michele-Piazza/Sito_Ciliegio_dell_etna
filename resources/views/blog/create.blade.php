@@ -49,9 +49,21 @@
                                 @enderror
                             </div>
 
+                            {{-- Campo Tag --}}
+                            <div class="mb-4">
+                                <label for="tags" class="form-label fw-semibold">Tag (separati da virgola)</label>
+                                <input type="text" name="tags" id="tags"
+                                    class="form-control @error('tags') is-invalid @enderror"
+                                    value="{{ old('tags') }}"
+                                    placeholder="es: eventi, cucina, estate">
+                                @error('tags')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
                             {{-- Campo Contenuto --}}
                             <div class="mb-4">
-                                <label for="content" class="form-label fw-semibold">Contenuto dell'Articolo</label>
+                                <label for="content" class="form-label fw-semibold @error('content') text-danger @enderror">Contenuto dell'Articolo</label>
                                 <textarea name="content" id="content" class="d-none">{{ old('content') }}</textarea>
                                 <div class="blog-editor @error('content') is-invalid @enderror">
                                     <div id="content-editor" aria-label="Contenuto dell'articolo"></div>

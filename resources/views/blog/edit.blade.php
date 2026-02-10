@@ -16,7 +16,7 @@
                     <div class="card-body p-4 p-md-5">
 
                         {{-- Notiamo l'action che punta a 'update' e passa l'ID del blog --}}
-                        <form action="{{ route('blog.update', $blog->id) }}" method="POST"
+                        <form action="{{ route('blog.update', $blog->slug) }}" method="POST"
                             enctype="multipart/form-data">
                             @csrf
                             @method('PUT') {{-- Fondamentale per le rotte di aggiornamento --}}
@@ -56,8 +56,23 @@
                                 @enderror
                             </div>
 
+                            {{-- Campo Tag --}}
+                            @php
+                                $tagsValue = $blog->tags->pluck('name')->implode(', ');
+                            @endphp
                             <div class="mb-4">
-                                <label for="content" class="form-label fw-bold">Contenuto</label>
+                                <label for="tags" class="form-label fw-bold">Tag (separati da virgola)</label>
+                                <input type="text" name="tags" id="tags"
+                                    class="form-control @error('tags') is-invalid @enderror"
+                                    value="{{ old('tags', $tagsValue) }}"
+                                    placeholder="es: eventi, cucina, estate">
+                                @error('tags')
+                                    <div class="invalid-feedback">{{ $message }}</div>
+                                @enderror
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="content" class="form-label fw-bold @error('content') text-danger @enderror">Contenuto</label>
                                 <textarea name="content" id="content" class="d-none ">{{ old('content', $blog->content) }}</textarea>
                                 <div class="blog-editor @error('content') is-invalid @enderror">
                                     <div id="content-editor" aria-label="Contenuto dell'articolo"></div>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -14,10 +15,41 @@ class PostController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::latest()->get();
-        return view('blog.index', compact('posts'));
+        $tag = $request->query('tag');
+        $search = $request->query('q');
+        $year = $request->query('year');
+        $query = Post::with('tags')->latest();
+
+        if (!empty($tag)) {
+            $query->whereHas('tags', function ($tagsQuery) use ($tag) {
+                $tagsQuery->where('slug', $tag)->orWhere('name', $tag);
+            });
+        }
+
+        if (!empty($search)) {
+            $query->where(function ($searchQuery) use ($search) {
+                $searchQuery->where('title', 'like', '%' . $search . '%')
+                    ->orWhere('content', 'like', '%' . $search . '%');
+            });
+        }
+
+        if (!empty($year)) {
+            $query->whereYear('created_at', $year);
+        }
+
+        $posts = $query->get();
+        $tags = Tag::withCount('posts')
+            ->having('posts_count', '>', 0)
+            ->orderBy('name')
+            ->get();
+        $years = Post::selectRaw('YEAR(created_at) as year')
+            ->distinct()
+            ->orderByDesc('year')
+            ->pluck('year');
+
+        return view('blog.index', compact('posts', 'tag', 'search', 'year', 'tags', 'years'));
     }
 
     /**
@@ -36,7 +68,8 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required|max:255',
             'content' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,webp|max:2048'
+            'image' => 'image|mimes:jpeg,png,jpg,webp|max:2048',
+            'tags' => 'nullable|string|max:255'
         ]);
 
         $post = new Post();
@@ -52,6 +85,8 @@ class PostController extends Controller
 
         $post->save();
 
+        $this->syncTags($post, $request->input('tags'));
+
         $this->cleanOldPosts();
 
         return redirect()->route('blog.index')->with('success', 'Post creato con successo!');
@@ -62,6 +97,7 @@ class PostController extends Controller
      */
     public function show(Post $blog)
     { // Laravel usa l'ID automaticamente
+        $blog->load('tags');
         // Se non c'è un valore o il file non esiste in storage pubblico,
         // usiamo il placeholder presente in storage/app/public/media/placeholder.webp
         if (empty($blog->image) || !Storage::disk('public')->exists($blog->image)) {
@@ -88,6 +124,7 @@ class PostController extends Controller
      */
     public function edit(Post $blog) // Cambiato $post in $blog per coerenza con la rotta
     {
+        $blog->load('tags');
         return view('blog.edit', compact('blog'));
     }
 
@@ -99,7 +136,8 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required|max:255',
             'content' => 'required',
-            'image' => 'image|mimes:jpeg,png,jpg,webp|max:2048'
+            'image' => 'image|mimes:jpeg,png,jpg,webp|max:2048',
+            'tags' => 'nullable|string|max:255'
         ]);
 
         $cleanTitle = html_entity_decode($request->title);
@@ -116,6 +154,8 @@ class PostController extends Controller
         }
 
         $blog->save();
+
+        $this->syncTags($blog, $request->input('tags'));
 
         return redirect()->route('blog.index')->with('success', 'Post aggiornato con successo!');
     }
@@ -158,5 +198,33 @@ class PostController extends Controller
         }
 
         return $slug;
+    }
+
+    private function syncTags(Post $post, ?string $rawTags): void
+    {
+        if ($rawTags === null) {
+            $post->tags()->sync([]);
+            return;
+        }
+
+        $names = collect(explode(',', $rawTags))
+            ->map(fn($tag) => trim($tag))
+            ->filter();
+
+        $tagIds = $names->map(function ($name) {
+            $slug = Str::slug($name);
+            if ($slug === '') {
+                return null;
+            }
+
+            $tag = Tag::firstOrCreate(
+                ['slug' => $slug],
+                ['name' => $name]
+            );
+
+            return $tag->id;
+        })->filter()->values();
+
+        $post->tags()->sync($tagIds);
     }
 }

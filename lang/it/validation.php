@@ -185,6 +185,18 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name' => 'nome',
+        'email' => 'email',
+        'password' => 'password',
+        'password_confirmation' => 'conferma password',
+        'title' => 'titolo',
+        'content' => 'contenuto',
+        'image' => 'immagine',
+        'tags' => 'tag',
+        'tag' => 'tag',
+        'q' => 'ricerca',
+        'year' => 'anno',
+    ],
 
 ];

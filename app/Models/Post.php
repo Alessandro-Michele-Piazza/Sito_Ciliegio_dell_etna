@@ -19,6 +19,16 @@ class Post extends Model
         'image'
     ];
 
+    public function tags()
+    {
+        return $this->belongsToMany(Tag::class)->withTimestamps();
+    }
+
+    public function getRouteKeyName(): string
+    {
+        return 'slug';
+    }
+
     /**
      * Il metodo "booted" viene richiamato automaticamente da Laravel.
      * Lo usiamo per agganciare degli "eventi" al ciclo di vita del modello.

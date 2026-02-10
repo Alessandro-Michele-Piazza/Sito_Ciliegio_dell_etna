@@ -8,17 +8,17 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MenuPizzeriaController;
 
 Route::get('/', [PublicController::class, 'home'])->name("home");
-Route::get('/Contatti', [PublicController::class, 'contatti'])->name("contatti");
-Route::post('/Contatti/invio', [ContactController::class, 'send'])->name('contact.send');
-Route::get('/Camere', [PublicController::class, 'stanze'])->name("stanze");
-Route::get('/Pizzeria', [PublicController::class, 'pizzeria'])->name("pizzeria");
-Route::get('/Ristorante', [PublicController::class, 'ristorante'])->name("ristorante");
-Route::post('/Lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
-Route::get('/Menu_domenicale', [ArticleController::class, 'index'])->name('menu_domenicale');
-Route::get('/Esperienze', [PublicController::class, 'esperienze'])->name("esperienze");
-Route::get('/Wine_Tour', [PublicController::class, 'winetour'])->name("winetour");
-Route::get('/Corso_Pizzeria', [PublicController::class, 'corso_pizzeria'])->name("corso_pizzeria");
-Route::get('/Corso_Cucina', [PublicController::class, 'corso_cucina'])->name("corso_cucina");
+Route::get('/contatti', [PublicController::class, 'contatti'])->name("contatti");
+Route::post('/contatti/invio', [ContactController::class, 'send'])->name('contact.send');
+Route::get('/camere', [PublicController::class, 'stanze'])->name("stanze");
+Route::get('/pizzeria', [PublicController::class, 'pizzeria'])->name("pizzeria");
+Route::get('/ristorante', [PublicController::class, 'ristorante'])->name("ristorante");
+Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
+Route::get('/menu_domenicale', [ArticleController::class, 'index'])->name('menu_domenicale');
+Route::get('/esperienze', [PublicController::class, 'esperienze'])->name("esperienze");
+Route::get('/wine_tour', [PublicController::class, 'winetour'])->name("winetour");
+Route::get('/corso_pizzeria', [PublicController::class, 'corso_pizzeria'])->name("corso_pizzeria");
+Route::get('/corso_cucina', [PublicController::class, 'corso_cucina'])->name("corso_cucina");
 
 
 
@@ -39,24 +39,24 @@ Route::middleware(['auth'])->group(function () {
 //ROTTE PER IL BLOG
 
 // Rotte PUBBLICHE (Tutti possono vedere la lista e il dettaglio)
-Route::get('/Blog', [PostController::class, 'index'])->name('blog.index');
-Route::get('/Blog/articolo/{blog}', [PostController::class, 'show'])->name('blog.show');
+Route::get('/blog', [PostController::class, 'index'])->name('blog.index');
+Route::get('/blog/articolo/{blog:slug}', [PostController::class, 'show'])->name('blog.show');
 
 // Rotte PROTETTE (Solo chi è loggato con Fortify può creare, modificare o eliminare)
 Route::middleware(['auth'])->group(function () {
-    Route::get('/Blog/crea', [PostController::class, 'create'])->name('blog.create');
-    Route::post('/Blog/salva', [PostController::class, 'store'])->name('blog.store');
-    Route::get('/Blog/modifica/{blog}', [PostController::class, 'edit'])->name('blog.edit');
-    Route::put('/Blog/aggiorna/{blog}', [PostController::class, 'update'])->name('blog.update');
-    Route::delete('/Blog/elimina/{blog}', [PostController::class, 'destroy'])->name('blog.destroy');
+    Route::get('/blog/crea', [PostController::class, 'create'])->name('blog.create');
+    Route::post('/blog/salva', [PostController::class, 'store'])->name('blog.store');
+    Route::get('/blog/modifica/{blog:slug}', [PostController::class, 'edit'])->name('blog.edit');
+    Route::put('/blog/aggiorna/{blog:slug}', [PostController::class, 'update'])->name('blog.update');
+    Route::delete('/blog/elimina/{blog:slug}', [PostController::class, 'destroy'])->name('blog.destroy');
 });
 
 //ROTTE PIZZERIA
 
 // Area riservata (Admin) - protetta dal middleware di Fortify
 Route::middleware(['auth'])->group(function () {
-    Route::get('/admin/Menu-pizzeria/edit', [MenuPizzeriaController::class, 'edit'])->name('menu_pizzeria_edit');
-    Route::post('/admin/Menu-pizzeria/update', [MenuPizzeriaController::class, 'update'])->name('menu_pizzeria_update');
+    Route::get('/admin/menu-pizzeria/edit', [MenuPizzeriaController::class, 'edit'])->name('menu_pizzeria_edit');
+    Route::post('/admin/menu-pizzeria/update', [MenuPizzeriaController::class, 'update'])->name('menu_pizzeria_update');
 });
 
 Route::get('/Apri-Menu-PDF', function () {
