@@ -7,6 +7,16 @@ use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MenuPizzeriaController;
 
+// Intercetta URL con prefisso lingua come /it/contatti
+// Limita il placeholder `lang` ai codici linguistici per non intercettare tutte le URI.
+Route::get('{lang}/{any?}', function ($lang, $any = null) {
+    if (in_array($lang, ['it', 'en', 'es', 'fr'])) {
+        session(['locale' => $lang]);
+        $target = $any ? '/' . $any : '/';
+        return redirect($target);
+    }
+    return abort(404);
+})->where('lang', 'it|en|es|fr')->where('any', '.*');
 Route::get('/', [PublicController::class, 'home'])->name("home");
 Route::get('/contatti', [PublicController::class, 'contatti'])->name("contatti");
 Route::post('/contatti/invio', [ContactController::class, 'send'])->name('contact.send');
