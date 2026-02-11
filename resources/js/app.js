@@ -10,7 +10,8 @@ window.Swiper = Swiper;
 AOS.init();
 
 const navbar = document.getElementById("navbar");
-const navbarCollapse = document.getElementById("navbarNav");
+const navbarOffcanvas = document.getElementById("navbarOffcanvas");
+const navbarRight = document.querySelector('.navbar-right');
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 50) {
@@ -20,24 +21,48 @@ window.addEventListener("scroll", () => {
     }
 });
 
+let _lastScrollY = 0;
+
+if (navbar && navbarOffcanvas) {
+    navbarOffcanvas.addEventListener("shown.bs.offcanvas", () => {
+        // visual class
+        navbar.classList.add("navbar-offcanvas-open");
+
+        // accessibility
+        if (navbarRight) {
+            navbarRight.setAttribute('aria-hidden', 'true');
+        }
+
+        // lock body scroll while preserving position
+        _lastScrollY = window.scrollY || window.pageYOffset;
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${_lastScrollY}px`;
+        document.body.style.left = '0';
+        document.body.style.right = '0';
+        document.body.style.width = '100%';
+    });
+
+    navbarOffcanvas.addEventListener("hidden.bs.offcanvas", () => {
+        navbar.classList.remove("navbar-offcanvas-open");
+
+        if (navbarRight) {
+            navbarRight.removeAttribute('aria-hidden');
+        }
+
+        // restore body scroll
+        document.body.style.position = '';
+        document.body.style.top = '';
+        document.body.style.left = '';
+        document.body.style.right = '';
+        document.body.style.width = '';
+
+        // restore previous scroll position
+        window.scrollTo(0, _lastScrollY);
+        _lastScrollY = 0;
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
-    const navbar = document.getElementById("navbar");
-    const navbarCollapse = document.getElementById("navbarNav");
-
-    if (navbar && navbarCollapse) {
-        document.addEventListener("click", (e) => {
-            const isClickInside = navbar.contains(e.target);
-            const isShown = navbarCollapse.classList.contains("show");
-
-            if (!isClickInside && isShown) {
-                const bsCollapse =
-                    bootstrap.Collapse.getInstance(navbarCollapse) ||
-                    new bootstrap.Collapse(navbarCollapse, { toggle: false });
-                bsCollapse.hide();
-            }
-        });
-    }
-
     var swiper = new Swiper(".mySwiper", {
         loop: true,
         centeredSlides: false,
