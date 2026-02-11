@@ -1,4 +1,11 @@
-<x-layout title="{{ __('ui.Menu_domenicale') }}">
+<x-layout
+    title="{{ __('ui.Menu_domenicale') }}"
+    metaDescription="{{ Str::limit(strip_tags($article->body ?? ''), 160, '') }}"
+    ogTitle="{{ __('ui.Menu_domenicale') }} | Il Ciliegio dell'Etna"
+    ogDescription="{{ Str::limit(strip_tags($article->body ?? ''), 160, '') }}"
+    ogImage="{{ $article->image ? asset('storage/' . $article->image) : Vite::asset('resources/images/logo_ciliegio.webp') }}"
+    canonical="{{ route('menu_domenicale') }}"
+>
     <x-header title=" {{ __('ui.Menu_domenicale') }}  " />
 
     <div class="container">

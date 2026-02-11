@@ -1,5 +1,12 @@
 {{-- filepath: c:\Users\alexp\Sito_ciliegio_dell_etna_2026\resources\views\corso_pizzeria.blade.php --}}
-<x-layout :title="__('ui.corso_pizzeria_title')">
+<x-layout
+    :title="__('ui.corso_pizzeria_title')"
+    metaDescription="Corso di pizzeria: impasti, tecniche e ingredienti con i maestri de Il Ciliegio dell'Etna."
+    ogTitle="Corso di Pizzeria | Il Ciliegio dell'Etna"
+    ogDescription="Impara a fare la pizza con il nostro corso dedicato, ingredienti e tecnica inclusi."
+    ogImage="{{ asset('storage/media/pizza_5.webp') }}"
+    canonical="{{ route('corso_pizzeria') }}"
+>
     <x-header :title="__('ui.corso_pizzeria_title')" />
 
     {{-- Hero con Immagine --}}

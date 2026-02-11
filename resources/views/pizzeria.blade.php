@@ -1,4 +1,11 @@
-<x-layout title="{{ __('ui.Pizzeria') }}">
+<x-layout
+    title="{{ __('ui.Pizzeria') }}"
+    metaDescription="Pizzeria Il Ciliegio dell'Etna: impasti tradizionali, ingredienti siciliani e menu da scoprire."
+    ogTitle="Pizzeria | Il Ciliegio dell'Etna"
+    ogDescription="Pizzeria con ingredienti locali e menu dedicato presso Il Ciliegio dell'Etna."
+    ogImage="{{ asset('storage/media/pizza_4.webp') }}"
+    canonical="{{ route('pizzeria') }}"
+>
     <x-header title="{{ __('ui.Pizzeria') }}" />
 
 

@@ -1,4 +1,11 @@
-<x-layout title="Blog">
+<x-layout
+    title="Blog"
+    metaDescription="Novita, eventi e storie dal Ciliegio dell'Etna. Leggi gli ultimi articoli del nostro blog."
+    ogTitle="Blog | Il Ciliegio dell'Etna"
+    ogDescription="Articoli, eventi e novita dal Ciliegio dell'Etna."
+    ogImage="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}"
+    canonical="{{ route('blog.index') }}"
+>
     <x-header title="Blog" />
 
     <div class="container py-5" id="blog-container-main">

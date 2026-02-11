@@ -1,4 +1,11 @@
-<x-layout title="{{ __('ui.Wine_Tour') }} | Ciliegio dell’Etna">
+<x-layout
+    title="{{ __('ui.Wine_Tour') }} | Il Ciliegio dell'Etna"
+    metaDescription="Wine tour e degustazioni: scopri i pacchetti e prenota la tua esperienza enogastronomica."
+    ogTitle="Wine Tour | Il Ciliegio dell'Etna"
+    ogDescription="Degustazioni e wine tour con pacchetti dedicati nel territorio dell'Etna."
+    ogImage="{{ asset('storage/media/vino.webp') }}"
+    canonical="{{ route('winetour') }}"
+>
     <x-header title="{{ __('ui.Wine_Tour') }}" />
 
     <main class="wine-page">

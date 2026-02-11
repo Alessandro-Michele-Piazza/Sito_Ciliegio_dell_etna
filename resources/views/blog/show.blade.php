@@ -1,4 +1,63 @@
-<x-layout title="{{ $post->title }}">
+<x-layout
+    title="{{ $post->title }}"
+    metaDescription="{{ Str::limit(strip_tags($post->content ?? ''), 160, '') }}"
+    ogTitle="{{ $post->title }}"
+    ogDescription="{{ Str::limit(strip_tags($post->content ?? ''), 160, '') }}"
+    ogImage="{{ $post->image ? asset('storage/' . $post->image) : Vite::asset('resources/images/logo_ciliegio.webp') }}"
+    ogType="article"
+    canonical="{{ route('blog.show', $post->slug) }}"
+>
+    @php
+        $articleStructuredData = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Article',
+            'mainEntityOfPage' => [
+                '@type' => 'WebPage',
+                '@id' => route('blog.show', $post->slug),
+            ],
+            'headline' => $post->title,
+            'image' => [$post->image ? asset('storage/' . $post->image) : Vite::asset('resources/images/logo_ciliegio.webp')],
+            'datePublished' => optional($post->created_at)->toIso8601String(),
+            'dateModified' => optional($post->updated_at)->toIso8601String(),
+            'author' => [
+                '@type' => 'Organization',
+                'name' => "Il Ciliegio dell'Etna",
+            ],
+            'publisher' => [
+                '@type' => 'Organization',
+                'name' => "Il Ciliegio dell'Etna",
+                'logo' => [
+                    '@type' => 'ImageObject',
+                    'url' => Vite::asset('resources/images/logo_ciliegio.webp'),
+                ],
+            ],
+            'description' => Str::limit(strip_tags($post->content ?? ''), 160, ''),
+        ];
+        $breadcrumbStructuredData = [
+            '@context' => 'https://schema.org',
+            '@type' => 'BreadcrumbList',
+            'itemListElement' => [
+                [
+                    '@type' => 'ListItem',
+                    'position' => 1,
+                    'name' => 'Blog',
+                    'item' => route('blog.index'),
+                ],
+                [
+                    '@type' => 'ListItem',
+                    'position' => 2,
+                    'name' => $post->title,
+                    'item' => route('blog.show', $post->slug),
+                ],
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">
+        {!! json_encode($articleStructuredData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+    </script>
+    <script type="application/ld+json">
+        {!! json_encode($breadcrumbStructuredData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+    </script>
     <x-header title="{{ $post->title }}" />
 
     <div class="blog-show" id="blog-show-page">

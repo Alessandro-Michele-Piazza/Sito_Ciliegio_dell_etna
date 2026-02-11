@@ -6,6 +6,7 @@ use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MenuPizzeriaController;
+use App\Models\Post;
 
 // Intercetta URL con prefisso lingua come /it/contatti
 // Limita il placeholder `lang` ai codici linguistici per non intercettare tutte le URI.
@@ -18,6 +19,101 @@ Route::get('{lang}/{any?}', function ($lang, $any = null) {
     return abort(404);
 })->where('lang', 'it|en|es|fr')->where('any', '.*');
 Route::get('/', [PublicController::class, 'home'])->name("home");
+Route::get('/sitemap.xml', function () {
+    $today = now()->toDateString();
+    $urls = [
+        [
+            'loc' => route('home'),
+            'lastmod' => $today,
+            'changefreq' => 'weekly',
+            'priority' => '1.0',
+        ],
+        [
+            'loc' => route('contatti'),
+            'lastmod' => $today,
+            'changefreq' => 'yearly',
+            'priority' => '0.6',
+        ],
+        [
+            'loc' => route('stanze'),
+            'lastmod' => $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.8',
+        ],
+        [
+            'loc' => route('pizzeria'),
+            'lastmod' => $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.8',
+        ],
+        [
+            'loc' => route('ristorante'),
+            'lastmod' => $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.8',
+        ],
+        [
+            'loc' => route('menu_domenicale'),
+            'lastmod' => $today,
+            'changefreq' => 'weekly',
+            'priority' => '0.7',
+        ],
+        [
+            'loc' => route('esperienze'),
+            'lastmod' => $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.7',
+        ],
+        [
+            'loc' => route('winetour'),
+            'lastmod' => $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.7',
+        ],
+        [
+            'loc' => route('corso_pizzeria'),
+            'lastmod' => $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.6',
+        ],
+        [
+            'loc' => route('corso_cucina'),
+            'lastmod' => $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.6',
+        ],
+        [
+            'loc' => route('blog.index'),
+            'lastmod' => $today,
+            'changefreq' => 'weekly',
+            'priority' => '0.7',
+        ],
+    ];
+
+    $posts = Post::query()->select(['slug', 'updated_at'])->get();
+    foreach ($posts as $post) {
+        $urls[] = [
+            'loc' => route('blog.show', $post->slug),
+            'lastmod' => optional($post->updated_at)->toDateString() ?? $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.6',
+        ];
+    }
+
+    $xml = '<?xml version="1.0" encoding="UTF-8"?>';
+    $xml .= '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+    foreach ($urls as $url) {
+        $xml .= '<url>';
+        $xml .= '<loc>' . htmlspecialchars($url['loc'], ENT_XML1) . '</loc>';
+        $xml .= '<lastmod>' . htmlspecialchars($url['lastmod'], ENT_XML1) . '</lastmod>';
+        $xml .= '<changefreq>' . htmlspecialchars($url['changefreq'], ENT_XML1) . '</changefreq>';
+        $xml .= '<priority>' . htmlspecialchars($url['priority'], ENT_XML1) . '</priority>';
+        $xml .= '</url>';
+    }
+    $xml .= '</urlset>';
+
+    return response($xml, 200)->header('Content-Type', 'application/xml');
+})->name('sitemap');
 Route::get('/contatti', [PublicController::class, 'contatti'])->name("contatti");
 Route::post('/contatti/invio', [ContactController::class, 'send'])->name('contact.send');
 Route::get('/camere', [PublicController::class, 'stanze'])->name("stanze");

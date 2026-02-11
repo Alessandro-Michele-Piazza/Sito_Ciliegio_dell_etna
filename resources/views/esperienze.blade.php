@@ -1,4 +1,11 @@
-<x-layout title="{{ __('ui.Esperienze') }}">
+<x-layout
+    title="{{ __('ui.Esperienze') }}"
+    metaDescription="Esperienze e tour sull'Etna: escursioni, parchi avventura e attrazioni vicine a Giarre."
+    ogTitle="Esperienze | Il Ciliegio dell'Etna"
+    ogDescription="Scopri esperienze, escursioni e attività sul territorio dell'Etna."
+    ogImage="{{ asset('storage/media/etna_1.webp') }}"
+    canonical="{{ route('esperienze') }}"
+>
 
     <x-header title="{{ __('ui.Esperienze') }}" />
 

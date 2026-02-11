@@ -1,4 +1,11 @@
-<x-layout title="{{ __('ui.Contatti') }}">
+<x-layout
+    title="{{ __('ui.Contatti') }}"
+    metaDescription="Contatta Il Ciliegio dell'Etna: telefono, email, indirizzo e form per informazioni e prenotazioni."
+    ogTitle="Contatti | Il Ciliegio dell'Etna"
+    ogDescription="Contatti, indirizzo e orari de Il Ciliegio dell'Etna a Giarre."
+    ogImage="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}"
+    canonical="{{ route('contatti') }}"
+>
 
     @php
         $structuredData = [

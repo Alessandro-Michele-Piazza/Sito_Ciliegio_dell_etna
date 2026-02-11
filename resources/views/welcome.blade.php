@@ -1,4 +1,11 @@
-<x-layout title="Homepage">
+<x-layout
+    title="Homepage"
+    metaDescription="Agriturismo Il Ciliegio dell'Etna a Giarre: camere, ristorante, pizzeria ed esperienze sull'Etna."
+    ogTitle="Il Ciliegio dell'Etna | Agriturismo a Giarre"
+    ogDescription="Agriturismo, ristorante e pizzeria a Giarre con camere e esperienze sul territorio dell'Etna."
+    ogImage="{{ Vite::asset('resources/images/ciliegio_esterno.webp') }}"
+    canonical="{{ route('home') }}"
+>
     @php
         $structuredData = [
             '@context' => 'https://schema.org',

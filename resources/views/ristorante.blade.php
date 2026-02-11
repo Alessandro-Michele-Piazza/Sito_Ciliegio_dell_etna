@@ -1,4 +1,11 @@
-<x-layout title=" {{ __('ui.il_ristorante') }} ">
+<x-layout
+    title="{{ __('ui.il_ristorante') }}"
+    metaDescription="Ristorante Il Ciliegio dell'Etna: cucina siciliana autentica con prodotti locali e di stagione."
+    ogTitle="Ristorante | Il Ciliegio dell'Etna"
+    ogDescription="Sapori autentici della Sicilia nel ristorante de Il Ciliegio dell'Etna a Giarre."
+    ogImage="{{ asset('storage/media/foto(3).webp') }}"
+    canonical="{{ route('ristorante') }}"
+>
 
     <x-header title=" {{ __('ui.il_ristorante') }} " />
 

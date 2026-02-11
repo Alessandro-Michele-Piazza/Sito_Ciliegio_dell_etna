@@ -1,4 +1,11 @@
-<x-layout title="{{ __('ui.Camere') }}">
+<x-layout
+    title="{{ __('ui.Camere') }}"
+    metaDescription="Camere confortevoli con servizi moderni presso Il Ciliegio dell'Etna a Giarre."
+    ogTitle="Camere | Il Ciliegio dell'Etna"
+    ogDescription="Camere matrimoniali e triple con comfort, Wi-Fi e servizi per un soggiorno rilassante."
+    ogImage="{{ asset('storage/media/foto(9).webp') }}"
+    canonical="{{ route('stanze') }}"
+>
 
     <div id="sezione-carosello-1" class="wrapper-carosello">
         <!-- Carosello Orizzontale -->

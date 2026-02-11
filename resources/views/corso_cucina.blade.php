@@ -1,4 +1,11 @@
-<x-layout title="{{ __('ui.corso_cucina_title') }}">
+<x-layout
+    title="{{ __('ui.corso_cucina_title') }}"
+    metaDescription="Corso di cucina siciliana con ingredienti locali e tecniche tradizionali."
+    ogTitle="Corso di Cucina | Il Ciliegio dell'Etna"
+    ogDescription="Scopri il nostro corso di cucina con ricette e tradizioni siciliane."
+    ogImage="{{ asset('storage/media/corso_cucina.webp') }}"
+    canonical="{{ route('corso_cucina') }}"
+>
     <x-header title="{{ __('ui.corso_cucina_title') }}" />
 
     {{-- Hero con Immagine --}}
