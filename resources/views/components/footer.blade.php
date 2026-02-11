@@ -13,22 +13,12 @@
                     <li>
                         <span class="footer-commercial__title">IL CILIEGIO DELL’ETNA Soc. Agricola S.R.L.</span>
                     </li>
-                    <li>
-                        <i class="fas fa-location-dot"></i>
-                        <span>Via Filippo Meda, n° 88 - 95014 Giarre (CT)</span>
-                    </li>
+                   
                     <li>
                         <i class="fas fa-id-card"></i>
                         <span>P. IVA e C.F. 05388700873</span>
                     </li>
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        <span>info@ilciliegiodelletna.it</span>
-                    </li>
-                    <li>
-                        <i class="fas fa-at"></i>
-                        <span>ciliegiodelletna@gmail.com</span>
-                    </li>
+    
                     <li>
                         <i class="fas fa-clipboard-list"></i>
                         <span>Iscrizione REA CT - 362901</span>
