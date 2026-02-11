@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
@@ -14,9 +15,33 @@ class ContactController extends Controller
             'email'   => 'required|email',
             'subject' => 'required',
             'message' => 'required|min:10|max:2000',
+            'g-recaptcha-response' => 'required',
         ];
 
-        $request->validate($rules);
+        $messages = [
+            'g-recaptcha-response.required' => 'Conferma il reCAPTCHA.',
+        ];
+
+        $request->validate($rules, $messages);
+
+        $recaptchaSecret = env('RECAPTCHA_SECRET_KEY');
+        if (!$recaptchaSecret) {
+            return back()->withErrors([
+                'g-recaptcha-response' => 'Configurazione reCAPTCHA non valida.',
+            ])->withInput();
+        }
+
+        $recaptchaResponse = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => $recaptchaSecret,
+            'response' => $request->input('g-recaptcha-response'),
+            'remoteip' => $request->ip(),
+        ]);
+
+        if (!$recaptchaResponse->ok() || !data_get($recaptchaResponse->json(), 'success')) {
+            return back()->withErrors([
+                'g-recaptcha-response' => 'Verifica reCAPTCHA non riuscita. Riprova.',
+            ])->withInput();
+        }
 
         $content = "Hai ricevuto un nuovo messaggio dal sito Il Ciliegio dell'Etna:\n\n" .
             "Nome: " . $request->name . "\n" .

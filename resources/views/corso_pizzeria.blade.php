@@ -48,7 +48,7 @@
             {{-- Card Programma --}}
             <div class="col-lg-5">
                 <div class="card-corso p-4 p-lg-5 shadow-sm h-100">
-                    <h3 class="h5 mb-3"><i
+                    <h3 class="h4 mb-3"><i
                             class="fa-solid fa-list-check me-2"></i>{{ __('ui.corso_pizzeria_programma') }}</h3>
                     <ul class="corso-list">
                         <li>{{ __('ui.corso_pizzeria_programma_1') }}</li>
@@ -108,7 +108,7 @@
         <div class="row g-4">
             <div class="col-lg-8">
                 <div class="card-corso p-4 h-100 shadow-sm">
-                    <h3 class="h5 mb-3"><i
+                    <h3 class="h4 mb-3"><i
                             class="fa-solid fa-wheat-awn me-2"></i>{{ __('ui.corso_pizzeria_ingredienti') }}</h3>
                     <ul class="corso-list">
                         <li>{{ __('ui.corso_pizzeria_ingrediente_1') }}</li>

@@ -138,6 +138,13 @@
                             @enderror
                         </div>
 
+                        <div class="mb-4">
+                            <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}"></div>
+                            @error('g-recaptcha-response')
+                                <div class="text-danger small">{{ $message }}</div>
+                            @enderror
+                        </div>
+
                         <button type="submit" class="btn-prenota border-0 w-100 py-3">{{ __('ui.Invia') }}</button>
 
                     </form>
@@ -158,3 +165,4 @@
 
 
 </x-layout>
+

@@ -22,9 +22,16 @@
                             </button>
                         </div>
                     </div>
-                    
+
                     <div class="d-flex justify-content-end">
                         <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}"></div>
+                        @error('g-recaptcha-response')
+                            <div class="text-danger small">{{ $message }}</div>
+                        @enderror
                     </div>
 
                     @auth

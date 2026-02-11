@@ -223,8 +223,9 @@ return [
         'start_date' => 'data inizio',
         'end_date' => 'data fine',
         'role' => 'ruolo',
-        'remember'=> 'ricordami',
-        'message'=> 'messaggio',
+        'remember' => 'ricordami',
+        'message' => 'messaggio',
+        'g-recaptcha-response' => 'reCAPTCHA',
     ],
 
 ];

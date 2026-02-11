@@ -17,6 +17,9 @@
         rel="stylesheet">
     {{-- FINE FONT GOOGLE --}}
 
+    {{-- GOOGLE CAPTCHA --}}
+    <script src="https://www.google.com/recaptcha/api.js?hl={{ app()->getLocale() }}" async defer></script>
+    {{-- FINE GOOGLE CAPTCHA --}}
 
     {{-- CAROSELLO DI SWIPERSJS.COM --}}
 

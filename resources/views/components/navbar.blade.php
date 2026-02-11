@@ -1,30 +1,23 @@
-<nav class="navbar fixed-top" id="navbar">
-    <div class="container-fluid px-4"> <!-- Aggiunto un po' di padding laterale -->
-        <div class="d-flex justify-content-between w-100 align-items-center">
+<nav class="navbar" id="navbar">
+    <div class="navbar-left">
+        <a class="navbar-brand" href=" {{ route('home') }}">
+            <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo" class="icona_navbar">
+        </a>
+    </div>
 
-            <!-- Sinistra: Logo -->
-            <div class="d-flex align-items-center">
-                <a class="navbar-brand" href=" {{ route('home') }}">
-                    <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo" class="icona_navbar">
-                </a>
-            </div>
+    <div class="navbar-right">
+        <a class="btn btn-prenota mt-3" href="https://ilciliegiodelletna.beddy.io?lang={{ app()->getLocale() }}">
+            {{ __('ui.Prenota_ora') }}
+        </a>
 
-            <!-- Destra: Bottone + Hamburger -->
-            <div class="d-flex align-items-center">
-                <a class="btn btn-prenota me-3"
-                    href="https://ilciliegiodelletna.beddy.io?lang={{ app()->getLocale() }}">
-                    {{ __('ui.Prenota_ora') }}
-                </a>
+        <button class="navbar-toggler mt-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
-            </div>
-
-            <!-- Menu Collapse (Il "Dropdown" Bianco) -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+        <!-- Menu Collapse (Il "Dropdown" Bianco) -->
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="{{ route('stanze') }}"> {{ __('ui.Camere') }} </a> </li>
                      <li class="nav-item"><a class="nav-link" href="{{ route('ristorante') }}">{{ __('ui.Ristorante') }}</a></li>
                     <li class="nav-item"><a class="nav-link" href="{{ route('pizzeria') }}"> {{ __('ui.Pizzeria') }}</a> </li>
@@ -81,9 +74,7 @@
 
                     @endauth
 
-                </ul>
-            </div>
-
+            </ul>
         </div>
     </div>
 </nav>
