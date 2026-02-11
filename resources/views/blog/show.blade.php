@@ -107,7 +107,7 @@
 
     {{-- ── FAB ADMIN ── --}}
     @auth
-        <div class="edit-fab-group">
+        <div id="blog-show-actions" class="edit-fab-group">
             <a href="{{ route('blog.edit', $post->slug) }}"
                 id="btn-edit-post-{{ $post->id }}"
                 class="btn btn-edit edit-fab shadow">

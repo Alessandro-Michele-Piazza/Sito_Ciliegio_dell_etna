@@ -55,7 +55,7 @@
                                     <div class="mb-3">
                                         <label class="form-label">Elenco Piatti e Descrizione</label>
                                         <textarea name="body" id="content" class="d-none" required>{{ $article->body }}</textarea>
-                                        <div class="blog-editor">
+                                        <div id="blog-editor" class="blog-editor">
                                             <div id="content-editor" aria-label="Elenco Piatti e Descrizione"></div>
                                         </div>
                                     </div>

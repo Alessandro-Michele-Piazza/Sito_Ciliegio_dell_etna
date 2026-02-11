@@ -218,9 +218,9 @@
 }
 
 /* ID-based override for Menu body to ensure correct color specificity */
-#menu-body,
-#menu-body p {
-    color: var(--verde_scuro) !important;
+#menu-body.menu-body,
+#menu-body.menu-body p {
+    color: var(--verde_scuro);
 }
 
 .preview-img {

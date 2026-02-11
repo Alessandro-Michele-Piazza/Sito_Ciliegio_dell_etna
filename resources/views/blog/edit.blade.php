@@ -74,7 +74,7 @@
                             <div class="mb-4">
                                 <label for="content" class="form-label fw-bold @error('content') text-danger @enderror">Contenuto</label>
                                 <textarea name="content" id="content" class="d-none ">{{ old('content', $blog->content) }}</textarea>
-                                <div class="blog-editor @error('content') is-invalid @enderror">
+                                <div id="blog-editor" class="blog-editor @error('content') is-invalid @enderror">
                                     <div id="content-editor" aria-label="Contenuto dell'articolo"></div>
                                 </div>
                                 @error('content')

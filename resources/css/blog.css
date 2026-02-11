@@ -133,16 +133,16 @@
     background: rgba(222, 7, 34, 0.04);
 }
 
-#blog-container-main .blog-pill--active {
+#blog-container-main .blog-pill.blog-pill--active {
     background: var(--rosso_ciliegia);
     border-color: var(--rosso_ciliegia);
-    color: #fff !important;
+    color: #fff;
 }
 
-#blog-container-main .blog-pill--active:hover {
+#blog-container-main .blog-pill.blog-pill--active:hover {
     background: var(--rosso_ombra);
     border-color: var(--rosso_ombra);
-    color: #fff !important;
+    color: #fff;
 }
 
 /* ═══════════════════════════════════════════
@@ -287,18 +287,30 @@
     opacity: 0.9;
 }
 
-#blog-container-main .blog-card__action--edit,
-[id^="btn-edit-post-"] {
-    background-color: #f0ad4e !important;
-    color: #fff !important;
-    border: none !important;
+#blog-container-main .blog-card__action.blog-card__action--edit,
+#blog-container-main [id^="btn-edit-post-"] {
+    background-color: #f0ad4e;
+    color: #fff;
+    border: none;
 }
 
-#blog-container-main .blog-card__action--delete,
-[id^="btn-delete-post-"] {
-    background-color: var(--rosso_ciliegia) !important;
-    color: #fff !important;
-    border: none !important;
+#blog-container-main .blog-card__action.blog-card__action--delete,
+#blog-container-main [id^="btn-delete-post-"] {
+    background-color: var(--rosso_ciliegia);
+    color: #fff;
+    border: none;
+}
+
+#blog-show-actions [id^="btn-edit-post-"] {
+    background-color: #f0ad4e;
+    color: #fff;
+    border: none;
+}
+
+#blog-show-actions [id^="btn-delete-post-"] {
+    background-color: var(--rosso_ciliegia);
+    color: #fff;
+    border: none;
 }
 
 /* ---  Tag chips nella card --- */
@@ -353,7 +365,7 @@
     font-family: "Montserrat", sans-serif;
     font-size: 0.88rem;
     line-height: 1.6;
-    color: #6b7280 !important;
+    color: #6b7280;
     margin: 0;
 }
 
@@ -388,7 +400,7 @@
 #blog-container-main .blog-empty p {
     font-family: "Montserrat", sans-serif;
     font-size: 0.9rem;
-    color: #999 !important;
+    color: #999;
     margin-bottom: 24px;
 }
 
@@ -894,19 +906,19 @@
     min-height: 260px;
 }
 
-.blog-editor.is-invalid .ck-editor__editable {
-    border-color: #dc3545 !important;
+#blog-editor.is-invalid .ck-editor__editable {
+    border-color: #dc3545;
 }
 
-.blog-editor.is-invalid .ck.ck-editor__main > .ck-editor__editable {
-    border-color: #dc3545 !important;
+#blog-editor.is-invalid .ck.ck-editor__main > .ck-editor__editable {
+    border-color: #dc3545;
     box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.25);
 }
 
 /* Floating create button */
-#btn-create-post {
-    background-color: #0d6efd !important;
-    color: #ffffff !important;
+#btn-create-post.btn {
+    background-color: #0d6efd;
+    color: #ffffff;
     padding: 12px 18px;
     border-radius: 50px;
     display: inline-flex;
@@ -914,9 +926,9 @@
     gap: 8px;
 }
 
-#btn-create-post:hover {
-    background-color: #0d6efd !important;
-    color: #ffffff !important;
+#btn-create-post.btn:hover {
+    background-color: #0d6efd;
+    color: #ffffff;
     transform: scale(1.05);
 }
 
@@ -925,14 +937,26 @@
 }
 
 /* Edit/delete hover override (keep for show page & other usage) */
-[id^="btn-edit-post-"]:hover {
-    background-color: #f0ad4e !important;
-    color: #ffffff !important;
-    transform: none !important;
+#blog-container-main [id^="btn-edit-post-"]:hover {
+    background-color: #f0ad4e;
+    color: #ffffff;
+    transform: none;
 }
 
-[id^="btn-delete-post-"]:hover {
-    background-color: var(--rosso_ciliegia) !important;
-    color: #ffffff !important;
-    transform: none !important;
+#blog-container-main [id^="btn-delete-post-"]:hover {
+    background-color: var(--rosso_ciliegia);
+    color: #ffffff;
+    transform: none;
+}
+
+#blog-show-actions [id^="btn-edit-post-"]:hover {
+    background-color: #f0ad4e;
+    color: #ffffff;
+    transform: none;
+}
+
+#blog-show-actions [id^="btn-delete-post-"]:hover {
+    background-color: var(--rosso_ciliegia);
+    color: #ffffff;
+    transform: none;
 }
