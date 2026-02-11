@@ -66,7 +66,7 @@
 
                             <div class="d-flex justify-content-center gap-3">
                                 <button type="submit" class="btn btn-success btn-lg px-5 rounded-pill">
-                                    🚀 PUBBLICA AGGIORNAMENTO
+                                    <i class="fas fa-sync-alt me-2"></i> PUBBLICA AGGIORNAMENTO
                                 </button>
                                 <a href="{{ route('menu_domenicale') }}"
                                     class="btn-modern-back">

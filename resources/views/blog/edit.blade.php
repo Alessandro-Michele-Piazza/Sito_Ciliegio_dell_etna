@@ -83,7 +83,7 @@
                             </div>
 
                             <div class="d-grid gap-2 mt-5">
-                                <button type="submit" class="btn btn-warning btn-lg fw-bold shadow">
+                                <button type="submit" class="btn btn-success btn-lg fw-bold shadow">
                                     <i class="fas fa-sync-alt me-2"></i> Aggiorna Articolo
                                 </button>
                             </div>

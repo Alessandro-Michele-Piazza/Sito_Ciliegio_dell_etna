@@ -34,7 +34,7 @@
                             </div>
 
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-primary btn-lg rounded-pill shadow">
+                                <button type="submit" class="btn btn-success btn-lg rounded-pill shadow">
                                     <i class="fas fa-sync-alt me-2"></i>Pubblica Nuovo Menù
                                 </button>
                             </div>

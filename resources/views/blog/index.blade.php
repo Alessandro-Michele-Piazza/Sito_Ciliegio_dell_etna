@@ -150,7 +150,7 @@
 
     @auth
         <div class="edit-fab-group">
-            <a href="{{ route('blog.create') }}" id="btn-create-post" class="btn btn-primary edit-fab shadow"
+            <a href="{{ route('blog.create') }}" id="btn-create-post" class="btn btn-success edit-fab shadow"
                 title="Crea nuovo articolo" aria-label="Crea nuovo articolo">
                 <i class="fas fa-plus me-2"></i>NUOVO ARTICOLO
             </a>

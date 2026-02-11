@@ -76,7 +76,7 @@
 
                             {{-- Pulsante Invio --}}
                             <div class="d-grid mt-5">
-                                <button type="submit" class="btn btn-primary btn-lg shadow">
+                                <button type="submit" class="btn btn-success btn-lg shadow">
                                     <i class="fas fa-paper-plane me-2"></i> Pubblica Articolo
                                 </button>
                             </div>
