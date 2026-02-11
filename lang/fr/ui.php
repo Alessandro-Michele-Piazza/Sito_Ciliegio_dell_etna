@@ -149,15 +149,15 @@ return [
     'Teatro_Greco' => 'Théâtre Grec',
     'Da_non_perdere' => 'À ne pas manquer',
 
-    'Alcantara_titolo' => 'Rafting - Gorges de l’Alcantara',
-    'Sottotitolo_Alcantara' => 'Adrénaline et nature sauvage dans le canyon de basalte',
+    'Alcantara_titolo' => 'Gorges de l’Alcantara',
+    'Sottotitolo_Alcantara' => 'Adrénaline et nature dans le canyon de basalte',
     'Alcantara_descrizione' => "Une aventure époustouflante au cœur du Parc Botanique et Géologique. Glissez dans des eaux cristallines, plongez parmi les roches laviques millénaires et laissez-vous emporter par le courant pour une expérience de body rafting inoubliable, accompagné de guides experts.",
     'Body_Rafting' => 'Body Rafting',
     'Difficolta' => 'Difficulté',
     'Livello_Medio' => 'Intermédiaire / Sportif',
 
     'Delfini_titolo' => 'Dauphins à Giardini Naxos',
-    'Sottotitolo_Delfini' => 'Une rencontre magique dans les eaux de la mer Ionienne',
+    'Sottotitolo_Delfini' => 'Rencontre magique dans la mer Ionienne',
     'Delfini_descrizione' => "Naviguez depuis le port de Giardini Naxos à la recherche des dauphins dans leur habitat naturel. Pendant l'excursion, vous admirerez la baie de Taormine, la Grotte des Amoureux et Isola Bella. Une expérience passionnante qui comprend un arrêt baignade et un apéritif rafraîchissant à bord.",
     'Tour_Barca' => 'Tour en bateau',
     'Aperitivo_Incluso' => 'Apéritif',
@@ -171,7 +171,7 @@ return [
 
     'Parco_Avventura_titolo' => 'Parc Aventure Etna',
     'Sottotitolo_Parco_Avventura' => 'Relevez le défi au sommet des arbres',
-    'Parco_Avventura_descrizione' => "Le plus grand parc d'aventure du sud de l'Italie vous attend à Milo. Vivez l'émotion des parcours acrobatiques entre pins et châtaigniers : ponts tibétains, tyroliennes et lianes pour s'amuser en toute sécurité. Avec des parcours de difficultés variées, c'est la destination idéale pour une journée en famille ou entre amis.",
+    'Parco_Avventura_descrizione' => "Le plus grand parc d'aventure du sud de l'Italie vous attend à Milo. Vivez l'émotion des parcours acrobatiques entre pins et châtaigniers : ponts tibétains, tyroliennes et lianes en toute sécurité. Avec des difficultés variées, c'est la destination idéale en famille ou entre amis.",
     'Tutte_eta' => 'Enfants et Adultes',
 
 
