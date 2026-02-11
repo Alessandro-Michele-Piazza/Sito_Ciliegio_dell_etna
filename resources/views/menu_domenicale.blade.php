@@ -18,14 +18,14 @@
                                             <!-- Prima Immagine -->
                                             <div class="carousel-item active">
                                                 <img src="{{ $article->image ? asset('storage/' . $article->image) : 'https://via.placeholder.com/800x1000?text=Il+Ciliegio+dell+Etna' }}"
-                                                    alt="{{ __('ui.Immagine_Menu_1') }}">
+                                                    alt="Immagine principale del menù domenicale: {{ $article->title }}">
                                             </div>
 
                                             <!-- Seconda Immagine (Condizionale) -->
                                             @if ($article->image_secondary)
                                                 <div class="carousel-item">
                                                     <img src="{{ asset('storage/' . $article->image_secondary) }}"
-                                                        alt="{{ __('ui.Immagine_Menu_2') }}">
+                                                        alt="Seconda immagine del menù domenicale: {{ $article->title }}">
                                                 </div>
                                             @endif
                                         </div>

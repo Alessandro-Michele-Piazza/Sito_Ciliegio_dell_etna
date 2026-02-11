@@ -1,7 +1,7 @@
 <nav class="navbar" id="navbar">
     <div class="navbar-left">
         <a class="navbar-brand" href=" {{ route('home') }}">
-            <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo" class="icona_navbar">
+            <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna" class="icona_navbar">
         </a>
     </div>
 

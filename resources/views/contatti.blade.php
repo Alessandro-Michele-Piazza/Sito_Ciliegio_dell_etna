@@ -1,5 +1,42 @@
 <x-layout title="{{ __('ui.Contatti') }}">
 
+    @php
+        $structuredData = [
+            '@context' => 'https://schema.org',
+            '@type' => 'LocalBusiness',
+            'name' => "Il Ciliegio dell'Etna",
+            'url' => url('/'),
+            'image' => [asset('images/logo_ciliegio.webp')],
+            'logo' => asset('images/logo_ciliegio.webp'),
+            'telephone' => '+39095969109',
+            'email' => 'info@ilciliegiodelletna.it',
+            'contactPoint' => [
+                [
+                    '@type' => 'ContactPoint',
+                    'telephone' => '+39095969109',
+                    'contactType' => 'customer service',
+                ],
+            ],
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => 'Via Filippo Meda, 88',
+                'addressLocality' => 'Giarre',
+                'addressRegion' => 'CT',
+                'postalCode' => '95014',
+                'addressCountry' => 'IT',
+            ],
+            'geo' => [
+                '@type' => 'GeoCoordinates',
+                'latitude' => 37.7451354,
+                'longitude' => 15.1634449,
+            ],
+            'servesCuisine' => ['Italian', 'Sicilian', 'Pizza'],
+        ];
+    @endphp
+    <script type="application/ld+json">
+        {!! json_encode($structuredData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+    </script>
+
 
     <!-- COLONNA IMMAGINE PARALLASSE -->
 
@@ -72,7 +109,7 @@
             <div class="col-lg-7" data-aos="fade-left">
                 <div class="form-wrapper">
                     <h3 class="fw-bold scritta_verde_scuro mb-4">{{ __('ui.Inviaci_un_messaggio') }}</h3>
-                    <form id="contact-form" action="{{ route('contact.send') }}" method="POST">
+                    <form id="contact-form" action="{{ route('contact.send') }}" method="POST" enctype="multipart/form-data">
                         @csrf
 
                         <div class="row">
@@ -120,6 +157,8 @@
                                 <option value="Eventi Speciali"
                                     {{ old('subject') == 'Eventi Speciali' ? 'selected' : '' }}>
                                     {{ __('ui.Eventi_Speciali') }}</option>
+                                <option value="Lavora con noi" {{ old('subject') == 'Lavora con noi' ? 'selected' : '' }}>
+                                    {{ __('ui.Lavora_con_noi') }}</option>
                                 <option value="Altro" {{ old('subject') == 'Altro' ? 'selected' : '' }}>
                                     {{ __('ui.Altro') }}</option>
                             </select>
@@ -134,6 +173,17 @@
                             <textarea name="message" class="form-control contact-input @error('message') is-invalid @enderror" rows="5"
                                 placeholder=" {{ __('ui.Scrivi_qui') }} ">{{ old('message') }}</textarea>
                             @error('message')
+                                <div class="text-danger small">{{ $message }}</div>
+                            @enderror
+                        </div>
+
+                        <!-- CURRICULUM (PDF) -->
+                        <div class="mb-4">
+                            <label class="custom-label">{{ __('ui.Allega_CV') }}</label>
+                            <input type="file" name="cv" accept="application/pdf"
+                                class="form-control contact-input @error('cv') is-invalid @enderror">
+                            <div class="form-text">{{ __('ui.Solo_PDF') }}</div>
+                            @error('cv')
                                 <div class="text-danger small">{{ $message }}</div>
                             @enderror
                         </div>

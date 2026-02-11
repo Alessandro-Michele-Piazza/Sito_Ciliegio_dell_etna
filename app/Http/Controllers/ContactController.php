@@ -15,11 +15,14 @@ class ContactController extends Controller
             'email'   => 'required|email',
             'subject' => 'required',
             'message' => 'required|min:10|max:2000',
+            'cv' => 'nullable|file|mimes:pdf|max:5120',
             'g-recaptcha-response' => 'required',
         ];
 
         $messages = [
             'g-recaptcha-response.required' => 'Conferma il reCAPTCHA.',
+            'cv.mimes' => 'Il curriculum deve essere un PDF.',
+            'cv.max' => 'Il curriculum non puo superare i 5MB.',
         ];
 
         $request->validate($rules, $messages);
@@ -43,17 +46,27 @@ class ContactController extends Controller
             ])->withInput();
         }
 
-        $content = "Hai ricevuto un nuovo messaggio dal sito Il Ciliegio dell'Etna:\n\n" .
-            "Nome: " . $request->name . "\n" .
-            "Email: " . $request->email . "\n" .
-            "Oggetto: " . $request->subject . "\n\n" .
-            "Messaggio:\n" . $request->message;
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email,
+            'subject' => $request->subject,
+            'messageText' => $request->message,
+            'hasCv' => $request->hasFile('cv') && $request->file('cv')->isValid(),
+        ];
 
-        Mail::raw($content, function ($message) use ($request) {
+        Mail::send('emails.contact', $data, function ($message) use ($request) {
             $message->to('info@ilciliegiodelletna.it') // Dove vuoi RICEVERE il messaggio
                 ->from(config('mail.from.address'), config('mail.from.name')) // Invia tramite Gmail
                 ->replyTo($request->email, $request->name) // Se rispondi, rispondi all'utente
                 ->subject('Nuovo Contatto: ' . $request->name);
+
+            if ($request->hasFile('cv') && $request->file('cv')->isValid()) {
+                $file = $request->file('cv');
+                $message->attach($file->getRealPath(), [
+                    'as' => $file->getClientOriginalName(),
+                    'mime' => $file->getMimeType(),
+                ]);
+            }
         });
 
         

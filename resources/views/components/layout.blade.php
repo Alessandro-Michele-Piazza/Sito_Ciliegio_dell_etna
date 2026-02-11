@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" type="image/webp">
     <title>{{ html_entity_decode($title ?? '') }}</title>
+    <meta name="description" content="{{ $metaDescription ?? 'Il Ciliegio dell\'Etna - Agriturismo, ristorante e pizzeria a Giarre. Scopri il nostro menu, camere e esperienze.' }}">
+    <link rel="canonical" href="{{ $canonical ?? url()->current() }}" />
+    <meta name="robots" content="index, follow">
     @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/contatti.css'])
 
     {{-- FONT GOOGLE --}}
@@ -27,12 +30,15 @@
     {{-- FINE CAROSELLO --}}
 
     {{-- PARTE NECESSARIA PER LA CONDIVISIONE BLOG --}}
-    <meta property="og:title" content="{{ $post->title ?? 'Il Ciliegio dell\'Etna' }}">
-    <meta property="og:description" content="{{ Str::limit($post->content ?? '', 150) }}">
-    <meta property="og:image"
-        content="{{ isset($post->image) ? asset('storage/' . $post->image) : asset('default-image.jpg') }}">
-    <meta property="og:url" content="{{ url()->current() }}">
-    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ $ogTitle ?? ($post->title ?? 'Il Ciliegio dell\'Etna') }}">
+    <meta property="og:description" content="{{ $ogDescription ?? Str::limit($post->content ?? '', 150) }}">
+    <meta property="og:image" content="{{ $ogImage ?? (isset($post->image) ? asset('storage/' . $post->image) : Vite::asset('resources/images/logo_ciliegio.webp')) }}">
+    <meta property="og:url" content="{{ $canonical ?? url()->current() }}">
+    <meta property="og:type" content="{{ $ogType ?? (isset($post) ? 'article' : 'website') }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ $ogTitle ?? ($post->title ?? 'Il Ciliegio dell\'Etna') }}">
+    <meta name="twitter:description" content="{{ $ogDescription ?? Str::limit($post->content ?? '', 150) }}">
+    <meta name="twitter:image" content="{{ $ogImage ?? (isset($post->image) ? asset('storage/' . $post->image) : Vite::asset('resources/images/logo_ciliegio.webp')) }}">
 
 </head>
 

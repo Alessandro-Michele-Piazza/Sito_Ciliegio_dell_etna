@@ -1,4 +1,40 @@
 <x-layout title="Homepage">
+    @php
+        $structuredData = [
+            '@context' => 'https://schema.org',
+            '@type' => 'LocalBusiness',
+            'name' => "Il Ciliegio dell'Etna",
+            'url' => url('/'),
+            'image' => [asset('images/logo_ciliegio.webp')],
+            'logo' => asset('images/logo_ciliegio.webp'),
+            'telephone' => '+39095969109',
+            'email' => 'info@ilciliegiodelletna.it',
+            'contactPoint' => [
+                [
+                    '@type' => 'ContactPoint',
+                    'telephone' => '+39095969109',
+                    'contactType' => 'customer service',
+                ],
+            ],
+            'address' => [
+                '@type' => 'PostalAddress',
+                'streetAddress' => 'Via Filippo Meda, 88',
+                'addressLocality' => 'Giarre',
+                'addressRegion' => 'CT',
+                'postalCode' => '95014',
+                'addressCountry' => 'IT',
+            ],
+            'geo' => [
+                '@type' => 'GeoCoordinates',
+                'latitude' => 37.7451354,
+                'longitude' => 15.1634449,
+            ],
+            'servesCuisine' => ['Italian', 'Sicilian', 'Pizza'],
+        ];
+    @endphp
+    <script type="application/ld+json">
+        {!! json_encode($structuredData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+    </script>
 
     <div class="h-video">
         <video class="video_home px-0" autoplay loop muted playsinline>
@@ -67,7 +103,7 @@
                         class="w-full h-screen object-cover">
                     <!-- Immagine per Desktop (default) -->
                     <img src="{{ asset('storage/media/foto_pc(5).webp') }}" class=" img-scacchiera-custom"
-                        alt="Stanza 1">
+                        alt="Scorcio dell'agriturismo Il Ciliegio dell'Etna">
                 </picture>
             </div>
 
@@ -137,7 +173,7 @@
                         class="w-full h-screen object-cover">
                     <!-- Immagine per Desktop (default) -->
                     <img src="{{ asset('storage/media/foto(12).webp') }}" class=" img-scacchiera-custom"
-                        alt="Stanza 1">
+                        alt="Camera e arredamento presso Il Ciliegio dell'Etna">
                 </picture>
             </div>
         </div>

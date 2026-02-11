@@ -19,9 +19,9 @@
                                     <!-- Gestione Prima Immagine -->
                                     <div class="mb-4 border-bottom pb-3">
                                         <label class="form-label">Immagine Principale</label>
-                                        @if ($article->image)
+                                            @if ($article->image)
                                             <img src="{{ asset('storage/' . $article->image) }}" class="preview-img"
-                                                alt="Anteprima 1">
+                                                alt="Anteprima immagine principale del menù domenicale: {{ $article->title }}">
                                         @endif
                                         <input type="file" name="image" class="form-control">
                                     </div>
@@ -29,9 +29,9 @@
                                     <!-- Gestione Seconda Immagine -->
                                     <div class="mb-3">
                                         <label class="form-label">Seconda Immagine (Carosello)</label>
-                                        @if ($article->image_secondary)
+                                            @if ($article->image_secondary)
                                             <img src="{{ asset('storage/' . $article->image_secondary) }}"
-                                                class="preview-img" alt="Anteprima 2">
+                                                class="preview-img" alt="Anteprima immagine secondaria del menù domenicale: {{ $article->title }}">
                                         @endif
                                         <input type="file" name="image_secondary" class="form-control">
                                         <small class="text-muted">Carica un file per attivare lo scorrimento nel

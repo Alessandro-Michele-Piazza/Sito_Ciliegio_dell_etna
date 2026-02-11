@@ -15,7 +15,7 @@
                                         srcset="{{ asset('storage/media/foto_telefono(9).webp') }}"
                                         class="w-full h-screen object-cover">
                                     <img src="{{ asset('storage/media/foto(9).webp') }}" class="img_carosello_stanza"
-                                        alt="Stanza 1">
+                                        alt="Camera matrimoniale - interno della stanza presso Il Ciliegio dell'Etna">
                                 </picture>
                             </div>
 
@@ -25,7 +25,7 @@
                                     <source media="(max-width: 767px)"
                                         srcset="{{ asset('storage/media/foto_telefono(10).webp') }}">
                                     <img src="{{ asset('storage/media/foto(10).webp') }}" class="img_carosello_stanza"
-                                        alt="Stanza 2" loading="lazy">
+                                        alt="Camera matrimoniale - dettaglio arredamento presso Il Ciliegio dell'Etna" loading="lazy">
                                 </picture>
                             </div>
 
@@ -35,7 +35,7 @@
                                     <source media="(max-width: 767px)"
                                         srcset="{{ asset('storage/media/foto_telefono(11).webp') }}">
                                     <img src="{{ asset('storage/media/foto(11).webp') }}" class="img_carosello_stanza"
-                                        alt="Stanza 3" loading="lazy">
+                                        alt="Camera matrimoniale - vista e decorazioni presso Il Ciliegio dell'Etna" loading="lazy">
                                 </picture>
                             </div>
                         </div>
