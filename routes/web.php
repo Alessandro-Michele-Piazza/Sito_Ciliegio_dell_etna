@@ -59,6 +59,12 @@ Route::get('/sitemap.xml', function () {
             'priority' => '0.7',
         ],
         [
+            'loc' => route('eventi'),
+            'lastmod' => $today,
+            'changefreq' => 'monthly',
+            'priority' => '0.7',
+        ],
+        [
             'loc' => route('winetour'),
             'lastmod' => $today,
             'changefreq' => 'monthly',
@@ -119,6 +125,7 @@ Route::get('/ristorante', fn() => redirect()->route('ristorazione', [], 301))->n
 Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
 Route::get('/menu_domenicale', [ArticleController::class, 'index'])->name('menu_domenicale');
 Route::get('/esperienze', [PublicController::class, 'esperienze'])->name("esperienze");
+Route::get('/eventi', [PublicController::class, 'eventi'])->name("eventi");
 Route::get('/wine_tour', [PublicController::class, 'winetour'])->name("winetour");
 Route::get('/corso_pizzeria', [PublicController::class, 'corso_pizzeria'])->name("corso_pizzeria");
 Route::get('/corso_cucina', [PublicController::class, 'corso_cucina'])->name("corso_cucina");

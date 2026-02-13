@@ -1,11 +1,8 @@
-<x-layout
-    title="Homepage"
+<x-layout title="Homepage"
     metaDescription="Agriturismo Il Ciliegio dell'Etna a Giarre: camere, ristorante, pizzeria ed esperienze sull'Etna."
     ogTitle="Il Ciliegio dell'Etna | Agriturismo a Giarre"
     ogDescription="Agriturismo, ristorante e pizzeria a Giarre con camere e esperienze sul territorio dell'Etna."
-    ogImage="{{ Vite::asset('resources/images/ciliegio_esterno.webp') }}"
-    canonical="{{ route('home') }}"
->
+    ogImage="{{ Vite::asset('resources/images/ciliegio_esterno.webp') }}" canonical="{{ route('home') }}">
     @php
         $structuredData = [
             '@context' => 'https://schema.org',
@@ -79,7 +76,7 @@
                         <strong class="scritta_verde_medio"> {{ __('ui.Ristorante') }}</strong>
                         {{ __('ui.nella_nostra') }} <strong
                             class="scritta_verde_medio">{{ __('ui.pizzeria') }}</strong>
-                            {{ __('ui.i') }}
+                        {{ __('ui.i') }}
                         <strong class="scritta_verde_medio">{{ __('ui.prodotti_tipici') }}</strong>
                         {{ __('ui.km.0') }}
                         <strong class="scritta_verde_medio">{{ __('ui.banchetti') }}</strong>{{ __('ui.avvolti') }}
@@ -127,7 +124,7 @@
                         {{ __('ui.descrizione_scacchiera_1') }}
                     </p>
 
-                    <p class="testo-radici-sul-vulcano mb-5 fst-italic">
+                    <p class="testo-radici-sul-vulcano mb-5 fst-italic fs-6 fs-md-5 fs-lg-4">
                         "{{ __('ui.descrizione_scacchiera_2') }}"
                     </p>
 
@@ -141,8 +138,6 @@
     </section>
 
     {{-- FINE TERZA SECTION --}}
-
-    {{-- INIZIO QUARTA SECTION --}}
 
     {{-- INIZIO QUARTA SECTION --}}
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left" data-aos-duration="1500"
@@ -161,7 +156,7 @@
                         {{ __('ui.descrizione_scacchiera_3') }}
                     </p>
 
-                    <p class="testo-radici-sul-vulcano mb-5 fst-italic">
+                    <p class="testo-radici-sul-vulcano mb-5 fst-italic fs-6 fs-md-5 fs-lg-4">
                         "{{ __('ui.descrizione_scacchiera_4') }}"
                     </p>
 
@@ -186,6 +181,50 @@
         </div>
     </section>
     {{-- FINE QUARTA SECTION --}}
+
+    {{-- INIZIO QUINTA SECTION --}}
+
+    <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"
+        data-aos-once="true">
+        <div class="row g-0 align-items-stretch">
+            <!-- COLONNA IMMAGINE -->
+            <div class="col-12 col-md-7 h-scacchiera">
+                <picture>
+                    <!-- Immagine per Mobile (schermi fino a 767px) -->
+                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/nozze_tel.webp') }}"
+                        class="w-full h-screen object-cover">
+                    <!-- Immagine per Desktop (default) -->
+                    <img src="{{ asset('storage/media/nozze_pc.webp') }}" class=" img-scacchiera-custom"
+                        alt="Scorcio dell'agriturismo Il Ciliegio dell'Etna">
+                </picture>
+            </div>
+
+            <!-- COLONNA TESTO -->
+            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5  ">
+                <div>
+                    <h2 class="fw-bold mb-3"> {{ __('ui.Matrimoni') }} </h2>
+                    <div class="divider-short mb-4 mt-0"></div>
+                    <span
+                        class="sub-label scritta_verde_medio d-block mb-2 fst-italic">{{ __('ui.Sottotitolo_matrimoni_homepage') }}</span>
+
+                    <p class="descrizione-scacchiera mb-4">
+                        {{ __('ui.descrizione_scacchiera_nozze') }}
+                    </p>
+
+                    <p class="testo-radici-sul-vulcano mb-5 fst-italic fs-6 fs-md-5 fs-lg-4">
+                        "{{ __('ui.descrizione_scacchiera_nozze_2') }}"
+                    </p>
+
+                    <a href="https://www.tenutadeiciliegi.it" class="link-scopri">
+                        <span> {{ __('ui.Scopri_i_nostri_matrimoni') }}</span>
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- FINE QUINTA SECTION --}}
 
     <!-- COLONNA IMMAGINE PARALLASSE -->
     <x-parallasse />

@@ -1,7 +1,8 @@
 <nav class="navbar " id="navbar">
     <div class="navbar-left d-none d-md-block">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna" class="icona_navbar">
+            <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna"
+                class="icona_navbar">
         </a>
     </div>
 
@@ -35,15 +36,20 @@
             <ul class="offcanvas-nav">
                 <li><a class="offcanvas-link" href="{{ route('stanze') }}">{{ __('ui.Camere') }}</a></li>
                 <li><a class="offcanvas-link" href="{{ route('ristorazione') }}">{{ __('ui.Ristorazione') }}</a></li>
-                <li><a class="offcanvas-link" href="{{ route('menu_domenicale') }}">{{ __('ui.Menu_domenicale') }}</a></li>
+                <li><a class="offcanvas-link" href="https://www.tenutadeiciliegi.it">{{ __('ui.Matrimoni') }}</a></li>
+                <li><a class="offcanvas-link" href="{{ route('menu_domenicale') }}">{{ __('ui.Menu_domenicale') }}</a>
+                </li>
                 <li><a class="offcanvas-link" href="{{ route('blog.index') }}">Blog</a></li>
                 <li><a class="offcanvas-link" href="{{ route('esperienze') }}">{{ __('ui.Esperienze') }}</a></li>
+                <li><a class="offcanvas-link" href="{{ route('eventi') }}">{{ __('ui.Eventi') }}</a></li>
 
                 <li class="offcanvas-divider"></li>
 
                 <li class="offcanvas-section-title">{{ __('ui.Servizi') }}</li>
-                <li><a class="offcanvas-link offcanvas-link-sub" href="{{ route('corso_cucina') }}">{{ __('ui.Corsi_di_cucina') }}</a></li>
-                <li><a class="offcanvas-link offcanvas-link-sub" href="{{ route('corso_pizzeria') }}">{{ __('ui.Corsi_di_pizzeria') }}</a></li>
+                <li><a class="offcanvas-link offcanvas-link-sub"
+                        href="{{ route('corso_cucina') }}">{{ __('ui.Corsi_di_cucina') }}</a></li>
+                <li><a class="offcanvas-link offcanvas-link-sub"
+                        href="{{ route('corso_pizzeria') }}">{{ __('ui.Corsi_di_pizzeria') }}</a></li>
                 {{-- <li><a class="offcanvas-link offcanvas-link-sub" href="{{ route('winetour') }}">{{ __('ui.Wine_Tour') }}</a></li> --}}
 
                 <li class="offcanvas-divider"></li>

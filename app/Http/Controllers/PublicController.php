@@ -21,18 +21,7 @@ class PublicController extends \App\Http\Controllers\Controller
         return view('stanze');
     }
 
-    public function pizzeria()
-    {
-        // Redirect to the unified ristorazione page
-        return redirect()->route('ristorazione');
-    }
-
-    public function ristorante()
-    {
-        // Redirect to the unified ristorazione page
-        return redirect()->route('ristorazione');
-    }
-
+   
     public function ristorazione()
     {
         return view('ristorazione');
@@ -46,6 +35,11 @@ class PublicController extends \App\Http\Controllers\Controller
     public function esperienze()
     {
         return view('esperienze');
+    }
+
+    public function eventi()
+    {
+        return view('eventi');
     }
 
     public function winetour()

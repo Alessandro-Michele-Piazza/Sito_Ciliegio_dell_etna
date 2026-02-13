@@ -18,6 +18,8 @@ return [
     'la_pizzeria' => 'La Pizzería',
     'le_camere' => 'Las Habitaciones',
     'contatti' => 'Contactos',
+    'Matrimoni' => 'Matrimonios',
+    'Scopri_i_nostri_matrimoni' => 'Descubre nuestros matrimonios',
     'orari' => 'Abierto todos los días (Martes cerrado)',
     'lingua' => 'Idioma actual',
     'dal_2005' => 'DESDE 2005',
@@ -58,6 +60,7 @@ return [
     'Wine_Tour' => 'Wine Tour',
     'Esperienze' => 'Experiencias',
     'Prodotti_Tipici' => 'Productos Típicos',
+        'Eventi' => 'Eventos',
     'Blog' => 'Blog',
     'Contatti' => 'Contactos',
     'Camere_matrimoniali' => 'Habitaciones Matrimoniales',
@@ -101,7 +104,7 @@ return [
     'email_esempio' => 'ejemplo@email.it',
     'Inviaci_un_messaggio' => 'Envíanos un mensaje',
     'Scrivi_qui' => 'Escribe aquí',
-    'Lavora_con_noi'=> 'Trabaja con nosotros',
+    'Lavora_con_noi' => 'Trabaja con nosotros',
     'Allega_CV' => 'Adjunta CV',
     'Solo_PDF' => 'Solo PDF (max 5MB)',
     'Inviato_con_successo' => 'Enviado con éxito',
@@ -259,7 +262,7 @@ return [
     'corso_pizzeria_prenotazioni_text' => 'Plazas limitadas. Reserva con antelación.',
     'corso_pizzeria_contattaci' => 'Contáctanos',
 
-// CORSO CUCINA
+    // CORSO CUCINA
 
     // CORSO CUCINA
     'corso_cucina_title' => 'Curso de Cocina Siciliana',
@@ -283,7 +286,7 @@ return [
     'corso_cucina_programma_5' => 'Certificado de participación y recetario en inglés',
 
     'corso_cucina_esperienza_title' => 'Una experiencia completa',
-    'corso_cucina_esperienza_text' => 'La lección se articula en la preparación en vivo con métodos simples e innovadores, variando desde el aperitivo hasta el postre. Explicamos paso a paso también sistemas de higiene y comportamiento en la cocina. Desde la preparación hasta la degustación, con enfoque en ingredientes locales y técnicas tradicionales.',        
+    'corso_cucina_esperienza_text' => 'La lección se articula en la preparación en vivo con métodos simples e innovadores, variando desde el aperitivo hasta el postre. Explicamos paso a paso también sistemas de higiene y comportamiento en la cocina. Desde la preparación hasta la degustación, con enfoque en ingredientes locales y técnicas tradicionales.',
 
     'corso_cucina_feature_1_title' => 'Material Didáctico',
     'corso_cucina_feature_1_text' => 'Delantal, bloc de notas y bolígrafo incluidos en el curso.',
@@ -312,4 +315,10 @@ return [
     'ristorazione_pizzeria_titolo_2' => 'Pizzería',
     'ristorazione_cta_titolo' => 'Ven a visitarnos',
     'ristorazione_cta_sottotitolo' => 'Reserva tu mesa o contáctanos para cualquier información. Te esperamos con los sabores auténticos de Sicilia.',
+
+    // BODAS
+    'Sottotitolo_matrimoni_homepage' => 'Amor, naturaleza y tradición',
+    'descrizione_scacchiera_nozze' => 'Celebramos el amor con los sabores de nuestra tierra, entre productos locales de excelencia y una cocina que realza la tradición siciliana, rodeados por el paisaje natural del Etna.',
+    'descrizione_scacchiera_nozze_2' => 'Amor, tradición y paisaje: el marco perfecto para vuestro “sí, quiero”.',
+
 ];

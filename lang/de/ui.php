@@ -7,6 +7,8 @@ return [
     'la_pizzeria' => 'Die Pizzeria',
     'le_camere' => 'Die Zimmer',
     'contatti' => 'Kontakt',
+    'Matrimoni' => 'Hochzeiten',
+    'Scopri_i_nostri_matrimoni' => 'Entdecken Sie unsere Hochzeiten',
     'orari' => 'Täglich geöffnet (Dienstag geschlossen)',
     'lingua' => 'Aktuelle Sprache',
     'dal_2005' => 'SEIT 2005',
@@ -47,6 +49,7 @@ return [
     'Corsi_di_panificazione' => 'Backkurse',
     'Wine_Tour' => 'Weintour',
     'Esperienze' => 'Erlebnisse',
+    'Eventi' => 'Events',
     'Prodotti_Tipici' => 'Typische Produkte',
     'Blog' => 'Blog',
     'Contatti' => 'Kontakt',
@@ -306,4 +309,11 @@ return [
     'ristorazione_pizzeria_titolo_2' => 'Pizzeria',
     'ristorazione_cta_titolo' => 'Besuchen Sie uns',
     'ristorazione_cta_sottotitolo' => 'Reservieren Sie Ihren Tisch oder kontaktieren Sie uns für weitere Informationen. Wir erwarten Sie mit den authentischen Aromen Siziliens.',
+
+    // HOCHZEITEN
+    'Sottotitolo_matrimoni_homepage' => 'Liebe, Natur und Tradition',
+    'descrizione_scacchiera_nozze' => 'Wir feiern die Liebe mit den Aromen unseres Landes, mit ausgewählten lokalen Spezialitäten und einer Küche, die die sizilianische Tradition hervorhebt, umgeben von der Naturlandschaft des Ätna.',
+    'descrizione_scacchiera_nozze_2' => 'Liebe, Tradition und Panorama für Ihr Ja.',
+
+
 ];

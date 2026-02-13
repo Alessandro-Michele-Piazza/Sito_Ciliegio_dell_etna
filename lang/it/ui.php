@@ -7,6 +7,8 @@ return [
     'la_pizzeria' => 'La Pizzeria',
     'le_camere' => 'Le Camere',
     'contatti' => 'Contatti',
+    'Matrimoni' => 'Matrimoni',
+    'Scopri_i_nostri_matrimoni' => 'Scopri i nostri matrimoni',
     'orari' => 'Aperto tutti i giorni (Martedì chiuso)',
     'lingua' => 'Lingua attuale',
     'dal_2005' => 'DAL 2005',
@@ -47,6 +49,7 @@ return [
     'Corsi_di_panificazione' => 'Corsi di panificazione',
     'Wine_Tour' => 'Wine Tour',
     'Esperienze' => 'Esperienze',
+    'Eventi' => 'Eventi',
     'Prodotti_Tipici' => 'Prodotti Tipici',
     'Blog' => 'Blog',
     'Contatti' => 'Contatti',
@@ -94,7 +97,7 @@ return [
     'email_esempio' => 'esempio@email.it',
     'Inviaci_un_messaggio' => 'Inviaci un messaggio',
     'Scrivi_qui' => 'Scrivi qui...',
-    'Lavora_con_noi'=> 'Lavora con noi',
+    'Lavora_con_noi' => 'Lavora con noi',
     'Allega_CV' => 'Allega curriculum',
     'Solo_PDF' => 'Solo PDF (max 5MB)',
     'Chiamaci' => 'Chiamaci',
@@ -310,4 +313,10 @@ return [
     'ristorazione_pizzeria_titolo_2' => 'Pizzeria',
     'ristorazione_cta_titolo' => 'Vieni a trovarci',
     'ristorazione_cta_sottotitolo' => 'Prenota il tuo tavolo o contattaci per qualsiasi informazione. Ti aspettiamo con i sapori autentici della Sicilia.',
+
+    // MATRIMONI
+    'Sottotitolo_matrimoni_homepage' => 'Amore, natura e tradizione',
+    'descrizione_scacchiera_nozze' => 'Celebriamo l’amore con i sapori della nostra terra, tra eccellenze locali e una cucina che esalta la tradizione siciliana, avvolti dal paesaggio naturale dell’Etna.',
+    'descrizione_scacchiera_nozze_2' => 'Amore, tradizione e panorama: la cornice perfetta per il vostro sì.',
+
 ];

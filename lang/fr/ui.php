@@ -6,6 +6,8 @@ return [
     'il_ristorante' => 'Le Restaurant',
     'la_pizzeria' => 'La Pizzeria',
     'le_camere' => 'Les Chambres',
+    'Matrimoni' => 'Mariages',
+    'Scopri_i_nostri_matrimoni' => 'Découvrez nos mariages',
     'contatti' => 'Contacts',
     'orari' => 'Ouvert tous les jours (Fermé le mardi)',
     'lingua' => 'Langue actuelle',
@@ -46,6 +48,7 @@ return [
     'Corsi_di_panificazione' => 'Cours de boulangerie',
     'Wine_Tour' => 'Wine Tour',
     'Esperienze' => 'Expériences',
+    'Eventi' => 'Événements',
     'Prodotti_Tipici' => 'Produits Typiques',
     'Blog' => 'Blog',
     'Contatti' => 'Contacts',
@@ -77,7 +80,7 @@ return [
     'Dove_Siamo' => 'Où nous trouver',
     'Chiamaci' => 'Appelez-nous',
     'Scrivici' => 'Écrivez-nous',
-    'Lavora_con_noi'=> 'Travaillez avec nous',
+    'Lavora_con_noi' => 'Travaillez avec nous',
     'Allega_CV' => 'Joindre CV',
     'Solo_PDF' => 'PDF uniquement (max 5MB)',
     'Visita' => 'Visitez',
@@ -226,7 +229,7 @@ return [
     'Degustazioni_Sezione_Lead' => 'Chaque proposition est pensée pour raconter l’Etna à travers des saveurs authentiques, des produits locaux et un service attentif. Idéal pour les groupes et les tours dédiés.',
     'Degustazioni_Nota' => '* Certains produits du menu peuvent varier selon la saison.',
     'Degustazioni_Footer' => 'Ciliegio dell’Etna — Dégustations pour groupes. Pour les réservations et infos, contactez-nous via le site.',
-        'header_subtitle' => 'Tradition, qualité et hospitalité sicilienne',
+    'header_subtitle' => 'Tradition, qualité et hospitalité sicilienne',
 
 
     // CORSO PIZZERIA
@@ -269,8 +272,8 @@ return [
     'corso_pizzeria_contattaci' => 'Contactez-nous',
 
     // CORSO CUCINA
-    
-    
+
+
     // CORSO CUCINA
     'corso_cucina_title' => 'Cours de Cuisine Sicilienne',
     'corso_cucina_badge' => 'Ciliegio Cooking School',
@@ -322,4 +325,10 @@ return [
     'ristorazione_pizzeria_titolo_2' => 'Pizzeria',
     'ristorazione_cta_titolo' => 'Venez nous rendre visite',
     'ristorazione_cta_sottotitolo' => 'Réservez votre table ou contactez-nous pour toute information. Nous vous attendons avec les saveurs authentiques de la Sicile.',
+
+    // MARIAGES
+    'Sottotitolo_matrimoni_homepage' => 'Amour, nature et tradition',
+    'descrizione_scacchiera_nozze' => 'Nous célébrons l’amour avec les saveurs de notre terre, entre produits locaux d’excellence et une cuisine qui sublime la tradition sicilienne, entourés par le paysage naturel de l’Etna.',
+    'descrizione_scacchiera_nozze_2' => 'Amour, tradition et panorama : le cadre parfait pour votre “oui”.',
+
 ];
