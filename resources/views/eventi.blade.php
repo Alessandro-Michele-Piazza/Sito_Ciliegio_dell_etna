@@ -4,14 +4,8 @@
     ogDescription="Celebra i tuoi momenti più importanti in un agriturismo immerso nei vigneti dell'Etna. Spazi interni ed esterni per ogni tipo di evento."
     ogImage="{{ asset('storage/media/nozze_pc.webp') }}" canonical="{{ route('eventi') }}">
 
-    {{-- HERO --}}
-    <section id="ev-hero" aria-label="{{ __('ui.ev_hero_aria') }}">
-        <div data-aos="fade-up" data-aos-duration="1200">
-            <span id="ev-hero-badge">{{ __('ui.ev_badge_hero') }}</span>
-            <h1 id="ev-hero-title">{{ __('ui.ev_hero_title') }}</h1>
-            <p id="ev-hero-subtitle">{{ __('ui.ev_hero_subtitle') }}</p>
-        </div>
-    </section>
+        {{-- HERO --}}
+    <x-header title="{{ __('ui.Eventi') }}"/>
 
     {{-- INTRO – immagine + testo a scacchiera --}}
     <section id="ev-intro">
@@ -25,14 +19,14 @@
                 <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
                     <div id="ev-intro-img-wrapper">
                         <picture>
-                            <source media="(max-width: 576px)" srcset="{{ asset('storage/media/foto_telefono(3).webp') }}">
+                            <source media="(max-width: 576px)" srcset="{{ asset('storage/media/laurea_pc.webp') }}">
                             <img id="ev-intro-img-main"
-                                 src="{{ asset('storage/media/foto(3).webp') }}"
+                                 src="{{ asset('storage/media/laurea_pc.webp') }}"
                                  alt="{{ __('ui.ev_img_alt_festa') }}"
                                  loading="lazy">
                         </picture>
                         <img id="ev-intro-img-accent"
-                             src="{{ asset('storage/media/foto(5).webp') }}"
+                             src="{{ asset('storage/media/laurea_pc (2).webp') }}"
                              alt="{{ __('ui.ev_img_alt_dettaglio') }}"
                              loading="lazy">
                     </div>
@@ -95,9 +89,9 @@
             <div class="row g-0 align-items-center">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
                     <picture>
-                        <source media="(max-width: 576px)" srcset="{{ asset('storage/media/foto_telefono(5).webp') }}">
+                        <source media="(max-width: 576px)" srcset="{{ asset('storage/media/18°compl_pc.webp') }}">
                         <img id="ev-gallery-img"
-                             src="{{ asset('storage/media/foto(6).webp') }}"
+                             src="{{ asset('storage/media/18°compl_pc.webp') }}"
                              alt="{{ __('ui.ev_img_alt_location') }}"
                              loading="lazy">
                     </picture>
