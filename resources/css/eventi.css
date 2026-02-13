@@ -1,0 +1,398 @@
+/* ============================================================
+   EVENTI – Il Ciliegio dell'Etna
+   Tutti i selettori usano il prefisso #ev- per evitare
+   conflitti con Bootstrap e con gli stili delle altre pagine.
+   ============================================================ */
+
+/* --- HERO --- */
+#ev-hero {
+    position: relative;
+    min-height: 70vh;
+    background-image:
+        linear-gradient(160deg, rgba(0, 26, 35, 0.55), rgba(0, 26, 35, 0.25)),
+        url('/storage/media/nozze_pc.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+#ev-hero-badge {
+    display: inline-block;
+    padding: 8px 20px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+#ev-hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+#ev-hero-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.85);
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* --- INTRO --- */
+#ev-intro {
+    padding: 5rem 0;
+    background-color: var(--bianco_sfondo);
+}
+
+#ev-intro-badge {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--verde_medio);
+    padding: 6px 16px;
+    border: 1px solid var(--verde_medio);
+    border-radius: 999px;
+    margin-bottom: 1.25rem;
+}
+
+#ev-intro-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 3.5vw, 3rem);
+    font-weight: 400;
+    color: var(--verde_scuro);
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+}
+
+#ev-intro-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 560px;
+}
+
+#ev-intro-img-wrapper {
+    position: relative;
+    padding: 2rem;
+}
+
+#ev-intro-img-main {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+#ev-intro-img-wrapper:hover #ev-intro-img-main {
+    transform: scale(1.02);
+}
+
+#ev-intro-img-accent {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid var(--bianco_sfondo);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    transition: transform 0.6s ease;
+}
+
+#ev-intro-img-accent:hover {
+    transform: scale(1.06);
+}
+
+/* --- CATEGORIE CARDS --- */
+#ev-categories {
+    padding: 5rem 0;
+    background-color: #fff;
+}
+
+#ev-categories-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 400;
+    color: var(--verde_scuro);
+    margin-bottom: 0.5rem;
+}
+
+#ev-categories-divider {
+    width: 60px;
+    height: 3px;
+    background-color: var(--rosso_ciliegia);
+    margin: 0 auto 3rem auto;
+    border: none;
+    border-radius: 2px;
+}
+
+#ev-card-lauree,
+#ev-card-compleanni,
+#ev-card-cerimonie,
+#ev-card-meeting {
+    background-color: var(--bianco_sfondo);
+    padding: 2.5rem 1.5rem;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgba(49, 73, 60, 0.08);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+                box-shadow 0.4s ease;
+    height: 100%;
+}
+
+#ev-card-lauree:hover,
+#ev-card-compleanni:hover,
+#ev-card-cerimonie:hover,
+#ev-card-meeting:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
+}
+
+#ev-icon-lauree,
+#ev-icon-compleanni,
+#ev-icon-cerimonie,
+#ev-icon-meeting {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem auto;
+    font-size: 1.6rem;
+    color: #fff;
+    background: linear-gradient(135deg, var(--verde_scuro), var(--verde_medio));
+}
+
+#ev-cardtitle-lauree,
+#ev-cardtitle-compleanni,
+#ev-cardtitle-cerimonie,
+#ev-cardtitle-meeting {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--verde_scuro);
+    margin-bottom: 0.75rem;
+}
+
+#ev-cardtext-lauree,
+#ev-cardtext-compleanni,
+#ev-cardtext-cerimonie,
+#ev-cardtext-meeting {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* --- SEZIONE GALLERIA SCACCHIERA --- */
+#ev-gallery {
+    padding: 0;
+    background-color: var(--bianco_sfondo);
+}
+
+#ev-gallery-img {
+    width: 100%;
+    height: 100%;
+    min-height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+#ev-gallery-text {
+    padding: 3rem 2.5rem;
+    max-width: 560px;
+}
+
+#ev-gallery-badge {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: var(--rosso_ciliegia);
+    margin-bottom: 1rem;
+}
+
+#ev-gallery-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-weight: 400;
+    color: var(--verde_scuro);
+    line-height: 1.15;
+    margin-bottom: 1.25rem;
+}
+
+#ev-gallery-desc {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+#ev-features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#ev-features-list li {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.92rem;
+    color: var(--verde_scuro);
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(49, 73, 60, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+#ev-features-list li i {
+    color: var(--verde_medio);
+    font-size: 0.85rem;
+    flex-shrink: 0;
+}
+
+/* --- CTA FINALE --- */
+#ev-cta {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, var(--verde_scurissimo) 0%, var(--verde_scuro) 100%);
+    text-align: center;
+}
+
+#ev-cta-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+}
+
+#ev-cta-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+#ev-cta-btn {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.85rem 2rem;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+}
+
+#ev-cta-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: #fff;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 991px) {
+    #ev-hero {
+        min-height: 55vh;
+    }
+
+    #ev-intro {
+        padding: 3rem 0;
+    }
+
+    #ev-intro-img-wrapper {
+        padding: 1.5rem;
+    }
+
+    #ev-intro-img-main {
+        height: 350px;
+    }
+
+    #ev-intro-img-accent {
+        width: 140px;
+        height: 140px;
+    }
+
+    #ev-intro-text,
+    #ev-gallery-text {
+        max-width: 100%;
+    }
+
+    #ev-gallery-text {
+        padding: 2rem 1.5rem;
+    }
+
+    #ev-gallery-img {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 576px) {
+    #ev-hero {
+        min-height: 50vh;
+        background-image:
+            linear-gradient(160deg, rgba(0, 26, 35, 0.6), rgba(0, 26, 35, 0.3)),
+            url('/storage/media/nozze_tel.webp');
+    }
+
+    #ev-intro {
+        padding: 2rem 0;
+    }
+
+    #ev-intro-img-main {
+        height: 280px;
+    }
+
+    #ev-intro-img-accent {
+        width: 110px;
+        height: 110px;
+    }
+
+    #ev-categories {
+        padding: 3rem 0;
+    }
+
+    #ev-gallery-img {
+        min-height: 260px;
+    }
+
+    #ev-cta {
+        padding: 3rem 1.5rem;
+    }
+}
