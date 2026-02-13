@@ -41,13 +41,7 @@ Route::get('/sitemap.xml', function () {
             'priority' => '0.8',
         ],
         [
-            'loc' => route('pizzeria'),
-            'lastmod' => $today,
-            'changefreq' => 'monthly',
-            'priority' => '0.8',
-        ],
-        [
-            'loc' => route('ristorante'),
+            'loc' => route('ristorazione'),
             'lastmod' => $today,
             'changefreq' => 'monthly',
             'priority' => '0.8',
@@ -117,8 +111,11 @@ Route::get('/sitemap.xml', function () {
 Route::get('/contatti', [PublicController::class, 'contatti'])->name("contatti");
 Route::post('/contatti/invio', [ContactController::class, 'send'])->name('contact.send');
 Route::get('/camere', [PublicController::class, 'stanze'])->name("stanze");
-Route::get('/pizzeria', [PublicController::class, 'pizzeria'])->name("pizzeria");
-Route::get('/ristorante', [PublicController::class, 'ristorante'])->name("ristorante");
+Route::get('/ristorazione', [PublicController::class, 'ristorazione'])->name("ristorazione");
+
+// Redirect vecchi URL per SEO
+Route::get('/pizzeria', fn() => redirect()->route('ristorazione', [], 301))->name('pizzeria');
+Route::get('/ristorante', fn() => redirect()->route('ristorazione', [], 301))->name('ristorante');
 Route::post('/lingua/{lang}', [PublicController::class, 'setLanguage'])->name('setLocale');
 Route::get('/menu_domenicale', [ArticleController::class, 'index'])->name('menu_domenicale');
 Route::get('/esperienze', [PublicController::class, 'esperienze'])->name("esperienze");

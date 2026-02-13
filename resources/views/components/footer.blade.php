@@ -4,8 +4,8 @@
         <div class="row g-4 mb-2">
             <!-- COLONNA BRAND -->
             <div class="col-lg-4 col-md-12">
-                <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna"
-                    class="footer-logo mb-3">
+               <a href="{{ route('home') }}"> <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna"
+                    class="footer-logo mb-3"></a>
                 <p class="footer-description mb-3">
                     {{ __('ui.footer_scritta') }}
                 </p>
@@ -13,12 +13,12 @@
                     <li>
                         <span class="footer-commercial__title">IL CILIEGIO DELL’ETNA Soc. Agricola S.R.L.</span>
                     </li>
-                   
+
                     <li>
                         <i class="fas fa-id-card"></i>
                         <span>P. IVA e C.F. 05388700873</span>
                     </li>
-    
+
                     <li>
                         <i class="fas fa-clipboard-list"></i>
                         <span>Iscrizione REA CT - 362901</span>
@@ -35,8 +35,7 @@
             <div class="col-lg-2 col-md-6 ms-lg-auto">
                 <h5 class="footer-title">{{ __('ui.esplora') }}</h5>
                 <ul class="list-unstyled footer-links">
-                    <li><a href="{{ route('ristorante') }}">{{ __('ui.il_ristorante') }}</a></li>
-                    <li><a href="{{ route('pizzeria') }}">{{ __('ui.la_pizzeria') }}</a></li>
+                    <li><a href="{{ route('ristorazione') }}">{{ __('ui.ristorazione_footer') }}</a></li>
                     <li><a href="{{ route('stanze') }}">{{ __('ui.le_camere') }}</a></li>
                 </ul>
             </div>
@@ -95,6 +94,10 @@
                             @if (App::getLocale() !== 'fr')
                                 <li><x-_locale lang="fr" /></li>
                             @endif
+                            @if (App::getLocale() !== 'de')
+                                <li><x-_locale lang="de" /></li>
+                            @endif 
+
                         </div>
                     </ul>
                 </div>

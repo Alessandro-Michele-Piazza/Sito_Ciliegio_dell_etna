@@ -131,7 +131,7 @@
                         "{{ __('ui.descrizione_scacchiera_2') }}"
                     </p>
 
-                    <a href="{{ route('ristorante') }}" class="link-scopri">
+                    <a href="{{ route('ristorazione') }}" class="link-scopri">
                         <span> {{ __('ui.esplora_la_nostra_cucina') }}</span>
                         <i class="fas fa-arrow-right ms-2"></i>
                     </a>

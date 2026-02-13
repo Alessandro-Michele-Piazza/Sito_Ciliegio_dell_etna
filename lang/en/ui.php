@@ -257,7 +257,7 @@ return [
         'corso_pizzeria_programma_7' => 'Final tasting',
         'corso_pizzeria_prenota' => 'Book your spot',
         'corso_pizzeria_esperienza_title' => 'An authentic experience',
-        'corso_pizzeria_esperienza_text' => 'Our pizzas are born from naturally leavened dough, with Sicilian durum wheat semolina and certified Italian 00 flour. The course guides you step by step to replicate master pizzaiolo quality.',
+        'corso_pizzeria_esperienza_text' => 'Our pizzas are born from naturally leavened dough, with Sicilian durum wheat semolina and certified Italian flours. The course guides you step by step to replicate master pizzaiolo quality.',
         'corso_pizzeria_feature_1_title' => 'Local ingredients',
         'corso_pizzeria_feature_1_text' => 'Selected and traceable.',
         'corso_pizzeria_feature_2_title' => 'Perfect baking',
@@ -266,7 +266,7 @@ return [
         'corso_pizzeria_feature_3_text' => 'Follow every step with the chef.',
         'corso_pizzeria_ingredienti' => 'Ingredients',
         'corso_pizzeria_ingrediente_1' => 'Re-milled durum wheat semolina',
-        'corso_pizzeria_ingrediente_2' => '00 flour',
+        'corso_pizzeria_ingrediente_2' => 'Ancient Sicilian wheat flours',
         'corso_pizzeria_ingrediente_3' => 'Water',
         'corso_pizzeria_ingrediente_4' => 'Natural yeast',
         'corso_pizzeria_ingrediente_5' => 'Salt',
@@ -295,11 +295,11 @@ return [
     'corso_cucina_img_alt' => 'Sicilian cooking course with chef and participants preparing dishes together',
 
     'corso_cucina_programma_title' => 'Daily Schedule',
-    'corso_cucina_programma_1' => '14:30 — Group meeting and distribution of teaching materials',
-    'corso_cucina_programma_2' => '15:00 — Briefing with interpreter on course proceedings',
-    'corso_cucina_programma_3' => '17:30 — 10-minute break for idea exchange',
-    'corso_cucina_programma_4' => '19:00 — Dinner with tasting of prepared dishes',
-    'corso_cucina_programma_5' => '21:30 — Certificate of participation and English recipe book',
+    'corso_cucina_programma_1' => 'Group meeting and distribution of teaching materials',
+    'corso_cucina_programma_2' => 'Briefing with interpreter on course proceedings',
+    'corso_cucina_programma_3' => '10-minute break for idea exchange',
+    'corso_cucina_programma_4' => 'Tasting of prepared dishes',
+    'corso_cucina_programma_5' => 'Certificate of participation and English recipe book',
 
     'corso_cucina_esperienza_title' => 'A Complete Experience',
     'corso_cucina_esperienza_text' => 'The lesson is structured around live preparation with simple and innovative methods, ranging from appetizer to dessert. We explain step by step hygiene systems and kitchen behavior. From preparation to tasting, with a focus on local ingredients and traditional techniques.',
@@ -308,7 +308,7 @@ return [
     'corso_cucina_feature_1_text' => 'Apron, notepad, and pen included in the course.',
     'corso_cucina_feature_2_title' => 'Products',
     'corso_cucina_feature_2_text' => 'Meat or fish, depending on the season and preferences.',
-    'corso_cucina_feature_3_title' => 'Dinner Included',
+    'corso_cucina_feature_3_title' => 'Included dishes',
     'corso_cucina_feature_3_text' => 'Appetizers, pasta, main course, dessert, water, and wine included.',
 
     'corso_cucina_contatti_title' => 'Where We Are & Contacts',
@@ -322,4 +322,13 @@ return [
     'corso_cucina_prenota_title' => 'Book Now',
     'corso_cucina_prenota_text' => 'Write to us to know the next available dates.',
     'corso_cucina_prenota_cta' => 'Contact Us',
+
+    // RISTORAZIONE (unified page)
+    'Ristorazione' => 'Restaurant & Pizzeria',
+    'ristorazione_footer' => 'Restaurant & Pizzeria',
+    'ristorazione_pizza_tradizionale' => 'Traditional Pizza',
+    'ristorazione_pizzeria_titolo_1' => 'Our ',
+    'ristorazione_pizzeria_titolo_2' => 'Pizzeria',
+    'ristorazione_cta_titolo' => 'Come Visit Us',
+    'ristorazione_cta_sottotitolo' => 'Book your table or contact us for any information. We look forward to welcoming you with the authentic flavors of Sicily.',
 ];

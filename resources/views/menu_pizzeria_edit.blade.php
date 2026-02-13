@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="text-center mt-4">
-                    <a href="{{ route('pizzeria') }}" class="text-decoration-none text-muted">
+                    <a href="{{ route('ristorazione') }}" class="text-decoration-none text-muted">
                         <i class="fas fa-arrow-left me-1"></i> Torna alla pagina pubblica
                     </a>
                 </div>

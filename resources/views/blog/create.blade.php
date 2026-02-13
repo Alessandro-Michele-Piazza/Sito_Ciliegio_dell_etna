@@ -89,7 +89,7 @@
                 <div class="text-center mt-4">
                     <p class="small text-muted">
                         <i class="fas fa-info-circle me-1"></i>
-                        Ricorda: il sistema mantiene solo gli ultimi 15 post. La pubblicazione di questo post potrebbe
+                        Ricorda: il sistema mantiene solo gli ultimi 100 post. La pubblicazione di questo post potrebbe
                         eliminare il più vecchio.
                     </p>
                 </div>

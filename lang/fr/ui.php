@@ -248,7 +248,7 @@ return [
     'corso_pizzeria_programma_7' => 'Dégustation finale',
     'corso_pizzeria_prenota' => 'Réservez votre place',
     'corso_pizzeria_esperienza_title' => 'Une expérience authentique',
-    'corso_pizzeria_esperienza_text' => 'Nos pizzas naissent d’une pâte à levée naturelle, avec semoule de blé dur sicilienne et farine 00 italienne certifiée. Le cours vous guide pas à pas pour reproduire la qualité des grands maîtres pizzaioli.',
+    'corso_pizzeria_esperienza_text' => 'Nos pizzas naissent d’une pâte à levée naturelle, avec semoule de blé dur sicilienne et farines italiennes certifiées. Le cours vous guide pas à pas pour reproduire la qualité des grands maîtres pizzaioli.',
     'corso_pizzeria_feature_1_title' => 'Ingrédients locaux',
     'corso_pizzeria_feature_1_text' => 'Sélectionnés et traçables.',
     'corso_pizzeria_feature_2_title' => 'Cuisson parfaite',
@@ -257,7 +257,7 @@ return [
     'corso_pizzeria_feature_3_text' => 'Suivez chaque étape avec le chef.',
     'corso_pizzeria_ingredienti' => 'Ingrédients',
     'corso_pizzeria_ingrediente_1' => 'Semoule de blé dur remoulue',
-    'corso_pizzeria_ingrediente_2' => 'Farine 00',
+    'corso_pizzeria_ingrediente_2' => 'Farine de blés anciens siciliens',
     'corso_pizzeria_ingrediente_3' => 'Eau',
     'corso_pizzeria_ingrediente_4' => 'Levain naturel',
     'corso_pizzeria_ingrediente_5' => 'Sel',
@@ -286,11 +286,11 @@ return [
     'corso_cucina_img_alt' => 'Cours de cuisine sicilienne',
 
     'corso_cucina_programma_title' => 'Programme de la journée',
-    'corso_cucina_programma_1' => '14:30 — éunion du groupe et distribution du matériel didactique',
-    'corso_cucina_programma_2' => '15:00 — Briefing avec interprète sur le déroulement du cours',
-    'corso_cucina_programma_3' => '17:30 — Pause de 10 minutes pour échange d\'idées',
-    'corso_cucina_programma_4' => '19:00 — Dîner avec dégustation des plats préparés',
-    'corso_cucina_programma_5' => '21:30 — Attestation de participation et livre de recettes en anglais',
+    'corso_cucina_programma_1' => 'Réunion du groupe et distribution du matériel didactique',
+    'corso_cucina_programma_2' => 'Briefing avec interprète sur le déroulement du cours',
+    'corso_cucina_programma_3' => 'Pause de 10 minutes pour échange d\'idées',
+    'corso_cucina_programma_4' => 'Dégustation des plats préparés',
+    'corso_cucina_programma_5' => 'Attestation de participation et livre de recettes en anglais',
 
     'corso_cucina_esperienza_title' => 'Une expérience complète',
     'corso_cucina_esperienza_text' => 'La leçon se déroule avec une préparation en direct utilisant des méthodes simples et innovantes, allant de l\'entrée au dessert. Nous expliquons également étape par étape les systèmes d\'hygiène et de comportement en cuisine. De la préparation à la dégustation, avec un accent sur les ingrédients locaux et les techniques traditionnelles.',
@@ -299,7 +299,7 @@ return [
     'corso_cucina_feature_1_text' => 'Tablier, bloc-notes et stylo pour les notes inclus dans le cours.',
     'corso_cucina_feature_2_title' => 'Produits',
     'corso_cucina_feature_2_text' => 'Viande ou poisson, selon la saison et les préférences.',
-    'corso_cucina_feature_3_title' => 'Dîner Inclus',
+    'corso_cucina_feature_3_title' => 'Plats Inclus',
     'corso_cucina_feature_3_text' => 'Entrées, pâtes, plat principal, dessert, eau et vin inclus.',
 
     'corso_cucina_contatti_title' => 'Où nous sommes & Contacts',
@@ -313,4 +313,13 @@ return [
     'corso_cucina_prenota_title' => 'Réservez maintenant',
     'corso_cucina_prenota_text' => 'Écrivez-nous pour connaître les prochaines dates disponibles.',
     'corso_cucina_prenota_cta' => 'Contactez-nous',
+
+    // RISTORAZIONE (page unifiée)
+    'Ristorazione' => 'Restaurant & Pizzeria',
+    'ristorazione_footer' => 'Restaurant & Pizzeria',
+    'ristorazione_pizza_tradizionale' => 'Pizza Traditionnelle',
+    'ristorazione_pizzeria_titolo_1' => 'Notre ',
+    'ristorazione_pizzeria_titolo_2' => 'Pizzeria',
+    'ristorazione_cta_titolo' => 'Venez nous rendre visite',
+    'ristorazione_cta_sottotitolo' => 'Réservez votre table ou contactez-nous pour toute information. Nous vous attendons avec les saveurs authentiques de la Sicile.',
 ];
