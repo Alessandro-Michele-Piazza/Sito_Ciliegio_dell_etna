@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PublicController extends Controller
+class PublicController extends \App\Http\Controllers\Controller
 {
     public function home()
     {
@@ -23,12 +23,14 @@ class PublicController extends Controller
 
     public function pizzeria()
     {
-        return view('pizzeria');
+        // Redirect to the unified ristorazione page
+        return redirect()->route('ristorazione');
     }
 
     public function ristorante()
     {
-        return view('ristorante');
+        // Redirect to the unified ristorazione page
+        return redirect()->route('ristorazione');
     }
 
     public function ristorazione()
