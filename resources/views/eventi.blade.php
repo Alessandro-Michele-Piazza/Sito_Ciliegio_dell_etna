@@ -111,6 +111,39 @@
         </div>
     </section>
 
+    {{-- CAROSELLO --}}
+
+    <!-- Sezione isolata per l'integrazione in Laravel -->
+    <section id="eventi_section_coverflow_container" data-aos="fade-up" data-aos-duration="1000">
+
+        <div id="eventi_header_wrapper">
+            <span id="eventi_badge_sezione">{{ __('ui.ev_gallery_badge') }}</span>
+            <h2 id="eventi_titolo_sezione">{{ __('ui.ev_cta_title') }}</h2>
+            <hr id="eventi_divider_sezione">
+        </div>
+
+        <!-- Main Swiper -->
+        <div id="eventi_swiper_principale" class="swiper">
+            <div class="swiper-wrapper" id="eventi_wrapper_slides">
+
+                {{-- Loop da 1 a 7: file presenti in public/storage/media --}}
+                @for ($i = 1; $i <= 8; $i++)
+                    <div class="swiper-slide" id="eventi_slide_card_{{ $i }}">
+                        <div id="eventi_card_overlay_{{ $i }}" class="eventi-overlay">
+                            <img src="{{ asset('storage/media/foto_evento(' . $i . ').webp') }}"
+                                id="eventi_foto_item_{{ $i }}" alt="Foto Evento {{ $i }}" />
+                        </div>
+                    </div>
+                @endfor
+
+            </div>
+
+            <!-- Paginazione con ID univoco -->
+            <div id="eventi_paginazione_bullets" class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
     {{-- CTA --}}
     <section id="ev-cta">
         <div class="container" data-aos="fade-up" data-aos-duration="1000">

@@ -37,8 +37,8 @@
                 <ul class="list-unstyled footer-links">
                     <li><a href="{{ route('ristorazione') }}">{{ __('ui.ristorazione_footer') }}</a></li>
                     <li><a href="{{ route('stanze') }}">{{ __('ui.le_camere') }}</a></li>
-                    <li><a href="{{ route('blog.index') }}">Blog</a></li>
-                    <li><a href="{{ route('esperienze') }}">{{ __('ui.Esperienze') }}</a></li>
+                    {{-- <li><a href="{{ route('blog.index') }}">Blog</a></li>
+                    <li><a href="{{ route('esperienze') }}">{{ __('ui.Esperienze') }}</a></li> --}}
                     <li><a href="{{ route('eventi') }}">{{ __('ui.Eventi') }}</a></li>
                     <li><a href="{{ route('menu_domenicale') }}">{{ __('ui.Menu_domenicale') }}</a></li>
                     <li><a href="https://www.tenutadeiciliegi.it">{{ __('ui.Matrimoni') }}</a></li>

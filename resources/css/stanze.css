@@ -406,7 +406,7 @@
 
 @media (max-width: 767.98px) {
     .stanze-page .col-text-stanze {
-        padding: 2.2rem 1.5rem !important;
+      padding: 2.2rem 1.5rem;
     }
 
     .stanze-page .stanze-section-number {
@@ -445,6 +445,18 @@
 
 @media (min-width: 1400px) {
     .stanze-page .col-text-stanze {
-        padding: 3.5rem !important;
+      padding: 3.5rem;
     }
+}
+
+/* High-specificity overrides when the wrapper element has id="stanze".
+   Add id="stanze" to the page container if you need these rules to win. */
+#stanze .stanze-page .col-text-stanze {
+  padding: 2.2rem 1.5rem;
+}
+
+@media (min-width: 1400px) {
+  #stanze .stanze-page .col-text-stanze {
+    padding: 3.5rem;
+  }
 }

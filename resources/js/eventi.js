@@ -67,3 +67,52 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Selettori iper-univoci tramite ID
+    const eventiSectionId = document.getElementById(
+        "eventi_section_coverflow_container",
+    );
+    const eventiSwiperId = document.getElementById("eventi_swiper_principale");
+
+    if (eventiSectionId && eventiSwiperId) {
+        // Inizializzazione AOS (se caricato nel progetto)
+        if (typeof AOS !== "undefined") {
+            AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        }
+
+        // Inizializzazione Swiper con parametri Coverflow
+        const eventiCoverflowAttivazione = new Swiper(
+            "#eventi_swiper_principale",
+            {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                loop: true,
+                coverflowEffect: {
+                    rotate: 40,
+                    stretch: 0,
+                    depth: 150,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: "#eventi_paginazione_bullets",
+                    clickable: true,
+                },
+                // Autoplay fluido
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+            },
+        );
+
+        // Debug log per conferma caricamento in console
+        console.log("Galleria Eventi (8 foto) inizializzata con successo.");
+    }
+});
