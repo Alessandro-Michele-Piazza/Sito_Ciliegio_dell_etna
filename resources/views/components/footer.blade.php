@@ -4,8 +4,8 @@
         <div class="row g-4 mb-2">
             <!-- COLONNA BRAND -->
             <div class="col-lg-4 col-md-12">
-               <a href="{{ route('home') }}"> <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna"
-                    class="footer-logo mb-3"></a>
+                <a href="{{ route('home') }}"> <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}"
+                        alt="Logo Il Ciliegio dell'Etna" class="footer-logo mb-3"></a>
                 <p class="footer-description mb-3">
                     {{ __('ui.footer_scritta') }}
                 </p>
@@ -37,6 +37,11 @@
                 <ul class="list-unstyled footer-links">
                     <li><a href="{{ route('ristorazione') }}">{{ __('ui.ristorazione_footer') }}</a></li>
                     <li><a href="{{ route('stanze') }}">{{ __('ui.le_camere') }}</a></li>
+                    <li><a href="{{ route('blog.index') }}">Blog</a></li>
+                    <li><a href="{{ route('esperienze') }}">{{ __('ui.Esperienze') }}</a></li>
+                    <li><a href="{{ route('eventi') }}">{{ __('ui.Eventi') }}</a></li>
+                    <li><a href="{{ route('menu_domenicale') }}">{{ __('ui.Menu_domenicale') }}</a></li>
+                    <li><a href="https://www.tenutadeiciliegi.it">{{ __('ui.Matrimoni') }}</a></li>
                 </ul>
             </div>
 
@@ -96,7 +101,7 @@
                             @endif
                             @if (App::getLocale() !== 'de')
                                 <li><x-_locale lang="de" /></li>
-                            @endif 
+                            @endif
 
                         </div>
                     </ul>

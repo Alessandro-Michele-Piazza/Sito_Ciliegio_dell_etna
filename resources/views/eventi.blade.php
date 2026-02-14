@@ -4,8 +4,8 @@
     ogDescription="Celebra i tuoi momenti più importanti in un agriturismo immerso nei vigneti dell'Etna. Spazi interni ed esterni per ogni tipo di evento."
     ogImage="{{ asset('storage/media/nozze_pc.webp') }}" canonical="{{ route('eventi') }}">
 
-        {{-- HERO --}}
-    <x-header title="{{ __('ui.Eventi') }}"/>
+    {{-- HERO --}}
+    <x-header title="{{ __('ui.Eventi') }}" />
 
     {{-- INTRO – immagine + testo a scacchiera --}}
     <section id="ev-intro">
@@ -20,15 +20,11 @@
                     <div id="ev-intro-img-wrapper">
                         <picture>
                             <source media="(max-width: 576px)" srcset="{{ asset('storage/media/laurea_pc.webp') }}">
-                            <img id="ev-intro-img-main"
-                                 src="{{ asset('storage/media/laurea_pc.webp') }}"
-                                 alt="{{ __('ui.ev_img_alt_festa') }}"
-                                 loading="lazy">
+                            <img id="ev-intro-img-main" src="{{ asset('storage/media/laurea_pc.webp') }}"
+                                alt="{{ __('ui.ev_img_alt_festa') }}" loading="lazy">
                         </picture>
-                        <img id="ev-intro-img-accent"
-                             src="{{ asset('storage/media/laurea_pc (2).webp') }}"
-                             alt="{{ __('ui.ev_img_alt_dettaglio') }}"
-                             loading="lazy">
+                        <img id="ev-intro-img-accent" src="{{ asset('storage/media/laurea_pc (2).webp') }}"
+                            alt="{{ __('ui.ev_img_alt_dettaglio') }}" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -90,15 +86,14 @@
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
                     <picture>
                         <source media="(max-width: 576px)" srcset="{{ asset('storage/media/18°compl_pc.webp') }}">
-                        <img id="ev-gallery-img"
-                             src="{{ asset('storage/media/18°compl_pc.webp') }}"
-                             alt="{{ __('ui.ev_img_alt_location') }}"
-                             loading="lazy">
+                        <img id="ev-gallery-img" src="{{ asset('storage/media/18°compl_pc.webp') }}"
+                            alt="{{ __('ui.ev_img_alt_location') }}" loading="lazy">
                     </picture>
                 </div>
-                <div class="col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-lg-6 d-flex align-items-center justify-content-center" data-aos="fade-left"
+                    data-aos-duration="1000">
                     <div id="ev-gallery-text">
-                        <span id="ev-gallery-badge">{{ __('ui.ev_gallery_badge') }}</span>
+                        <span id="ev-gallery-badge" class="fs-6">{{ __('ui.ev_gallery_badge') }}</span>
                         <h2 id="ev-gallery-title">{{ __('ui.ev_gallery_title') }}</h2>
                         <p id="ev-gallery-desc">{{ __('ui.ev_gallery_desc') }}</p>
                         <ul id="ev-features-list">
@@ -106,6 +101,9 @@
                             <li><i class="fa-solid fa-check"></i> {{ __('ui.ev_feature_2') }}</li>
                             <li><i class="fa-solid fa-check"></i> {{ __('ui.ev_feature_3') }}</li>
                             <li><i class="fa-solid fa-check"></i> {{ __('ui.ev_feature_4') }}</li>
+                            <li><i class="fa-solid fa-check"></i> {{ __('ui.ev_feature_5') }}</li>
+                            <li><i class="fa-solid fa-check"></i> {{ __('ui.ev_feature_7') }}</li>
+
                         </ul>
                     </div>
                 </div>
