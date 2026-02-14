@@ -215,3 +215,236 @@
         /* var(--verde_scuro) con trasparenza */
       }
     }
+
+
+/* =============================================
+   STANZE PAGE — Premium Upgrade
+   ============================================= */
+
+/* --- Scacchiera senza bordo --- */
+.stanze-page .div-scacchiera {
+    border: none;
+    position: relative;
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.stanze-page .div-scacchiera:hover {
+    z-index: 2;
+}
+
+/* --- Colonna Immagine — overlay sfumato + zoom --- */
+.stanze-page .col-img-stanze {
+    position: relative;
+    overflow: hidden;
+}
+
+.stanze-page .col-img-stanze::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg,
+            rgba(0, 26, 35, 0.18) 0%,
+            rgba(122, 158, 126, 0.10) 100%);
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.stanze-page .col-img-stanze:hover::after {
+    opacity: 0.6;
+}
+
+.stanze-page .col-img-stanze .img-scacchiera-custom {
+    transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+        filter 0.6s ease;
+}
+
+.stanze-page .div-scacchiera:hover .col-img-stanze .img-scacchiera-custom {
+    transform: scale(1.04);
+}
+
+/* --- Colonna Testo — pannello premium --- */
+.stanze-page .col-text-stanze {
+    position: relative;
+    background: linear-gradient(160deg,
+            #ffffff 0%,
+            #f8faf8 40%,
+            #f0f5f1 100%);
+    overflow: hidden;
+}
+
+.stanze-page .col-text-stanze::before {
+    content: '';
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle,
+            rgba(122, 158, 126, 0.08) 0%,
+            transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.stanze-page .col-text-stanze::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: -40px;
+    width: 160px;
+    height: 160px;
+    background: radial-gradient(circle,
+            rgba(222, 7, 34, 0.04) 0%,
+            transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* --- Titolo --- */
+.stanze-page .stanze-title {
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: var(--verde_scurissimo);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    position: relative;
+}
+
+/* --- Divider con Gradiente --- */
+.stanze-page .divider-premium-stanze {
+    width: 70px;
+    height: 3px;
+    border: none;
+    border-radius: 3px;
+    background: linear-gradient(90deg,
+            var(--rosso_ciliegia) 0%,
+            var(--verde_medio) 100%);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    opacity: 1;
+    transition: width 0.4s ease;
+}
+
+.stanze-page .div-scacchiera:hover .divider-premium-stanze {
+    width: 100px;
+}
+
+/* --- Sottotitolo --- */
+.stanze-page .stanze-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.92rem;
+    letter-spacing: 0.03em;
+}
+
+/* --- Descrizione --- */
+.stanze-page .stanze-description {
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: #444;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- Amenity Row (icona + testo inline) --- */
+.stanze-page .amenity-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.4rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(122, 158, 126, 0.15);
+}
+
+.stanze-page .amenity-item {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.stanze-page .amenity-item i {
+    font-size: 0.95rem;
+    flex-shrink: 0;
+}
+
+.stanze-page .amenity-item span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--verde_scurissimo);
+    white-space: nowrap;
+}
+
+/* --- Numero Sezione Decorativo --- */
+.stanze-page .stanze-section-number {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(122, 158, 126, 0.12);
+    pointer-events: none;
+    z-index: 0;
+    user-select: none;
+}
+
+/* --- Separatore tra Sezioni --- */
+.stanze-page .section-separator-stanze {
+    height: 1px;
+    background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(122, 158, 126, 0.25) 50%,
+            transparent 100%);
+    margin: 0;
+    border: none;
+}
+
+/* =============================================
+   STANZE — RESPONSIVE
+   ============================================= */
+
+@media (max-width: 767.98px) {
+    .stanze-page .col-text-stanze {
+        padding: 2.2rem 1.5rem !important;
+    }
+
+    .stanze-page .stanze-section-number {
+        font-size: 3.5rem;
+        top: 12px;
+        right: 14px;
+    }
+
+    .stanze-page .amenity-row {
+        gap: 0.5rem 1rem;
+        margin-top: 0.85rem;
+        padding-top: 0.85rem;
+    }
+
+    .stanze-page .divider-premium-stanze {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .stanze-page .stanze-title {
+        text-align: center;
+    }
+
+    .stanze-page .stanze-subtitle {
+        text-align: center;
+    }
+
+    .stanze-page .stanze-description {
+        text-align: center;
+    }
+
+    .stanze-page .amenity-row {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    .stanze-page .col-text-stanze {
+        padding: 3.5rem !important;
+    }
+}

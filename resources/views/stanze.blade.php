@@ -7,6 +7,8 @@
     canonical="{{ route('stanze') }}"
 >
 
+    <div class="stanze-page">
+
     <div id="sezione-carosello-1" class="wrapper-carosello">
         <!-- Carosello Orizzontale -->
         <div class="swiper swiper-principale-1">
@@ -60,8 +62,8 @@
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"
         data-aos-once="true">
         <div class="row g-0 align-items-stretch">
-            <!-- COLONNA IMMAGINE (Già prima nel codice, ok per mobile) -->
-            <div class="col-12 col-md-7 h-scacchiera">
+            <!-- COLONNA IMMAGINE -->
+            <div class="col-12 col-md-7 h-scacchiera col-img-stanze">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto_telefono(12).webp') }}"
                         class="w-full h-screen object-cover">
@@ -71,40 +73,52 @@
             </div>
 
             <!-- COLONNA TESTO -->
-            <div class="col-12 col-md-5 d-flex align-items-center py-5 px-4 p-md-5 bg-white">
-                <div>
-                    <h2 class="fw-bold mb-3"> {{ __('ui.Camere_matrimoniali') }} </h2>
-                    <div class="divider-short mb-4 mt-0"></div>
-                    <span class="sub-label scritta_verde_medio d-block mb-2 fst-italic"> {{ __('ui.Un_nido') }} </span>
-                    <p class="descrizione-scacchiera mb-4">{{ __('ui.Camere_matrimoniali_Descrizione') }}</p>
-                    <div class="row g-3 mt-2 border-top">
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-snowflake scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-wifi scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Wi-Fi_Free') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-tv scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.TV') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-shower scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Bagno_privato') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-mug-hot scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Bollitore_in_stanza') }}</span></div>
+            <div class="col-12 col-md-5 d-flex align-items-center col-text-stanze py-5 px-4 p-md-5">
+                <div class="position-relative w-100">
+                    <span class="stanze-section-number">01</span>
+                    <h2 class="stanze-title fw-bold mb-3" data-aos="fade-up" data-aos-delay="200"
+                        data-aos-once="true">{{ __('ui.Camere_matrimoniali') }}</h2>
+                    <hr class="divider-premium-stanze" data-aos="fade-right" data-aos-delay="300" data-aos-once="true">
+                    <span class="stanze-subtitle sub-label scritta_verde_medio d-block mb-2 fst-italic"
+                        data-aos="fade-up" data-aos-delay="350"
+                        data-aos-once="true">{{ __('ui.Un_nido') }}</span>
+                    <p class="stanze-description mb-4" data-aos="fade-up" data-aos-delay="400"
+                        data-aos-once="true">{{ __('ui.Camere_matrimoniali_Descrizione') }}</p>
+                    <div class="amenity-row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
+                        <div class="amenity-item">
+                            <i class="fas fa-snowflake scritta_verde_medio"></i>
+                            <span>{{ __('ui.Aria_Condizionata') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-wifi scritta_verde_medio"></i>
+                            <span>{{ __('ui.Wi-Fi_Free') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-tv scritta_verde_medio"></i>
+                            <span>{{ __('ui.TV') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-shower scritta_verde_medio"></i>
+                            <span>{{ __('ui.Bagno_privato') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-mug-hot scritta_verde_medio"></i>
+                            <span>{{ __('ui.Bollitore_in_stanza') }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <hr class="section-separator-stanze">
+
     {{-- 2. CAMERE TRIPLE (Testo Sinistra - Immagine Destra su Desktop | Immagine SOPRA su Mobile) --}}
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-left" data-aos-duration="1500"
         data-aos-once="true">
         <div class="row g-0 align-items-stretch">
-            <!-- COLONNA IMMAGINE: Spostata prima nel codice, ma con order-md-2 per il Desktop -->
-            <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
+            <!-- COLONNA IMMAGINE -->
+            <div class="col-12 col-md-7 h-scacchiera col-img-stanze order-1 order-md-2">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/tripla_telefono.webp') }}"
                         class="w-full h-screen object-cover">
@@ -113,45 +127,57 @@
                 </picture>
             </div>
 
-            <!-- COLONNA TESTO: Seconda nel codice, ma order-md-1 per il Desktop -->
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5 order-2 order-md-1">
-                <div>
-                    <h2 class="fw-bold mb-3">{{ __('ui.Camere_Triple_Superior') }}</h2>
-                    <div class="divider-short mb-4 mt-0"></div>
-                    <span
-                        class="sub-label scritta_verde_medio d-block mb-2 fst-italic">{{ __('ui.Ampiezza_e_Comfort') }}</span>
-                    <p class="descrizione-scacchiera mb-4">{{ __('ui.Camere_Triple_Descrizione') }}</p>
-                    <div class="row g-3 mt-2 border-top">
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-snowflake scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-wifi scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Wi-Fi_Free') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-tv scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.TV') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-mug-hot scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Bollitore_in_stanza') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-wheelchair scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Accesso_Disabili') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-shower scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Bagno_privato') }}</span></div>
+            <!-- COLONNA TESTO -->
+            <div class="col-12 col-md-5 d-flex align-items-center col-text-stanze py-5 px-4 p-md-5 order-2 order-md-1">
+                <div class="position-relative w-100">
+                    <span class="stanze-section-number">02</span>
+                    <h2 class="stanze-title fw-bold mb-3" data-aos="fade-up" data-aos-delay="200"
+                        data-aos-once="true">{{ __('ui.Camere_Triple_Superior') }}</h2>
+                    <hr class="divider-premium-stanze" data-aos="fade-right" data-aos-delay="300" data-aos-once="true">
+                    <span class="stanze-subtitle sub-label scritta_verde_medio d-block mb-2 fst-italic"
+                        data-aos="fade-up" data-aos-delay="350"
+                        data-aos-once="true">{{ __('ui.Ampiezza_e_Comfort') }}</span>
+                    <p class="stanze-description mb-4" data-aos="fade-up" data-aos-delay="400"
+                        data-aos-once="true">{{ __('ui.Camere_Triple_Descrizione') }}</p>
+                    <div class="amenity-row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
+                        <div class="amenity-item">
+                            <i class="fas fa-snowflake scritta_verde_medio"></i>
+                            <span>{{ __('ui.Aria_Condizionata') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-wifi scritta_verde_medio"></i>
+                            <span>{{ __('ui.Wi-Fi_Free') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-tv scritta_verde_medio"></i>
+                            <span>{{ __('ui.TV') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-mug-hot scritta_verde_medio"></i>
+                            <span>{{ __('ui.Bollitore_in_stanza') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-wheelchair scritta_verde_medio"></i>
+                            <span>{{ __('ui.Accesso_Disabili') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-shower scritta_verde_medio"></i>
+                            <span>{{ __('ui.Bagno_privato') }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <hr class="section-separator-stanze">
+
     {{-- 3. CAMERE QUADRUPLE (Immagine Sinistra - Testo Destra) --}}
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right"
         data-aos-duration="1500" data-aos-once="true">
         <div class="row g-0 align-items-stretch">
             <!-- COLONNA IMMAGINE -->
-            <div class="col-12 col-md-7 h-scacchiera">
+            <div class="col-12 col-md-7 h-scacchiera col-img-stanze">
                 <picture>
                     <source media="(max-width: 767px)" srcset="{{ asset('storage/media/quadrupla_telefono.webp') }}"
                         class="w-full h-screen object-cover">
@@ -161,36 +187,48 @@
             </div>
 
             <!-- COLONNA TESTO -->
-            <div class="col-12 col-md-5 d-flex align-items-center bg-white py-5 px-4 p-md-5">
-                <div>
-                    <h2 class="fw-bold mb-3">{{ __('ui.Quadrupla') }}</h2>
-                    <div class="divider-short mb-4 mt-0"></div>
-                    <span
-                        class="sub-label scritta_verde_medio d-block mb-2 fst-italic">{{__('ui.Spazio_e_armonia') }}</span>
-                    <p class="descrizione-scacchiera mb-4">{{ __('ui.Camere_Quadruple_Descrizione') }}</p>
-                    <div class="row g-3 mt-2 border-top">
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-snowflake scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Aria_Condizionata') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-wifi scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Wi-Fi_Free') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-tv scritta_verde_medio me-2"></i><span class="small fw-semibold">Smart
-                                TV</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-mug-hot scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Bollitore_in_stanza') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-wheelchair scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Accesso_Disabili') }}</span></div>
-                        <div class="col-6 col-sm-4 d-flex align-items-center"><i
-                                class="fas fa-shower scritta_verde_medio me-2"></i><span
-                                class="small fw-semibold">{{ __('ui.Bagno_privato') }}</span></div>
+            <div class="col-12 col-md-5 d-flex align-items-center col-text-stanze py-5 px-4 p-md-5">
+                <div class="position-relative w-100">
+                    <span class="stanze-section-number">03</span>
+                    <h2 class="stanze-title fw-bold mb-3" data-aos="fade-up" data-aos-delay="200"
+                        data-aos-once="true">{{ __('ui.Quadrupla') }}</h2>
+                    <hr class="divider-premium-stanze" data-aos="fade-right" data-aos-delay="300" data-aos-once="true">
+                    <span class="stanze-subtitle sub-label scritta_verde_medio d-block mb-2 fst-italic"
+                        data-aos="fade-up" data-aos-delay="350"
+                        data-aos-once="true">{{ __('ui.Spazio_e_armonia') }}</span>
+                    <p class="stanze-description mb-4" data-aos="fade-up" data-aos-delay="400"
+                        data-aos-once="true">{{ __('ui.Camere_Quadruple_Descrizione') }}</p>
+                    <div class="amenity-row" data-aos="fade-up" data-aos-delay="500" data-aos-once="true">
+                        <div class="amenity-item">
+                            <i class="fas fa-snowflake scritta_verde_medio"></i>
+                            <span>{{ __('ui.Aria_Condizionata') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-wifi scritta_verde_medio"></i>
+                            <span>{{ __('ui.Wi-Fi_Free') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-tv scritta_verde_medio"></i>
+                            <span>Smart TV</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-mug-hot scritta_verde_medio"></i>
+                            <span>{{ __('ui.Bollitore_in_stanza') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-wheelchair scritta_verde_medio"></i>
+                            <span>{{ __('ui.Accesso_Disabili') }}</span>
+                        </div>
+                        <div class="amenity-item">
+                            <i class="fas fa-shower scritta_verde_medio"></i>
+                            <span>{{ __('ui.Bagno_privato') }}</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    </div>
 
 </x-layout>
