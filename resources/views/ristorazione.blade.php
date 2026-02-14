@@ -88,10 +88,10 @@
                             <img src="{{ asset('storage/media/agripizza.webp') }}" alt="Agripizza"
                                 class="riz-agripizza-logo" loading="lazy">
                         </div>
-                        <h2 class="riz-title">
+                        {{-- <h2 class="riz-title">
                             {{ __('ui.ristorazione_pizzeria_titolo_1') }}
                             <span class="scritta_verde_medio">{{ __('ui.ristorazione_pizzeria_titolo_2') }}</span>
-                        </h2>
+                        </h2> --}}
                         <p class="riz-description">
                             {{ __('ui.Pizzeria_Descrizione') }}
                         </p>
