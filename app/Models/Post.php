@@ -46,5 +46,9 @@ class Post extends Model
                 Storage::disk('public')->delete($post->image);
             }
         });
+
+        static::deleted(function () {
+            Tag::pruneOrphans();
+        });
     }
 }

@@ -206,6 +206,7 @@ class PostController extends Controller
     {
         if ($rawTags === null) {
             $post->tags()->sync([]);
+            Tag::pruneOrphans();
             return;
         }
 
@@ -228,5 +229,6 @@ class PostController extends Controller
         })->filter()->values();
 
         $post->tags()->sync($tagIds);
+        Tag::pruneOrphans();
     }
 }

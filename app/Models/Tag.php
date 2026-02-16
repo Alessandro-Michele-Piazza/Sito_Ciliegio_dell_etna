@@ -15,4 +15,9 @@ class Tag extends Model
     {
         return $this->belongsToMany(Post::class)->withTimestamps();
     }
+
+    public static function pruneOrphans(): void
+    {
+        static::query()->doesntHave('posts')->delete();
+    }
 }
