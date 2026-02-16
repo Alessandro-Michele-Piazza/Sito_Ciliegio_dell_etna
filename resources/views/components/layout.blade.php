@@ -42,7 +42,7 @@
         <link rel="alternate" hreflang="{{ $locale }}" href="{{ $alternateUrl }}">
     @endforeach
     <link rel="alternate" hreflang="x-default" href="{{ url($currentPath) }}">
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/contatti.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/contatti.css'])
 
     {{-- FONT GOOGLE --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
