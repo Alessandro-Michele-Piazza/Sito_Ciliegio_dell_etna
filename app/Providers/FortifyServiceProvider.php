@@ -9,6 +9,8 @@ use App\Actions\Fortify\UpdateUserProfileInformation;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
@@ -65,34 +67,48 @@ class FortifyServiceProvider extends ServiceProvider
                 'g-recaptcha-response.required' => 'Conferma il reCAPTCHA.',
             ]);
 
-            $recaptchaSecret = env('RECAPTCHA_SECRET_KEY');
-            if (!$recaptchaSecret) {
-                throw ValidationException::withMessages([
-                    'g-recaptcha-response' => 'Configurazione reCAPTCHA non valida.',
-                ]);
-            }
+            // Verifica reCAPTCHA solo se non già validato in questa request
+            // (Fortify può chiamare authenticateUsing più volte, es. per 2FA,
+            //  e il token reCAPTCHA è monouso → errore "timeout-or-duplicate")
+            if (!$request->attributes->get('recaptcha_verified')) {
+                $recaptchaSecret = config('services.recaptcha.secret');
+                if (!$recaptchaSecret) {
+                    throw ValidationException::withMessages([
+                        'g-recaptcha-response' => 'Configurazione reCAPTCHA non valida.',
+                    ]);
+                }
 
-            $recaptchaPayload = http_build_query([
-                'secret' => $recaptchaSecret,
-                'response' => $request->input('g-recaptcha-response'),
-                'remoteip' => $request->ip(),
-            ]);
+                try {
+                    /** @var \Illuminate\Http\Client\Response $recaptchaResponse */
+                    $recaptchaResponse = Http::asForm()->timeout(10)->post('https://www.google.com/recaptcha/api/siteverify', [
+                        'secret' => $recaptchaSecret,
+                        'response' => $request->input('g-recaptcha-response'),
+                        'remoteip' => $request->ip(),
+                    ]);
+                } catch (\Throwable $exception) {
+                    Log::warning('reCAPTCHA login request failed', [
+                        'message' => $exception->getMessage(),
+                    ]);
 
-            $recaptchaRaw = @file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, stream_context_create([
-                'http' => [
-                    'method' => 'POST',
-                    'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                    'content' => $recaptchaPayload,
-                    'timeout' => 10,
-                ],
-            ]));
+                    throw ValidationException::withMessages([
+                        'g-recaptcha-response' => 'Servizio reCAPTCHA temporaneamente non disponibile. Riprova tra poco.',
+                    ]);
+                }
 
-            $recaptchaData = is_string($recaptchaRaw) ? json_decode($recaptchaRaw, true) : null;
+                $recaptchaData = $recaptchaResponse->json();
 
-            if (!is_array($recaptchaData) || !data_get($recaptchaData, 'success')) {
-                throw ValidationException::withMessages([
-                    'g-recaptcha-response' => 'Verifica reCAPTCHA non riuscita. Riprova.',
-                ]);
+                if (!is_array($recaptchaData) || !data_get($recaptchaData, 'success')) {
+                    Log::info('reCAPTCHA login validation failed', [
+                        'error_codes' => data_get($recaptchaData, 'error-codes', []),
+                    ]);
+
+                    throw ValidationException::withMessages([
+                        'g-recaptcha-response' => 'Verifica reCAPTCHA non riuscita. Riprova.',
+                    ]);
+                }
+
+                // Segna come verificato per evitare doppia verifica nella stessa request
+                $request->attributes->set('recaptcha_verified', true);
             }
 
             $user = User::where(Fortify::username(), $request->input(Fortify::username()))->first();

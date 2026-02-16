@@ -4,6 +4,8 @@ namespace App\Actions\Fortify;
 
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Illuminate\Validation\ValidationException;
@@ -35,31 +37,37 @@ class CreateNewUser implements CreatesNewUsers
             'g-recaptcha-response.required' => 'Conferma il reCAPTCHA.',
         ])->validate();
 
-        $recaptchaSecret = env('RECAPTCHA_SECRET_KEY');
+        $recaptchaSecret = config('services.recaptcha.secret');
         if (!$recaptchaSecret) {
             throw ValidationException::withMessages([
                 'g-recaptcha-response' => 'Configurazione reCAPTCHA non valida.',
             ]);
         }
 
-        $recaptchaPayload = http_build_query([
-            'secret' => $recaptchaSecret,
-            'response' => $input['g-recaptcha-response'] ?? null,
-            'remoteip' => request()->ip(),
-        ]);
+        try {
+            /** @var \Illuminate\Http\Client\Response $recaptchaResponse */
+            $recaptchaResponse = Http::asForm()->timeout(10)->post('https://www.google.com/recaptcha/api/siteverify', [
+                'secret' => $recaptchaSecret,
+                'response' => $input['g-recaptcha-response'] ?? null,
+                'remoteip' => request()->ip(),
+            ]);
+        } catch (\Throwable $exception) {
+            Log::warning('reCAPTCHA register request failed', [
+                'message' => $exception->getMessage(),
+            ]);
 
-        $recaptchaRaw = @file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, stream_context_create([
-            'http' => [
-                'method' => 'POST',
-                'header' => "Content-type: application/x-www-form-urlencoded\r\n",
-                'content' => $recaptchaPayload,
-                'timeout' => 10,
-            ],
-        ]));
+            throw ValidationException::withMessages([
+                'g-recaptcha-response' => 'Servizio reCAPTCHA temporaneamente non disponibile. Riprova tra poco.',
+            ]);
+        }
 
-        $recaptchaData = is_string($recaptchaRaw) ? json_decode($recaptchaRaw, true) : null;
+        $recaptchaData = $recaptchaResponse->json();
 
         if (!is_array($recaptchaData) || !data_get($recaptchaData, 'success')) {
+            Log::info('reCAPTCHA register validation failed', [
+                'error_codes' => data_get($recaptchaData, 'error-codes', []),
+            ]);
+
             throw ValidationException::withMessages([
                 'g-recaptcha-response' => 'Verifica reCAPTCHA non riuscita. Riprova.',
             ]);

@@ -23,15 +23,15 @@
                         </div>
                     </div>
 
-                    <div class="d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary">Login</button>
-                    </div>
-
                     <div class="mb-4">
-                        <div class="g-recaptcha" data-sitekey="{{ env('RECAPTCHA_SITE_KEY') }}"></div>
+                        <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.site_key') }}"></div>
                         @error('g-recaptcha-response')
                             <div class="text-danger small">{{ $message }}</div>
                         @enderror
+                    </div>
+
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Login</button>
                     </div>
 
                     @auth
