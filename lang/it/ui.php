@@ -352,5 +352,6 @@ return [
     'ev_cta_title' => 'Vuoi prenotare la tua data?',
     'ev_cta_subtitle' => 'Contattaci per un preventivo personalizzato e senza impegno.',
     'ev_cta_btn' => 'Richiedi informazioni',
+    'eventi_passati' => 'Emozioni da ricordare',
 
 ];

@@ -373,4 +373,5 @@ return [
     'ev_cta_title' => 'Want to book your date?',
     'ev_cta_subtitle' => 'Contact us for a personalized, no-obligation quote.',
     'ev_cta_btn' => 'Request information',
+    'eventi_passati' => 'Emotions to Remember',
 ];

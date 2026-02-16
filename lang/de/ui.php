@@ -347,5 +347,5 @@ return [
     'ev_cta_title' => 'Möchten Sie Ihren Termin reservieren?',
     'ev_cta_subtitle' => 'Kontaktieren Sie uns für ein unverbindliches und individuelles Angebot.',
     'ev_cta_btn' => 'Informationen anfordern',
-
+    'eventi_passati' => 'Erinnerungen zum Behalten',
 ];

@@ -363,4 +363,5 @@ return [
     'ev_cta_title' => 'Vous souhaitez réserver votre date ?',
     'ev_cta_subtitle' => 'Contactez-nous pour un devis personnalisé et sans engagement.',
     'ev_cta_btn' => 'Demander des informations',
+    'eventi_passati' => 'Émotions à retenir',
 ];

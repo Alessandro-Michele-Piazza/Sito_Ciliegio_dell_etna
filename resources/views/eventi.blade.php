@@ -117,8 +117,7 @@
     <section id="eventi_section_coverflow_container" data-aos="fade-up" data-aos-duration="1000">
 
         <div id="eventi_header_wrapper">
-            <span id="eventi_badge_sezione">{{ __('ui.ev_gallery_badge') }}</span>
-            <h2 id="eventi_titolo_sezione">{{ __('ui.ev_cta_title') }}</h2>
+            <h2 id="eventi_titolo_sezione">{{ __('ui.eventi_passati') }}</h2>
             <hr id="eventi_divider_sezione">
         </div>
 

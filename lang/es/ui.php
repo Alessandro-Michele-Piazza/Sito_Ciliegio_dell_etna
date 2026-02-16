@@ -60,7 +60,7 @@ return [
     'Wine_Tour' => 'Wine Tour',
     'Esperienze' => 'Experiencias',
     'Prodotti_Tipici' => 'Productos Típicos',
-        'Eventi' => 'Eventos',
+    'Eventi' => 'Eventos',
     'Blog' => 'Blog',
     'Contatti' => 'Contactos',
     'Camere_matrimoniali' => 'Habitaciones Matrimoniales',
@@ -354,4 +354,5 @@ return [
     'ev_cta_title' => '¿Quieres reservar tu fecha?',
     'ev_cta_subtitle' => 'Contáctanos para un presupuesto personalizado y sin compromiso.',
     'ev_cta_btn' => 'Solicitar información',
+    'eventi_passati' => 'Emociones para recordar',
 ];
