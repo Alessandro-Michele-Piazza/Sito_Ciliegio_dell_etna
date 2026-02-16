@@ -3,7 +3,8 @@
     metaDescription="{{ Str::limit(strip_tags($article->body ?? ''), 160, '') }}"
     ogTitle="{{ __('ui.Menu_domenicale') }} | Il Ciliegio dell'Etna"
     ogDescription="{{ Str::limit(strip_tags($article->body ?? ''), 160, '') }}"
-    ogImage="{{ $article->image ? asset('storage/' . $article->image) : Vite::asset('resources/images/logo_ciliegio.webp') }}"
+    {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
+    ogImage="{{ $article->image ? asset('storage/' . $article->image) : asset('images/logo_ciliegio.webp') }}"
     canonical="{{ route('menu_domenicale') }}"
 >
     <x-header title=" {{ __('ui.Menu_domenicale') }}  " />

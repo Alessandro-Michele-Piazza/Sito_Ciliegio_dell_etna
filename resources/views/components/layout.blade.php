@@ -11,7 +11,7 @@
     $pageOgDescription = Str::limit(strip_tags($pageOgDescription), 160, '');
     $pageOgImage = $ogImage ?? (isset($post->image)
         ? asset('storage/' . $post->image)
-        : Vite::asset('resources/images/logo_ciliegio.webp'));
+        : asset('images/logo_ciliegio.webp'));
     $pageOgType = $ogType ?? (isset($post) ? 'article' : 'website');
     $pageOgLocale = str_replace('_', '-', app()->getLocale());
     $currentPath = request()->path();
@@ -31,7 +31,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" type="image/webp">
+    <link rel="icon" href="{{ asset('images/logo_ciliegio.webp') }}" type="image/webp">
     <title>{{ $pageTitle }}</title>
     <meta name="description" content="{{ $pageDescription }}">
     <link rel="canonical" href="{{ $pageCanonical }}" />
@@ -42,7 +42,7 @@
         <link rel="alternate" hreflang="{{ $locale }}" href="{{ $alternateUrl }}">
     @endforeach
     <link rel="alternate" hreflang="x-default" href="{{ url($currentPath) }}">
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/contatti.css'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/contatti.css'])
 
     {{-- FONT GOOGLE --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">

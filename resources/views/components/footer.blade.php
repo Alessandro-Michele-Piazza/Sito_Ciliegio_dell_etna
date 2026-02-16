@@ -4,7 +4,8 @@
         <div class="row g-4 mb-2">
             <!-- COLONNA BRAND -->
             <div class="col-lg-4 col-md-12">
-                <a href="{{ route('home') }}"> <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}"
+                {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
+                <a href="{{ route('home') }}"> <img src="{{ asset('images/logo_ciliegio.webp') }}"
                         alt="Logo Il Ciliegio dell'Etna" class="footer-logo mb-3"></a>
                 <p class="footer-description mb-3">
                     {{ __('ui.footer_scritta') }}

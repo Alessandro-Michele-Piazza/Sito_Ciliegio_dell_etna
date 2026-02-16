@@ -3,7 +3,8 @@
     metaDescription="Novita, eventi e storie dal Ciliegio dell'Etna. Leggi gli ultimi articoli del nostro blog."
     ogTitle="Blog | Il Ciliegio dell'Etna"
     ogDescription="Articoli, eventi e novita dal Ciliegio dell'Etna."
-    ogImage="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}"
+    {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
+    ogImage="{{ asset('images/logo_ciliegio.webp') }}"
     canonical="{{ route('blog.index') }}"
 >
     <x-header title="Blog" />

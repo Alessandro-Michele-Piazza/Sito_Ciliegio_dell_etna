@@ -1,7 +1,8 @@
 <nav class="navbar " id="navbar">
     <div class="navbar-left d-none d-md-block">
         <a class="navbar-brand" href="{{ route('home') }}">
-            <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna"
+            {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
+            <img src="{{ asset('images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna"
                 class="icona_navbar">
         </a>
     </div>
@@ -24,7 +25,8 @@
 
     <div class="offcanvas-header">
         <a href="{{ route('home') }}">
-            <img src="{{ Vite::asset('resources/images/logo_ciliegio.webp') }}" alt="Logo" class="offcanvas-logo">
+            {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
+            <img src="{{ asset('images/logo_ciliegio.webp') }}" alt="Logo" class="offcanvas-logo">
         </a>
         <button type="button" class="btn-close-offcanvas" data-bs-dismiss="offcanvas" aria-label="Close">
             <i class="fa-solid fa-xmark"></i>

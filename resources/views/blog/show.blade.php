@@ -3,7 +3,8 @@
     metaDescription="{{ Str::limit(strip_tags($post->content ?? ''), 160, '') }}"
     ogTitle="{{ $post->title }}"
     ogDescription="{{ Str::limit(strip_tags($post->content ?? ''), 160, '') }}"
-    ogImage="{{ $post->image ? asset('storage/' . $post->image) : Vite::asset('resources/images/logo_ciliegio.webp') }}"
+    {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
+    ogImage="{{ $post->image ? asset('storage/' . $post->image) : asset('images/logo_ciliegio.webp') }}"
     ogType="article"
     canonical="{{ route('blog.show', $post->slug) }}"
 >
@@ -16,7 +17,8 @@
                 '@id' => route('blog.show', $post->slug),
             ],
             'headline' => $post->title,
-            'image' => [$post->image ? asset('storage/' . $post->image) : Vite::asset('resources/images/logo_ciliegio.webp')],
+            // TODO: path corretto per immagine og:image (NON VITE)
+            'image' => [$post->image ? asset('storage/' . $post->image) : asset('images/logo_ciliegio.webp')],
             'datePublished' => optional($post->created_at)->toIso8601String(),
             'dateModified' => optional($post->updated_at)->toIso8601String(),
             'author' => [
@@ -28,7 +30,8 @@
                 'name' => "Il Ciliegio dell'Etna",
                 'logo' => [
                     '@type' => 'ImageObject',
-                    'url' => Vite::asset('resources/images/logo_ciliegio.webp'),
+                    // TODO: path corretto per immagine og:image (NON VITE)
+                    'url' => asset('images/logo_ciliegio.webp'),
                 ],
             ],
             'description' => Str::limit(strip_tags($post->content ?? ''), 160, ''),
