@@ -6,11 +6,24 @@
 
     <div class="stanze-page">
 
-        {{-- ===== Carosello hero ===== --}}
+        {{-- ===== Carosello hero (solo desktop) ===== --}}
         <div id="sezione-carosello-1" class="wrapper-carosello d-none d-lg-block">
-            <!-- Carosello Orizzontale -->
-            <div class="swiper swiper-principale-1">
-                <!-- ... resto del codice ... -->
+            <div class="swiper swiper-verticale-1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="{{ asset('storage/media/foto(9).webp') }}" class="img_carosello_stanza"
+                            alt="Camera foto 9" loading="eager">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('storage/media/foto(11).webp') }}" class="img_carosello_stanza"
+                            alt="Camera foto 11" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ asset('storage/media/foto(10).webp') }}" class="img_carosello_stanza"
+                            alt="Camera foto 10" loading="lazy">
+                    </div>
+                </div>
+                <div class="swiper-pagination pag-verticale-1"></div>
             </div>
         </div>
 
