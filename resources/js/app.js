@@ -117,44 +117,48 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 });
 
-// CAROSELLO STANZE
-
-var swiperVerticale1 = new Swiper("#sezione-carosello-1 .swiper-verticale-1", {
-    direction: "horizontal",
-    spaceBetween: 0,
-    effect: "fade",
-    fadeEffect: {
-        crossFade: true,
-    },
-    autoplay: {
-        delay: 4000,
-        disableOnInteraction: false,
-    },
-    speed: 1300,
-    allowTouchMove: false,
-    simulateTouch: false,
-
-    pagination: {
-        el: "#sezione-carosello-1 .pag-verticale-1",
-        clickable: true,
-    },
-});
-
-// SLIDER STANZE MOBILE (< 768px)
-if (document.querySelector(".swiperStanzeMobile")) {
-    var swiperStanzeMobile = new Swiper(".swiperStanzeMobile", {
+// CAROSELLO STANZE (desktop)
+if (document.querySelector("#sezione-carosello-1 .swiper-verticale-1")) {
+    var swiperVerticale1 = new Swiper("#sezione-carosello-1 .swiper-verticale-1", {
         direction: "horizontal",
-        slidesPerView: 1,
         spaceBetween: 0,
-        loop: true,
-        speed: 500,
-        grabCursor: true,
+        effect: "fade",
+        fadeEffect: {
+            crossFade: true,
+        },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
+        speed: 1300,
+        allowTouchMove: false,
+        simulateTouch: false,
         pagination: {
-            el: ".stanze-mobile-pagination",
+            el: "#sezione-carosello-1 .pag-verticale-1",
             clickable: true,
         },
     });
 }
+
+// SLIDER STANZE MOBILE (< 768px)
+document.addEventListener("DOMContentLoaded", function () {
+    var mobileEl = document.querySelector(".swiperStanzeMobile");
+    if (mobileEl && window.innerWidth < 768) {
+        new Swiper(".swiperStanzeMobile", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            speed: 450,
+            grabCursor: true,
+            touchRatio: 1,
+            threshold: 10,
+            pagination: {
+                el: ".stanze-mobile-pagination",
+                clickable: true,
+            },
+        });
+    }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     // --- LOGICA PER PASSWORD ---

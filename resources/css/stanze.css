@@ -528,14 +528,33 @@
 
 .stanze-mobile-slider .swiperStanzeMobile {
   width: 100%;
-  padding-bottom: 48px; /* spazio per la pagination */
+  overflow: hidden;
+  padding-bottom: 48px;
+  position: relative;
+}
+
+/* Override globali swiper per il mobile slider */
+.swiperStanzeMobile .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.swiperStanzeMobile .swiper-slide {
+  width: 100% !important;
+  height: auto !important;
+  flex-shrink: 0;
+  display: block;
+  background: transparent;
+  font-size: inherit;
+  text-align: left;
+  color: inherit;
 }
 
 /* --- Card singola slide --- */
 .slide-stanza-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100%;
   background: #fff;
   overflow: hidden;
 }
