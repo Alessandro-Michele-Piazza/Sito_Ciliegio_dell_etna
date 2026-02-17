@@ -11,6 +11,7 @@ return [
     | application's requirements.
     |
     */
+    'Homepage' => 'Homepage',
     'footer_scritta' => 'An oasis of taste and relaxation at the foot of the volcano. Sicilian tradition, excellent raw materials and a welcome that smells like home.',
     'esplora' => 'Explore',
     'il_ristorante' => 'The Restaurant',

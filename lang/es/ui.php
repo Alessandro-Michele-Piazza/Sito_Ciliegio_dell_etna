@@ -11,7 +11,7 @@ return [
     | application's requirements.
     |
     */
-
+    'Homepage' => 'Inicio',
     'footer_scritta' => 'Un oasis de sabor y relajación al pie del volcán. Tradición siciliana, excelentes materias primas y una acogida que huele a hogar.',
     'esplora' => 'Explorar',
     'il_ristorante' => 'El Restaurante',

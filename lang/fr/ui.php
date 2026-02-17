@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'Homepage' => 'Accueil',
     'footer_scritta' => "Un havre de saveur et de détente au pied du volcan. Tradition sicilienne, matières premières d'excellence et un accueil qui fleure bon la maison.",
     'esplora' => 'Explorer',
     'il_ristorante' => 'Le Restaurant',

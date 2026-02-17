@@ -87,10 +87,6 @@
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-
-
-
-
     .section-camere-premium {
       background-color: var(--bianco_sfondo);
       min-height: 80vh;
@@ -200,9 +196,14 @@
 
       #sezione-carosello-1.wrapper-carosello {
         width: 100%;
-        height: 85vh;
+        height: 58vh;
+        min-height: 320px;
         /* Altezza intero schermo */
         position: relative;
+      }
+
+      #sezione-carosello-1 .swiper {
+        touch-action: pan-y;
       }
 
 

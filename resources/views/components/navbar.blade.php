@@ -2,8 +2,7 @@
     <div class="navbar-left d-none d-md-block">
         <a class="navbar-brand" href="{{ route('home') }}">
             {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
-            <img src="{{ asset('images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna"
-                class="icona_navbar">
+            <img src="{{ asset('images/logo_ciliegio.webp') }}" alt="Logo Il Ciliegio dell'Etna" class="icona_navbar">
         </a>
     </div>
 
@@ -36,6 +35,9 @@
     <div class="offcanvas-body">
         <div class="offcanvas-nav-wrapper">
             <ul class="offcanvas-nav">
+                <li class="d-sm-none">
+                    <a class="offcanvas-link" href="{{ route('home') }}">{{ __('ui.Homepage') }}</a>
+                </li>
                 <li><a class="offcanvas-link" href="{{ route('stanze') }}">{{ __('ui.Camere') }}</a></li>
                 <li><a class="offcanvas-link" href="{{ route('ristorazione') }}">{{ __('ui.Ristorazione') }}</a></li>
                 <li><a class="offcanvas-link" href="https://www.tenutadeiciliegi.it">{{ __('ui.Matrimoni') }}</a></li>

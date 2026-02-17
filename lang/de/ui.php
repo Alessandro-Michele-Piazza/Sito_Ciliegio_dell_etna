@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'Homepage' => 'Startseite',
     'footer_scritta' => "Eine Oase des Geschmacks und der Entspannung am Fuße des Vulkans. Sizilianische Tradition, exzellente Rohstoffe und eine herzliche Gastfreundschaft, die nach Zuhause duftet.",
     'esplora' => 'Entdecken',
     'il_ristorante' => 'Das Restaurant',
