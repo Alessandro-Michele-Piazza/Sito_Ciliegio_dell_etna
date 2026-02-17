@@ -54,6 +54,11 @@
             </div>
             <div class="swiper-pagination pag-orizzontale-1"></div>
         </div>
+
+        <!-- Scroll indicator -->
+        <div class="carousel-scroll-hint">
+            <i class="fas fa-chevron-down"></i>
+        </div>
     </div>
 
     {{-- INIZIO SCACCHIERA STANZE --}}

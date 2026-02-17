@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // CAROSELLO STANZE
 
 var swiperVerticale1 = new Swiper("#sezione-carosello-1 .swiper-verticale-1", {
-    direction: "vertical",
+    direction: "horizontal",
     spaceBetween: 0,
     effect: "fade",
     fadeEffect: {
@@ -131,6 +131,8 @@ var swiperVerticale1 = new Swiper("#sezione-carosello-1 .swiper-verticale-1", {
         disableOnInteraction: false,
     },
     speed: 1300,
+    allowTouchMove: false,
+    simulateTouch: false,
 
     pagination: {
         el: "#sezione-carosello-1 .pag-verticale-1",
