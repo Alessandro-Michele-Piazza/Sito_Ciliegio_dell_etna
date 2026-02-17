@@ -140,6 +140,22 @@ var swiperVerticale1 = new Swiper("#sezione-carosello-1 .swiper-verticale-1", {
     },
 });
 
+// SLIDER STANZE MOBILE (< 768px)
+if (document.querySelector(".swiperStanzeMobile")) {
+    var swiperStanzeMobile = new Swiper(".swiperStanzeMobile", {
+        direction: "horizontal",
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        speed: 500,
+        grabCursor: true,
+        pagination: {
+            el: ".stanze-mobile-pagination",
+            clickable: true,
+        },
+    });
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // --- LOGICA PER PASSWORD ---
     const togglePassword = document.querySelector("#togglePassword");

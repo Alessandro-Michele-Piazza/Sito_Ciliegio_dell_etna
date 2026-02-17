@@ -207,6 +207,7 @@
 
     /* Responsive adjustments */
     @media (max-width: 767px) {
+
       .line-horizontal {
         width: 30px;
       }
@@ -512,4 +513,168 @@
   #stanze .stanze-page .col-text-stanze {
     padding: 3.5rem;
   }
+}
+
+/* =============================================
+   STANZE — MOBILE SLIDER (< 768px)
+   ============================================= */
+
+.stanze-mobile-slider {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  background: linear-gradient(160deg, #f8faf8 0%, #f0f5f1 60%, #e8efe9 100%);
+}
+
+.stanze-mobile-slider .swiperStanzeMobile {
+  width: 100%;
+  padding-bottom: 48px; /* spazio per la pagination */
+}
+
+/* --- Card singola slide --- */
+.slide-stanza-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* --- Immagine in alto --- */
+.slide-stanza-img {
+  position: relative;
+  width: 100%;
+  height: 38vh;
+  min-height: 220px;
+  overflow: hidden;
+}
+
+.slide-stanza-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay sfumato in basso sull'immagine */
+.slide-stanza-img::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Badge numero */
+.slide-stanza-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(255,255,255,0.25);
+  -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* --- Body testo sotto l'immagine --- */
+.slide-stanza-body {
+  padding: 1.5rem 1.25rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background: linear-gradient(160deg, #ffffff 0%, #f8faf8 40%, #f0f5f1 100%);
+}
+
+.slide-stanza-title {
+  font-size: 1.55rem;
+  font-weight: 700;
+  color: var(--verde_scurissimo);
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+  text-align: center;
+}
+
+.slide-stanza-divider {
+  width: 50px;
+  height: 3px;
+  border: none;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--rosso_ciliegia) 0%, var(--verde_medio) 100%);
+  margin: 0 auto 0.7rem;
+  opacity: 1;
+}
+
+.slide-stanza-subtitle {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--verde_medio);
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.slide-stanza-desc {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* --- Amenities grid --- */
+.slide-stanza-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.45rem 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(122, 158, 126, 0.15);
+}
+
+.slide-stanza-amenities span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--verde_scurissimo);
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.slide-stanza-amenities i {
+  font-size: 0.85rem;
+  color: var(--verde_medio);
+}
+
+/* --- Pagination mobile --- */
+.stanze-mobile-pagination.swiper-pagination {
+  bottom: 12px !important;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+.stanze-mobile-pagination .swiper-pagination-bullet {
+  width: 28px;
+  height: 3px;
+  border-radius: 20px;
+  background: rgba(122, 158, 126, 0.3);
+  opacity: 1;
+  transition: all 0.35s ease;
+}
+
+.stanze-mobile-pagination .swiper-pagination-bullet-active {
+  width: 42px;
+  background: var(--verde_medio);
 }

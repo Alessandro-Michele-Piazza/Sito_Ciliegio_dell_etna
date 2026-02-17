@@ -9,7 +9,93 @@
 
     <div class="stanze-page">
 
-    <div id="sezione-carosello-1" class="wrapper-carosello">
+    {{-- ===== MOBILE/TABLET: Swiper a slide orizzontali ===== --}}
+    <div class="stanze-mobile-slider d-md-none">
+        <div class="swiper swiperStanzeMobile">
+            <div class="swiper-wrapper">
+
+                {{-- Slide 1 — Matrimoniale --}}
+                <div class="swiper-slide">
+                    <div class="slide-stanza-card">
+                        <div class="slide-stanza-img">
+                            <img src="{{ asset('storage/media/foto_telefono(12).webp') }}"
+                                 alt="Camere Matrimoniali">
+                            <span class="slide-stanza-badge">01</span>
+                        </div>
+                        <div class="slide-stanza-body">
+                            <h2 class="slide-stanza-title">{{ __('ui.Camere_matrimoniali') }}</h2>
+                            <hr class="slide-stanza-divider">
+                            <span class="slide-stanza-subtitle">{{ __('ui.Un_nido') }}</span>
+                            <p class="slide-stanza-desc">{{ __('ui.Camere_matrimoniali_Descrizione') }}</p>
+                            <div class="slide-stanza-amenities">
+                                <span><i class="fas fa-snowflake"></i> {{ __('ui.Aria_Condizionata') }}</span>
+                                <span><i class="fas fa-wifi"></i> {{ __('ui.Wi-Fi_Free') }}</span>
+                                <span><i class="fas fa-tv"></i> {{ __('ui.TV') }}</span>
+                                <span><i class="fas fa-shower"></i> {{ __('ui.Bagno_privato') }}</span>
+                                <span><i class="fas fa-mug-hot"></i> {{ __('ui.Bollitore_in_stanza') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Slide 2 — Tripla --}}
+                <div class="swiper-slide">
+                    <div class="slide-stanza-card">
+                        <div class="slide-stanza-img">
+                            <img src="{{ asset('storage/media/tripla_telefono.webp') }}"
+                                 alt="Camere Triple Superior">
+                            <span class="slide-stanza-badge">02</span>
+                        </div>
+                        <div class="slide-stanza-body">
+                            <h2 class="slide-stanza-title">{{ __('ui.Camere_Triple_Superior') }}</h2>
+                            <hr class="slide-stanza-divider">
+                            <span class="slide-stanza-subtitle">{{ __('ui.Ampiezza_e_Comfort') }}</span>
+                            <p class="slide-stanza-desc">{{ __('ui.Camere_Triple_Descrizione') }}</p>
+                            <div class="slide-stanza-amenities">
+                                <span><i class="fas fa-snowflake"></i> {{ __('ui.Aria_Condizionata') }}</span>
+                                <span><i class="fas fa-wifi"></i> {{ __('ui.Wi-Fi_Free') }}</span>
+                                <span><i class="fas fa-tv"></i> {{ __('ui.TV') }}</span>
+                                <span><i class="fas fa-mug-hot"></i> {{ __('ui.Bollitore_in_stanza') }}</span>
+                                <span><i class="fas fa-wheelchair"></i> {{ __('ui.Accesso_Disabili') }}</span>
+                                <span><i class="fas fa-shower"></i> {{ __('ui.Bagno_privato') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- Slide 3 — Quadrupla --}}
+                <div class="swiper-slide">
+                    <div class="slide-stanza-card">
+                        <div class="slide-stanza-img">
+                            <img src="{{ asset('storage/media/quadrupla_telefono.webp') }}"
+                                 alt="Camere Quadruple">
+                            <span class="slide-stanza-badge">03</span>
+                        </div>
+                        <div class="slide-stanza-body">
+                            <h2 class="slide-stanza-title">{{ __('ui.Quadrupla') }}</h2>
+                            <hr class="slide-stanza-divider">
+                            <span class="slide-stanza-subtitle">{{ __('ui.Spazio_e_armonia') }}</span>
+                            <p class="slide-stanza-desc">{{ __('ui.Camere_Quadruple_Descrizione') }}</p>
+                            <div class="slide-stanza-amenities">
+                                <span><i class="fas fa-snowflake"></i> {{ __('ui.Aria_Condizionata') }}</span>
+                                <span><i class="fas fa-wifi"></i> {{ __('ui.Wi-Fi_Free') }}</span>
+                                <span><i class="fas fa-tv"></i> Smart TV</span>
+                                <span><i class="fas fa-mug-hot"></i> {{ __('ui.Bollitore_in_stanza') }}</span>
+                                <span><i class="fas fa-wheelchair"></i> {{ __('ui.Accesso_Disabili') }}</span>
+                                <span><i class="fas fa-shower"></i> {{ __('ui.Bagno_privato') }}</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            {{-- Pagination --}}
+            <div class="swiper-pagination stanze-mobile-pagination"></div>
+        </div>
+    </div>
+
+    {{-- ===== DESKTOP: Carosello hero (nascosto su mobile) ===== --}}
+    <div id="sezione-carosello-1" class="wrapper-carosello d-none d-md-block">
         <!-- Carosello Orizzontale -->
         <div class="swiper swiper-principale-1">
             <div class="swiper-wrapper">
@@ -61,7 +147,8 @@
         </div>
     </div>
 
-    {{-- INIZIO SCACCHIERA STANZE --}}
+    {{-- INIZIO SCACCHIERA STANZE (solo desktop) --}}
+    <div class="stanze-desktop-content d-none d-md-block">
 
     {{-- 1. STANZE MATRIMONIALI (Immagine Sinistra - Testo Destra) --}}
     <section class="container-fluid div-scacchiera px-0 overflow-hidden" data-aos="fade-right" data-aos-duration="1500"
@@ -233,6 +320,8 @@
             </div>
         </div>
     </section>
+
+    </div> {{-- fine stanze-desktop-content --}}
 
     </div>
 
