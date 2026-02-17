@@ -550,7 +550,7 @@ body::-webkit-scrollbar-thumb {
     align-items: stretch;
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
     height: 80vh;
     display: flex;
 }
