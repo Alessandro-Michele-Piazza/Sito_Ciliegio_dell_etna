@@ -1,3 +1,11 @@
+/* --- HEADER & VIDEO --- */
+.header {
+    height: 45vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/ciliegio_esterno.webp');
+    background-size: cover;
+    background-position: center;
+}
+
 
 /* --- CONTACT CARDS (LEFT SIDE) --- */
 .contact-card {
