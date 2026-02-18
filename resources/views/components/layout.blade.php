@@ -1,7 +1,8 @@
 @php
     $pageTitle = html_entity_decode($title ?? '');
-    $pageDescription = $metaDescription
-        ?? 'Il Ciliegio dell\'Etna - Agriturismo, ristorante e pizzeria a Giarre. Scopri il nostro menu, camere e esperienze.';
+    $pageDescription =
+        $metaDescription ??
+        'Il Ciliegio dell\'Etna - Agriturismo, ristorante e pizzeria a Giarre. Scopri il nostro menu, camere e esperienze.';
     $pageDescription = Str::limit(strip_tags($pageDescription), 160, '');
 
     $pageCanonical = $canonical ?? url()->current();
@@ -9,9 +10,8 @@
     $pageOgTitle = $ogTitle ?? ($post->title ?? 'Il Ciliegio dell\'Etna');
     $pageOgDescription = $ogDescription ?? ($post->content ?? $pageDescription);
     $pageOgDescription = Str::limit(strip_tags($pageOgDescription), 160, '');
-    $pageOgImage = $ogImage ?? (isset($post->image)
-        ? asset('storage/' . $post->image)
-        : asset('images/logo_ciliegio.webp'));
+    $pageOgImage =
+        $ogImage ?? (isset($post->image) ? asset('storage/' . $post->image) : asset('images/logo_ciliegio.webp'));
     $pageOgType = $ogType ?? (isset($post) ? 'article' : 'website');
     $pageOgLocale = str_replace('_', '-', app()->getLocale());
     $currentPath = request()->path();
@@ -55,17 +55,44 @@
     {{-- Critical CSS (small, above-the-fold rules to reduce FOUC/LCP) --}}
     <style>
         /* Navbar and header essentials */
-        .navbar{position:fixed;top:0;left:0;width:100%;z-index:1050;background-color:transparent}
-        .icona_navbar{width:6.5rem}
-        .header-modern{min-height:45vh;background-size:cover;background-position:center}
-        .video_home{display:block;width:100%;height:100vh;object-fit:cover}
-        .h-video{height:100vh}
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1050;
+            background-color: transparent
+        }
+
+        .icona_navbar {
+            width: 6.5rem
+        }
+
+        .header-modern {
+            min-height: 45vh;
+            background-size: cover;
+            background-position: center
+        }
+
+        .video_home {
+            display: block;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover
+        }
+
+        .h-video {
+            height: 100vh
+        }
+
         /* Basic body paint to avoid white flash */
-        body{background-color:var(--bianco_sfondo)}
+        body {
+            background-color: var(--bianco_sfondo)
+        }
     </style>
 
     {{-- Preload the main OG image (helps LCP when it's the hero image) --}}
-    @if(!empty($pageOgImage))
+    @if (!empty($pageOgImage))
         <link rel="preload" as="image" href="{{ $pageOgImage }}">
     @endif
 
@@ -90,6 +117,21 @@
     <meta name="twitter:title" content="{{ $pageOgTitle }}">
     <meta name="twitter:description" content="{{ $pageOgDescription }}">
     <meta name="twitter:image" content="{{ $pageOgImage }}">
+
+    <!-- Google ANALYTICS tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google.analytics_id') }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', '{{ config('services.google.analytics_id') }}');
+    </script>
+
+
 
 </head>
 

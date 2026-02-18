@@ -12,15 +12,15 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img src="{{ asset('storage/media/foto(9).webp') }}" class="img_carosello_stanza"
-                            alt="Camera foto 9" loading="eager">
+                            alt="Foto vista dal balcone" loading="eager">
                     </div>
                     <div class="swiper-slide">
                         <img src="{{ asset('storage/media/foto(11).webp') }}" class="img_carosello_stanza"
-                            alt="Camera foto 11" loading="lazy">
+                            alt="Foto Terrazza " loading="lazy">
                     </div>
                     <div class="swiper-slide">
                         <img src="{{ asset('storage/media/foto(10).webp') }}" class="img_carosello_stanza"
-                            alt="Camera foto 10" loading="lazy">
+                            alt="Foto Camera Romantica con letto a Baldacchino" loading="lazy">
                     </div>
                 </div>
                 <div class="swiper-pagination pag-verticale-1"></div>

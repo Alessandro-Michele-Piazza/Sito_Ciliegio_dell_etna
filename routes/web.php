@@ -1,12 +1,13 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\PublicController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\MenuPizzeriaController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\PublicController;
 use App\Models\Post;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Route;
 
 // Intercetta URL con prefisso lingua come /it/contatti
 // Limita il placeholder `lang` ai codici linguistici per non intercettare tutte le URI.
@@ -176,3 +177,9 @@ Route::get('/Apri-Menu-PDF', function () {
     }
     return redirect()->back()->with('error', 'Menu non trovato');
 })->name('apri_menu_diretto');
+
+Route::get('/clear-config', function() {
+    Artisan::call('config:cache');
+    Artisan::call('view:clear');
+    return "Cache pulita con successo!";
+});
