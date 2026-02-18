@@ -177,3 +177,10 @@ Route::get('/Apri-Menu-PDF', function () {
     return redirect()->back()->with('error', 'Menu non trovato');
 })->name('apri_menu_diretto');
 
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/debug-config', function () {
+    Artisan::call('config:cache');
+    Artisan::call('view:clear');
+    return "Cache svuotata! ID rilevato: " . config('services.google.analytics_id');
+});
