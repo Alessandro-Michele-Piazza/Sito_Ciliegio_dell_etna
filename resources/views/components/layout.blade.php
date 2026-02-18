@@ -118,8 +118,8 @@
     <meta name="twitter:description" content="{{ $pageOgDescription }}">
     <meta name="twitter:image" content="{{ $pageOgImage }}">
 
-    <!-- Google ANALYTICS tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google.analytics_id') }}"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VNZFDYL98V"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -128,7 +128,7 @@
         }
         gtag('js', new Date());
 
-        gtag('config', '{{ config('services.google.analytics_id') }}');
+        gtag('config', 'G-VNZFDYL98V');
     </script>
 
 
