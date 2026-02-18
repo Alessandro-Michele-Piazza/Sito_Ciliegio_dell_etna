@@ -179,8 +179,10 @@ Route::get('/Apri-Menu-PDF', function () {
 
 use Illuminate\Support\Facades\Artisan;
 
-Route::get('/debug-config', function () {
-    Artisan::call('config:cache');
-    Artisan::call('view:clear');
-    return "Cache svuotata! ID rilevato: " . config('services.google.analytics_id');
+Route::get('/debug-config', function() {
+    Artisan::call('config:clear'); // Pulizia profonda
+    return [
+        'ID_DA_ENV' => env('GOOGLE_ANALYTICS_ID'),
+        'ID_DA_CONFIG' => config('services.google.analytics_id')
+    ];
 });
