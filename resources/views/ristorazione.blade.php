@@ -2,7 +2,7 @@
     metaDescription="Ristorante e Pizzeria Il Ciliegio dell'Etna: cucina siciliana autentica, pizze a lunga lievitazione e ingredienti a km 0."
     ogTitle="Ristorante & Pizzeria | Il Ciliegio dell'Etna"
     ogDescription="Sapori autentici della Sicilia: ristorante con piatti tipici e pizzeria con impasti tradizionali presso Il Ciliegio dell'Etna."
-    ogImage="{{ asset('storage/media/foto(3).webp') }}" canonical="{{ route('ristorazione') }}">
+    ogImage="{{ asset('storage/media/tagliata_di_carne.webp') }}" canonical="{{ route('ristorazione') }}">
 
     <x-header title="{{ __('ui.Ristorazione') }}" />
 
@@ -36,7 +36,7 @@
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
                     <div class="riz-img-stack">
                         <div class="riz-img-main">
-                            <img src="{{ asset('storage/media/foto(3).webp') }}" alt="{{ __('ui.Ristorante') }}"
+                            <img src="{{ asset('storage/media/tagliata_di_carne.webp') }}" alt="{{ __('ui.Ristorante') }}"
                                 class="riz-img shadow" loading="lazy">
                         </div>
                         <div class="riz-img-accent">
