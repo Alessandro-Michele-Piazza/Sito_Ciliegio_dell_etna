@@ -356,13 +356,13 @@
             </div>
         </div>
 
-        <div class="swiper-button-next"  data-aos="fade-left" data-aos-duration="1500"
+        <div class="swiper-button-next" id="button-next" data-aos="fade-left" data-aos-duration="1500"
             data-aos-once="true" aria-label="Recensione successiva">
-            <wa-icon name="angles-right" variant="light"></wa-icon>
+            <i class="fa-light fa-chevron-right"></i>
         </div>
-        <div class="swiper-button-prev" data-aos="fade-right" data-aos-duration="1500"
+        <div class="swiper-button-prev" id="button-prev" data-aos="fade-right" data-aos-duration="1500"
             data-aos-once="true" aria-label="Recensione precedente">
-            <wa-icon name="angles-left" variant="light"></wa-icon>
+            <i class="fa-light fa-chevron-left"></i>
         </div>
 
         {{-- FINE CAROSELLO --}}
