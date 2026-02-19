@@ -648,6 +648,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #button-next, #button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 100;
     cursor: pointer;
     pointer-events: auto;
@@ -665,13 +668,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 #button-next:hover, #button-prev:hover {
-    transform: scale(1.12);
+    transform: translateY(-50%) scale(1.12);
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
 #button-next:active, #button-prev:active {
-    transform: scale(0.95);
+    transform: translateY(-50%) scale(0.95);
 }
 
 
