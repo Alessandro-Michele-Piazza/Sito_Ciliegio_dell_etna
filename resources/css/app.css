@@ -650,8 +650,28 @@ body::-webkit-scrollbar-thumb {
 #button-next, #button-prev {
     z-index: 100;
     cursor: pointer;
-    pointer-events: auto; /* Forza la ricezione del click */
-    user-select: none;    /* Impedisce la selezione blu del testo al doppio click */
+    pointer-events: auto;
+    user-select: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+#button-next:hover, #button-prev:hover {
+    transform: scale(1.12);
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+#button-next:active, #button-prev:active {
+    transform: scale(0.95);
 }
 
 #button-next::after,
@@ -661,7 +681,8 @@ body::-webkit-scrollbar-thumb {
 
 #button-next i,
 #button-prev i {
-    font-size: 2.2rem;
+    font-size: 1.15rem;
+    line-height: 1;
 }
 
 .profilo-1 {
