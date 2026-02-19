@@ -1,12 +1,8 @@
-<x-layout
-    title="{{ __('ui.Contatti') }}"
+<x-layout title="{{ __('ui.Contatti') }}"
     metaDescription="Contatta Il Ciliegio dell'Etna: telefono, email, indirizzo e form per informazioni e prenotazioni."
     ogTitle="Contatti | Il Ciliegio dell'Etna"
-    ogDescription="Contatti, indirizzo e orari de Il Ciliegio dell'Etna a Giarre."
-    {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
-    ogImage="{{ asset('images/logo_ciliegio.webp') }}"
-    canonical="{{ route('contatti') }}"
->
+    ogDescription="Contatti, indirizzo e orari de Il Ciliegio dell'Etna a Giarre." {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
+    ogImage="{{ asset('images/logo_ciliegio.webp') }}" canonical="{{ route('contatti') }}">
 
     @php
         $structuredData = [
@@ -117,7 +113,8 @@
             <div class="col-lg-7" data-aos="fade-left">
                 <div class="form-wrapper">
                     <h3 class="fw-bold scritta_verde_scuro mb-4">{{ __('ui.Inviaci_un_messaggio') }}</h3>
-                    <form id="contact-form" action="{{ route('contact.send') }}" method="POST" enctype="multipart/form-data">
+                    <form id="contact-form" action="{{ route('contact.send') }}" method="POST"
+                        enctype="multipart/form-data">
                         @csrf
 
                         <div class="row">
@@ -165,7 +162,8 @@
                                 <option value="Eventi Speciali"
                                     {{ old('subject') == 'Eventi Speciali' ? 'selected' : '' }}>
                                     {{ __('ui.Eventi_Speciali') }}</option>
-                                <option value="Lavora con noi" {{ old('subject') == 'Lavora con noi' ? 'selected' : '' }}>
+                                <option value="Lavora con noi"
+                                    {{ old('subject') == 'Lavora con noi' ? 'selected' : '' }}>
                                     {{ __('ui.Lavora_con_noi') }}</option>
                                 <option value="Altro" {{ old('subject') == 'Altro' ? 'selected' : '' }}>
                                     {{ __('ui.Altro') }}</option>
@@ -214,13 +212,14 @@
     <!-- MAPPA SECTION -->
     <section class="container-fluid px-0 pt-5">
         <div class="map-container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d25246.295514246463!2d15.144402091706615!3d37.724678657837224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x131407010c31b87b%3A0x7d52551d759a5837!2sCasello%20di%20Giarre%2C%20Giarre%2C%20CT!3m2!1d37.7044486!2d15.1685954!4m5!1s0x131407af435429f9%3A0x8a2bde68902eded0!2sIl%20Ciliegio%20dell&#39;Etna%20Agriturismo%2C%20Via%20Filippo%20Meda%2C%2088%2C%2095014%20Giarre%20CT!3m2!1d37.745135399999995!2d15.1634449!5e0!3m2!1sit!2sit!4v1768904173571!5m2!1sit!2sit"
-                class="map-iframe"></iframe>
+            <a href="https://maps.app.goo.gl/3xSpixaTwDHq2xfP6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d25246.295514246463!2d15.144402091706615!3d37.724678657837224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x131407010c31b87b%3A0x7d52551d759a5837!2sCasello%20di%20Giarre%2C%20Giarre%2C%20CT!3m2!1d37.7044486!2d15.1685954!4m5!1s0x131407af435429f9%3A0x8a2bde68902eded0!2sIl%20Ciliegio%20dell&#39;Etna%20Agriturismo%2C%20Via%20Filippo%20Meda%2C%2088%2C%2095014%20Giarre%20CT!3m2!1d37.745135399999995!2d15.1634449!5e0!3m2!1sit!2sit!4v1768904173571!5m2!1sit!2sit"
+                    class="map-iframe"></iframe>
+            </a>
         </div>
     </section>
 
 
 
 </x-layout>
-
