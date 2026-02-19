@@ -19,7 +19,7 @@
                                     <!-- Gestione Prima Immagine -->
                                     <div class="mb-4 border-bottom pb-3">
                                         <label class="form-label">Immagine Principale</label>
-                                            @if ($article->image)
+                                        @if ($article->image)
                                             <img src="{{ asset('storage/' . $article->image) }}" class="preview-img"
                                                 alt="Anteprima immagine principale del menù domenicale: {{ $article->title }}">
                                         @endif
@@ -29,9 +29,10 @@
                                     <!-- Gestione Seconda Immagine -->
                                     <div class="mb-3">
                                         <label class="form-label">Seconda Immagine (Carosello)</label>
-                                            @if ($article->image_secondary)
+                                        @if ($article->image_secondary)
                                             <img src="{{ asset('storage/' . $article->image_secondary) }}"
-                                                class="preview-img" alt="Anteprima immagine secondaria del menù domenicale: {{ $article->title }}">
+                                                class="preview-img"
+                                                alt="Anteprima immagine secondaria del menù domenicale: {{ $article->title }}">
                                         @endif
                                         <input type="file" name="image_secondary" class="form-control">
                                         <small class="text-muted">Carica un file per attivare lo scorrimento nel
@@ -68,9 +69,8 @@
                                 <button type="submit" class="btn btn-success btn-lg px-5 rounded-pill">
                                     <i class="fas fa-sync-alt me-2"></i> PUBBLICA AGGIORNAMENTO
                                 </button>
-                                <a href="{{ route('menu_domenicale') }}"
-                                    class="btn-modern-back">
-                                    Annulla
+                                <a href="{{ route('menu_domenicale') }}" class="btn-modern-back">
+                                    <i class="fas fa-chevron-left me-1"></i> Annulla e torna indietro
                                 </a>
                             </div>
                         </form>

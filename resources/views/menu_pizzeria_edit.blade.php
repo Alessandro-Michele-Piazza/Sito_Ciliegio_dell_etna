@@ -60,7 +60,7 @@
 
                 <div class="text-center mt-4">
                     <a href="{{ route('ristorazione') }}" class="btn-modern-back">
-                         Torna alla pagina pubblica
+                        <i class="fas fa-chevron-left me-1"></i> Annulla e torna indietro
                     </a>
                 </div>
             </div>
