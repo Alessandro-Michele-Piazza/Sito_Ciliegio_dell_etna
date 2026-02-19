@@ -674,10 +674,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(0.95);
 }
 
-#button-next::after,
-#button-prev::after {
-    display: none;
-}
+
 
 #button-next i,
 #button-prev i {
