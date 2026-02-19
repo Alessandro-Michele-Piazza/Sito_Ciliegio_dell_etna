@@ -654,6 +654,16 @@ body::-webkit-scrollbar-thumb {
     user-select: none;    /* Impedisce la selezione blu del testo al doppio click */
 }
 
+#button-next::after,
+#button-prev::after {
+    content: '';
+}
+
+#button-next i,
+#button-prev i {
+    font-size: 2.2rem;
+}
+
 .profilo-1 {
     background-color: #E67E22;
 }
