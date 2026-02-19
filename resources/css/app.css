@@ -639,12 +639,12 @@ body::-webkit-scrollbar-thumb {
 
 #button-next {
     color: var(--rosso_ciliegia);
-    right: -40px;
+    right: 0;
 }
 
 #button-prev {
     color: var(--rosso_ciliegia);
-    left: -40px;
+    left: 0;
 }
 
 #button-next, #button-prev {
