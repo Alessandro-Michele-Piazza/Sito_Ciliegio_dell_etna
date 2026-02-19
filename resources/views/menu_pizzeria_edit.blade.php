@@ -59,8 +59,8 @@
                 </div>
 
                 <div class="text-center mt-4">
-                    <a href="{{ route('ristorazione') }}" class="text-decoration-none text-muted">
-                        <i class="btn-modern-back"></i> Torna alla pagina pubblica
+                    <a href="{{ route('ristorazione') }}" class="btn-modern-back">
+                         Torna alla pagina pubblica
                     </a>
                 </div>
             </div>
