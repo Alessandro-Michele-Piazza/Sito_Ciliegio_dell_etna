@@ -2,7 +2,8 @@
     metaDescription="Agriturismo Il Ciliegio dell'Etna a Giarre: camere, ristorante, pizzeria ed esperienze sull'Etna."
     ogTitle="Il Ciliegio dell'Etna | Agriturismo a Giarre"
     ogDescription="Agriturismo, ristorante e pizzeria a Giarre con camere e esperienze sul territorio dell'Etna."
-    {{-- TODO: path corretto per immagine og:image (NON VITE) --}} ogImage="{{ asset('images/ciliegio_esterno.webp') }}" canonical="{{ route('home') }}">
+    {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
+    ogImage="{{ asset('images/ciliegio_esterno.webp') }}" canonical="{{ route('home') }}">
     @php
         $structuredData = [
             '@context' => 'https://schema.org',
@@ -356,13 +357,13 @@
             </div>
         </div>
 
-        <div id="button-next" data-aos="fade-left" data-aos-duration="1500"
+        <div class="swiper-button-next " id="button-next" data-aos="fade-left" data-aos-duration="1500"
             data-aos-once="true" aria-label="Recensione successiva">
-            <i class="fa-solid fa-chevron-right"></i>
+            <i class="fa-solid fa-circle-chevron-right"></i>
         </div>
-        <div id="button-prev" data-aos="fade-right" data-aos-duration="1500"
+        <div class="swiper-button-prev" id="button-prev" data-aos="fade-right" data-aos-duration="1500"
             data-aos-once="true" aria-label="Recensione precedente">
-            <i class="fa-solid fa-chevron-left"></i>
+            <i class="fa-solid fa-circle-chevron-left"></i>
         </div>
 
         {{-- FINE CAROSELLO --}}

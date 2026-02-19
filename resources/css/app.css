@@ -639,50 +639,29 @@ body::-webkit-scrollbar-thumb {
 
 #button-next {
     color: var(--rosso_ciliegia);
-    right: 0;
+    right: -40px;
 }
 
 #button-prev {
     color: var(--rosso_ciliegia);
-    left: 0;
+    left: -40px;
 }
 
 #button-next, #button-prev {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
     z-index: 100;
     cursor: pointer;
-    pointer-events: auto;
-    user-select: none;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
-    backdrop-filter: blur(4px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    pointer-events: auto; /* Forza la ricezione del click */
+    user-select: none;    /* Impedisce la selezione blu del testo al doppio click */
 }
 
-#button-next:hover, #button-prev:hover {
-    transform: translateY(-50%) scale(1.12);
-    background-color: rgba(255, 255, 255, 1);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+#button-next::after,
+#button-prev::after {
+    content: '';
 }
-
-#button-next:active, #button-prev:active {
-    transform: translateY(-50%) scale(0.95);
-}
-
-
 
 #button-next i,
 #button-prev i {
-    font-size: 1.15rem;
-    line-height: 1;
+    font-size: 2.2rem;
 }
 
 .profilo-1 {
