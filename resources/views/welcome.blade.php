@@ -55,10 +55,10 @@
 
             <div class="col-lg-5 col-md-12 mb-4 mb-lg-0 text-center text-lg-start">
                 <span class="sub-label scritta_rossa"> {{ __('ui.dal_2005') }} </span>
-                <h2 class="titolo-mission scritta_verde_scuro mt-2">
+                <h1 class="titolo-mission scritta_verde_scuro mt-2">
                     Il Ciliegio dell'Etna <br>
                     <span class="testo-radici-sul-vulcano">{{ __('ui.radici_sul_vulcano') }}</span>
-                </h2>
+                </h1>
                 <div class="divider-short mx-auto mx-lg-0"></div>
             </div>
 
