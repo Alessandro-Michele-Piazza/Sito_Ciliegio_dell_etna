@@ -49,8 +49,7 @@
                         <span class="stanze-section-number">01</span>
                         <h2 class="stanze-title fw-bold mb-3" data-aos="fade-up" data-aos-delay="200"
                             data-aos-once="true">{{ __('ui.Camere_matrimoniali') }}</h2>
-                        <hr class="divider-premium-stanze" data-aos="fade-right" data-aos-delay="300"
-                            data-aos-once="true">
+                        <hr class="divider-premium-stanze">
                         <span class="stanze-subtitle sub-label scritta_verde_medio d-block mb-2 fst-italic"
                             data-aos="fade-up" data-aos-delay="350" data-aos-once="true">{{ __('ui.Un_nido') }}</span>
                         <p class="stanze-description mb-4" data-aos="fade-up" data-aos-delay="400" data-aos-once="true">
@@ -105,8 +104,7 @@
                         <span class="stanze-section-number">02</span>
                         <h2 class="stanze-title fw-bold mb-3" data-aos="fade-up" data-aos-delay="200"
                             data-aos-once="true">{{ __('ui.Camere_Triple_Superior') }}</h2>
-                        <hr class="divider-premium-stanze" data-aos="fade-right" data-aos-delay="300"
-                            data-aos-once="true">
+                        <hr class="divider-premium-stanze">
                         <span class="stanze-subtitle sub-label scritta_verde_medio d-block mb-2 fst-italic"
                             data-aos="fade-up" data-aos-delay="350"
                             data-aos-once="true">{{ __('ui.Ampiezza_e_Comfort') }}</span>
@@ -166,8 +164,7 @@
                         <span class="stanze-section-number">03</span>
                         <h2 class="stanze-title fw-bold mb-3" data-aos="fade-up" data-aos-delay="200"
                             data-aos-once="true">{{ __('ui.Quadrupla') }}</h2>
-                        <hr class="divider-premium-stanze" data-aos="fade-right" data-aos-delay="300"
-                            data-aos-once="true">
+                        <hr class="divider-premium-stanze">
                         <span class="stanze-subtitle sub-label scritta_verde_medio d-block mb-2 fst-italic"
                             data-aos="fade-up" data-aos-delay="350"
                             data-aos-once="true">{{ __('ui.Spazio_e_armonia') }}</span>
