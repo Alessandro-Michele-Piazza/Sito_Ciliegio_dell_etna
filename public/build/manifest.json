@@ -1,0 +1,24 @@
+{
+  "resources/css/app.css": {
+    "file": "assets/app-kv6A2Z0P.css",
+    "src": "resources/css/app.css",
+    "isEntry": true,
+    "name": "app",
+    "names": [
+      "app.css"
+    ]
+  },
+  "resources/images/ciliegio_esterno.webp": {
+    "file": "assets/ciliegio_esterno-9ls0B8Nx.webp",
+    "src": "resources/images/ciliegio_esterno.webp"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-CqL8j0EN.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "css": [
+      "assets/app-B5TAodXb.css"
+    ]
+  }
+}
