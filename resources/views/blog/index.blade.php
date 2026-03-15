@@ -79,7 +79,7 @@
                         <a href="{{ route('blog.show', $post->slug) }}" class="blog-card__img-link">
                             <div class="blog-card__img-wrap">
                                 @if ($post->image)
-                                    <img src="{{ asset('storage/' . $post->image) }}"
+                                    <img src="{{ route('uploads.serve', $post->image) }}"
                                         alt="{{ $post->title }}" loading="lazy">
                                 @else
                                     <img src="{{ asset('media/placeholder.webp') }}"

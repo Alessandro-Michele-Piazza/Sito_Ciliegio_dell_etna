@@ -4,7 +4,7 @@
     ogTitle="{{ $post->title }}"
     ogDescription="{{ Str::limit(strip_tags($post->content ?? ''), 160, '') }}"
     {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
-    ogImage="{{ $post->image ? asset('storage/' . $post->image) : asset('images/logo_ciliegio.webp') }}"
+    ogImage="{{ $post->image ? route('uploads.serve', $post->image) : asset('images/logo_ciliegio.webp') }}"
     ogType="article"
     canonical="{{ route('blog.show', $post->slug) }}"
 >
@@ -18,7 +18,7 @@
             ],
             'headline' => $post->title,
             // TODO: path corretto per immagine og:image (NON VITE)
-            'image' => [$post->image ? asset('storage/' . $post->image) : asset('images/logo_ciliegio.webp')],
+            'image' => [$post->image ? route('uploads.serve', $post->image) : asset('images/logo_ciliegio.webp')],
             'datePublished' => optional($post->created_at)->toIso8601String(),
             'dateModified' => optional($post->updated_at)->toIso8601String(),
             'author' => [
@@ -81,7 +81,7 @@
                         {{-- ── HERO IMAGE ── --}}
                         <div class="blog-show__hero">
                             @if ($post->image)
-                                <img src="{{ asset('storage/' . $post->image) }}"
+                                <img src="{{ route('uploads.serve', $post->image) }}"
                                     alt="{{ $post->title }}" loading="eager">
                             @else
                                 <img src="{{ asset('media/placeholder.webp') }}"

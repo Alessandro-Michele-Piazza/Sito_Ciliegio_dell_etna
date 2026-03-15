@@ -4,7 +4,7 @@
     ogTitle="{{ __('ui.Menu_domenicale') }} | Il Ciliegio dell'Etna"
     ogDescription="{{ Str::limit(strip_tags($article->body ?? ''), 160, '') }}"
     {{-- TODO: path corretto per immagine og:image (NON VITE) --}}
-    ogImage="{{ $article->image ? asset('storage/' . $article->image) : asset('images/logo_ciliegio.webp') }}"
+    ogImage="{{ $article->image ? route('uploads.serve', $article->image) : asset('images/logo_ciliegio.webp') }}"
     canonical="{{ route('menu_domenicale') }}"
 >
     <x-header title=" {{ __('ui.Menu_domenicale') }}  " />
@@ -25,14 +25,14 @@
                                         <div class="carousel-inner">
                                             <!-- Prima Immagine -->
                                             <div class="carousel-item active">
-                                                <img src="{{ $article->image ? asset('storage/' . $article->image) : 'https://via.placeholder.com/800x1000?text=Il+Ciliegio+dell+Etna' }}"
+                                                <img src="{{ $article->image ? route('uploads.serve', $article->image) : 'https://via.placeholder.com/800x1000?text=Il+Ciliegio+dell+Etna' }}"
                                                     alt="Immagine principale del menù domenicale: {{ $article->title }}">
                                             </div>
 
                                             <!-- Seconda Immagine (Condizionale) -->
                                             @if ($article->image_secondary)
                                                 <div class="carousel-item">
-                                                    <img src="{{ asset('storage/' . $article->image_secondary) }}"
+                                                    <img src="{{ route('uploads.serve', $article->image_secondary) }}"
                                                         alt="Seconda immagine del menù domenicale: {{ $article->title }}">
                                                 </div>
                                             @endif

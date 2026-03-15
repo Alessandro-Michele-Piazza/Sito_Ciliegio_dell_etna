@@ -20,7 +20,7 @@
                                     <div class="mb-4 border-bottom pb-3">
                                         <label class="form-label">Immagine Principale</label>
                                         @if ($article->image)
-                                            <img src="{{ asset('storage/' . $article->image) }}" class="preview-img"
+                                            <img src="{{ route('uploads.serve', $article->image) }}" class="preview-img"
                                                 alt="Anteprima immagine principale del menù domenicale: {{ $article->title }}">
                                         @endif
                                         <input type="file" name="image" class="form-control">
@@ -30,7 +30,7 @@
                                     <div class="mb-3">
                                         <label class="form-label">Seconda Immagine (Carosello)</label>
                                         @if ($article->image_secondary)
-                                            <img src="{{ asset('storage/' . $article->image_secondary) }}"
+                                            <img src="{{ route('uploads.serve', $article->image_secondary) }}"
                                                 class="preview-img"
                                                 alt="Anteprima immagine secondaria del menù domenicale: {{ $article->title }}">
                                         @endif

@@ -19,8 +19,8 @@ Route::get('{lang}/{any?}', function ($lang, $any = null) {
     return abort(404);
 })->where('lang', 'it|en|es|fr')->where('any', '.*');
 
-// Fallback: serve storage files via PHP when the symlink is missing
-Route::get('/storage/{path}', function (string $path) {
+// Serve uploaded files from storage without requiring a symlink
+Route::get('/uploads/{path}', function (string $path) {
     if (str_contains($path, '..')) {
         abort(403);
     }
@@ -29,7 +29,7 @@ Route::get('/storage/{path}', function (string $path) {
         abort(404);
     }
     return response()->file($fullPath);
-})->where('path', '.*')->name('storage.serve');
+})->where('path', '.*')->name('uploads.serve');
 
 Route::get('/', [PublicController::class, 'home'])->name("home");
 Route::get('/sitemap.xml', function () {
@@ -185,12 +185,18 @@ Route::middleware(['auth'])->group(function () {
 Route::get('/Apri-Menu-PDF', function () {
     $menu = \App\Models\MenuPizzeria::first();
     if ($menu) {
-        return redirect(asset('storage/' . $menu->pdf_path));
+        return redirect(route('uploads.serve', $menu->pdf_path));
     }
     return redirect()->back()->with('error', 'Menu non trovato');
 })->name('apri_menu_diretto');
 
 use Illuminate\Support\Facades\Artisan;
+
+// Admin: crea il symlink public/storage -> storage/app/public
+Route::get('/admin/crea-storage-link', function () {
+    Artisan::call('storage:link');
+    return 'Storage link creato! ' . Artisan::output();
+})->middleware('auth')->name('admin.storage_link');
 
 Route::get('/debug-config', function() {
     Artisan::call('config:clear'); // Pulizia profonda

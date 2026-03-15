@@ -36,7 +36,7 @@
                                 {{-- Anteprima immagine esistente --}}
                                 <div class="mb-3">
                                     @if ($blog->image)
-                                        <img src="{{ asset('storage/' . $blog->image) }}" alt="{{ $blog->title }}"
+                                        <img src="{{ route('uploads.serve', $blog->image) }}" alt="{{ $blog->title }}"
                                             class="img-thumbnail img-fluid rounded shadow-sm w-25">
                                     @else
                                         <span class="badge bg-light text-secondary border p-2">Nessuna immagine

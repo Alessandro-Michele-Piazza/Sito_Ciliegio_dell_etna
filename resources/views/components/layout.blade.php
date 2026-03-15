@@ -11,7 +11,7 @@
     $pageOgDescription = $ogDescription ?? ($post->content ?? $pageDescription);
     $pageOgDescription = Str::limit(strip_tags($pageOgDescription), 160, '');
     $pageOgImage =
-        $ogImage ?? (isset($post->image) ? asset('storage/' . $post->image) : asset('images/logo_ciliegio.webp'));
+        $ogImage ?? (isset($post->image) ? route('uploads.serve', $post->image) : asset('images/logo_ciliegio.webp'));
     $pageOgType = $ogType ?? (isset($post) ? 'article' : 'website');
     $pageOgLocale = str_replace('_', '-', app()->getLocale());
     $currentPath = request()->path();

@@ -48,7 +48,7 @@
                                         <i class="fas fa-file-pdf text-danger me-2"></i>
                                         {{ basename($menu->pdf_path) }}
                                     </span>
-                                    <a href="{{ asset('storage/' . $menu->pdf_path) }}" target="_blank"
+                                    <a href="{{ route('uploads.serve', $menu->pdf_path) }}" target="_blank"
                                         class="btn btn-sm btn-outline-dark">
                                         <i class="fas fa-eye"></i>
                                     </a>
