@@ -18,6 +18,19 @@ Route::get('{lang}/{any?}', function ($lang, $any = null) {
     }
     return abort(404);
 })->where('lang', 'it|en|es|fr')->where('any', '.*');
+
+// Fallback: serve storage files via PHP when the symlink is missing
+Route::get('/storage/{path}', function (string $path) {
+    if (str_contains($path, '..')) {
+        abort(403);
+    }
+    $fullPath = storage_path('app/public/' . $path);
+    if (!is_file($fullPath)) {
+        abort(404);
+    }
+    return response()->file($fullPath);
+})->where('path', '.*')->name('storage.serve');
+
 Route::get('/', [PublicController::class, 'home'])->name("home");
 Route::get('/sitemap.xml', function () {
     $today = now()->toDateString();
