@@ -30,16 +30,17 @@
             <div class="swiper swiper-verticale-1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="{{ $heroBalconeImage }}" class="img_carosello_stanza"
-                            alt="Foto vista dal balcone" loading="eager">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="{{ $heroTerrazzaImage }}" class="img_carosello_stanza"
-                            alt="Foto Terrazza " loading="lazy">
-                    </div>
-                    <div class="swiper-slide">
+
                         <img src="{{ $heroBaldacchinoImage }}" class="img_carosello_stanza"
                             alt="Foto Camera Romantica con letto a Baldacchino" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ $heroTerrazzaImage }}" class="img_carosello_stanza" alt="Foto Terrazza "
+                            loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="{{ $heroBalconeImage }}" class="img_carosello_stanza" alt="Foto vista dal balcone"
+                            loading="eager">
                     </div>
                 </div>
                 <div class="swiper-pagination pag-verticale-1"></div>
@@ -111,8 +112,8 @@
                     <picture>
                         <source media="(max-width: 767px)" srcset="{{ $triplaMobileImage }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ $triplaDesktopImage }}" class="img-scacchiera-custom"
-                            alt="Camere Triple Superior" loading="lazy">
+                        <img src="{{ $triplaDesktopImage }}" class="img-scacchiera-custom" alt="Camere Triple Superior"
+                            loading="lazy">
                     </picture>
                 </div>
 
@@ -169,11 +170,10 @@
                 <!-- COLONNA IMMAGINE -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-stanze">
                     <picture>
-                        <source media="(max-width: 767px)"
-                            srcset="{{ $quadruplaMobileImage }}"
+                        <source media="(max-width: 767px)" srcset="{{ $quadruplaMobileImage }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ $quadruplaDesktopImage }}" class="img-scacchiera-custom"
-                            alt="Camere Quadruple" loading="lazy">
+                        <img src="{{ $quadruplaDesktopImage }}" class="img-scacchiera-custom" alt="Camere Quadruple"
+                            loading="lazy">
                     </picture>
                 </div>
 
