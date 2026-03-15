@@ -147,6 +147,12 @@ body::-webkit-scrollbar-thumb {
     font-size: 1rem;
 }
 
+.header-modern.header-corso-cucina {
+    background-image:
+        linear-gradient(120deg, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.22)),
+        url('/images/corso_cucina.webp');
+}
+
 .video_home {
     display: block;
     width: 100%;
@@ -164,6 +170,26 @@ body::-webkit-scrollbar-thumb {
 
 .h-div-mission {
     height: 50vh;
+}
+
+.lead-narrow {
+    max-width: 700px;
+}
+
+.corso-cucina-figure {
+    margin: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.12);
+}
+
+.corso-cucina-image {
+    display: block;
+    width: 100%;
+    min-height: 280px;
+    max-height: 420px;
+    object-fit: cover;
+    object-position: center;
 }
 
 /* --- NAVBAR --- */
@@ -993,6 +1019,11 @@ body::-webkit-scrollbar-thumb {
     .offcanvas-link {
         font-size: 1rem;
         padding: 0.5rem 0;
+    }
+
+    .corso-cucina-image {
+        min-height: 220px;
+        max-height: 300px;
     }
 }
 

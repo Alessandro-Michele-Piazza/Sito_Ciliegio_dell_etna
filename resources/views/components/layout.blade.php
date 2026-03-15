@@ -35,6 +35,7 @@
     <title>{{ $pageTitle }}</title>
     <meta name="description" content="{{ $pageDescription }}">
     <link rel="canonical" href="{{ $pageCanonical }}" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ route('sitemap') }}">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Il Ciliegio dell'Etna">
     <meta name="theme-color" content="#001a23">
@@ -51,45 +52,6 @@
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     {{-- FINE FONT GOOGLE --}}
-
-    {{-- Critical CSS (small, above-the-fold rules to reduce FOUC/LCP) --}}
-    <style>
-        /* Navbar and header essentials */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1050;
-            background-color: transparent
-        }
-
-        .icona_navbar {
-            width: 6.5rem
-        }
-
-        .header-modern {
-            min-height: 45vh;
-            background-size: cover;
-            background-position: center
-        }
-
-        .video_home {
-            display: block;
-            width: 100%;
-            height: 100vh;
-            object-fit: cover
-        }
-
-        .h-video {
-            height: 100vh
-        }
-
-        /* Basic body paint to avoid white flash */
-        body {
-            background-color: var(--bianco_sfondo)
-        }
-    </style>
 
     {{-- Preload the main OG image (helps LCP when it's the hero image) --}}
     @if (!empty($pageOgImage))
@@ -114,6 +76,7 @@
     <meta property="og:locale" content="{{ $pageOgLocale }}">
     <meta property="og:site_name" content="Il Ciliegio dell'Etna">
     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ilciliegiodelletna">
     <meta name="twitter:title" content="{{ $pageOgTitle }}">
     <meta name="twitter:description" content="{{ $pageOgDescription }}">
     <meta name="twitter:image" content="{{ $pageOgImage }}">

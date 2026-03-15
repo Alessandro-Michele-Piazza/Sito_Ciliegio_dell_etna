@@ -326,7 +326,7 @@
 
 /* carosello */
 
-/* Selezione iper-univoca tramite ID per evitare conflitti e !important */
+/* Selezione iper-univoca tramite ID per evitare conflitti di specificita */
 
 /* ============================================================
    CAROSELLO EVENTI — stile coerente con il sito

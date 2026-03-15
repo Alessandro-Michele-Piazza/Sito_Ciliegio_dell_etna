@@ -1,5 +1,7 @@
 {{-- filepath: c:\Users\alexp\Sito_ciliegio_dell_etna_2026\resources\views\components\header.blade.php --}}
-<section class="header header-modern d-flex align-items-center justify-content-center">
+@props(['title', 'variant' => ''])
+
+<section class="header header-modern {{ $variant }} d-flex align-items-center justify-content-center">
     <div class="header-overlay"></div>
     <div class="container text-center position-relative" data-aos="fade-up">
         <span class="sub-label header-badge">IL CILIEGIO DELL'ETNA</span>
