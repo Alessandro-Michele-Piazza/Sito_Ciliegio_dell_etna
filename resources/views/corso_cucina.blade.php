@@ -3,49 +3,47 @@
     metaDescription="Corso di cucina siciliana con ingredienti locali e tecniche tradizionali."
     ogTitle="Corso di Cucina | Il Ciliegio dell'Etna"
     ogDescription="Scopri il nostro corso di cucina con ricette e tradizioni siciliane."
-    ogImage="{{ asset('storage/media/Corso_cucina.webp') }}"
     canonical="{{ route('corso_cucina') }}"
 >
     <x-header title="{{ __('ui.corso_cucina_title') }}" />
 
-    {{-- Hero con Immagine --}}
+    {{-- Hero --}}
     <section class="container py-4 py-lg-5">
-        <div class="row g-4 align-items-center">
-            <div class="col-lg-6">
-                <span class="badge rounded-pill bg-success-subtle text-success mb-3">
-                    <i class="fa-solid fa-star me-2"></i>{{ __('ui.corso_cucina_badge') }}
-                </span>
-                <h1 class="display-5 fw-bold mb-3">{{ __('ui.corso_cucina_h1') }}</h1>
-                <p class="lead text-muted mb-4">
-                    {{ __('ui.corso_cucina_lead') }}
-                </p>
+        <div class="text-center mb-4">
+            <span class="badge rounded-pill bg-success-subtle text-success mb-3">
+                <i class="fa-solid fa-star me-2"></i>{{ __('ui.corso_cucina_badge') }}
+            </span>
+            <h1 class="display-5 fw-bold mb-3">{{ __('ui.corso_cucina_h1') }}</h1>
+            <p class="lead text-muted mb-4 mx-auto" style="max-width: 700px;">
+                {{ __('ui.corso_cucina_lead') }}
+            </p>
+        </div>
 
-                <div class="d-flex flex-wrap gap-3 mb-4">
-                    <div class="info-tile">
-                        <i class="fa-solid fa-clock scritta_verde_medio"></i>
-                        <div>
-                            <h6 class="mb-1">{{ __('ui.corso_cucina_durata_label') }}</h6>
-                            <p class="mb-0">{{ __('ui.corso_cucina_durata_value') }}</p>
-                        </div>
-                    </div>
-                    <div class="info-tile">
-                        <i class="fa-solid fa-tag scritta_verde_medio"></i>
-                        <div>
-                            <h6 class="mb-1">{{ __('ui.corso_cucina_costo_label') }}</h6>
-                            <p class="mb-0"><strong>{{ __('ui.corso_cucina_costo_value') }}</strong> <small class="text-muted">{{ __('ui.corso_cucina_costo_suffix') }}</small></p>
-                        </div>
+        <div class="row g-3 justify-content-center mb-4">
+            <div class="col-auto">
+                <div class="info-tile">
+                    <i class="fa-solid fa-clock scritta_verde_medio"></i>
+                    <div>
+                        <h6 class="mb-1">{{ __('ui.corso_cucina_durata_label') }}</h6>
+                        <p class="mb-0">{{ __('ui.corso_cucina_durata_value') }}</p>
                     </div>
                 </div>
-                
-                <a href="{{ route('contatti') }}" class="btn btn-prenota">
-                    <i class="fa-solid fa-envelope me-2"></i> {{ __('ui.corso_cucina_prenota_email') }}
-                </a>
             </div>
+            <div class="col-auto">
+                <div class="info-tile">
+                    <i class="fa-solid fa-tag scritta_verde_medio"></i>
+                    <div>
+                        <h6 class="mb-1">{{ __('ui.corso_cucina_costo_label') }}</h6>
+                        <p class="mb-0"><strong>{{ __('ui.corso_cucina_costo_value') }}</strong> <small class="text-muted">{{ __('ui.corso_cucina_costo_suffix') }}</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="col-lg-6">
-                <img src="{{ asset('storage/media/Corso_cucina.webp') }}"
-                     alt="{{ __('ui.corso_cucina_img_alt') }}" class="img-fluid rounded-3 shadow-sm">
-            </div>
+        <div class="text-center">
+            <a href="{{ route('contatti') }}" class="btn btn-prenota">
+                <i class="fa-solid fa-envelope me-2"></i> {{ __('ui.corso_cucina_prenota_email') }}
+            </a>
         </div>
     </section>
 
