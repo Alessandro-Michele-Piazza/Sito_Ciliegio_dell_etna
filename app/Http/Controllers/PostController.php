@@ -180,8 +180,33 @@ class PostController extends Controller
         $image->scaleDown(1920, 1920);
         $encoded = $image->toWebp(80); // qualità 0-100
 
-        $filename = 'blog_images/' . Str::uuid() . '.webp';
+        $filename = $this->generateOriginalFilenamePath($file->getClientOriginalName());
         Storage::disk('public')->put($filename, $encoded);
+
+        return $filename;
+    }
+
+    private function generateOriginalFilenamePath(string $originalName): string
+    {
+        $baseName = pathinfo($originalName, PATHINFO_FILENAME);
+        $baseName = Str::of($baseName)
+            ->ascii()
+            ->replaceMatches('/[^A-Za-z0-9_-]+/', '_')
+            ->trim('_-')
+            ->lower()
+            ->value();
+
+        if ($baseName === '') {
+            $baseName = 'blog-image';
+        }
+
+        $filename = 'blog_images/' . $baseName . '.webp';
+        $suffix = 2;
+
+        while (Storage::disk('public')->exists($filename)) {
+            $filename = 'blog_images/' . $baseName . '-' . $suffix . '.webp';
+            $suffix++;
+        }
 
         return $filename;
     }
