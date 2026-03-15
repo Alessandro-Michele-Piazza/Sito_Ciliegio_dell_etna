@@ -43,7 +43,7 @@
             </div>
 
             <div class="col-lg-6">
-                <img src="{{ asset('storage/media/corso_cucina.webp') }}"
+                <img src="{{ asset('storage/media/Corso_cucina.webp') }}"
                      alt="{{ __('ui.corso_cucina_img_alt') }}" class="img-fluid rounded-3 shadow-sm">
             </div>
         </div>
