@@ -1,68 +1,11 @@
 <x-layout
     title="{{ __('ui.corso_cucina_title') }}"
-    metaDescription="Corso di cucina siciliana a Giarre con ricette tradizionali, ingredienti locali e un'esperienza autentica ai piedi dell'Etna."
+    metaDescription="Corso di cucina siciliana con ingredienti locali e tecniche tradizionali."
     ogTitle="Corso di Cucina | Il Ciliegio dell'Etna"
-    ogDescription="Prenota il corso di cucina del Ciliegio dell'Etna e scopri ricette siciliane, tecniche tradizionali e prodotti del territorio."
-    ogImage="{{ asset('images/corso_cucina.webp') }}"
+    ogDescription="Scopri il nostro corso di cucina con ricette e tradizioni siciliane."
     canonical="{{ route('corso_cucina') }}"
 >
-    @php
-        $structuredData = [
-            '@context' => 'https://schema.org',
-            '@graph' => [
-                [
-                    '@type' => 'BreadcrumbList',
-                    'itemListElement' => [
-                        [
-                            '@type' => 'ListItem',
-                            'position' => 1,
-                            'name' => 'Home',
-                            'item' => route('home'),
-                        ],
-                        [
-                            '@type' => 'ListItem',
-                            'position' => 2,
-                            'name' => __('ui.corso_cucina_title'),
-                            'item' => route('corso_cucina'),
-                        ],
-                    ],
-                ],
-                [
-                    '@type' => 'Course',
-                    'name' => __('ui.corso_cucina_title'),
-                    'description' => "Corso di cucina siciliana a Giarre con ricette tradizionali, ingredienti locali e un'esperienza autentica ai piedi dell'Etna.",
-                    'image' => asset('images/corso_cucina.webp'),
-                    'provider' => [
-                        '@type' => 'LocalBusiness',
-                        'name' => "Il Ciliegio dell'Etna",
-                        'url' => url('/'),
-                        'telephone' => '+39095969109',
-                        'email' => 'info@ilciliegiodelletna.it',
-                        'address' => [
-                            '@type' => 'PostalAddress',
-                            'streetAddress' => 'Via Filippo Meda, 88',
-                            'addressLocality' => 'Giarre',
-                            'addressRegion' => 'CT',
-                            'postalCode' => '95014',
-                            'addressCountry' => 'IT',
-                        ],
-                    ],
-                    'offers' => [
-                        '@type' => 'Offer',
-                        'priceCurrency' => 'EUR',
-                        'price' => '80',
-                        'availability' => 'https://schema.org/InStock',
-                        'url' => route('contatti'),
-                    ],
-                ],
-            ],
-        ];
-    @endphp
-    <script type="application/ld+json">
-        {!! json_encode($structuredData, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
-    </script>
-
-    <x-header title="{{ __('ui.corso_cucina_title') }}" variant="header-corso-cucina" />
+    <x-header title="{{ __('ui.corso_cucina_title') }}" />
 
     {{-- Hero --}}
     <section class="container py-4 py-lg-5">
@@ -71,7 +14,7 @@
                 <i class="fa-solid fa-star me-2"></i>{{ __('ui.corso_cucina_badge') }}
             </span>
             <h1 class="display-5 fw-bold mb-3">{{ __('ui.corso_cucina_h1') }}</h1>
-            <p class="lead text-muted mb-4 mx-auto lead-narrow">
+            <p class="lead text-muted mb-4 mx-auto" style="max-width: 700px;">
                 {{ __('ui.corso_cucina_lead') }}
             </p>
         </div>
@@ -123,15 +66,6 @@
 
             <div class="col-lg-7">
                 <div class="card-corso p-4 p-lg-5 h-100 shadow-sm">
-                    <figure class="corso-cucina-figure mb-4">
-                        <img
-                            src="{{ asset('images/corso_cucina.webp') }}"
-                            class="corso-cucina-image"
-                            alt="Corso di cucina siciliana al Ciliegio dell'Etna"
-                            loading="eager"
-                            fetchpriority="high"
-                        >
-                    </figure>
                     <h2 class="mb-3">{{ __('ui.corso_cucina_esperienza_title') }}</h2>
                     <p class="descrizione-mission ">
                         {{ __('ui.corso_cucina_esperienza_text') }}
