@@ -1,8 +1,27 @@
+@php
+    $versionedMedia = static function (string $path): string {
+        $fullPath = public_path($path);
+        $version = is_file($fullPath) ? filemtime($fullPath) : time();
+
+        return asset($path) . '?v=' . $version;
+    };
+
+    $heroBalconeImage = $versionedMedia('media/foto(9).webp');
+    $heroTerrazzaImage = $versionedMedia('media/foto(11).webp');
+    $heroBaldacchinoImage = $versionedMedia('media/foto(10).webp');
+    $matrimonialiMobileImage = $versionedMedia('media/foto_telefono(12).webp');
+    $matrimonialiDesktopImage = $versionedMedia('media/foto(12).webp');
+    $triplaMobileImage = $versionedMedia('media/tripla_telefono.webp');
+    $triplaDesktopImage = $versionedMedia('media/tripla.webp');
+    $quadruplaMobileImage = $versionedMedia('media/quadrupla_telefono.webp');
+    $quadruplaDesktopImage = $versionedMedia('media/quadrupla.webp');
+@endphp
+
 <x-layout title="{{ __('ui.Camere') }}"
     metaDescription="Camere confortevoli con servizi moderni presso Il Ciliegio dell'Etna a Giarre."
     ogTitle="Camere | Il Ciliegio dell'Etna"
     ogDescription="Camere matrimoniali e triple con comfort, Wi-Fi e servizi per un soggiorno rilassante."
-    ogImage="{{ asset('media/foto(9).webp') }}" canonical="{{ route('stanze') }}">
+    ogImage="{{ $heroBalconeImage }}" canonical="{{ route('stanze') }}">
 
     <div class="stanze-page">
 
@@ -11,15 +30,15 @@
             <div class="swiper swiper-verticale-1">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="{{ asset('media/foto(9).webp') }}" class="img_carosello_stanza"
+                        <img src="{{ $heroBalconeImage }}" class="img_carosello_stanza"
                             alt="Foto vista dal balcone" loading="eager">
                     </div>
                     <div class="swiper-slide">
-                        <img src="{{ asset('media/foto(11).webp') }}" class="img_carosello_stanza"
+                        <img src="{{ $heroTerrazzaImage }}" class="img_carosello_stanza"
                             alt="Foto Terrazza " loading="lazy">
                     </div>
                     <div class="swiper-slide">
-                        <img src="{{ asset('media/foto(10).webp') }}" class="img_carosello_stanza"
+                        <img src="{{ $heroBaldacchinoImage }}" class="img_carosello_stanza"
                             alt="Foto Camera Romantica con letto a Baldacchino" loading="lazy">
                     </div>
                 </div>
@@ -36,9 +55,9 @@
                 <!-- COLONNA IMMAGINE -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-stanze">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('media/foto_telefono(12).webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ $matrimonialiMobileImage }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('media/foto(12).webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ $matrimonialiDesktopImage }}" class="img-scacchiera-custom"
                             alt="Camere Matrimoniali" loading="lazy">
                     </picture>
                 </div>
@@ -90,9 +109,9 @@
                 <!-- COLONNA IMMAGINE -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-stanze order-1 order-md-2">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('media/tripla_telefono.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ $triplaMobileImage }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('media/tripla.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ $triplaDesktopImage }}" class="img-scacchiera-custom"
                             alt="Camere Triple Superior" loading="lazy">
                     </picture>
                 </div>
@@ -151,9 +170,9 @@
                 <div class="col-12 col-md-7 h-scacchiera col-img-stanze">
                     <picture>
                         <source media="(max-width: 767px)"
-                            srcset="{{ asset('media/quadrupla_telefono.webp') }}"
+                            srcset="{{ $quadruplaMobileImage }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('media/quadrupla.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ $quadruplaDesktopImage }}" class="img-scacchiera-custom"
                             alt="Camere Quadruple" loading="lazy">
                     </picture>
                 </div>
