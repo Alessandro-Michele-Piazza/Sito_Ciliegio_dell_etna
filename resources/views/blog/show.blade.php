@@ -84,7 +84,7 @@
                                 <img src="{{ asset('storage/' . $post->image) }}"
                                     alt="{{ $post->title }}" loading="eager">
                             @else
-                                <img src="{{ asset('storage/media/placeholder.webp') }}"
+                                <img src="{{ asset('media/placeholder.webp') }}"
                                     alt="Placeholder" loading="eager">
                             @endif
                             <div class="blog-show__hero-fade"></div>

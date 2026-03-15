@@ -2,7 +2,7 @@
     metaDescription="Organizza il tuo evento speciale al Ciliegio dell'Etna: lauree, compleanni, cerimonie e meeting aziendali con vista Etna."
     ogTitle="Eventi Privati | Il Ciliegio dell'Etna"
     ogDescription="Celebra i tuoi momenti più importanti in un agriturismo immerso nei vigneti dell'Etna. Spazi interni ed esterni per ogni tipo di evento."
-    ogImage="{{ asset('storage/media/nozze_pc.webp') }}" canonical="{{ route('eventi') }}">
+    ogImage="{{ asset('media/nozze_pc.webp') }}" canonical="{{ route('eventi') }}">
 
     {{-- HERO --}}
     <x-header title="{{ __('ui.Eventi') }}" />
@@ -19,11 +19,11 @@
                 <div class="col-lg-6 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
                     <div id="ev-intro-img-wrapper">
                         <picture>
-                            <source media="(max-width: 576px)" srcset="{{ asset('storage/media/laurea_pc.webp') }}">
-                            <img id="ev-intro-img-main" src="{{ asset('storage/media/laurea_pc.webp') }}"
+                            <source media="(max-width: 576px)" srcset="{{ asset('media/laurea_pc.webp') }}">
+                            <img id="ev-intro-img-main" src="{{ asset('media/laurea_pc.webp') }}"
                                 alt="{{ __('ui.ev_img_alt_festa') }}" loading="lazy">
                         </picture>
-                        <img id="ev-intro-img-accent" src="{{ asset('storage/media/laurea_pc (2).webp') }}"
+                        <img id="ev-intro-img-accent" src="{{ asset('media/laurea_pc (2).webp') }}"
                             alt="{{ __('ui.ev_img_alt_dettaglio') }}" loading="lazy">
                     </div>
                 </div>
@@ -85,8 +85,8 @@
             <div class="row g-0 align-items-center">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
                     <picture>
-                        <source media="(max-width: 576px)" srcset="{{ asset('storage/media/18°compl_pc.webp') }}">
-                        <img id="ev-gallery-img" src="{{ asset('storage/media/18°compl_pc.webp') }}"
+                        <source media="(max-width: 576px)" srcset="{{ asset('media/18°compl_pc.webp') }}">
+                        <img id="ev-gallery-img" src="{{ asset('media/18°compl_pc.webp') }}"
                             alt="{{ __('ui.ev_img_alt_location') }}" loading="lazy">
                     </picture>
                 </div>
@@ -129,7 +129,7 @@
                 @for ($i = 1; $i <= 8; $i++)
                     <div class="swiper-slide" id="eventi_slide_card_{{ $i }}">
                         <div id="eventi_card_overlay_{{ $i }}" class="eventi-overlay">
-                            <img src="{{ asset('storage/media/foto_evento(' . $i . ').webp') }}"
+                            <img src="{{ asset('media/foto_evento(' . $i . ').webp') }}"
                                 id="eventi_foto_item_{{ $i }}" alt="Foto Evento {{ $i }}" />
                         </div>
                     </div>

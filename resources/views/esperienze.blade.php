@@ -3,7 +3,7 @@
     metaDescription="Esperienze e tour sull'Etna: escursioni, parchi avventura e attrazioni vicine a Giarre."
     ogTitle="Esperienze | Il Ciliegio dell'Etna"
     ogDescription="Scopri esperienze, escursioni e attività sul territorio dell'Etna."
-    ogImage="{{ asset('storage/media/etna_1.webp') }}"
+    ogImage="{{ asset('media/etna_1.webp') }}"
     canonical="{{ route('esperienze') }}"
 >
 
@@ -18,9 +18,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etna_1_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/etna_1_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/etna_1.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/etna_1.webp') }}" class="img-scacchiera-custom"
                             alt="Escursione sull'Etna">
                     </picture>
                 </div>
@@ -73,9 +73,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-1 order-md-2">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etnaland_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/etnaland_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/etnaland.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/etnaland.webp') }}" class="img-scacchiera-custom"
                             alt="Etnaland Theme Park" loading="lazy">
                     </picture>
                 </div>
@@ -130,9 +130,9 @@
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-2 order-md-1">
                     <picture>
                         <source media="(max-width: 767px)"
-                            srcset="{{ asset('storage/media/parco_avventura_tel.webp') }}"
+                            srcset="{{ asset('media/parco_avventura_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/parco_avventura.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/parco_avventura.webp') }}" class="img-scacchiera-custom"
                             alt="Parco Avventura Etna Milo - Percorsi sugli alberi" loading="lazy">
                     </picture>
                 </div>
@@ -186,9 +186,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-1 order-md-2">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/alcantara_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/alcantara_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/alcantara.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/alcantara.webp') }}" class="img-scacchiera-custom"
                             alt="Body Rafting Gole Alcantara" loading="lazy">
                     </picture>
                 </div>
@@ -242,9 +242,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-1 order-md-1">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/taormina_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/taormina_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/taormina.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/taormina.webp') }}" class="img-scacchiera-custom"
                             alt="Taormina" loading="lazy">
                     </picture>
                 </div>
@@ -298,9 +298,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-1 order-md-2">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etna_quad_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/etna_quad_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/etna_quad.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/etna_quad.webp') }}" class="img-scacchiera-custom"
                             alt="Etna Quad" loading="lazy">
                     </picture>
                 </div>
@@ -354,9 +354,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-1 order-md-1">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etna_bici_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/etna_bici_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/etna_bici.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/etna_bici.webp') }}" class="img-scacchiera-custom"
                             alt="E-Bike Etna" loading="lazy">
                     </picture>
                 </div>
@@ -410,9 +410,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-1 order-md-2">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/asini_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/asini_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/asini.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/asini.webp') }}" class="img-scacchiera-custom"
                             alt="Asini Etna" loading="lazy">
                     </picture>
                 </div>
@@ -466,9 +466,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-1 order-md-1">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/delfini_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/delfini_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/delfini.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/delfini.webp') }}" class="img-scacchiera-custom"
                             alt="Dolphin Watching Giardini Naxos" loading="lazy">
                     </picture>
                 </div>
@@ -529,9 +529,9 @@
                 <!-- Immagine -->
                 <div class="col-12 col-md-7 h-scacchiera col-img-exp order-1 order-md-2">
                     <picture>
-                        <source media="(max-width: 767px)" srcset="{{ asset('storage/media/etna_scii_tel.webp') }}"
+                        <source media="(max-width: 767px)" srcset="{{ asset('media/etna_scii_tel.webp') }}"
                             class="w-full h-screen object-cover">
-                        <img src="{{ asset('storage/media/etna_scii.webp') }}" class="img-scacchiera-custom"
+                        <img src="{{ asset('media/etna_scii.webp') }}" class="img-scacchiera-custom"
                             alt="Sciare sull'Etna con vista mare" loading="lazy">
                     </picture>
                 </div>

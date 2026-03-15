@@ -2,7 +2,7 @@
     metaDescription="Ristorante e Pizzeria Il Ciliegio dell'Etna: cucina siciliana autentica, pizze a lunga lievitazione e ingredienti a km 0."
     ogTitle="Ristorante & Pizzeria | Il Ciliegio dell'Etna"
     ogDescription="Sapori autentici della Sicilia: ristorante con piatti tipici e pizzeria con impasti tradizionali presso Il Ciliegio dell'Etna."
-    ogImage="{{ asset('storage/media/tagliata_di_carne.webp') }}" canonical="{{ route('ristorazione') }}">
+    ogImage="{{ asset('media/tagliata_di_carne.webp') }}" canonical="{{ route('ristorazione') }}">
 
     <x-header title="{{ __('ui.Ristorazione') }}" />
 
@@ -36,11 +36,11 @@
                 <div class="col-12 col-lg-6 order-1 order-lg-2">
                     <div class="riz-img-stack">
                         <div class="riz-img-main">
-                            <img src="{{ asset('storage/media/tagliata_di_carne.webp') }}" alt="{{ __('ui.Ristorante') }}"
+                            <img src="{{ asset('media/tagliata_di_carne.webp') }}" alt="{{ __('ui.Ristorante') }}"
                                 class="riz-img shadow" loading="lazy">
                         </div>
                         <div class="riz-img-accent">
-                            <img src="{{ asset('storage/media/foto(6).webp') }}" alt="{{ __('ui.Piatti_Tipici') }}"
+                            <img src="{{ asset('media/foto(6).webp') }}" alt="{{ __('ui.Piatti_Tipici') }}"
                                 class="riz-img shadow-sm" loading="lazy">
                         </div>
                     </div>
@@ -70,11 +70,11 @@
                 <div class="col-12 col-lg-6">
                     <div class="riz-img-stack riz-img-stack-reverse">
                         <div class="riz-img-main">
-                            <img src="{{ asset('storage/media/pizza_4.webp') }}" alt="{{ __('ui.Pizzeria') }}"
+                            <img src="{{ asset('media/pizza_4.webp') }}" alt="{{ __('ui.Pizzeria') }}"
                                 class="riz-img shadow" loading="lazy">
                         </div>
                         <div class="riz-img-accent riz-img-accent-right">
-                            <img src="{{ asset('storage/media/pizza_3.webp') }}"
+                            <img src="{{ asset('media/pizza_3.webp') }}"
                                 alt="{{ __('ui.ristorazione_pizza_tradizionale') }}" class="riz-img shadow-sm"
                                 loading="lazy">
                         </div>
@@ -85,7 +85,7 @@
                 <div class="col-12 col-lg-6 d-flex align-items-center">
                     <div class="riz-text-block riz-text-right">
                         <div class="riz-badge-line">
-                            <img src="{{ asset('storage/media/agripizza.webp') }}" alt="Agripizza"
+                            <img src="{{ asset('media/agripizza.webp') }}" alt="Agripizza"
                                 class="riz-agripizza-logo" loading="lazy">
                         </div>
                         {{-- <h2 class="riz-title">

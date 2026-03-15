@@ -44,7 +44,7 @@
     <div class="h-video">
         <video class="video_home px-0" autoplay loop muted playsinline>
 
-            <source src="{{ asset('storage/media/video_ciliegio_home.mp4') }}" type="video/mp4">
+            <source src="{{ asset('media/video_ciliegio_home.mp4') }}" type="video/mp4">
         </video>
     </div>
 
@@ -104,10 +104,10 @@
             <div class="col-12 col-md-7 h-scacchiera">
                 <picture>
                     <!-- Immagine per Mobile (schermi fino a 767px) -->
-                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto(5).webp') }}"
+                    <source media="(max-width: 767px)" srcset="{{ asset('media/foto(5).webp') }}"
                         class="w-full h-screen object-cover">
                     <!-- Immagine per Desktop (default) -->
-                    <img src="{{ asset('storage/media/foto_pc(5).webp') }}" class=" img-scacchiera-custom"
+                    <img src="{{ asset('media/foto_pc(5).webp') }}" class=" img-scacchiera-custom"
                         alt="Scorcio dell'agriturismo Il Ciliegio dell'Etna">
                 </picture>
             </div>
@@ -172,10 +172,10 @@
             <div class="col-12 col-md-7 h-scacchiera order-1 order-md-2">
                 <picture>
                     <!-- Immagine per Mobile (schermi fino a 767px) -->
-                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/foto_telefono(12).webp') }}"
+                    <source media="(max-width: 767px)" srcset="{{ asset('media/foto_telefono(12).webp') }}"
                         class="w-full h-screen object-cover">
                     <!-- Immagine per Desktop (default) -->
-                    <img src="{{ asset('storage/media/foto(12).webp') }}" class=" img-scacchiera-custom"
+                    <img src="{{ asset('media/foto(12).webp') }}" class=" img-scacchiera-custom"
                         alt="Camera e arredamento presso Il Ciliegio dell'Etna">
                 </picture>
             </div>
@@ -192,10 +192,10 @@
             <div class="col-12 col-md-7 h-scacchiera">
                 <picture>
                     <!-- Immagine per Mobile (schermi fino a 767px) -->
-                    <source media="(max-width: 767px)" srcset="{{ asset('storage/media/nozze_tel.webp') }}"
+                    <source media="(max-width: 767px)" srcset="{{ asset('media/nozze_tel.webp') }}"
                         class="w-full h-screen object-cover">
                     <!-- Immagine per Desktop (default) -->
-                    <img src="{{ asset('storage/media/nozze_pc.webp') }}" class=" img-scacchiera-custom"
+                    <img src="{{ asset('media/nozze_pc.webp') }}" class=" img-scacchiera-custom"
                         alt="Scorcio dell'agriturismo Il Ciliegio dell'Etna">
                 </picture>
             </div>

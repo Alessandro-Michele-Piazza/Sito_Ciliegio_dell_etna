@@ -3,7 +3,7 @@
     metaDescription="Wine tour e degustazioni: scopri i pacchetti e prenota la tua esperienza enogastronomica."
     ogTitle="Wine Tour | Il Ciliegio dell'Etna"
     ogDescription="Degustazioni e wine tour con pacchetti dedicati nel territorio dell'Etna."
-    ogImage="{{ asset('storage/media/vino.webp') }}"
+    ogImage="{{ asset('media/vino.webp') }}"
     canonical="{{ route('winetour') }}"
 >
     <x-header title="{{ __('ui.Wine_Tour') }}" />
@@ -22,7 +22,7 @@
                     </p>
                     <a class="btn btn-prenota" href="{{ route('contatti') }}">{{ __('ui.Contattaci') }}</a>
                 </div>
-                <img class="hero-img" src="{{ asset('storage/media/vino.webp') }}" alt="{{ __('ui.Degustazioni_Alt1') }}" />
+                <img class="hero-img" src="{{ asset('media/vino.webp') }}" alt="{{ __('ui.Degustazioni_Alt1') }}" />
             </div>
         </section>
 
@@ -86,7 +86,7 @@
             </div>
 
             <div class="split wine-split">
-                <img class="hero-img" src="{{ asset('storage/media/vino2.webp') }}" alt="{{ __('ui.Degustazioni_Alt2') }}" />
+                <img class="hero-img" src="{{ asset('media/vino2.webp') }}" alt="{{ __('ui.Degustazioni_Alt2') }}" />
                 <div>
                     <h2 class="scritta_verde_scuro">{{ __('ui.Degustazioni_Sezione_Titolo') }}</h2>
                     <p class="lead">

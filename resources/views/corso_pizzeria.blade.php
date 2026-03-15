@@ -4,7 +4,7 @@
     metaDescription="Corso di pizzeria: impasti, tecniche e ingredienti con i maestri de Il Ciliegio dell'Etna."
     ogTitle="Corso di Pizzeria | Il Ciliegio dell'Etna"
     ogDescription="Impara a fare la pizza con il nostro corso dedicato, ingredienti e tecnica inclusi."
-    ogImage="{{ asset('storage/media/pizza_5.webp') }}"
+    ogImage="{{ asset('media/pizza_5.webp') }}"
     canonical="{{ route('corso_pizzeria') }}"
 >
     <x-header :title="__('ui.corso_pizzeria_title')" />
@@ -43,7 +43,7 @@
             </div>
 
             <div class="col-lg-6">
-                <img src="{{ asset('storage/media/pizza_5.webp') }}" alt="Corso di pizza"
+                <img src="{{ asset('media/pizza_5.webp') }}" alt="Corso di pizza"
                     class="img-fluid rounded-3 shadow-sm">
             </div>
         </div>

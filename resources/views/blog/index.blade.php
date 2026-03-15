@@ -82,7 +82,7 @@
                                     <img src="{{ asset('storage/' . $post->image) }}"
                                         alt="{{ $post->title }}" loading="lazy">
                                 @else
-                                    <img src="{{ asset('storage/media/placeholder.webp') }}"
+                                    <img src="{{ asset('media/placeholder.webp') }}"
                                         alt="Placeholder" loading="lazy">
                                 @endif
                                 <div class="blog-card__img-overlay"></div>
